@@ -8,19 +8,30 @@ import {
 } from "./components/Message";
 import Composer from "./components/Composer";
 
-const SUGGESTIONS = [
-  "Beach trip in December under $1,500",
-  "10 days of culture & food in Europe in spring",
-  "Adventure & mountains, mid budget, August",
-  "Romantic honeymoon, luxury, somewhere warm",
-];
+const SUGGESTIONS = {
+  domestic: [
+    "Goa beach trip in December under ₹20,000",
+    "Hill station for 5 days, budget ₹25,000",
+    "Spiritual trip, low budget, in winter",
+    "Adventure & mountains in August under ₹30,000",
+  ],
+  international: [
+    "Beach trip in December under $1,500",
+    "10 days of culture & food in Europe in spring",
+    "Adventure & mountains, mid budget, August",
+    "Romantic honeymoon, luxury, somewhere warm",
+  ],
+};
 
 export default function App() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
+  const [origin, setOrigin] = useState("");
+  const [mode, setMode] = useState("domestic");
   const [loading, setLoading] = useState(false);
   const [meta, setMeta] = useState(null);
   const scrollRef = useRef(null);
+  const suggestions = SUGGESTIONS[mode];
 
   useEffect(() => {
     getMeta().then(setMeta).catch(() => {});
@@ -49,7 +60,7 @@ export default function App() {
     setMessages((prev) => [...prev, { role: "user", content: message }]);
     setLoading(true);
     try {
-      const data = await recommend(message, history);
+      const data = await recommend(message, history, origin.trim() || undefined, mode);
       setMessages((prev) => [
         ...prev,
         {
@@ -92,21 +103,21 @@ export default function App() {
             </div>
           </div>
         </div>
-        {meta && (
-          <div className="hidden items-center gap-4 text-[11px] text-slate-400 sm:flex">
-            <Stat n={meta.destination_count} label="destinations" />
-            <Stat n={meta.country_count} label="countries" />
-            <span className="rounded-full bg-white/5 px-2.5 py-1 font-mono text-[10px] text-sky-300">
-              {meta.model}
-            </span>
-          </div>
-        )}
+        <div className="flex items-center gap-4">
+          <ModeTabs mode={mode} onChange={setMode} />
+          {meta && (
+            <div className="hidden items-center gap-4 text-[11px] text-slate-400 lg:flex">
+              <Stat n={meta.destination_count} label="destinations" />
+              <Stat n={meta.country_count} label="countries" />
+            </div>
+          )}
+        </div>
       </header>
 
       {/* Conversation */}
       <main ref={scrollRef} className="flex-1 overflow-y-auto px-4 py-6 sm:px-8">
         <div className="mx-auto max-w-3xl space-y-6">
-          {!started && <Welcome meta={meta} onPick={send} />}
+          {!started && <Welcome meta={meta} mode={mode} suggestions={suggestions} onPick={send} />}
 
           {messages.map((m, i) => {
             if (m.role === "user")
@@ -132,7 +143,7 @@ export default function App() {
         <div className="mx-auto max-w-3xl space-y-2">
           {started && (
             <div className="flex flex-wrap gap-2">
-              {SUGGESTIONS.slice(0, 3).map((s) => (
+              {suggestions.slice(0, 3).map((s) => (
                 <Chip
                   key={s}
                   text={s}
@@ -142,6 +153,20 @@ export default function App() {
               ))}
             </div>
           )}
+          {meta?.live_pricing && (
+            <div className="flex items-center gap-2">
+              <span className="text-[11px] text-slate-500">✈️ Flying from</span>
+              <input
+                value={origin}
+                onChange={(e) => setOrigin(e.target.value)}
+                placeholder="e.g. Mumbai or DEL"
+                className="w-44 rounded-lg border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-slate-200 placeholder:text-slate-500 focus:border-sky-400/50 focus:outline-none"
+              />
+              <span className="text-[11px] text-slate-500">
+                — for live flight prices
+              </span>
+            </div>
+          )}
           <Composer
             value={input}
             onChange={setInput}
@@ -149,11 +174,38 @@ export default function App() {
             disabled={loading}
           />
           <p className="text-center text-[11px] text-slate-500">
-            Atlas reasons over real destination data — figures are planning
-            estimates, not live prices.
+            {meta?.live_pricing
+              ? "Atlas pulls live flight & hotel prices for top picks — cards marked ● Live are real fares; others are planning estimates."
+              : "Atlas reasons over real destination data — figures are planning estimates, not live prices."}
           </p>
         </div>
       </footer>
+    </div>
+  );
+}
+
+function ModeTabs({ mode, onChange }) {
+  const tabs = [
+    { id: "domestic", label: "Domestic", flag: "🇮🇳" },
+    { id: "international", label: "International", flag: "🌍" },
+  ];
+  return (
+    <div className="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 p-1">
+      {tabs.map((t) => (
+        <button
+          key={t.id}
+          onClick={() => onChange(t.id)}
+          className={
+            "flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-semibold transition " +
+            (mode === t.id
+              ? "bg-gradient-to-r from-sky-400 to-indigo-500 text-white shadow"
+              : "text-slate-400 hover:text-white")
+          }
+        >
+          <span>{t.flag}</span>
+          {t.label}
+        </button>
+      ))}
     </div>
   );
 }
@@ -179,27 +231,38 @@ function Chip({ text, onClick, disabled }) {
   );
 }
 
-function Welcome({ meta, onPick }) {
+function Welcome({ meta, mode, suggestions, onPick }) {
+  const domestic = mode === "domestic";
   return (
     <div className="flex flex-col items-center pt-8 text-center animate-fade-up sm:pt-16">
       <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-400 to-indigo-500 text-3xl shadow-2xl">
-        🧭
+        {domestic ? "🇮🇳" : "🧭"}
       </div>
       <h1 className="font-display text-3xl font-extrabold leading-tight text-white sm:text-4xl">
-        Where should you go next?
+        {domestic ? "Explore incredible India" : "Where should you go next?"}
       </h1>
       <p className="mt-3 max-w-md text-sm leading-relaxed text-slate-400">
-        Tell me your budget, when you want to travel, and what you love. My
-        agent filters{" "}
-        <span className="text-slate-200">
-          {meta ? meta.destination_count : "100+"} destinations
-        </span>{" "}
-        across {meta ? meta.continent_count : "6"} continents, estimates your
-        costs, and ranks the best matches for your season.
+        {domestic ? (
+          <>
+            Tell me your budget in rupees, when you want to travel, and what you
+            love. Atlas plans low-budget trips across India — beaches, hills,
+            heritage and more — with real must-visit spots and day-by-day plans.
+          </>
+        ) : (
+          <>
+            Tell me your budget, when you want to travel, and what you love. My
+            agent filters{" "}
+            <span className="text-slate-200">
+              {meta ? meta.destination_count : "100+"} destinations
+            </span>{" "}
+            across {meta ? meta.continent_count : "6"} continents, estimates your
+            costs, and ranks the best matches.
+          </>
+        )}
       </p>
 
       <div className="mt-8 grid w-full max-w-xl grid-cols-1 gap-2.5 sm:grid-cols-2">
-        {SUGGESTIONS.map((s) => (
+        {suggestions.map((s) => (
           <button
             key={s}
             onClick={() => onPick(s)}

@@ -18,8 +18,9 @@ from pydantic import BaseModel, Field
 
 load_dotenv()
 
-from agent import run_workflow, SMART_MODEL, FAST_MODEL, USD_TO_INR  # noqa: E402
+from agent import run_workflow, generate_itinerary, SMART_MODEL, FAST_MODEL, USD_TO_INR  # noqa: E402
 from destinations import DESTINATIONS, ALL_TAGS  # noqa: E402
+import pricing  # noqa: E402
 
 
 def _key_ready() -> bool:
@@ -46,6 +47,14 @@ class ChatTurn(BaseModel):
 class RecommendRequest(BaseModel):
     message: str = Field(..., min_length=1, max_length=2000)
     history: Optional[List[ChatTurn]] = None
+    origin: Optional[str] = Field(None, max_length=60)  # departure city/IATA for live flight prices
+    mode: Optional[str] = Field(None, pattern="^(domestic|international)$")  # India-only vs global
+
+
+class ItineraryRequest(BaseModel):
+    name: str = Field(..., min_length=1, max_length=120)
+    days: int = Field(5, ge=1, le=14)
+    interests: Optional[List[str]] = None
 
 
 @app.get("/api/health")
@@ -55,6 +64,7 @@ def health():
         "model": SMART_MODEL,
         "fast_model": FAST_MODEL,
         "groq_key_configured": _key_ready(),
+        "live_pricing": pricing.enabled(),
     }
 
 
@@ -67,6 +77,7 @@ def meta():
         "tags": ALL_TAGS,
         "model": SMART_MODEL,
         "usd_to_inr": USD_TO_INR,
+        "live_pricing": pricing.enabled(),
     }
 
 
@@ -80,9 +91,24 @@ def recommend(req: RecommendRequest):
         )
     try:
         history = [t.model_dump() for t in req.history] if req.history else None
-        return run_workflow(req.message, history)
+        return run_workflow(req.message, history, origin=req.origin, mode=req.mode)
     except Exception as exc:  # surface a clean error to the client
         raise HTTPException(status_code=500, detail=f"Agent failed: {exc}")
+
+
+@app.post("/api/itinerary")
+def itinerary(req: ItineraryRequest):
+    if not _key_ready():
+        raise HTTPException(
+            status_code=503,
+            detail="GROQ_API_KEY is not set. Add your key to backend/.env and restart.",
+        )
+    try:
+        return generate_itinerary(req.name, req.days, req.interests)
+    except ValueError as exc:
+        raise HTTPException(status_code=404, detail=str(exc))
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Itinerary failed: {exc}")
 
 
 @app.get("/")
