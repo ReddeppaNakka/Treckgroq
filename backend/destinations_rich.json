@@ -1,0 +1,6856 @@
+{
+  "Jaipur": {
+    "tagline": "Vibrant city of majestic forts",
+    "ideal_days_min": 3,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Majestic hilltop forts",
+      "Intricate mirrored palaces",
+      "Vibrant bazaar shopping",
+      "Rich cultural heritage"
+    ],
+    "must_visit": [
+      {
+        "name": "Amber Fort",
+        "desc": "Explore the majestic fort's grandeur"
+      },
+      {
+        "name": "Hawa Mahal",
+        "desc": "Marvel at the palace's intricate architecture"
+      },
+      {
+        "name": "City Palace",
+        "desc": "Discover the palace's rich history and culture"
+      },
+      {
+        "name": "Johri Bazaar",
+        "desc": "Experience the vibrant colours of the local market"
+      },
+      {
+        "name": "Nahargarh Fort",
+        "desc": "Enjoy panoramic views of the city"
+      }
+    ],
+    "covers": [
+      "Amer",
+      "Tonk",
+      "Sanganer",
+      "Ajmer"
+    ],
+    "food": [
+      "Dal Baati Churma",
+      "Laal Maans",
+      "Ghewar",
+      "Ker Sangri"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "backpackers",
+      "adventurers"
+    ],
+    "getting_around": "Use auto-rickshaws, taxis, or rent a bike to navigate the city",
+    "tips": [
+      "Bargain while shopping at local bazaars",
+      "Respect local customs and dress modestly"
+    ]
+  },
+  "Goa": {
+    "tagline": "Tropical beaches meet Portuguese charm",
+    "ideal_days_min": 5,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Palm-lined beaches",
+      "Vibrant nightlife",
+      "Water sports",
+      "Historic churches"
+    ],
+    "must_visit": [
+      {
+        "name": "Palolem Beach",
+        "desc": "Secluded beach with picturesque views"
+      },
+      {
+        "name": "Baga Beach",
+        "desc": "Popular beach with water sports and nightlife"
+      },
+      {
+        "name": "Se Cathedral",
+        "desc": "Historic Portuguese-era cathedral"
+      },
+      {
+        "name": "Fort Aguada",
+        "desc": "17th-century Portuguese fort"
+      },
+      {
+        "name": "Anjuna Market",
+        "desc": "Famous flea market for shopping and dining"
+      }
+    ],
+    "covers": [
+      "Panjim",
+      "Candolim",
+      "Calangute",
+      "Morjim"
+    ],
+    "food": [
+      "Seafood curry",
+      "Beef vindaloo",
+      "Goan fish fry",
+      "Bebinca dessert"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "backpackers"
+    ],
+    "getting_around": "Rent a scooter or take a taxi to explore the area",
+    "tips": [
+      "Book accommodations in advance during peak season",
+      "Be mindful of sun protection and stay hydrated"
+    ]
+  },
+  "Kerala Backwaters": {
+    "tagline": "Drift through serene palm-lined canals",
+    "ideal_days_min": 3,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Houseboat cruises",
+      "Palm-lined canals",
+      "Tea-green hills",
+      "Village walks"
+    ],
+    "must_visit": [
+      {
+        "name": "Alleppey",
+        "desc": "Board houseboats and explore backwaters"
+      },
+      {
+        "name": "Kumarakom",
+        "desc": "Birdwatching and village tours"
+      },
+      {
+        "name": "Kollam",
+        "desc": "Explore ancient lighthouses and harbors"
+      },
+      {
+        "name": "Mararikulam",
+        "desc": "Relax on pristine beaches"
+      },
+      {
+        "name": "Pathiramanal Island",
+        "desc": "Spot exotic birds and wildlife"
+      }
+    ],
+    "covers": [
+      "Alleppey",
+      "Kottayam",
+      "Kollam",
+      "Trivandrum"
+    ],
+    "food": [
+      "Karimeen fry",
+      "Kerala sadhya",
+      "Idiyappam",
+      "Puttu with kadala curry"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "backpackers"
+    ],
+    "getting_around": "Houseboats, ferries, and local buses connect main towns and villages",
+    "tips": [
+      "Book houseboats in advance to avoid peak season rush",
+      "Carry sunscreen and insect repellent for outdoor activities"
+    ]
+  },
+  "Rishikesh": {
+    "tagline": "Find serenity on the Ganges",
+    "ideal_days_min": 5,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Yoga and meditation retreats",
+      "River rafting in the Himalayas",
+      "Scenic treks to hidden waterfalls",
+      "Spiritual ashrams and temples"
+    ],
+    "must_visit": [
+      {
+        "name": "Triveni Ghat",
+        "desc": "Witness the sacred Ganges aarti ceremony"
+      },
+      {
+        "name": "Neer Garh Waterfall",
+        "desc": "Hike to a stunning natural waterfall"
+      },
+      {
+        "name": "Ram Jhula",
+        "desc": "Walk across a historic iron suspension bridge"
+      },
+      {
+        "name": "Parmarth Niketan Ashram",
+        "desc": "Experience yoga and meditation in a serene ashram"
+      },
+      {
+        "name": "Rajaji National Park",
+        "desc": "Go on a wildlife safari in the Himalayan foothills"
+      }
+    ],
+    "covers": [
+      "Haridwar",
+      "Dehradun",
+      "Mussoorie",
+      "Tehri"
+    ],
+    "food": [
+      "Chole Bhature",
+      "Momos",
+      "Aloo Puri",
+      "Jalebi"
+    ],
+    "best_for": [
+      "adventurers",
+      "couples",
+      "solo",
+      "backpackers",
+      "families"
+    ],
+    "getting_around": "Use local buses, taxis, or rent a bike to explore the city and surrounding areas",
+    "tips": [
+      "Book accommodations and activities in advance during peak season",
+      "Respect local customs and dress modestly when visiting temples and ashrams"
+    ]
+  },
+  "Manali": {
+    "tagline": "Snowy Himalayan Charm",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Trek to high mountain passes",
+      "Soak in natural hot springs",
+      "Explore pine forest trails",
+      "Experience Himalayan village life"
+    ],
+    "must_visit": [
+      {
+        "name": "Solang Valley",
+        "desc": "Adventure sports and stunning views"
+      },
+      {
+        "name": "Rohtang Pass",
+        "desc": "Scenic mountain pass with snow"
+      },
+      {
+        "name": "Manikaran Gurudwara",
+        "desc": "Sacred Sikh temple with hot springs"
+      },
+      {
+        "name": "Old Manali",
+        "desc": "Quaint village with charming cafes"
+      },
+      {
+        "name": "Jogini Waterfall",
+        "desc": "Picturesque waterfall trek"
+      }
+    ],
+    "covers": [
+      "Kullu",
+      "Naggar",
+      "Vashisht"
+    ],
+    "food": [
+      "Momos",
+      "Thukpa",
+      "Sidu",
+      "Rajma Chawal"
+    ],
+    "best_for": [
+      "couples",
+      "adventurers",
+      "trekkers",
+      "backpackers",
+      "families"
+    ],
+    "getting_around": "Use local taxis, buses, or rent a bike to explore the town and nearby areas",
+    "tips": [
+      "Check the weather before planning a trek",
+      "Book accommodations in advance during peak season"
+    ]
+  },
+  "Udaipur": {
+    "tagline": "Romance in marble palaces",
+    "ideal_days_min": 3,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Marble palaces",
+      "Sunset boat rides",
+      "Old-world royalty",
+      "Rich cultural heritage"
+    ],
+    "must_visit": [
+      {
+        "name": "Lake Pichola",
+        "desc": "Take a boat ride across the lake"
+      },
+      {
+        "name": "City Palace",
+        "desc": "Explore the majestic palace complex"
+      },
+      {
+        "name": "Jag Mandir",
+        "desc": "Visit the stunning island palace"
+      },
+      {
+        "name": "Fateh Sagar Lake",
+        "desc": "Enjoy a scenic walk around the lake"
+      },
+      {
+        "name": "Eklingji Temple",
+        "desc": "Discover the ancient Hindu temple"
+      }
+    ],
+    "covers": [
+      "Mount Abu",
+      "Ranakpur",
+      "Kumbhalgarh",
+      "Chittorgarh"
+    ],
+    "food": [
+      "Dal Baati Churma",
+      "Laal Maans",
+      "Ghevar",
+      "Mirchi Bada"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "backpackers"
+    ],
+    "getting_around": "Use local taxis, auto-rickshaws, or rent a bike to explore the city",
+    "tips": [
+      "Hire a local guide to explore the city's hidden gems",
+      "Bargain while shopping at local markets"
+    ]
+  },
+  "Varanasi": {
+    "tagline": "Sacred ghats on the Ganges River",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Spiritual ghats along Ganges",
+      "Vibrant street food scenes",
+      "Ancient temples and ruins",
+      "Dawn boat rides on the river"
+    ],
+    "must_visit": [
+      {
+        "name": "Dasaswamedh Ghat",
+        "desc": "Witness the iconic Ganga Aarti ceremony"
+      },
+      {
+        "name": "Kashi Vishwanath Temple",
+        "desc": "One of the twelve Jyotirlingas in India"
+      },
+      {
+        "name": "Assi Ghat",
+        "desc": "A favorite spot for sunrise and yoga"
+      },
+      {
+        "name": "Banaras Hindu University",
+        "desc": "Explore the campus and its museum"
+      },
+      {
+        "name": "Sarnath",
+        "desc": "Discover ancient Buddhist ruins and artifacts"
+      }
+    ],
+    "covers": [
+      "Sarnath",
+      "Ramnagar",
+      "Chunar",
+      "Mirzapur"
+    ],
+    "food": [
+      "Malaiyyo",
+      "Thandai",
+      "Lassi",
+      "Jalebi"
+    ],
+    "best_for": [
+      "spiritual seekers",
+      "couples",
+      "backpackers",
+      "families"
+    ],
+    "getting_around": "Explore the city on foot or hire a cycle rickshaw for a day",
+    "tips": [
+      "Respect local customs and dress modestly",
+      "Bargain at local markets for the best deals"
+    ]
+  },
+  "Agra": {
+    "tagline": "Mughal Marvels and Timeless Romance",
+    "ideal_days_min": 3,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Taj Mahal sunrise",
+      "Mughal architectural heritage",
+      "Marble inlay craftsmanship",
+      "Rich cultural festivals"
+    ],
+    "must_visit": [
+      {
+        "name": "Taj Mahal",
+        "desc": "Witness the stunning white marble mausoleum"
+      },
+      {
+        "name": "Agra Fort",
+        "desc": "Explore the historic Mughal fort and palace"
+      },
+      {
+        "name": "Fatehpur Sikri",
+        "desc": "Discover the abandoned Mughal city"
+      },
+      {
+        "name": "Itmad-Ud-Daulah's Tomb",
+        "desc": "Admire the beautiful marble inlay work"
+      },
+      {
+        "name": "Kinari Bazaar",
+        "desc": "Shop for local handicrafts and souvenirs"
+      }
+    ],
+    "covers": [
+      "Fatehabad",
+      "Mathura",
+      "Bharatpur",
+      "Gwalior"
+    ],
+    "food": [
+      "Petha sweet",
+      "Mughlai cuisine",
+      "Dalmoth snack",
+      "Bedai breakfast"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "backpackers"
+    ],
+    "getting_around": "Use auto-rickshaws, taxis, or cycle-rickshaws to navigate the city",
+    "tips": [
+      "Hire a guide to explore the monuments",
+      "Bargain while shopping at local markets"
+    ]
+  },
+  "Munnar": {
+    "tagline": "Misty hills and emerald tea",
+    "ideal_days_min": 3,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Rolling tea gardens",
+      "Misty mountain landscapes",
+      "Wildlife sanctuaries",
+      "Scenic hiking trails"
+    ],
+    "must_visit": [
+      {
+        "name": "Mattupetty Dam",
+        "desc": "A picturesque dam with boating facilities"
+      },
+      {
+        "name": "Echo Point",
+        "desc": "A scenic spot with natural echo phenomenon"
+      },
+      {
+        "name": "Kundala Lake",
+        "desc": "A serene lake with pedal boating options"
+      },
+      {
+        "name": "Anamudi Peak",
+        "desc": "The highest peak in the Western Ghats"
+      },
+      {
+        "name": "Tea Museum",
+        "desc": "A museum showcasing tea production history"
+      }
+    ],
+    "covers": [
+      "Thekkady",
+      "Kochi",
+      "Alleppey",
+      "Idukki"
+    ],
+    "food": [
+      "Idlis and dosas",
+      "Puttu with kadala curry",
+      "Appam with stew",
+      "Kerala-style biryani"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "backpackers"
+    ],
+    "getting_around": "Local buses and taxis are available for transportation, while self-drive cars and bikes can be rented for flexibility",
+    "tips": [
+      "Carry warm clothing for chilly evenings",
+      "Book accommodations in advance to avoid peak season rush"
+    ]
+  },
+  "Hampi": {
+    "tagline": "Ancient ruins amidst surreal boulders",
+    "ideal_days_min": 3,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Vijayanagara Empire ruins",
+      "Boulder-strewn landscape",
+      "Ancient temples and palaces",
+      "Serene rural Indian setting"
+    ],
+    "must_visit": [
+      {
+        "name": "Virupaksha Temple",
+        "desc": "A historic temple with stunning carvings"
+      },
+      {
+        "name": "Vittala Temple",
+        "desc": "Features an iconic stone chariot"
+      },
+      {
+        "name": "Hampi Bazaar",
+        "desc": "A bustling marketplace with local vendors"
+      },
+      {
+        "name": "Royal Enclosure",
+        "desc": "Explore the ancient royal ruins"
+      },
+      {
+        "name": "Matanga Hill",
+        "desc": "Offers breathtaking sunset views"
+      }
+    ],
+    "covers": [
+      "Hospet",
+      "Kamalapuram",
+      "Anegundi"
+    ],
+    "food": [
+      "Dosa",
+      "Idli",
+      "Vada",
+      "Bisi Bele Bath"
+    ],
+    "best_for": [
+      "backpackers",
+      "adventurers",
+      "couples",
+      "solo"
+    ],
+    "getting_around": "Rent a bicycle or scooter to explore the ruins and surrounding landscape",
+    "tips": [
+      "Wear comfortable shoes for exploring",
+      "Stay hydrated in the tropical climate"
+    ]
+  },
+  "Pondicherry": {
+    "tagline": "French colonial charm by the sea",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Seaside promenades",
+      "French quarter architecture",
+      "Auroville's spiritual calm",
+      "Local seafood cuisine"
+    ],
+    "must_visit": [
+      {
+        "name": "Auroville",
+        "desc": "Explore the experimental township's serene atmosphere"
+      },
+      {
+        "name": "Promenade Beach",
+        "desc": "Stroll along the scenic beachfront"
+      },
+      {
+        "name": "Bharathi Park",
+        "desc": "Relax in this picturesque French-style garden"
+      },
+      {
+        "name": "Sri Aurobindo Ashram",
+        "desc": "Discover the spiritual community's peaceful ambiance"
+      },
+      {
+        "name": "Goubert Market",
+        "desc": "Browse the vibrant stalls for local handicrafts and souvenirs"
+      }
+    ],
+    "covers": [
+      "Auroville",
+      "Villupuram",
+      "Chunnambar",
+      "Mahabalipuram"
+    ],
+    "food": [
+      "Seafood biryani",
+      "French crepes",
+      "Idlis with sambar",
+      "Filter coffee"
+    ],
+    "best_for": [
+      "couples",
+      "solo",
+      "families",
+      "backpackers"
+    ],
+    "getting_around": "Rent a bicycle or take an auto-rickshaw to explore the town and nearby areas",
+    "tips": [
+      "Visit during the cooler months from October to February",
+      "Respect the peaceful atmosphere in Auroville and ashrams"
+    ]
+  },
+  "Leh Ladakh": {
+    "tagline": "Turquoise lakes amidst high desert landscapes",
+    "ideal_days_min": 7,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Breathtaking mountain vistas",
+      "Serene turquoise lakes",
+      "Ancient monasteries and culture",
+      "Challenging high-altitude treks"
+    ],
+    "must_visit": [
+      {
+        "name": "Pangong Lake",
+        "desc": "Witness the lake's changing colors"
+      },
+      {
+        "name": "Nubra Valley",
+        "desc": "Explore the valley's scenic landscapes"
+      },
+      {
+        "name": "Thiksey Monastery",
+        "desc": "Discover ancient Buddhist artifacts"
+      },
+      {
+        "name": "Khardung La Pass",
+        "desc": "Conquer the world's highest motorable pass"
+      },
+      {
+        "name": "Tso Moriri Lake",
+        "desc": "Spot rare migratory birds"
+      }
+    ],
+    "covers": [
+      "Nubra Valley",
+      "Zanskar Valley",
+      "Kargil",
+      "Srinagar"
+    ],
+    "food": [
+      "Momos",
+      "Thukpa",
+      "Skyu",
+      "Gurgur Cha"
+    ],
+    "best_for": [
+      "adventurers",
+      "backpackers",
+      "couples",
+      "solo"
+    ],
+    "getting_around": "Rent a bike or hire a taxi to navigate the rugged terrain",
+    "tips": [
+      "Acclimatize to high altitude by resting for a day",
+      "Pack warm clothing for extreme temperature fluctuations"
+    ]
+  },
+  "Darjeeling": {
+    "tagline": "Himalayan haven of tea and tranquility",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Breathtaking Kanchenjunga views",
+      "Riding the toy train",
+      "Tea plantation tours",
+      "Scenic Himalayan treks"
+    ],
+    "must_visit": [
+      {
+        "name": "Tiger Hill",
+        "desc": "Witness sunrise over Kanchenjunga"
+      },
+      {
+        "name": "Darjeeling Himalayan Railway",
+        "desc": "Ride the historic toy train"
+      },
+      {
+        "name": "Happy Valley Tea Estate",
+        "desc": "Explore tea gardens and factory"
+      },
+      {
+        "name": "Mirik Lake",
+        "desc": "Relax by the lake and surrounding hills"
+      },
+      {
+        "name": "Batasia Loop",
+        "desc": "Admire the war memorial and gardens"
+      }
+    ],
+    "covers": [
+      "Gangtok",
+      "Kalimpong",
+      "Kurseong",
+      "Siliguri"
+    ],
+    "food": [
+      "Momos",
+      "Thukpa",
+      "Darjeeling tea",
+      "Gundruk soup"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "backpackers"
+    ],
+    "getting_around": "Explore the town on foot or hire taxis for nearby excursions",
+    "tips": [
+      "Book accommodations in advance during peak season",
+      "Pack warm clothing for chilly mornings and evenings"
+    ]
+  },
+  "Jaisalmer": {
+    "tagline": "Golden Desert Oasis Awaits",
+    "ideal_days_min": 3,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Desert Fort City",
+      "Camel Safari Adventures",
+      "Thar Dune Camping",
+      "Rich Cultural Heritage"
+    ],
+    "must_visit": [
+      {
+        "name": "Jaisalmer Fort",
+        "desc": "Explore the majestic golden fort"
+      },
+      {
+        "name": "Patwon Ki Haveli",
+        "desc": "Discover intricate architecture and history"
+      },
+      {
+        "name": "Sam Sand Dunes",
+        "desc": "Experience thrilling desert safaris"
+      },
+      {
+        "name": "Gadisar Lake",
+        "desc": "Relax by the serene lake"
+      },
+      {
+        "name": "Bada Bagh",
+        "desc": "Visit the royal cenotaphs"
+      }
+    ],
+    "covers": [
+      "Jodhpur",
+      "Bikaner",
+      "Barmer",
+      "Khuri"
+    ],
+    "food": [
+      "Dal Baati Churma",
+      "Laal Maans",
+      "Ker Sangri",
+      "Ghevar"
+    ],
+    "best_for": [
+      "couples",
+      "adventurers",
+      "families",
+      "backpackers"
+    ],
+    "getting_around": "Explore the city on foot or hire a taxi for longer trips",
+    "tips": [
+      "Book desert camps in advance",
+      "Stay hydrated during desert safaris"
+    ]
+  },
+  "Andaman Islands": {
+    "tagline": "Tropical paradise in the Bay of Bengal",
+    "ideal_days_min": 5,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Pristine beaches and coral reefs",
+      "Turquoise waters and marine life",
+      "Lush green forests and wildlife",
+      "Secluded islands and romantic getaways"
+    ],
+    "must_visit": [
+      {
+        "name": "Havelock Island",
+        "desc": "Known for its beautiful beaches and snorkeling opportunities"
+      },
+      {
+        "name": "Neil Island",
+        "desc": "Famous for its natural coral reefs and scenic views"
+      },
+      {
+        "name": "Port Blair",
+        "desc": "The capital city with a rich history and cultural heritage"
+      },
+      {
+        "name": "Radhanagar Beach",
+        "desc": "One of the most beautiful beaches in Asia"
+      },
+      {
+        "name": "Elephant Beach",
+        "desc": "A popular spot for water sports and activities"
+      }
+    ],
+    "covers": [
+      "Port Blair",
+      "Havelock Island",
+      "Neil Island",
+      "Little Andaman"
+    ],
+    "food": [
+      "Seafood curries",
+      "Fresh fish barbecue",
+      "Coconut water and local fruits",
+      "Indian and Southeast Asian cuisine"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "adventurers",
+      "luxury",
+      "backpackers"
+    ],
+    "getting_around": "Ferries and boats are the primary mode of transportation between islands, while taxis and buses are available for local travel",
+    "tips": [
+      "Book ferry tickets in advance to avoid long wait times",
+      "Respect the local environment and marine life by not littering and avoiding single-use plastics"
+    ]
+  },
+  "Bali": {
+    "tagline": "Tropical paradise found in Bali",
+    "ideal_days_min": 7,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Lush green landscapes",
+      "World-class surf breaks",
+      "Ancient temples and culture",
+      "Vibrant beach towns"
+    ],
+    "must_visit": [
+      {
+        "name": "Uluwatu Temple",
+        "desc": "Watch the sunset over the Indian Ocean"
+      },
+      {
+        "name": "Seminyak Beach",
+        "desc": "Enjoy upscale dining and shopping"
+      },
+      {
+        "name": "Ubud Monkey Forest",
+        "desc": "Explore the sacred forest and its inhabitants"
+      },
+      {
+        "name": "Nusa Dua",
+        "desc": "Relax on the pristine white-sand beaches"
+      },
+      {
+        "name": "Tegalalang Rice Terrace",
+        "desc": "Marvel at the stunning rice field landscapes"
+      }
+    ],
+    "covers": [
+      "Kuta",
+      "Sanur",
+      "Canggu",
+      "Lovina"
+    ],
+    "food": [
+      "Nasi Goreng",
+      "Satay",
+      "Fresh seafood",
+      "Martabak"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "adventurers"
+    ],
+    "getting_around": "Rent a scooter or hire a driver to explore the island",
+    "tips": [
+      "Learn some basic Indonesian phrases to interact with locals",
+      "Respect the island's rich culture and traditions"
+    ]
+  },
+  "Bangkok": {
+    "tagline": "Vibrant streets, rich culture, spicy delights",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Street food heaven",
+      "Glittering temples",
+      "Rooftop bar scene",
+      "Vibrant night markets"
+    ],
+    "must_visit": [
+      {
+        "name": "Grand Palace",
+        "desc": "Explore the official residence of the king"
+      },
+      {
+        "name": "Wat Phra Kaew",
+        "desc": "Discover the home of the Emerald Buddha"
+      },
+      {
+        "name": "Chatuchak Weekend Market",
+        "desc": "Browse over 15,000 stalls"
+      },
+      {
+        "name": "Wat Arun",
+        "desc": "Marvel at the 79-meter-tall spire"
+      },
+      {
+        "name": "Khao San Road",
+        "desc": "Experience the lively nightlife"
+      }
+    ],
+    "covers": [
+      "Ayutthaya",
+      "Chinatown",
+      "Rattanakosin",
+      "Sukhumvit"
+    ],
+    "food": [
+      "Pad Thai",
+      "Tom Yum soup",
+      "Som Tam (papaya salad)",
+      "Mango sticky rice"
+    ],
+    "best_for": [
+      "couples",
+      "solo",
+      "friends",
+      "backpackers"
+    ],
+    "getting_around": "Use the efficient Skytrain or taxis to navigate the city",
+    "tips": [
+      "Learn basic Thai phrases to interact with locals",
+      "Be prepared for crowds and heat in peak season"
+    ]
+  },
+  "Chiang Mai": {
+    "tagline": "Ancient temples meet modern charm",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Rich cultural heritage",
+      "Majestic mountain scenery",
+      "Vibrant night markets",
+      "Elephant sanctuaries"
+    ],
+    "must_visit": [
+      {
+        "name": "Doi Suthep",
+        "desc": "Panoramic views of the city"
+      },
+      {
+        "name": "Wat Phra That",
+        "desc": "Historic temple with stunning architecture"
+      },
+      {
+        "name": "Chiang Mai Night Bazaar",
+        "desc": "Shopping and street food heaven"
+      },
+      {
+        "name": "Bo Sang Umbrella Village",
+        "desc": "Colorful handmade crafts"
+      },
+      {
+        "name": "Elephant Nature Park",
+        "desc": "Ethical elephant conservation"
+      }
+    ],
+    "covers": [
+      "Mae Rim",
+      "Hang Dong",
+      "San Kamphaeng",
+      "Doi Inthanon National Park"
+    ],
+    "food": [
+      "Khao Soi",
+      "Som Tam (papaya salad)",
+      "Sai Oua (Chiang Mai sausage)",
+      "Khao Niew Mamuang (mango with sticky rice)"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "backpackers",
+      "adventurers"
+    ],
+    "getting_around": "Songthaews and tuk-tuks are readily available for local transportation",
+    "tips": [
+      "Respect temple dress codes and customs",
+      "Bargain politely at markets and from street vendors"
+    ]
+  },
+  "Phuket": {
+    "tagline": "Tropical paradise with turquoise bays",
+    "ideal_days_min": 5,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Stunning Andaman Sea beaches",
+      "Limestone cliffs and bays",
+      "Vibrant nightlife and markets",
+      "Water sports and activities"
+    ],
+    "must_visit": [
+      {
+        "name": "Patong Beach",
+        "desc": "Popular beach with lively atmosphere"
+      },
+      {
+        "name": "Phang Nga Bay",
+        "desc": "Iconic bay with towering limestone cliffs"
+      },
+      {
+        "name": "Old Phuket Town",
+        "desc": "Historic town with Sino-Portuguese architecture"
+      },
+      {
+        "name": "Promthep Cape",
+        "desc": "Scenic viewpoint with stunning sunsets"
+      },
+      {
+        "name": "Kata Beach",
+        "desc": "Family-friendly beach with clear waters"
+      }
+    ],
+    "covers": [
+      "Karon",
+      "Kamala",
+      "Surin Beach"
+    ],
+    "food": [
+      "Som Tam (papaya salad)",
+      "Tom Yum Goong (spicy soup)",
+      "Massaman Curry",
+      "Fresh seafood barbecues"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "friends",
+      "adventurers"
+    ],
+    "getting_around": "Rent a car, scooter, or use local songthaews and taxis to get around the island",
+    "tips": [
+      "Book accommodations and tours in advance during peak season",
+      "Be mindful of sun protection and stay hydrated in the tropical heat"
+    ]
+  },
+  "Hanoi": {
+    "tagline": "Vibrant streets meet serene lakes",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Rich cultural heritage",
+      "Delicious street food",
+      "Historic old quarter",
+      "Scenic lakeside views"
+    ],
+    "must_visit": [
+      {
+        "name": "Hoan Kiem Lake",
+        "desc": "Walk around this peaceful lake in the heart of the city"
+      },
+      {
+        "name": "Old Quarter",
+        "desc": "Explore the narrow streets and local markets"
+      },
+      {
+        "name": "Temple of Literature",
+        "desc": "Discover Vietnam's ancient education system"
+      },
+      {
+        "name": "Dong Xuan Market",
+        "desc": "Shop for local goods and try street food"
+      },
+      {
+        "name": "Ha Long Bay",
+        "desc": "Take a day trip to this stunning natural wonder"
+      }
+    ],
+    "covers": [
+      "Ho Chi Minh Mausoleum",
+      "Bat Trang Ceramic Village",
+      "Ba Dinh Square",
+      "West Lake"
+    ],
+    "food": [
+      "Pho",
+      "Bun Cha",
+      "Banh Xeo",
+      "Cha Ca La Vong"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "backpackers"
+    ],
+    "getting_around": "Use taxis, cyclos, or walk to navigate the city's compact old quarter",
+    "tips": [
+      "Learn some basic Vietnamese phrases to interact with locals",
+      "Be prepared for crowded streets and chaotic traffic"
+    ]
+  },
+  "Ha Long Bay": {
+    "tagline": "Emerald waters meet limestone giants",
+    "ideal_days_min": 2,
+    "ideal_days_max": 5,
+    "highlights": [
+      "Limestone karst island scenery",
+      "Vibrant emerald waters",
+      "Romantic sunset cruises",
+      "Abundant marine life"
+    ],
+    "must_visit": [
+      {
+        "name": "Sung Sot Cave",
+        "desc": "Explore a massive cave with stunning rock formations"
+      },
+      {
+        "name": "Titop Island",
+        "desc": "Enjoy panoramic views from the island's summit"
+      },
+      {
+        "name": "Bai Tu Long Bay",
+        "desc": "Discover a quieter alternative to Ha Long Bay"
+      },
+      {
+        "name": "Cat Ba Island",
+        "desc": "Relax on the island's beautiful beaches"
+      },
+      {
+        "name": "Ha Long Bay Cruise",
+        "desc": "Take a romantic overnight cruise through the bay"
+      }
+    ],
+    "covers": [
+      "Cat Ba Island",
+      "Bai Tu Long Bay",
+      "Quang Ninh Province",
+      "Van Don Island"
+    ],
+    "food": [
+      "Fresh seafood",
+      "Vietnamese spring rolls",
+      "Pho noodle soup",
+      "Grilled squid"
+    ],
+    "best_for": [
+      "couples",
+      "adventurers",
+      "families",
+      "friends"
+    ],
+    "getting_around": "Take an overnight cruise or rent a kayak to explore the bay",
+    "tips": [
+      "Book a cruise in advance to avoid peak season crowds",
+      "Bring sunscreen and a hat to protect against the strong sun"
+    ]
+  },
+  "Siem Reap": {
+    "tagline": "Uncover ancient secrets at dawn",
+    "ideal_days_min": 3,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Majestic Angkor Wat sunrise",
+      "Ancient temple ruins",
+      "Vibrant local markets",
+      "Rich Khmer culture"
+    ],
+    "must_visit": [
+      {
+        "name": "Angkor Wat",
+        "desc": "Witness sunrise over the ancient temple complex"
+      },
+      {
+        "name": "Tonle Sap Lake",
+        "desc": "Explore floating villages and bird sanctuaries"
+      },
+      {
+        "name": "Pub Street",
+        "desc": "Experience Siem Reap's nightlife and cuisine"
+      },
+      {
+        "name": "Ta Prohm Temple",
+        "desc": "Discover the jungle-covered temple ruins"
+      },
+      {
+        "name": "National Museum of Angkor",
+        "desc": "Learn about Khmer history and art"
+      }
+    ],
+    "covers": [
+      "Angkor Archaeological Park",
+      "Tonle Sap Lake",
+      "Banteay Srei",
+      "Kampong Phluk"
+    ],
+    "food": [
+      "Fish Amok",
+      "Nom Banh Chok",
+      "Khmer BBQ",
+      "Fresh coconut water"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "adventurers",
+      "backpackers"
+    ],
+    "getting_around": "Rent a tuk-tuk or bike to explore the town and temples",
+    "tips": [
+      "Book temple tours in advance to avoid crowds",
+      "Respect local customs and dress modestly when visiting temples"
+    ]
+  },
+  "Singapore": {
+    "tagline": "Garden city of future delights",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Futuristic Gardens by the Bay",
+      "Vibrant hawker food scene",
+      "Rooftop pools with city views",
+      "World-class shopping malls"
+    ],
+    "must_visit": [
+      {
+        "name": "Marina Bay Sands",
+        "desc": "Iconic hotel with rooftop infinity pool"
+      },
+      {
+        "name": "Gardens by the Bay",
+        "desc": "Stunning floral displays and Supertree Grove"
+      },
+      {
+        "name": "Haw Par Villa",
+        "desc": "Theme park showcasing Chinese mythology"
+      },
+      {
+        "name": "Clarke Quay",
+        "desc": "Lively nightlife and dining destination"
+      },
+      {
+        "name": "Merlion Park",
+        "desc": "Symbolic half-lion, half-fish statue of Singapore"
+      }
+    ],
+    "covers": [
+      "Sentosa Island",
+      "Chinatown",
+      "Little India",
+      "Orchard Road"
+    ],
+    "food": [
+      "Chili crab",
+      "Hainanese chicken rice",
+      "Laksa noodle soup",
+      "Kaya toast with coffee"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "luxury",
+      "friends",
+      "foodies"
+    ],
+    "getting_around": "Use the efficient Mass Rapid Transit system or taxis to navigate the city",
+    "tips": [
+      "Buy a Singapore Tourist Pass for unlimited public transport",
+      "Try street food at hawker centers like Maxwell Food Centre"
+    ]
+  },
+  "Kuala Lumpur": {
+    "tagline": "Vibrant city of diverse flavours",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Iconic Petronas Twin Towers",
+      "Street food heaven",
+      "Rich cultural heritage",
+      "Affordable luxury shopping"
+    ],
+    "must_visit": [
+      {
+        "name": "Batu Caves",
+        "desc": "Limestone caves with Hindu temples"
+      },
+      {
+        "name": "Merdeka Square",
+        "desc": "Historic heart of Kuala Lumpur"
+      },
+      {
+        "name": "Petaling Street",
+        "desc": "Bustling night market"
+      },
+      {
+        "name": "National Museum",
+        "desc": "Insights into Malaysian history"
+      },
+      {
+        "name": "Jalan Alor",
+        "desc": "Famous street food night market"
+      }
+    ],
+    "covers": [
+      "Bukit Bintang",
+      "Chinatown",
+      "Brickfields",
+      "Subang Jaya"
+    ],
+    "food": [
+      "Char Kway Teow",
+      "Hainanese Chicken Rice",
+      "Roti Canai",
+      "Nasi Lemak"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "backpackers"
+    ],
+    "getting_around": "Use the efficient KL Monorail and LRT network to navigate the city",
+    "tips": [
+      "Try haggling at markets for best deals",
+      "Stay hydrated in the tropical heat"
+    ]
+  },
+  "Tokyo": {
+    "tagline": "Neon Dreams in Ancient Streets",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Vibrant Neon Districts",
+      "Ancient Temples and Shrines",
+      "World-Class Cuisine",
+      "Cutting-Edge Technology"
+    ],
+    "must_visit": [
+      {
+        "name": "Shibuya Crossing",
+        "desc": "Experience the busiest intersection in the world"
+      },
+      {
+        "name": "Meiji Shrine",
+        "desc": "Serene Shinto shrine in a tranquil forested area"
+      },
+      {
+        "name": "Tsukiji Outer Market",
+        "desc": "Fresh sushi and seafood at the world's largest fish market"
+      },
+      {
+        "name": "Asakusa Kannon Temple",
+        "desc": "Explore one of Japan's oldest and most iconic temples"
+      },
+      {
+        "name": "Akihabara District",
+        "desc": "Tokyo's electronic and anime hub"
+      }
+    ],
+    "covers": [
+      "Yokohama",
+      "Kamakura",
+      "Nikko"
+    ],
+    "food": [
+      "Sushi at the Tsukiji Fish Market",
+      "Ramen in Shinjuku",
+      "Tonkatsu in Shibuya",
+      "Yakitori in Otemachi"
+    ],
+    "best_for": [
+      "couples",
+      "solo",
+      "friends",
+      "adventurers"
+    ],
+    "getting_around": "Use the efficient and extensive Tokyo Metro subway system to navigate the city",
+    "tips": [
+      "Learn basic Japanese phrases to enhance your experience",
+      "Purchase a Suica or Pasmo card for convenient travel on public transportation"
+    ]
+  },
+  "Kyoto": {
+    "tagline": "Golden temples and geisha charm",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Vibrant temples and shrines",
+      "Serenity of bamboo forests",
+      "Geisha culture and traditions",
+      "Delicious local cuisine"
+    ],
+    "must_visit": [
+      {
+        "name": "Kinkaku-ji Temple",
+        "desc": "A stunning golden pavilion"
+      },
+      {
+        "name": "Fushimi Inari Shrine",
+        "desc": "Famous for its thousands of vermillion torii gates"
+      },
+      {
+        "name": "Arashiyama Bamboo Grove",
+        "desc": "A serene and picturesque forest"
+      },
+      {
+        "name": "Gion District",
+        "desc": "Kyoto's traditional geisha quarter"
+      },
+      {
+        "name": "Nijo Castle",
+        "desc": "A UNESCO World Heritage Site with nightingale floors"
+      }
+    ],
+    "covers": [
+      "Nara",
+      "Osaka",
+      "Uji"
+    ],
+    "food": [
+      "Kaiseki multi-course meal",
+      "Shojin-ryori Buddhist cuisine",
+      "Yudofu boiled tofu",
+      "Matcha green tea sweets"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "luxury"
+    ],
+    "getting_around": "Use public buses, trains, and subways to navigate the city",
+    "tips": [
+      "Respect temple rules and dress modestly",
+      "Learn basic Japanese phrases to interact with locals"
+    ]
+  },
+  "Seoul": {
+    "tagline": "Vibrant city of K-pop and ancient charm",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "K-pop culture",
+      "Historic palace tours",
+      "24-hour street food",
+      "Cutting-edge tech"
+    ],
+    "must_visit": [
+      {
+        "name": "Gyeongbokgung Palace",
+        "desc": "Largest palace in Korea"
+      },
+      {
+        "name": "Myeong-dong Shopping District",
+        "desc": "Premier shopping destination"
+      },
+      {
+        "name": "Bukchon Hanok Village",
+        "desc": "Traditional Korean village"
+      },
+      {
+        "name": "Hongdae Night Market",
+        "desc": "Trendy nightlife and shopping"
+      },
+      {
+        "name": "N Seoul Tower",
+        "desc": "Panoramic city views"
+      }
+    ],
+    "covers": [
+      "Incheon",
+      "Suwon",
+      "Paju"
+    ],
+    "food": [
+      "Bibimbap",
+      "Bulgogi",
+      "Jjajangmyeon",
+      "Tteokbokki"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "adventurers"
+    ],
+    "getting_around": "Use the efficient and extensive subway system to navigate the city",
+    "tips": [
+      "Learn basic Korean phrases to enhance your experience",
+      "Try to avoid traveling during peak rush hour times"
+    ]
+  },
+  "Hong Kong": {
+    "tagline": "East meets West in dazzling skyscrapers",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Breathtaking skyline views",
+      "World-class dim sum",
+      "Vibrant nightlife scene",
+      "Rich cultural heritage"
+    ],
+    "must_visit": [
+      {
+        "name": "Victoria Peak",
+        "desc": "Enjoy panoramic views of the city"
+      },
+      {
+        "name": "Tsim Sha Tsui Promenade",
+        "desc": "Watch the nightly Symphony of Lights"
+      },
+      {
+        "name": "Lantau Island",
+        "desc": "Explore the Big Buddha and Po Lin Monastery"
+      },
+      {
+        "name": "Wong Tai Sin Temple",
+        "desc": "Discover a famous Taoist temple"
+      },
+      {
+        "name": "Ladies' Market",
+        "desc": "Shop for souvenirs and try street food"
+      }
+    ],
+    "covers": [
+      "Kowloon",
+      "Mong Kok",
+      "Causeway Bay",
+      "Lantau Island"
+    ],
+    "food": [
+      "Dim sum at Tim Ho Wan",
+      "Roast goose at Kam's Roast Goose",
+      "Congee at Sang Kee",
+      "Egg tarts at Lord Stow's Bakery"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "luxury"
+    ],
+    "getting_around": "Use the efficient MTR subway system or take a taxi to get around the city",
+    "tips": [
+      "Learn some basic Cantonese phrases to interact with locals",
+      "Buy an Octopus card for convenient travel on public transport"
+    ]
+  },
+  "Beijing": {
+    "tagline": "Ancient Imperial City Unveiled",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Imperial Palace Complex",
+      "Hutong Alley Exploration",
+      "Great Wall of China",
+      "Rich Cultural Heritage"
+    ],
+    "must_visit": [
+      {
+        "name": "The Forbidden City",
+        "desc": "Explore the imperial palace of the Ming and Qing dynasties"
+      },
+      {
+        "name": "The Great Wall at Mutianyu",
+        "desc": "Hike a well-preserved and less crowded section of the Great Wall"
+      },
+      {
+        "name": "Temple of Heaven",
+        "desc": "Discover the historic temple complex where emperors once prayed"
+      },
+      {
+        "name": "Wangfujing Street",
+        "desc": "Experience modern Beijing's shopping and dining scene"
+      },
+      {
+        "name": "Summer Palace",
+        "desc": "Stroll through the beautiful imperial gardens and lakes"
+      }
+    ],
+    "covers": [
+      "Tianjin",
+      "Chengde",
+      "The Ming Tombs"
+    ],
+    "food": [
+      "Peking Roast Duck",
+      "Jiaozi Dumplings",
+      "Zhajiangmian Noodles",
+      "Jianbing Pancakes"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "adventurers",
+      "culture lovers"
+    ],
+    "getting_around": "Use the efficient subway system or hire a taxi for convenient transportation around the city",
+    "tips": [
+      "Learn basic Mandarin phrases to enhance your experience",
+      "Avoid traveling during peak hours and holidays for a smoother journey"
+    ]
+  },
+  "Maldives": {
+    "tagline": "Crystal Lagoons and Overwater Bliss",
+    "ideal_days_min": 5,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Pristine beaches and coral reefs",
+      "Luxurious overwater villas",
+      "World-class diving and snorkeling",
+      "Unparalleled romantic getaways"
+    ],
+    "must_visit": [
+      {
+        "name": "Grand Friday Mosque",
+        "desc": "A historic mosque in Malé"
+      },
+      {
+        "name": "HP Reef",
+        "desc": "A popular diving spot"
+      },
+      {
+        "name": "Nasaru Palace",
+        "desc": "A historic palace in Malé"
+      },
+      {
+        "name": "Malé Fish Market",
+        "desc": "A bustling marketplace"
+      },
+      {
+        "name": "Banana Reef",
+        "desc": "A protected marine area"
+      }
+    ],
+    "covers": [
+      "Malé",
+      "Ari Atoll",
+      "Kaafu Atoll",
+      "Addu Atoll"
+    ],
+    "food": [
+      "Garudhiya",
+      "Bambukeylu",
+      "Kavaabu",
+      "Mas huni"
+    ],
+    "best_for": [
+      "couples",
+      "luxury",
+      "honeymoon",
+      "diving",
+      "wellness"
+    ],
+    "getting_around": "Speedboats and seaplanes connect islands and resorts",
+    "tips": [
+      "Book resorts with house reefs for easy snorkeling",
+      "Pack light and breathable clothing for tropical weather"
+    ]
+  },
+  "Colombo & South Coast": {
+    "tagline": "Tropical bliss on a compact island",
+    "ideal_days_min": 7,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Ancient Buddhist stupas",
+      "Lush tea country landscapes",
+      "Surf beaches and coastlines",
+      "Vibrant local markets"
+    ],
+    "must_visit": [
+      {
+        "name": "Galle Fort",
+        "desc": "Historic fortified city"
+      },
+      {
+        "name": "Mirissa Beach",
+        "desc": "Popular surf and whale watching spot"
+      },
+      {
+        "name": "Udawalawe National Park",
+        "desc": "Wildlife sanctuary with elephants"
+      },
+      {
+        "name": "Kandy",
+        "desc": "Cultural hub with Temple of the Tooth"
+      },
+      {
+        "name": "Bentota",
+        "desc": "Relaxed beach town with water sports"
+      }
+    ],
+    "covers": [
+      "Galle",
+      "Kandy",
+      "Bentota",
+      "Mirissa"
+    ],
+    "food": [
+      "Hoppers with egg and chili",
+      "Lamprais with meat and rice",
+      "Pittu with coconut milk",
+      "Fresh seafood at beach restaurants"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "backpackers",
+      "adventurers"
+    ],
+    "getting_around": "Use tuk-tuks, buses, or rent a car with driver for easy travel",
+    "tips": [
+      "Learn some basic Sinhala phrases to interact with locals",
+      "Respect Buddhist traditions when visiting temples"
+    ]
+  },
+  "Kathmandu & Pokhara": {
+    "tagline": "Himalayan grandeur at trekker's doorstep",
+    "ideal_days_min": 7,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Majestic Annapurna range",
+      "Vibrant temple life",
+      "Scenic lakeside walks",
+      "Trekking trailheads abound"
+    ],
+    "must_visit": [
+      {
+        "name": "Boudhanath Stupa",
+        "desc": "Sacred Buddhist site with massive dome"
+      },
+      {
+        "name": "Phewa Lake",
+        "desc": "Serene lake with boat rides and views"
+      },
+      {
+        "name": "Pashupatinath Temple",
+        "desc": "Hindu temple complex on Bagmati River"
+      },
+      {
+        "name": "Sarangkot",
+        "desc": "Panoramic viewpoint for sunrise and sunset"
+      },
+      {
+        "name": "Thamel",
+        "desc": "Kathmandu's bustling backpacker hub"
+      }
+    ],
+    "covers": [
+      "Bhaktapur",
+      "Nagarkot",
+      "Lumbini"
+    ],
+    "food": [
+      "Momo dumplings",
+      "Dal bhat",
+      "Gorkhali lamb",
+      "Yak cheese dishes"
+    ],
+    "best_for": [
+      "adventurers",
+      "backpackers",
+      "couples",
+      "trekkers"
+    ],
+    "getting_around": "Use local buses, taxis, or rent a bike to navigate the cities and trailheads",
+    "tips": [
+      "Respect local temple customs and dress modestly",
+      "Book treks and accommodations in advance for peak season"
+    ]
+  },
+  "Dubai": {
+    "tagline": "Desert Oasis of Opulence",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "World's tallest tower",
+      "Desert safaris at dawn",
+      "Gold souk shopping sprees",
+      "Luxurious city nightlife"
+    ],
+    "must_visit": [
+      {
+        "name": "Burj Khalifa",
+        "desc": "Experience the world's tallest tower"
+      },
+      {
+        "name": "Dubai Mall",
+        "desc": "Shop and dine in one of the world's largest malls"
+      },
+      {
+        "name": "Palm Jumeirah",
+        "desc": "Relax on a man-made island"
+      },
+      {
+        "name": "Desert Conservation Reserve",
+        "desc": "Explore the Arabian desert's natural beauty"
+      },
+      {
+        "name": "Dubai Miracle Garden",
+        "desc": "Marvel at the world's largest flower garden"
+      }
+    ],
+    "covers": [
+      "Abu Dhabi",
+      "Sharjah",
+      "Ras Al Khaimah",
+      "Hatta"
+    ],
+    "food": [
+      "Shawarma",
+      "Machboos",
+      "Luqaimat",
+      "Karak Chai"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "luxury",
+      "friends"
+    ],
+    "getting_around": "Use the efficient metro system or hire a taxi to navigate the city",
+    "tips": [
+      "Haggle when shopping at traditional souks",
+      "Respect local customs and dress modestly"
+    ]
+  },
+  "Petra & Wadi Rum": {
+    "tagline": "Ancient city meets desert sands",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Rose-red city of Petra",
+      "Mars-like Wadi Rum desert",
+      "Rich cultural heritage",
+      "Breathtaking natural landscapes"
+    ],
+    "must_visit": [
+      {
+        "name": "Al-Khazneh",
+        "desc": "The iconic Treasury building in Petra"
+      },
+      {
+        "name": "Monastery",
+        "desc": "A monumental structure in Petra"
+      },
+      {
+        "name": "Wadi Rum Valley",
+        "desc": "Explore the stunning desert landscape"
+      },
+      {
+        "name": "Siq Canyon",
+        "desc": "A narrow canyon leading to Petra"
+      },
+      {
+        "name": "Little Petra",
+        "desc": "A smaller archaeological site near Petra"
+      }
+    ],
+    "covers": [
+      "Aqaba",
+      "Amman",
+      "Dead Sea"
+    ],
+    "food": [
+      "Mansaf",
+      "Maqluba",
+      "Falafel",
+      "Shawarma"
+    ],
+    "best_for": [
+      "couples",
+      "adventurers",
+      "families",
+      "solo"
+    ],
+    "getting_around": "Rent a car or hire a driver to explore Petra and Wadi Rum",
+    "tips": [
+      "Bring sun protection and stay hydrated in the desert",
+      "Hire a guide for a deeper understanding of Petra's history and culture"
+    ]
+  },
+  "Istanbul": {
+    "tagline": "Where East meets West in grand style",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Historic mosques and churches",
+      "Vibrant bazaars and markets",
+      "Scenic Bosphorus Strait views",
+      "Rich cultural heritage"
+    ],
+    "must_visit": [
+      {
+        "name": "Hagia Sophia",
+        "desc": "Explore the ancient Byzantine church"
+      },
+      {
+        "name": "Topkapi Palace",
+        "desc": "Discover the Ottoman Empire's primary residence"
+      },
+      {
+        "name": "Grand Bazaar",
+        "desc": "Shop for souvenirs and local goods"
+      },
+      {
+        "name": "Bosphorus Ferry",
+        "desc": "Cruise along the scenic strait"
+      },
+      {
+        "name": "Blue Mosque",
+        "desc": "Marvel at the stunning Islamic architecture"
+      }
+    ],
+    "covers": [
+      "Sultanahmet",
+      "Beyoglu",
+      "Princes' Islands",
+      "Kadikoy"
+    ],
+    "food": [
+      "Doner kebab",
+      "Baklava",
+      "Lahmacun",
+      "Turkish delight"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "luxury"
+    ],
+    "getting_around": "Use the efficient tram and metro system or take a ferry along the Bosphorus",
+    "tips": [
+      "Haggle when shopping at bazaars",
+      "Respect dress codes when visiting mosques"
+    ]
+  },
+  "Cappadocia": {
+    "tagline": "Dawn hot air balloon rides over fairy chimneys",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Breathtaking hot air balloon views",
+      "Unique fairy chimney landscapes",
+      "Ancient cave churches and monasteries",
+      "Stunning sunrises and sunsets"
+    ],
+    "must_visit": [
+      {
+        "name": "Göreme National Park",
+        "desc": "Explore ancient cave dwellings and churches"
+      },
+      {
+        "name": "Derinkuyu Underground City",
+        "desc": "Discover an ancient subterranean city"
+      },
+      {
+        "name": "Ürgüp",
+        "desc": "Wander through a historic town with fairy chimneys"
+      },
+      {
+        "name": "Red and Rose Valleys",
+        "desc": "Hike through scenic valleys with stunning rock formations"
+      },
+      {
+        "name": "Kaymaklı Underground City",
+        "desc": "Learn about ancient underground living"
+      }
+    ],
+    "covers": [
+      "Göreme",
+      "Ürgüp",
+      "Avanos",
+      "Nevşehir"
+    ],
+    "food": [
+      "Manti",
+      "Lahmacun",
+      "Menemen",
+      "Baklava"
+    ],
+    "best_for": [
+      "couples",
+      "adventurers",
+      "luxury",
+      "honeymoon"
+    ],
+    "getting_around": "Rent a car or take guided tours to explore the region",
+    "tips": [
+      "Book hot air balloon rides in advance to avoid peak season crowds",
+      "Wear comfortable shoes for hiking and exploring ancient sites"
+    ]
+  },
+  "Paris": {
+    "tagline": "City of Light and Endless Charm",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Iconic Eiffel Tower views",
+      "World-class art at the Louvre",
+      "Romantic Seine River cruises",
+      "Chic boutique shopping"
+    ],
+    "must_visit": [
+      {
+        "name": "The Louvre Museum",
+        "desc": "Home to the Mona Lisa"
+      },
+      {
+        "name": "Eiffel Tower",
+        "desc": "Iron lattice tower with stunning views"
+      },
+      {
+        "name": "Notre-Dame Cathedral",
+        "desc": "Historic Gothic church"
+      },
+      {
+        "name": "Montmartre",
+        "desc": "Bohemian neighborhood with artist studios"
+      },
+      {
+        "name": "Champs-Élysées",
+        "desc": "Famous avenue for shopping and dining"
+      }
+    ],
+    "covers": [
+      "Versailles",
+      "Saint-Germain-des-Prés",
+      "Le Marais",
+      "Île de la Cité"
+    ],
+    "food": [
+      "Escargots",
+      "Coq au Vin",
+      "Macarons",
+      "Croissants"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "luxury"
+    ],
+    "getting_around": "Use the efficient Metro system to navigate the city",
+    "tips": [
+      "Learn basic French phrases to interact with locals",
+      "Buy a Paris Museum Pass for skip-the-line access"
+    ]
+  },
+  "Nice & French Riviera": {
+    "tagline": "Azure coastline and glamorous harbours await",
+    "ideal_days_min": 5,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Stunning beaches and coves",
+      "Historic old towns to explore",
+      "Glamorous yacht-lined harbours",
+      "Breathtaking views of the Mediterranean"
+    ],
+    "must_visit": [
+      {
+        "name": "Promenade des Anglais",
+        "desc": "Iconic seaside promenade in Nice"
+      },
+      {
+        "name": "Villefranche-sur-Mer",
+        "desc": "Picturesque medieval town with harbour"
+      },
+      {
+        "name": "Monaco",
+        "desc": "Luxurious principality with casino and palace"
+      },
+      {
+        "name": "Cours Saleya Market",
+        "desc": "Vibrant market in Nice's old town"
+      },
+      {
+        "name": "Eze Village",
+        "desc": "Perched medieval village with stunning views"
+      }
+    ],
+    "covers": [
+      "Cannes",
+      "Antibes",
+      "Menton",
+      "Saint-Tropez"
+    ],
+    "food": [
+      "Salade Niçoise",
+      "Ratatouille",
+      "Socca",
+      "Tarte Tropezienne"
+    ],
+    "best_for": [
+      "couples",
+      "luxury",
+      "families",
+      "friends"
+    ],
+    "getting_around": "Use buses, trains, or rent a car to explore the French Riviera",
+    "tips": [
+      "Book restaurants and beaches in advance for peak season",
+      "Explore old towns on foot to discover hidden gems"
+    ]
+  },
+  "Rome": {
+    "tagline": "Eternal City of Ancient Ruins",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Ancient Roman landmarks",
+      "Vatican City treasures",
+      "Renaissance architecture",
+      "World-class pasta dishes"
+    ],
+    "must_visit": [
+      {
+        "name": "Colosseum",
+        "desc": "Explore the iconic amphitheater"
+      },
+      {
+        "name": "Vatican Museums",
+        "desc": "Discover Renaissance art masterpieces"
+      },
+      {
+        "name": "Trevi Fountain",
+        "desc": "Toss a coin for good luck"
+      },
+      {
+        "name": "Roman Forum",
+        "desc": "Walk among ancient ruins"
+      },
+      {
+        "name": "Pantheon",
+        "desc": "Marvel at the ancient temple"
+      }
+    ],
+    "covers": [
+      "Vatican City",
+      "Trastevere",
+      "Monti",
+      "Ostia Antica"
+    ],
+    "food": [
+      "Carbonara",
+      "Amatriciana",
+      "Pizza Romana",
+      "Gelato"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "luxury"
+    ],
+    "getting_around": "Use the efficient metro system or walk through the historic center",
+    "tips": [
+      "Book Vatican tickets in advance to avoid long lines",
+      "Explore the city's hidden gems on foot"
+    ]
+  },
+  "Venice": {
+    "tagline": "Floating City of Golden Dreams",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Serene gondola rides",
+      "Vibrant masked carnivals",
+      "Historic golden basilicas",
+      "Romantic canal-side strolls"
+    ],
+    "must_visit": [
+      {
+        "name": "St. Mark's Basilica",
+        "desc": "Marvel at its stunning Byzantine mosaics"
+      },
+      {
+        "name": "Grand Canal",
+        "desc": "Take a romantic gondola ride along its waters"
+      },
+      {
+        "name": "Doge's Palace",
+        "desc": "Explore the historic heart of Venice's government"
+      },
+      {
+        "name": "Rialto Bridge",
+        "desc": "Shop and dine with breathtaking views"
+      },
+      {
+        "name": "San Giorgio Maggiore",
+        "desc": "Enjoy panoramic views of the city from its campanile"
+      }
+    ],
+    "covers": [
+      "Murano",
+      "Burano",
+      "Lido di Venezia"
+    ],
+    "food": [
+      "Risotto al nero di seppia",
+      "Fritto misto",
+      "Bigoli in salsa",
+      "Seafood risotto"
+    ],
+    "best_for": [
+      "couples",
+      "honeymoon",
+      "families",
+      "luxury"
+    ],
+    "getting_around": "Explore the city on foot or by vaporetto, Venice's public water bus system",
+    "tips": [
+      "Get lost in the narrow streets to discover hidden gems",
+      "Book a gondola ride at sunset for a romantic experience"
+    ]
+  },
+  "Amalfi Coast": {
+    "tagline": "Cliffside villages above turquoise seas",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Pastel towns perched on cliffs",
+      "Crystal clear Tyrrhenian Sea",
+      "Luxury villas and hotels",
+      "Fresh seafood and limoncello"
+    ],
+    "must_visit": [
+      {
+        "name": "Positano",
+        "desc": "Colorful town with steep streets and beaches"
+      },
+      {
+        "name": "Amalfi Cathedral",
+        "desc": "Historic cathedral in the town of Amalfi"
+      },
+      {
+        "name": "Island of Capri",
+        "desc": "Chic island with stunning natural beauty"
+      },
+      {
+        "name": "Ravello",
+        "desc": "Hilltop town with stunning views and villas"
+      },
+      {
+        "name": "Sentiero degli Dei",
+        "desc": "Hiking trail with breathtaking sea views"
+      }
+    ],
+    "covers": [
+      "Sorrento",
+      "Pompeii",
+      "Naples",
+      "Ischia"
+    ],
+    "food": [
+      "Seafood risotto",
+      "Limoncello",
+      "Neapolitan pizza",
+      "Fresh mozzarella"
+    ],
+    "best_for": [
+      "couples",
+      "luxury",
+      "honeymoon",
+      "adventurers"
+    ],
+    "getting_around": "Ferries and buses connect towns along the coast, while renting a car or scooter provides flexibility",
+    "tips": [
+      "Book accommodations and restaurants in advance, especially during peak season",
+      "Explore the towns and villages on foot to discover hidden gems"
+    ]
+  },
+  "Florence & Tuscany": {
+    "tagline": "Renaissance charm in every corner",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "World-class art museums",
+      "Rolling vineyard landscapes",
+      "Historic city center",
+      "Delicious Tuscan cuisine"
+    ],
+    "must_visit": [
+      {
+        "name": "Uffizi Gallery",
+        "desc": "Witness Botticelli's The Birth of Venus"
+      },
+      {
+        "name": "Duomo",
+        "desc": "Marvel at the iconic cathedral complex"
+      },
+      {
+        "name": "Chianti Wine Region",
+        "desc": "Taste some of the world's best wines"
+      },
+      {
+        "name": "Ponte Vecchio",
+        "desc": "Shop on the medieval stone bridge"
+      },
+      {
+        "name": "San Gimignano",
+        "desc": "Explore the medieval walled town"
+      }
+    ],
+    "covers": [
+      "Siena",
+      "Pisa",
+      "Lucca",
+      "Cinque Terre"
+    ],
+    "food": [
+      "Ribollita",
+      "Pappardelle",
+      "Bistecca alla Fiorentina",
+      "Cantucci con Vin Santo"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "luxury"
+    ],
+    "getting_around": "Walk or bike in Florence, and use trains or rental cars to explore Tuscany",
+    "tips": [
+      "Book Uffizi Gallery tickets in advance to avoid long lines",
+      "Try to visit popular sites early in the morning or late in the evening"
+    ]
+  },
+  "Barcelona": {
+    "tagline": "Surreal architecture meets Mediterranean charm",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Gaudi's iconic Sagrada Familia",
+      "Vibrant La Rambla street life",
+      "Stunning Barceloneta beach",
+      "Rich cultural heritage"
+    ],
+    "must_visit": [
+      {
+        "name": "Park Guell",
+        "desc": "Explore Gaudi's famous mosaic benches"
+      },
+      {
+        "name": "La Boqueria Market",
+        "desc": "Sample local cuisine and fresh produce"
+      },
+      {
+        "name": "Casa Batllo",
+        "desc": "Marvel at Gaudi's unique architecture"
+      },
+      {
+        "name": "Barceloneta Beach",
+        "desc": "Relax on Barcelona's main beach"
+      },
+      {
+        "name": "Gothic Quarter",
+        "desc": "Discover narrow streets and historic landmarks"
+      }
+    ],
+    "covers": [
+      "Tibidabo",
+      "Montjuic",
+      "Sitges",
+      "Costa Brava"
+    ],
+    "food": [
+      "Pa amb tomàquet",
+      "Patatas Bravas",
+      "Seafood Paella",
+      "Crema Catalana"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "luxury"
+    ],
+    "getting_around": "Use the efficient metro system or hop-on hop-off buses to explore the city",
+    "tips": [
+      "Buy a Hola BCN card for public transport discounts",
+      "Visit popular attractions early to avoid crowds"
+    ]
+  },
+  "Madrid": {
+    "tagline": "Vibrant city of art and passion",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "World-class art museums",
+      "Vibrant nightlife scene",
+      "Delicious tapas culture",
+      "Historic grand boulevards"
+    ],
+    "must_visit": [
+      {
+        "name": "Prado Museum",
+        "desc": "Explore an extensive collection of European art"
+      },
+      {
+        "name": "Royal Palace of Madrid",
+        "desc": "Discover the official residence of the Spanish royal family"
+      },
+      {
+        "name": "Plaza Mayor",
+        "desc": "Experience the heart of Madrid's historic center"
+      },
+      {
+        "name": "Reina Sofia Museum",
+        "desc": "See Picasso's Guernica and other modern art masterpieces"
+      },
+      {
+        "name": "Malasana neighborhood",
+        "desc": "Enjoy the city's trendy nightlife and shopping"
+      }
+    ],
+    "covers": [
+      "Toledo",
+      "Segovia",
+      "Salamanca",
+      "Avila"
+    ],
+    "food": [
+      "Tapas",
+      "Paella",
+      "Gazpacho",
+      "Churros con Chocolate"
+    ],
+    "best_for": [
+      "couples",
+      "solo",
+      "friends",
+      "luxury",
+      "backpackers"
+    ],
+    "getting_around": "Use the efficient metro system or walk through the city's pedestrian-friendly streets",
+    "tips": [
+      "Learn some basic Spanish to enhance your experience",
+      "Be prepared for late-night dining and socializing"
+    ]
+  },
+  "Seville": {
+    "tagline": "Moorish magic in vibrant plazas",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Moorish palaces and gardens",
+      "Vibrant orange-scented plazas",
+      "Flamenco music and dance",
+      "Rich cultural heritage"
+    ],
+    "must_visit": [
+      {
+        "name": "Alcázar Palace",
+        "desc": "A UNESCO World Heritage Site with stunning Mudéjar architecture"
+      },
+      {
+        "name": "Cathedral of Seville",
+        "desc": "A majestic Gothic cathedral with impressive Giralda tower"
+      },
+      {
+        "name": "Royal Tobacco Factory",
+        "desc": "A historic building now housing the University of Seville"
+      },
+      {
+        "name": "Parque de María Luisa",
+        "desc": "A beautiful park with ornate fountains and gardens"
+      },
+      {
+        "name": "Flamenco Show at Los Gallos",
+        "desc": "An authentic flamenco experience in a historic tablao"
+      }
+    ],
+    "covers": [
+      "Santa Cruz neighborhood",
+      "Triana district",
+      "Córdoba",
+      "Granada"
+    ],
+    "food": [
+      "Gazpacho",
+      "Jamón ibérico",
+      "Paella",
+      "Torta de Aceite"
+    ],
+    "best_for": [
+      "couples",
+      "culture lovers",
+      "foodies",
+      "history buffs",
+      "romantics"
+    ],
+    "getting_around": "Seville has an efficient public transportation system, including buses and trams, as well as bike rentals and walking paths",
+    "tips": [
+      "Explore the narrow streets of the Santa Cruz neighborhood on foot",
+      "Book flamenco shows and popular restaurants in advance to avoid long wait times"
+    ]
+  },
+  "Lisbon": {
+    "tagline": "Charming hills meet Atlantic coast",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Historic trams and funiculars",
+      "Vibrant tile work and architecture",
+      "Rich cultural heritage",
+      "Fresh seafood by the ocean"
+    ],
+    "must_visit": [
+      {
+        "name": "Belem Tower",
+        "desc": "A medieval fortress and UNESCO site"
+      },
+      {
+        "name": "Jerónimos Monastery",
+        "desc": "A stunning example of Manueline architecture"
+      },
+      {
+        "name": "Castelo de São Jorge",
+        "desc": "A Moorish castle with panoramic views"
+      },
+      {
+        "name": "Pastéis de Belém",
+        "desc": "The birthplace of the famous custard tart"
+      },
+      {
+        "name": "Cascais Beach",
+        "desc": "A picturesque beach town near Lisbon"
+      }
+    ],
+    "covers": [
+      "Sintra",
+      "Cascais",
+      "Estoril"
+    ],
+    "food": [
+      "Bacalhau à brás",
+      "Arroz de pato",
+      "Caldo verde",
+      "Pastéis de nata"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "backpackers"
+    ],
+    "getting_around": "Lisbon has an efficient public transport system including trams, buses, and metro lines.",
+    "tips": [
+      "Buy a rechargeable Viva Viagem card for easy travel on public transport",
+      "Explore the city's hills and neighborhoods on foot to discover hidden gems"
+    ]
+  },
+  "Porto": {
+    "tagline": "Vintage charm by the Douro River",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Port wine tastings",
+      "Riverside Ribeira district",
+      "Gothic churches",
+      "Iconic Luis I Bridge"
+    ],
+    "must_visit": [
+      {
+        "name": "Taylor's Port",
+        "desc": "Sample aged port wines"
+      },
+      {
+        "name": "São Francisco Church",
+        "desc": "Admire Gothic architecture"
+      },
+      {
+        "name": "Luis I Bridge",
+        "desc": "Walk across for city views"
+      },
+      {
+        "name": "Ribeira neighborhood",
+        "desc": "Explore colorful riverside streets"
+      },
+      {
+        "name": "Palácio da Bolsa",
+        "desc": "Discover 19th-century grandeur"
+      }
+    ],
+    "covers": [
+      "Vila Nova de Gaia",
+      "Matosinhos",
+      "Guimarães",
+      "Douro Valley"
+    ],
+    "food": [
+      "Bacalhau à brás",
+      "Francesinha sandwich",
+      "Arroz de pato",
+      "Pastéis de nata"
+    ],
+    "best_for": [
+      "couples",
+      "foodies",
+      "culture lovers",
+      "budget travelers"
+    ],
+    "getting_around": "Walk or take metro and buses to navigate the city",
+    "tips": [
+      "Buy a Porto Card for public transport and attraction discounts",
+      "Book wine cellar tours in advance to avoid crowds"
+    ]
+  },
+  "Santorini": {
+    "tagline": "Dreamy Greek isle with breathtaking caldera views",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      " Picturesque whitewashed houses",
+      "Stunning sunsets over the caldera",
+      "Beautiful black sand beaches",
+      "Rich Greek history and culture"
+    ],
+    "must_visit": [
+      {
+        "name": "Oia Village",
+        "desc": "Explore narrow streets and scenic views"
+      },
+      {
+        "name": "Fira",
+        "desc": "Visit the capital town of Santorini"
+      },
+      {
+        "name": "Perissa Beach",
+        "desc": "Relax on the famous black sand beach"
+      },
+      {
+        "name": "Akrotiri Archaeological Site",
+        "desc": "Discover ancient Minoan ruins"
+      },
+      {
+        "name": "Santorini Caldera",
+        "desc": "Take a boat tour of the volcanic caldera"
+      }
+    ],
+    "covers": [
+      "Imerovigli",
+      "Megalochori",
+      "Firostefani",
+      "Thirassia Island"
+    ],
+    "food": [
+      "Fresh seafood moussaka",
+      "Traditional Greek salad",
+      "Grilled octopus",
+      "Greek yogurt with honey"
+    ],
+    "best_for": [
+      "couples",
+      "luxury",
+      "honeymoon",
+      "relaxation"
+    ],
+    "getting_around": "Use buses, taxis, or rent a car or scooter to explore the island",
+    "tips": [
+      "Book accommodations and restaurants in advance",
+      "Wear comfortable shoes for walking on cobblestone streets"
+    ]
+  },
+  "Athens": {
+    "tagline": "Ancient ruins meet vibrant city life",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Iconic Acropolis views",
+      "Ancient history and architecture",
+      "Delicious Greek cuisine",
+      "Lively city nightlife"
+    ],
+    "must_visit": [
+      {
+        "name": "The Parthenon",
+        "desc": "Explore the ancient temple's grandeur"
+      },
+      {
+        "name": "Monastiraki Flea Market",
+        "desc": "Browse vintage goods and souvenirs"
+      },
+      {
+        "name": "National Archaeological Museum",
+        "desc": "Discover ancient Greek artifacts"
+      },
+      {
+        "name": "Syntagma Square",
+        "desc": "Witness the changing of the guard ceremony"
+      },
+      {
+        "name": "Mount Lycabettus",
+        "desc": "Enjoy panoramic city views"
+      }
+    ],
+    "covers": [
+      "Piraeus",
+      "Glyfada",
+      "Kifissia"
+    ],
+    "food": [
+      "Moussaka",
+      "Souvlaki",
+      "Greek salad",
+      "Baklava"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "culture lovers"
+    ],
+    "getting_around": "Use the efficient metro system or walk through the historic city center",
+    "tips": [
+      "Visit the Acropolis early in the morning to avoid crowds",
+      "Try traditional Greek street food at a local taverna"
+    ]
+  },
+  "Crete": {
+    "tagline": "Discover ancient secrets on pink sands",
+    "ideal_days_min": 7,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Minoan palaces and ruins",
+      "Stunning pink-sand beaches",
+      "Scenic gorges and hiking trails",
+      "Rich Greek cuisine and culture"
+    ],
+    "must_visit": [
+      {
+        "name": "Knossos Palace",
+        "desc": "Explore the ancient Minoan capital"
+      },
+      {
+        "name": "Elafonisi Beach",
+        "desc": "Relax on pink sands and turquoise waters"
+      },
+      {
+        "name": "Samaria Gorge",
+        "desc": "Hike through one of Europe's longest gorges"
+      },
+      {
+        "name": "Chania Old Town",
+        "desc": "Wander through Venetian-era streets and harbor"
+      },
+      {
+        "name": "Heraklion Museum",
+        "desc": "Uncover Cretan history and artifacts"
+      }
+    ],
+    "covers": [
+      "Chania",
+      "Heraklion",
+      "Rethymnon",
+      "Agios Nikolaos"
+    ],
+    "food": [
+      "Moussaka",
+      "Greek salad",
+      "Fresh seafood",
+      "Galaktoboureko"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends"
+    ],
+    "getting_around": "Rent a car or use public buses to explore the island",
+    "tips": [
+      "Visit ancient sites early to avoid crowds",
+      "Try local products like olive oil and honey"
+    ]
+  },
+  "London": {
+    "tagline": "Royal heritage meets vibrant culture",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "World-class museums",
+      "Royal pageantry",
+      "Iconic landmarks",
+      "Diverse neighborhoods"
+    ],
+    "must_visit": [
+      {
+        "name": "The British Museum",
+        "desc": "Explore a vast collection of historical artifacts"
+      },
+      {
+        "name": "Buckingham Palace",
+        "desc": "Witness the Changing of the Guard ceremony"
+      },
+      {
+        "name": "The National Gallery",
+        "desc": "Admire an extensive collection of European art"
+      },
+      {
+        "name": "The Tower of London",
+        "desc": "Discover the historic fortress and the Crown Jewels"
+      },
+      {
+        "name": "West End",
+        "desc": "Enjoy a musical or play in one of the many theaters"
+      }
+    ],
+    "covers": [
+      "Camden",
+      "Notting Hill",
+      "Covent Garden",
+      "Kensington"
+    ],
+    "food": [
+      "Fish and Chips",
+      "English Breakfast",
+      "Sunday Roast",
+      "Afternoon Tea"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends"
+    ],
+    "getting_around": "Use the efficient Tube network or iconic red buses to navigate the city",
+    "tips": [
+      "Buy a Visitor Oyster Card for convenient travel",
+      "Book tickets to popular attractions in advance to avoid long queues"
+    ]
+  },
+  "Edinburgh": {
+    "tagline": "Medieval charm meets vibrant festival spirit",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Historic Edinburgh Castle",
+      "Vibrant Royal Mile",
+      "Misty Highland landscapes",
+      "World-class festival performances"
+    ],
+    "must_visit": [
+      {
+        "name": "Edinburgh Castle",
+        "desc": "Perched atop Castle Rock, offering stunning city views"
+      },
+      {
+        "name": "The Royal Mile",
+        "desc": "The historic heart of Edinburgh's Old Town"
+      },
+      {
+        "name": "National Museum of Scotland",
+        "desc": "Showcasing Scotland's rich history and culture"
+      },
+      {
+        "name": "Arthur's Seat",
+        "desc": "An ancient volcano with breathtaking views of the city"
+      },
+      {
+        "name": "The Royal Yacht Britannia",
+        "desc": "A former royal residence with impressive maritime history"
+      }
+    ],
+    "covers": [
+      "Leith",
+      "Stockbridge",
+      "Portobello"
+    ],
+    "food": [
+      "Haggis",
+      "Cullen Skink",
+      "Scottish Tablet",
+      "Deep-fried Mars bars"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends"
+    ],
+    "getting_around": "Edinburgh has an efficient public bus system and walkable city center, making it easy to explore on foot or by bus",
+    "tips": [
+      "Book festival tickets and popular attractions in advance to avoid crowds",
+      "Pack layers for unpredictable Scottish weather"
+    ]
+  },
+  "Amsterdam": {
+    "tagline": "Canal houses and cultural charm",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Masterpiece art galleries",
+      "Gabled canal houses",
+      "Vibrant nightlife scene",
+      "Bicycle-friendly streets"
+    ],
+    "must_visit": [
+      {
+        "name": "Rijksmuseum",
+        "desc": "Explore Dutch art and history"
+      },
+      {
+        "name": "Van Gogh Museum",
+        "desc": "Discover the artist's life and works"
+      },
+      {
+        "name": "Anne Frank House",
+        "desc": "Learn about the famous diarist's life"
+      },
+      {
+        "name": "Vondelpark",
+        "desc": "Relax in Amsterdam's largest park"
+      },
+      {
+        "name": "Jordaan neighborhood",
+        "desc": "Admire historic architecture and canals"
+      }
+    ],
+    "covers": [
+      "Haarlem",
+      "Leiden",
+      "Utrecht"
+    ],
+    "food": [
+      "Stroopwafels",
+      "Herring",
+      "Frikadellen",
+      "Poffertjes"
+    ],
+    "best_for": [
+      "couples",
+      "solo",
+      "friends",
+      "luxury",
+      "backpackers"
+    ],
+    "getting_around": "Use the city's efficient tram and bus network or rent a bicycle to explore",
+    "tips": [
+      "Buy an I Amsterdam City Card for discounts and free entry to attractions",
+      "Be mindful of cycling rules and pedestrian paths"
+    ]
+  },
+  "Berlin": {
+    "tagline": "Explore Cold War history and edgy art scene",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Vibrant street art",
+      "Rich Cold War history",
+      "Legendary nightlife",
+      "World-class museums"
+    ],
+    "must_visit": [
+      {
+        "name": "Berlin Wall Memorial",
+        "desc": "Learn about the wall's history"
+      },
+      {
+        "name": "Museum Island",
+        "desc": "Discover five world-class museums"
+      },
+      {
+        "name": "Checkpoint Charlie",
+        "desc": "See the former border crossing"
+      },
+      {
+        "name": "Kreuzberg",
+        "desc": "Explore the trendy neighborhood"
+      },
+      {
+        "name": "Brandenburg Gate",
+        "desc": "Visit the iconic landmark"
+      }
+    ],
+    "covers": [
+      "Potsdam",
+      "Kreuzberg",
+      "Neukölln",
+      "Mitte"
+    ],
+    "food": [
+      "Currywurst",
+      "Schnitzel",
+      "Bratwurst",
+      "Berliner Pfannkuchen"
+    ],
+    "best_for": [
+      "couples",
+      "solo",
+      "friends",
+      "adventurers"
+    ],
+    "getting_around": "Use the efficient U-Bahn and S-Bahn public transportation system",
+    "tips": [
+      "Buy a Berlin Welcome Card for free museum entry and public transport",
+      "Explore the city's many neighborhoods on foot or by bike"
+    ]
+  },
+  "Munich & Bavaria": {
+    "tagline": "Prost to Bavarian cheer and Alpine views",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Fairytale Neuschwanstein Castle",
+      "Vibrant Marienplatz",
+      "Scenic Alpine lakes",
+      "Legendary Oktoberfest"
+    ],
+    "must_visit": [
+      {
+        "name": "Nymphenburg Palace",
+        "desc": "Baroque palace with beautiful gardens"
+      },
+      {
+        "name": "English Garden",
+        "desc": "One of Europe's largest urban parks"
+      },
+      {
+        "name": "Zugspitze",
+        "desc": "Germany's highest mountain peak"
+      },
+      {
+        "name": "Dachau Concentration Camp",
+        "desc": "Historic WWII memorial site"
+      },
+      {
+        "name": "Hofbräuhaus",
+        "desc": "Munich's famous beer hall"
+      }
+    ],
+    "covers": [
+      "Garmisch-Partenkirchen",
+      "Starnberg",
+      "Augsburg",
+      "Berchtesgaden"
+    ],
+    "food": [
+      "Bratwurst mit Sauerkraut",
+      "Schnitzel mit Kartoffeln",
+      "Apple Strudel",
+      "Leberkäse"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "friends",
+      "adventurers"
+    ],
+    "getting_around": "Use the efficient U-Bahn and S-Bahn train network to explore Munich and surrounding areas",
+    "tips": [
+      "Book Neuschwanstein Castle tickets in advance to avoid long wait times",
+      "Try a traditional Bavarian beer garden for an authentic experience"
+    ]
+  },
+  "Prague": {
+    "tagline": "Medieval charm in a beer lover's paradise",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Historic architecture",
+      "Vibrant cultural scene",
+      "World-class beer",
+      "Romantic river views"
+    ],
+    "must_visit": [
+      {
+        "name": "Charles Bridge",
+        "desc": "Walk across this 600-year-old iconic bridge"
+      },
+      {
+        "name": "Prague Castle",
+        "desc": "Explore the largest castle complex in the world"
+      },
+      {
+        "name": "Old Town Square",
+        "desc": "Admire the famous Astronomical Clock"
+      },
+      {
+        "name": "St. Vitus Cathedral",
+        "desc": "Marvel at stunning Gothic architecture"
+      },
+      {
+        "name": "Wenceslas Square",
+        "desc": "Experience the heart of the city's shopping and nightlife"
+      }
+    ],
+    "covers": [
+      "Karlstejn",
+      "Kutna Hora",
+      "cesky Krumlov"
+    ],
+    "food": [
+      "Roasted pork",
+      "Svíčková",
+      "Trdelník",
+      "Goulash"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "backpackers"
+    ],
+    "getting_around": "Use the efficient and affordable public transport system, including metro, trams, and buses",
+    "tips": [
+      "Buy a Prague Card for free entry to many attractions and public transport",
+      "Learn some basic Czech phrases to interact with the friendly locals"
+    ]
+  },
+  "Vienna": {
+    "tagline": "Imperial grandeur meets artistic flair",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Majestic palaces and gardens",
+      "Vibrant coffee-house culture",
+      "World-class opera and music",
+      "Rich history and artistic heritage"
+    ],
+    "must_visit": [
+      {
+        "name": "Schönbrunn Palace",
+        "desc": "A former imperial summer residence with stunning gardens"
+      },
+      {
+        "name": "St. Stephen's Cathedral",
+        "desc": "A iconic Gothic cathedral in the heart of the city"
+      },
+      {
+        "name": "Vienna State Opera",
+        "desc": "A world-renowned opera house with guided tours"
+      },
+      {
+        "name": "Belvedere Palace",
+        "desc": "A historic palace with an impressive art collection"
+      },
+      {
+        "name": "Hofburg Palace",
+        "desc": "The former principal imperial palace of the Habsburg dynasty"
+      }
+    ],
+    "covers": [
+      "Grinzing",
+      "Klosterneuburg",
+      "Bratislava",
+      "Wachau Valley"
+    ],
+    "food": [
+      "Wiener Schnitzel",
+      "Sacher Torte",
+      "Apple Strudel",
+      "Viennese Coffee"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "luxury"
+    ],
+    "getting_around": "The city has an efficient public transportation system with buses, trams, and metro lines",
+    "tips": [
+      "Buy a Vienna Card for free public transport and museum discounts",
+      "Book opera and concert tickets well in advance to avoid sold-out performances"
+    ]
+  },
+  "Swiss Alps (Interlaken)": {
+    "tagline": "Majestic mountains meet serene lakes",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Breathtaking mountain scenery",
+      "World-class skiing and snowboarding",
+      "Scenic boat rides on Lake Thun",
+      "Thrilling paragliding experiences"
+    ],
+    "must_visit": [
+      {
+        "name": "Jungfraujoch",
+        "desc": "Explore the Top of Europe for panoramic views"
+      },
+      {
+        "name": "Schilthorn Mountain",
+        "desc": "Enjoy 360-degree views from the revolving restaurant"
+      },
+      {
+        "name": "Interlaken Old Town",
+        "desc": "Discover charming streets and historic buildings"
+      },
+      {
+        "name": "Grindelwald Ski Resort",
+        "desc": "Experience skiing and snowboarding in a picturesque setting"
+      },
+      {
+        "name": "Lake Brienz",
+        "desc": "Take a scenic boat tour on the turquoise lake"
+      }
+    ],
+    "covers": [
+      "Grindelwald",
+      "Wengen",
+      "Murren",
+      "Adelboden"
+    ],
+    "food": [
+      "Fondue",
+      "Raclette",
+      "Swiss chocolate",
+      "Bircher muesli"
+    ],
+    "best_for": [
+      "couples",
+      "adventurers",
+      "luxury",
+      "families",
+      "friends"
+    ],
+    "getting_around": "Use the efficient Swiss public transport system, including trains, buses, and boats to explore the region",
+    "tips": [
+      "Book mountain railways and ski resorts in advance to avoid peak season crowds",
+      "Pack layers for changing mountain weather conditions"
+    ]
+  },
+  "Zurich": {
+    "tagline": "Elegant lakeside city with alpine charm",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Stunning Lake Zurich views",
+      "Historic Old Town charm",
+      "Snow-capped Alpine backdrop",
+      "World-class museums and art"
+    ],
+    "must_visit": [
+      {
+        "name": "Bahnhofstrasse",
+        "desc": "Upscale shopping and dining street"
+      },
+      {
+        "name": "Kunsthaus art museum",
+        "desc": "Showcasing Swiss and international art"
+      },
+      {
+        "name": "Lake Zurich boat tour",
+        "desc": "Scenic cruise with city and mountain views"
+      },
+      {
+        "name": "Uetliberg mountain",
+        "desc": "Panoramic views of the city and lake"
+      },
+      {
+        "name": "Old Town's Niederdorf",
+        "desc": "Historic neighborhood with narrow streets and charm"
+      }
+    ],
+    "covers": [
+      "Kilchberg",
+      "Adliswil",
+      "Thalwil",
+      "Stafa"
+    ],
+    "food": [
+      "Fondue",
+      "Raclette",
+      "Zurich-style veal",
+      "Luxemburgerli chocolates"
+    ],
+    "best_for": [
+      "couples",
+      "luxury",
+      "families"
+    ],
+    "getting_around": "Efficient trams and buses connect the city, with scenic boat rides on Lake Zurich",
+    "tips": [
+      "Buy a Zurich Card for free public transport and attractions",
+      "Explore the city's many parks and gardens for a peaceful escape"
+    ]
+  },
+  "Reykjavik & Ring Road": {
+    "tagline": "Aurora lit landscapes and geothermal wonders",
+    "ideal_days_min": 7,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Breathtaking waterfalls",
+      "Northern Lights displays",
+      "Geothermal hot springs",
+      "Dramatic black-sand beaches"
+    ],
+    "must_visit": [
+      {
+        "name": "Gullfoss waterfall",
+        "desc": "Witness the powerful cascade"
+      },
+      {
+        "name": "Geysir geothermal area",
+        "desc": "See the original geyser erupt"
+      },
+      {
+        "name": "Jokulsarlon glacier lagoon",
+        "desc": "Float among icebergs"
+      },
+      {
+        "name": "Skogafoss waterfall",
+        "desc": "Hike behind the falling water"
+      },
+      {
+        "name": "Blue Lagoon",
+        "desc": "Soak in geothermal waters"
+      }
+    ],
+    "covers": [
+      "Vik",
+      "Hofn",
+      "Akureyri",
+      "Snaefellsnes Peninsula"
+    ],
+    "food": [
+      "Hangikjot smoked lamb",
+      "Harofiskur fermented fish",
+      "Skyr yogurt",
+      "Laufabrauoi leaf bread"
+    ],
+    "best_for": [
+      "couples",
+      "adventurers",
+      "friends",
+      "solo",
+      "nature lovers"
+    ],
+    "getting_around": "Rent a 4x4 vehicle to explore the Ring Road and rural areas",
+    "tips": [
+      "Check weather forecasts before heading out",
+      "Book accommodations and popular attractions in advance"
+    ]
+  },
+  "Tromso": {
+    "tagline": "Aurora base camp in Arctic Norway",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Northern Lights displays",
+      "Dog-sledding through snow",
+      "Whale watching tours",
+      "Snow-capped mountain landscapes"
+    ],
+    "must_visit": [
+      {
+        "name": "Tromso Cathedral",
+        "desc": "Admire the Arctic Cathedral's unique design"
+      },
+      {
+        "name": "Polar Museum",
+        "desc": "Learn about Arctic history and culture"
+      },
+      {
+        "name": "Tromso Fjord",
+        "desc": "Take a boat tour to spot whales and seabirds"
+      },
+      {
+        "name": "Lyngen Alps",
+        "desc": "Hike through breathtaking mountain scenery"
+      },
+      {
+        "name": "Kvaloya Island",
+        "desc": "Explore scenic coastal roads and beaches"
+      }
+    ],
+    "covers": [
+      "Senja Island",
+      "Sommaroy Island",
+      "Lyngenfjord",
+      "Narvik"
+    ],
+    "food": [
+      "Reindeer stew",
+      "Fresh seafood",
+      "Cloudberry desserts",
+      "Kjottkaker meatballs"
+    ],
+    "best_for": [
+      "couples",
+      "adventurers",
+      "families",
+      "solo"
+    ],
+    "getting_around": "Use buses, taxis, or rent a car to explore Tromso and surrounding areas",
+    "tips": [
+      "Book Northern Lights tours in advance to secure spots",
+      "Pack warm clothing for subzero temperatures"
+    ]
+  },
+  "Copenhagen": {
+    "tagline": "Cosy harbour vibes meet Nordic chic",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Vibrant harbour life",
+      "New Nordic cuisine",
+      "Bike-friendly streets",
+      "Rich cultural heritage"
+    ],
+    "must_visit": [
+      {
+        "name": "Tivoli Gardens",
+        "desc": "Explore one of the world's oldest amusement parks"
+      },
+      {
+        "name": "The Little Mermaid",
+        "desc": "See the iconic bronze statue by Edvard Eriksen"
+      },
+      {
+        "name": "Ny Carlsberg Glyptotek",
+        "desc": "Discover an impressive art collection"
+      },
+      {
+        "name": "Noma restaurant",
+        "desc": "Experience New Nordic cuisine at its finest"
+      },
+      {
+        "name": "Strøget shopping street",
+        "desc": "Wander through one of Europe's longest pedestrian streets"
+      }
+    ],
+    "covers": [
+      "Malmo",
+      "Helsingør",
+      "Frederiksberg"
+    ],
+    "food": [
+      "Smørrebrød",
+      "Flæskesteg",
+      "Kødboller",
+      "Kanelsnurrer"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "luxury"
+    ],
+    "getting_around": "Copenhagen has an efficient public bike system and metro network, making it easy to get around the city",
+    "tips": [
+      "Buy a Copenhagen Card for free entry to many attractions and public transport",
+      "Explore the city's many bike lanes and harbour paths on two wheels"
+    ]
+  },
+  "Stockholm": {
+    "tagline": "Island city of design and charm",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Historic Old Town",
+      "Archipelago boat tours",
+      "World-class design",
+      "Vibrant cultural scene"
+    ],
+    "must_visit": [
+      {
+        "name": "Vasa Museum",
+        "desc": "Explore the world's only preserved 17th-century ship"
+      },
+      {
+        "name": "ABBA The Museum",
+        "desc": "Interactive exhibits on the famous Swedish band"
+      },
+      {
+        "name": "Skansen Open-Air Museum",
+        "desc": "Sweden's history and culture in a park setting"
+      },
+      {
+        "name": "Royal Palace",
+        "desc": "Official residence of the Swedish monarch"
+      },
+      {
+        "name": "Djurgarden Island",
+        "desc": "Green oasis with parks and museums"
+      }
+    ],
+    "covers": [
+      "Uppsala",
+      "Sigtuna",
+      "Vaxholm"
+    ],
+    "food": [
+      "Gravlax",
+      "Meatballs with lingonberry jam",
+      "Janssons Frestelse",
+      "Swedish seafood stew"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends"
+    ],
+    "getting_around": "Use public ferries, buses, and metro lines to navigate the city and archipelago",
+    "tips": [
+      "Buy a Stockholm Card for free museum entry and public transport",
+      "Book archipelago tours in advance to avoid summer crowds"
+    ]
+  },
+  "Dubrovnik": {
+    "tagline": "Ancient walls meet turquoise sea",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Medieval architecture",
+      "Crystal clear waters",
+      "Rich cultural heritage",
+      "Breathtaking sea views"
+    ],
+    "must_visit": [
+      {
+        "name": "Old City",
+        "desc": "Walk along the ancient city walls"
+      },
+      {
+        "name": "Lokrum Island",
+        "desc": "Explore the beautiful botanical garden"
+      },
+      {
+        "name": "Banje Beach",
+        "desc": "Enjoy swimming in the turquoise sea"
+      },
+      {
+        "name": "Rector's Palace",
+        "desc": "Discover the history of Dubrovnik"
+      },
+      {
+        "name": "Cable Car to Mount Srd",
+        "desc": "Take in panoramic views of the city"
+      }
+    ],
+    "covers": [
+      "Cavtat",
+      "Lapad",
+      "Korčula Island"
+    ],
+    "food": [
+      "Seafood risotto",
+      "Black cuttlefish risotto",
+      "Dalmatian peka",
+      "Fresh oysters"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "luxury"
+    ],
+    "getting_around": "Walk or take buses to get around the city and nearby areas",
+    "tips": [
+      "Book accommodations and restaurants in advance during peak season",
+      "Wear comfortable shoes for walking on the old town's marble streets"
+    ]
+  },
+  "Split & Dalmatian Coast": {
+    "tagline": "Turquoise seas meet ancient Roman walls",
+    "ideal_days_min": 5,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Roman palace city",
+      "Turquoise island beaches",
+      "Vibrant nightlife scene",
+      "Historic old town charm"
+    ],
+    "must_visit": [
+      {
+        "name": "Diocletian's Palace",
+        "desc": "Explore the ancient Roman palace"
+      },
+      {
+        "name": "Hvar Island",
+        "desc": "Visit the picturesque island town"
+      },
+      {
+        "name": "Brač Island",
+        "desc": "Relax on the famous Zlatni Rat beach"
+      },
+      {
+        "name": "Trogir Old Town",
+        "desc": "Discover the UNESCO-listed historic town"
+      },
+      {
+        "name": "Blue Lagoon",
+        "desc": "Snorkel in the crystal-clear bay"
+      }
+    ],
+    "covers": [
+      "Trogir",
+      "Šibenik",
+      "Hvar",
+      "Brač"
+    ],
+    "food": [
+      "Fresh seafood risotto",
+      "Peka lamb",
+      "Black cuttlefish risotto",
+      "Palacinke pancakes"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "adventurers"
+    ],
+    "getting_around": "Ferries and catamarans connect the islands, while buses and taxis cover the mainland",
+    "tips": [
+      "Book island accommodations in advance for peak season",
+      "Try to avoid visiting in July and August for smaller crowds"
+    ]
+  },
+  "Budapest": {
+    "tagline": "Grandeur on the Danube River",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Historic parliament building",
+      "Vibrant ruin bars scene",
+      "Relaxing thermal baths",
+      "Rich cultural heritage"
+    ],
+    "must_visit": [
+      {
+        "name": "Széchenyi Thermal Bath",
+        "desc": "Soak in Europe's largest thermal bath complex"
+      },
+      {
+        "name": "Hungarian Parliament Building",
+        "desc": "Admire the stunning architecture of this iconic landmark"
+      },
+      {
+        "name": "Buda Castle",
+        "desc": "Explore the historic castle and its stunning views"
+      },
+      {
+        "name": "St. Stephen's Basilica",
+        "desc": "Marvel at the beautiful interior and panoramic views"
+      },
+      {
+        "name": "Ruins of the Anker Palace",
+        "desc": "Experience Budapest's unique ruin bar culture"
+      }
+    ],
+    "covers": [
+      "Pest",
+      "Buda",
+      "Óbuda",
+      "Margaret Island"
+    ],
+    "food": [
+      "Goulash",
+      "Paprikás csirke",
+      "Lángos",
+      "Dobos torte"
+    ],
+    "best_for": [
+      "couples",
+      "backpackers",
+      "solo",
+      "friends",
+      "luxury"
+    ],
+    "getting_around": "Use public transport, including buses, trams, and metro lines, to navigate the city easily",
+    "tips": [
+      "Buy a Budapest Card for free public transport and attractions",
+      "Visit thermal baths early or late to avoid crowds"
+    ]
+  },
+  "Krakow": {
+    "tagline": "Medieval charm meets somber history",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Vibrant Main Market Square",
+      "Historic Wawel Castle",
+      "Auschwitz-Birkenau Memorial",
+      "Rich cultural festivals"
+    ],
+    "must_visit": [
+      {
+        "name": "Wawel Cathedral",
+        "desc": "Gothic cathedral with royal tombs"
+      },
+      {
+        "name": "Auschwitz-Birkenau",
+        "desc": "Former concentration camp and museum"
+      },
+      {
+        "name": "St. Mary's Basilica",
+        "desc": "Gothic church with impressive altar"
+      },
+      {
+        "name": "Kazimierz District",
+        "desc": "Historic Jewish quarter with synagogues"
+      },
+      {
+        "name": "Schindler's Factory Museum",
+        "desc": "Museum showcasing Krakow's WWII history"
+      }
+    ],
+    "covers": [
+      "Wieliczka Salt Mines",
+      "Tatra Mountains",
+      "Auschwitz",
+      "Zakopane"
+    ],
+    "food": [
+      "Pierogi Ruskie",
+      "Bigos",
+      "Zurek",
+      "Kielbasa"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "backpackers"
+    ],
+    "getting_around": "Krakow has an efficient public transport system including buses and trams.",
+    "tips": [
+      "Buy a Krakow Card for free entry to many attractions",
+      "Explore the city on foot to discover hidden gems"
+    ]
+  },
+  "Marrakech": {
+    "tagline": "Vibrant labyrinth of ancient traditions",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Labyrinthine souks and markets",
+      "Historic riad architecture",
+      "Snake charmers in Jemaa el-Fnaa",
+      "Desert excursions"
+    ],
+    "must_visit": [
+      {
+        "name": "Jemaa el-Fnaa",
+        "desc": "Experience the bustling main square"
+      },
+      {
+        "name": "Bahia Palace",
+        "desc": "Admire the stunning Islamic architecture"
+      },
+      {
+        "name": "Majorelle Garden",
+        "desc": "Explore the beautiful botanical gardens"
+      },
+      {
+        "name": "Medina Souks",
+        "desc": "Discover local handicrafts and souvenirs"
+      },
+      {
+        "name": "Atlas Mountains",
+        "desc": "Take a guided hike through the mountains"
+      }
+    ],
+    "covers": [
+      "Essaouira",
+      "Ouarzazate",
+      "Agafay Desert",
+      "Ourika Valley"
+    ],
+    "food": [
+      "Tagine",
+      "Couscous",
+      "Msemen",
+      "Makroud"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "backpackers"
+    ],
+    "getting_around": "Explore the city on foot or by taxi, with many attractions within walking distance",
+    "tips": [
+      "Haggle when shopping in the souks",
+      "Respect local customs and dress modestly"
+    ]
+  },
+  "Cape Town": {
+    "tagline": "Mountain meets ocean in vibrant Cape Town",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Breathtaking Table Mountain views",
+      "Pristine Atlantic beaches",
+      "African penguin colonies",
+      "World-class winelands"
+    ],
+    "must_visit": [
+      {
+        "name": "Table Mountain",
+        "desc": "Take a cable car to the summit"
+      },
+      {
+        "name": "Cape of Good Hope",
+        "desc": "Explore the southern tip of Africa"
+      },
+      {
+        "name": "Boulders Beach",
+        "desc": "See African penguins up close"
+      },
+      {
+        "name": "Stellenbosch",
+        "desc": "Wine taste in this historic town"
+      },
+      {
+        "name": "Camp's Bay",
+        "desc": "Relax on this beautiful Atlantic beach"
+      }
+    ],
+    "covers": [
+      "Stellenbosch",
+      "Franschhoek",
+      "Hout Bay",
+      "Simon's Town"
+    ],
+    "food": [
+      "Bobotie",
+      "Boerewors rolls",
+      "Cape Malay curry",
+      "Fresh seafood"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "adventurers",
+      "friends",
+      "luxury"
+    ],
+    "getting_around": "Use a car or take the efficient MyCiTi bus system to get around the city and surrounding areas",
+    "tips": [
+      "Book Table Mountain cable car tickets in advance to avoid queues",
+      "Be mindful of strong sun and winds, pack accordingly"
+    ]
+  },
+  "Serengeti & Ngorongoro": {
+    "tagline": "Wildlife spectacle on golden plains",
+    "ideal_days_min": 5,
+    "ideal_days_max": 14,
+    "highlights": [
+      "The Great Migration",
+      "Big Five game viewing",
+      "Endless savannah landscapes",
+      "Ngorongoro crater exploration"
+    ],
+    "must_visit": [
+      {
+        "name": "Serengeti National Park",
+        "desc": "Witness the Great Migration up close"
+      },
+      {
+        "name": "Ngorongoro Conservation Area",
+        "desc": "Explore the world's largest intact caldera"
+      },
+      {
+        "name": "Olduvai Gorge",
+        "desc": "Discover human evolution history"
+      },
+      {
+        "name": "Lake Manyara National Park",
+        "desc": "See diverse birdlife and tree-climbing lions"
+      },
+      {
+        "name": "Gol Mountains",
+        "desc": "Experience Maasai culture and scenic hiking"
+      }
+    ],
+    "covers": [
+      "Arusha",
+      "Karatu",
+      "Mto wa Mbu",
+      "Tarangire"
+    ],
+    "food": [
+      "Nyama choma",
+      "Ugali",
+      "Sukuma wiki",
+      "Matooke"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "adventurers",
+      "luxury"
+    ],
+    "getting_around": "Use 4x4 vehicles with experienced guides for safe and convenient transportation",
+    "tips": [
+      "Book accommodations and safaris well in advance to avoid peak season crowds",
+      "Pack layers for variable weather and bring binoculars for optimal wildlife viewing"
+    ]
+  },
+  "Maasai Mara": {
+    "tagline": "Wildlife paradise of the Big Five",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Great Migration spectacle",
+      "Abundant lion prides",
+      "Leopard and cheetah sightings",
+      "Scenic river crossings"
+    ],
+    "must_visit": [
+      {
+        "name": "Mara River",
+        "desc": "Witness the Great Migration's river crossings"
+      },
+      {
+        "name": "Oloololo Escarpment",
+        "desc": "Enjoy panoramic views of the Mara"
+      },
+      {
+        "name": "Leopard Gorge",
+        "desc": "Spot leopards in their natural habitat"
+      },
+      {
+        "name": "Big Cat Diary filming grounds",
+        "desc": "See lions and cheetahs up close"
+      },
+      {
+        "name": "Maasai village",
+        "desc": "Experience traditional Maasai culture"
+      }
+    ],
+    "covers": [
+      "Nairobi",
+      "Lake Nakuru",
+      "Lake Victoria",
+      "Serengeti"
+    ],
+    "food": [
+      "Nyama choma",
+      "Ugali and sukuma wiki",
+      "Matooke and beans",
+      "Fresh tilapia from Lake Victoria"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "adventurers",
+      "luxury"
+    ],
+    "getting_around": "Explore the reserve in guided 4x4 safari vehicles or take a hot air balloon ride for a bird's-eye view",
+    "tips": [
+      "Book accommodations and safaris in advance to avoid peak season crowds",
+      "Pack layers for cooler mornings and evenings, and sun protection for the day"
+    ]
+  },
+  "Zanzibar": {
+    "tagline": "Spice island paradise found",
+    "ideal_days_min": 5,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Turquoise waters",
+      "Swahili architecture",
+      "Pristine beaches",
+      "Vibrant markets"
+    ],
+    "must_visit": [
+      {
+        "name": "Stone Town",
+        "desc": "Explore narrow alleys and historic landmarks"
+      },
+      {
+        "name": "Nungwi Beach",
+        "desc": "Relax on powdery white sand"
+      },
+      {
+        "name": "Mnarani Marine Turtles",
+        "desc": "See turtles in their natural habitat"
+      },
+      {
+        "name": "Chumbe Island",
+        "desc": "Snorkel in a protected marine sanctuary"
+      },
+      {
+        "name": "Jozani Forest",
+        "desc": "Spot rare red colobus monkeys"
+      }
+    ],
+    "covers": [
+      "Nungwi",
+      "Kendwa",
+      "Matemwe",
+      "Paje"
+    ],
+    "food": [
+      "Urojo soup",
+      "Fresh seafood",
+      "Mandazi pastries",
+      "Cardamom coffee"
+    ],
+    "best_for": [
+      "couples",
+      "honeymoon",
+      "families",
+      "adventurers"
+    ],
+    "getting_around": "Use local dala-dala buses or hire a private taxi for easy transport",
+    "tips": [
+      "Bargain when shopping at local markets",
+      "Respect local customs and dress modestly"
+    ]
+  },
+  "Victoria Falls": {
+    "tagline": "Africa's majestic waterfall wonder",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Thundering waterfalls",
+      "Wild Zambezi River",
+      "Abundant wildlife",
+      "Stunning African sunsets"
+    ],
+    "must_visit": [
+      {
+        "name": "Victoria Falls National Park",
+        "desc": "Hike to the falls' edge for an unforgettable experience"
+      },
+      {
+        "name": "Devil's Pool",
+        "desc": "Swim in a natural pool on the edge of the falls"
+      },
+      {
+        "name": "Zambezi River Cruise",
+        "desc": "Witness hippos and crocodiles in their natural habitat"
+      },
+      {
+        "name": "Victoria Falls Bridge",
+        "desc": "Bungee jump or take in the views of the falls"
+      },
+      {
+        "name": "Hwange National Park",
+        "desc": "Go on a guided safari to spot lions and elephants"
+      }
+    ],
+    "covers": [
+      "Livingstone",
+      "Kazungula",
+      "Hwange",
+      "Matobo Hills"
+    ],
+    "food": [
+      "Braaied game meats",
+      "Sadza with stew",
+      "Grilled Zambezi tilapia",
+      "Wild fruit salads"
+    ],
+    "best_for": [
+      "adventurers",
+      "couples",
+      "families",
+      "nature lovers"
+    ],
+    "getting_around": "Take a taxi or shuttle from the airport to your accommodation and use local tour operators for activities",
+    "tips": [
+      "Book activities in advance to avoid peak season crowds",
+      "Bring a waterproof camera to capture the falls' mist"
+    ]
+  },
+  "Cairo & the Pyramids": {
+    "tagline": "Ancient Wonders Meet Urban Chaos",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Pyramids of Giza",
+      "Egyptian Museum",
+      "Islamic Cairo",
+      "Nile River Cruises"
+    ],
+    "must_visit": [
+      {
+        "name": "The Great Pyramid of Giza",
+        "desc": "Explore the last ancient wonder"
+      },
+      {
+        "name": "The Egyptian Museum",
+        "desc": "Discover the world's largest collection of ancient Egyptian artifacts"
+      },
+      {
+        "name": "Khan el-Khalili Market",
+        "desc": "Experience the vibrant atmosphere of this ancient bazaar"
+      },
+      {
+        "name": "Mosque of Muhammad Ali Pasha",
+        "desc": "Admire the stunning architecture of this Ottoman mosque"
+      },
+      {
+        "name": "Saqqara Necropolis",
+        "desc": "Visit the ancient burial ground with step pyramids"
+      }
+    ],
+    "covers": [
+      "Giza",
+      "Downtown Cairo",
+      "Islamic Cairo",
+      "Alexandria"
+    ],
+    "food": [
+      "Koshari",
+      "Falafel",
+      "Shawarma",
+      "Umm Ali"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "adventurers",
+      "backpackers"
+    ],
+    "getting_around": "Use taxis, ride-hailing apps, or metro lines to navigate the city",
+    "tips": [
+      "Haggle at markets to get the best prices",
+      "Respect local customs and dress modestly when visiting mosques or churches"
+    ]
+  },
+  "Chefchaouen": {
+    "tagline": "Dreamy Blue Mountain Town",
+    "ideal_days_min": 3,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Vibrant blue alleys",
+      "Stunning mountain views",
+      "Rich cultural heritage",
+      "Photographer's paradise"
+    ],
+    "must_visit": [
+      {
+        "name": "Kasbah",
+        "desc": "Explore the historic fortress and gardens"
+      },
+      {
+        "name": "Ras el-Maa Waterfall",
+        "desc": "Hike to the picturesque waterfall"
+      },
+      {
+        "name": "Medina",
+        "desc": "Wander through the narrow blue streets"
+      },
+      {
+        "name": "Spanish Mosque",
+        "desc": "Visit the ruins with breathtaking views"
+      },
+      {
+        "name": "Talassemtane National Park",
+        "desc": "Discover the diverse wildlife and flora"
+      }
+    ],
+    "covers": [
+      "Tangier",
+      "Tetouan",
+      "Fez"
+    ],
+    "food": [
+      "Tagine",
+      "Harira",
+      "B'stilla",
+      "Msemen"
+    ],
+    "best_for": [
+      "couples",
+      "solo",
+      "backpackers",
+      "photographers"
+    ],
+    "getting_around": "Walk or take taxis to navigate the town and surrounding areas",
+    "tips": [
+      "Learn some basic Arabic phrases to interact with locals",
+      "Bargain when shopping at traditional markets"
+    ]
+  },
+  "Seychelles": {
+    "tagline": "Granite boulders meet turquoise seas",
+    "ideal_days_min": 7,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Stunning beaches with granite formations",
+      "Rare palm forests and unique wildlife",
+      "World-class diving and snorkeling spots",
+      "Luxurious resorts and villas"
+    ],
+    "must_visit": [
+      {
+        "name": "Anse Source d'Argent",
+        "desc": "Famous beach with towering granite boulders"
+      },
+      {
+        "name": "Vallée de Mai",
+        "desc": "Nature reserve with rare palm species"
+      },
+      {
+        "name": "Cousin Island",
+        "desc": "Uninhabited island with diverse birdlife"
+      },
+      {
+        "name": "Sainte Anne Marine National Park",
+        "desc": "Protected area for snorkeling and diving"
+      },
+      {
+        "name": "Mahé Island",
+        "desc": "Largest island with vibrant markets and culture"
+      }
+    ],
+    "covers": [
+      "Praslin Island",
+      "La Digue Island",
+      "Mahé Island",
+      "Silhouette Island"
+    ],
+    "food": [
+      "Fresh seafood",
+      "Coconut curry",
+      "Poulet au coco",
+      "Ladob breadfruit"
+    ],
+    "best_for": [
+      "couples",
+      "luxury",
+      "honeymoon",
+      "adventurers"
+    ],
+    "getting_around": "Rent a car or take a taxi to explore the islands, with ferry services connecting the main islands",
+    "tips": [
+      "Book accommodations and diving trips in advance to avoid peak season crowds",
+      "Respect the unique environment and wildlife by following local conservation guidelines"
+    ]
+  },
+  "Mauritius": {
+    "tagline": "Tropical paradise with crystal lagoons",
+    "ideal_days_min": 7,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Turquoise lagoon waters",
+      "Sugar cane hills and fields",
+      "Luxury resorts and spas",
+      "Vibrant local culture"
+    ],
+    "must_visit": [
+      {
+        "name": "Grand Baie",
+        "desc": "Popular beach town with water sports"
+      },
+      {
+        "name": "Ile aux Cerfs",
+        "desc": "Island with beautiful beaches and golf course"
+      },
+      {
+        "name": "Chamarel Waterfall",
+        "desc": "Scenic waterfall and hiking spot"
+      },
+      {
+        "name": "Pamplemousses Botanical Garden",
+        "desc": "Historic garden with diverse flora"
+      },
+      {
+        "name": "Rhumerie de Chamarel",
+        "desc": "Rum distillery with tastings and tours"
+      }
+    ],
+    "covers": [
+      "Port Louis",
+      "Flic-en-Flac",
+      "Mahebourg",
+      "Trou aux Biches"
+    ],
+    "food": [
+      "Seafood curries",
+      "Dholl puri",
+      "Vindaye",
+      "Coconut water and fresh fruits"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "luxury",
+      "honeymoon"
+    ],
+    "getting_around": "Rent a car or use taxis and buses to explore the island",
+    "tips": [
+      "Book water sports and activities in advance",
+      "Try local rum and Mauritian cuisine"
+    ]
+  },
+  "New York City": {
+    "tagline": "City That Never Sleeps",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Iconic Skyscrapers",
+      "World-Class Museums",
+      "Vibrant Nightlife",
+      "Diverse Food Scene"
+    ],
+    "must_visit": [
+      {
+        "name": "Statue of Liberty",
+        "desc": "Take a ferry to Liberty Island"
+      },
+      {
+        "name": "Central Park",
+        "desc": "Escape the city in this green oasis"
+      },
+      {
+        "name": "Metropolitan Museum of Art",
+        "desc": "Explore over 2 million works of art"
+      },
+      {
+        "name": "Broadway",
+        "desc": "Catch a performance of a hit musical"
+      },
+      {
+        "name": "Times Square",
+        "desc": "Experience the bright lights and energy"
+      }
+    ],
+    "covers": [
+      "Brooklyn",
+      "Queens",
+      "New Jersey"
+    ],
+    "food": [
+      "New York-Style Pizza",
+      "Bagels with Lox",
+      "Black and White Cookies",
+      "Katz's Delicatessen Pastrami Sandwich"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "luxury"
+    ],
+    "getting_around": "Use the comprehensive subway system or hail a yellow taxi to get around the city",
+    "tips": [
+      "Buy a MetroCard for easy subway travel",
+      "Book Broadway show tickets in advance to avoid sold-out performances"
+    ]
+  },
+  "San Francisco": {
+    "tagline": "Foggy city by the bay",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Iconic Golden Gate Bridge",
+      "Steep hills and cable cars",
+      "Vibrant cultural neighbourhoods",
+      "Stunning bay views"
+    ],
+    "must_visit": [
+      {
+        "name": "Alcatraz Island",
+        "desc": "Explore the former prison turned national park"
+      },
+      {
+        "name": "Fisherman's Wharf",
+        "desc": "Sample seafood and street performers"
+      },
+      {
+        "name": "Golden Gate Park",
+        "desc": "Visit de Young Museum and Japanese Tea Garden"
+      },
+      {
+        "name": "Chinatown",
+        "desc": "Discover colourful streets and authentic eateries"
+      },
+      {
+        "name": "Pier 39",
+        "desc": "Watch sea lions and enjoy waterfront views"
+      }
+    ],
+    "covers": [
+      "Sausalito",
+      "Berkeley",
+      "Oakland",
+      "Marin Headlands"
+    ],
+    "food": [
+      "Sourdough bread",
+      "Fresh Dungeness crab",
+      "Mission-style burritos",
+      "Cioppino seafood stew"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "luxury"
+    ],
+    "getting_around": "Use public transport like cable cars, buses, and BART to explore the city",
+    "tips": [
+      "Pack layers for chilly foggy mornings and evenings",
+      "Buy a Clipper card for convenient public transport"
+    ]
+  },
+  "Las Vegas": {
+    "tagline": "Vegas Lights Up The Night",
+    "ideal_days_min": 3,
+    "ideal_days_max": 7,
+    "highlights": [
+      "World-class casinos",
+      "Vibrant nightlife scene",
+      "Unforgettable shows",
+      "Desert landscapes nearby"
+    ],
+    "must_visit": [
+      {
+        "name": "The Strip",
+        "desc": "Experience the iconic Las Vegas Boulevard"
+      },
+      {
+        "name": "Grand Canyon",
+        "desc": "Explore one of the world's most famous natural wonders"
+      },
+      {
+        "name": "Fountains of Bellagio",
+        "desc": "Watch the spectacular water show"
+      },
+      {
+        "name": "Red Rock Canyon",
+        "desc": "Discover unique red rock formations"
+      },
+      {
+        "name": "Cirque du Soleil",
+        "desc": "Enjoy a mesmerizing theatrical performance"
+      }
+    ],
+    "covers": [
+      "Henderson",
+      "Boulder City",
+      "Hoover Dam",
+      "Valley of Fire State Park"
+    ],
+    "food": [
+      "Buffets",
+      "Shake Shack",
+      "Gordon Ramsay Hell's Kitchen",
+      "Evel Pie pizza"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "friends",
+      "adventurers"
+    ],
+    "getting_around": "Use the Las Vegas Monorail or ride-sharing services to navigate the city",
+    "tips": [
+      "Book shows and restaurants in advance to avoid long wait times",
+      "Stay hydrated in the desert climate"
+    ]
+  },
+  "Grand Canyon & Utah Parks": {
+    "tagline": "Explore mile-deep canyons and red-rock wonders",
+    "ideal_days_min": 7,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Breathtaking canyon vistas",
+      "Hike among red-rock formations",
+      "Scenic drives through desert landscapes",
+      "Stargaze in dark skies"
+    ],
+    "must_visit": [
+      {
+        "name": "Grand Canyon National Park",
+        "desc": "Hike the Bright Angel Trail"
+      },
+      {
+        "name": "Zion National Park",
+        "desc": "Hike the Narrows"
+      },
+      {
+        "name": "Bryce Canyon National Park",
+        "desc": "Watch sunrise at the amphitheater"
+      },
+      {
+        "name": "Monument Valley",
+        "desc": "Take a guided Navajo tour"
+      },
+      {
+        "name": "Arches National Park",
+        "desc": "Explore Devils Garden"
+      }
+    ],
+    "covers": [
+      "Las Vegas",
+      "Moab",
+      "Page",
+      "Flagstaff"
+    ],
+    "food": [
+      "Southwestern BBQ",
+      "Navajo fry bread",
+      "Utah scones",
+      "Cactus fruit smoothies"
+    ],
+    "best_for": [
+      "families",
+      "adventurers",
+      "couples",
+      "friends"
+    ],
+    "getting_around": "Rent a car and drive the scenic byways to explore the parks and surrounding areas",
+    "tips": [
+      "Bring plenty of water and sunscreen",
+      "Book park accommodations and tours in advance"
+    ]
+  },
+  "Hawaii (Maui)": {
+    "tagline": "Tropical paradise with volcanic sunrises",
+    "ideal_days_min": 7,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Volcanic landscapes",
+      "Turquoise snorkel coves",
+      "Waterfall drives",
+      "Luxury resorts"
+    ],
+    "must_visit": [
+      {
+        "name": "Haleakala National Park",
+        "desc": "Watch the sunrise from a volcanic summit"
+      },
+      {
+        "name": "Road to Hana",
+        "desc": "Drive along a scenic coastline with waterfalls"
+      },
+      {
+        "name": "Molokini Crater",
+        "desc": "Snorkel in a crystal-clear marine sanctuary"
+      },
+      {
+        "name": "Ka'anapali Beach",
+        "desc": "Relax on a white sand beach with luxury resorts"
+      },
+      {
+        "name": "Lahaina",
+        "desc": "Explore a historic town with Hawaiian culture"
+      }
+    ],
+    "covers": [
+      "Lahaina",
+      "Kihei",
+      "Paia",
+      "Kapalua"
+    ],
+    "food": [
+      "Poke bowls",
+      "Kalua pig",
+      "Haupia coconut milk dessert",
+      "Fresh pineapple"
+    ],
+    "best_for": [
+      "couples",
+      "luxury",
+      "adventurers",
+      "honeymoon",
+      "families"
+    ],
+    "getting_around": "Rent a car to explore the island's scenic drives and beaches",
+    "tips": [
+      "Book sunrise viewing at Haleakala National Park in advance",
+      "Check the road conditions before driving the Road to Hana"
+    ]
+  },
+  "Miami": {
+    "tagline": "Vibrant Beachfront City",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Art Deco District",
+      "Turquoise Atlantic Beaches",
+      "Latin Rhythm Nights",
+      "Luxury Shopping"
+    ],
+    "must_visit": [
+      {
+        "name": "South Beach",
+        "desc": "Enjoy white sand and clear waters."
+      },
+      {
+        "name": "Wynwood Walls",
+        "desc": "Explore vibrant street art and murals."
+      },
+      {
+        "name": "Little Havana",
+        "desc": "Experience Cuban culture and cuisine."
+      },
+      {
+        "name": "Miami Beach Boardwalk",
+        "desc": "Stroll along the oceanfront promenade."
+      },
+      {
+        "name": "Design District",
+        "desc": "Discover luxury fashion and art galleries."
+      }
+    ],
+    "covers": [
+      "Fort Lauderdale",
+      "Key Biscayne",
+      "Coconut Grove"
+    ],
+    "food": [
+      "Cuban Sandwich",
+      "Fresh Seafood",
+      "Stone Crab Claws",
+      "Empanadas"
+    ],
+    "best_for": [
+      "couples",
+      "luxury",
+      "friends",
+      "solo"
+    ],
+    "getting_around": "Use public buses, taxis, or ride-sharing services to navigate the city.",
+    "tips": [
+      "Book beach umbrellas and chairs in advance.",
+      "Visit during winter months for optimal weather."
+    ]
+  },
+  "New Orleans": {
+    "tagline": "Jazz fills the vibrant streets",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Rich musical heritage",
+      "Vibrant Mardi Gras celebrations",
+      "Delicious Creole cuisine",
+      "Historic French Quarter"
+    ],
+    "must_visit": [
+      {
+        "name": "Bourbon Street",
+        "desc": "Experience the city's nightlife"
+      },
+      {
+        "name": "French Quarter",
+        "desc": "Explore historic architecture"
+      },
+      {
+        "name": "National WWII Museum",
+        "desc": "Learn about American history"
+      },
+      {
+        "name": "Preservation Hall",
+        "desc": "Enjoy intimate jazz performances"
+      },
+      {
+        "name": "Cafe du Monde",
+        "desc": "Savor beignets and coffee"
+      }
+    ],
+    "covers": [
+      "Garden District",
+      "Metairie",
+      "Lake Pontchartrain"
+    ],
+    "food": [
+      "Gumbo",
+      "Jambalaya",
+      "Beignets",
+      "Po' Boys"
+    ],
+    "best_for": [
+      "couples",
+      "friends",
+      "solo",
+      "adventurers"
+    ],
+    "getting_around": "Use the famous St. Charles Avenue streetcar or walk through the historic neighborhoods",
+    "tips": [
+      "Book accommodations well in advance for Mardi Gras",
+      "Try to visit during the week to avoid crowds"
+    ]
+  },
+  "Banff & the Rockies": {
+    "tagline": "Turquoise lakes beneath soaring mountains",
+    "ideal_days_min": 5,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Glacier-fed lakes",
+      "Soaring mountain peaks",
+      "Abundant wildlife",
+      "Scenic hiking trails"
+    ],
+    "must_visit": [
+      {
+        "name": "Lake Louise",
+        "desc": "Hike to the lake's turquoise shores"
+      },
+      {
+        "name": "Moraine Lake",
+        "desc": "Kayak on its vibrant blue waters"
+      },
+      {
+        "name": "Johnston Canyon",
+        "desc": "Explore its lower and upper falls"
+      },
+      {
+        "name": "Banff National Park",
+        "desc": "Discover its glaciers and mountains"
+      },
+      {
+        "name": "Icefields Parkway",
+        "desc": "Drive this scenic mountain road"
+      }
+    ],
+    "covers": [
+      "Canmore",
+      "Jasper",
+      "Kootenay National Park"
+    ],
+    "food": [
+      "Alberta beef",
+      "Smoked trout",
+      "Bannock bread",
+      "Maple syrup pancakes"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "adventurers",
+      "nature lovers"
+    ],
+    "getting_around": "Rent a car to explore the scenic Icefields Parkway and surrounding national parks",
+    "tips": [
+      "Book accommodations and popular hikes in advance",
+      "Bring bear spray and know how to use it"
+    ]
+  },
+  "Vancouver": {
+    "tagline": "Mountain meets ocean in vibrant city",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Surrounded by rainforests",
+      "Skiing and snowboarding",
+      "Waterfront dining",
+      "Diverse cultural scene"
+    ],
+    "must_visit": [
+      {
+        "name": "Stanley Park",
+        "desc": "Explore 400 hectares of forest and coastline"
+      },
+      {
+        "name": "Grouse Mountain",
+        "desc": "Take a scenic skyride for panoramic views"
+      },
+      {
+        "name": "Capilano Suspension Bridge",
+        "desc": "Walk among the treetops in a lush forest"
+      },
+      {
+        "name": "Granville Island",
+        "desc": "Sample local food and shop for crafts"
+      },
+      {
+        "name": "Whistler Blackcomb",
+        "desc": "Ski or hike in a world-class resort"
+      }
+    ],
+    "covers": [
+      "Whistler",
+      "Squamish",
+      "Richmond",
+      "North Vancouver"
+    ],
+    "food": [
+      "Seafood at Granville Island",
+      "Food trucks in downtown Vancouver",
+      "Dim sum in Chinatown",
+      "Craft beer in Gastown"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends"
+    ],
+    "getting_around": "Use public transit, walk, or bike to explore the city and surrounding areas",
+    "tips": [
+      "Pack layers for changing mountain weather",
+      "Book popular attractions in advance to avoid crowds"
+    ]
+  },
+  "Quebec City": {
+    "tagline": "Historic charm under snow",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Walled city with cobblestone streets",
+      "Rich French-Canadian history",
+      "Magical winter wonderland",
+      "Vibrant cultural festivals"
+    ],
+    "must_visit": [
+      {
+        "name": "Old Quebec",
+        "desc": "Explore historic architecture and fortifications"
+      },
+      {
+        "name": "Chateau Frontenac",
+        "desc": "Admire the iconic hotel's grandeur"
+      },
+      {
+        "name": "Montmorency Falls",
+        "desc": "Marvel at the breathtaking waterfall"
+      },
+      {
+        "name": "Rue du Petit-Champlain",
+        "desc": "Discover unique boutiques and cafes"
+      },
+      {
+        "name": "Quebec Winter Festival",
+        "desc": "Experience the city's festive atmosphere"
+      }
+    ],
+    "covers": [
+      "Montreal",
+      "Trois-Rivieres",
+      "Charlevoix",
+      "Levis"
+    ],
+    "food": [
+      "Poutine",
+      "Sugar pie",
+      "Tourtiere",
+      "Peameal bacon sandwiches"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends"
+    ],
+    "getting_around": "Walk or take the funicular to explore the historic district and surrounding areas",
+    "tips": [
+      "Book accommodations in Old Quebec for an immersive experience",
+      "Pack warm clothing for winter visits, including a hat and gloves"
+    ]
+  },
+  "Mexico City": {
+    "tagline": "Vibrant Aztec heritage meets modern flair",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Ancient Aztec ruins",
+      "Vibrant street art scene",
+      "World-class cuisine",
+      "Rich cultural heritage"
+    ],
+    "must_visit": [
+      {
+        "name": "Palacio de Bellas Artes",
+        "desc": "Admire stunning art nouveau architecture"
+      },
+      {
+        "name": "Templo Mayor",
+        "desc": "Explore the ancient Aztec temple"
+      },
+      {
+        "name": "Frida Kahlo Museum",
+        "desc": "Discover the life and art of Frida Kahlo"
+      },
+      {
+        "name": "Xochimilco Floating Gardens",
+        "desc": "Float through canals on traditional boats"
+      },
+      {
+        "name": "Chapultepec Park",
+        "desc": "Stroll through one of the largest urban parks in the world"
+      }
+    ],
+    "covers": [
+      "Coyoacan",
+      "Xochimilco",
+      "Polanco",
+      "Roma"
+    ],
+    "food": [
+      "Tacos al pastor",
+      "Mole poblano",
+      "Chiles rellenos",
+      "Churros con cajeta"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "backpackers"
+    ],
+    "getting_around": "Use the efficient metro system or hail a taxi on the street",
+    "tips": [
+      "Learn some basic Spanish to enhance your experience",
+      "Be prepared for crowds and lines at popular attractions"
+    ]
+  },
+  "Cancun & Riviera Maya": {
+    "tagline": "Turquoise waves meet ancient Maya secrets",
+    "ideal_days_min": 5,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Pristine Caribbean beaches",
+      "Swimming in crystal cenotes",
+      "Exploring ancient Maya ruins",
+      "Vibrant nightlife and dining"
+    ],
+    "must_visit": [
+      {
+        "name": "Chichen Itza",
+        "desc": "Explore the ancient Maya pyramid complex"
+      },
+      {
+        "name": "Tulum National Park",
+        "desc": "Visit the cliffside Maya ruins overlooking the sea"
+      },
+      {
+        "name": "Xel-Ha Park",
+        "desc": "Snorkel in a natural aquarium filled with tropical fish"
+      },
+      {
+        "name": "Coba Ruins",
+        "desc": "Discover the ancient Maya city deep in the jungle"
+      },
+      {
+        "name": "Playa del Carmen",
+        "desc": "Stroll along the famous Fifth Avenue for shopping and dining"
+      }
+    ],
+    "covers": [
+      "Playa del Carmen",
+      "Tulum",
+      "Cozumel Island",
+      "Isla Mujeres"
+    ],
+    "food": [
+      "Tacos al pastor",
+      "Fresh ceviche",
+      "Cochinita pibil",
+      "Churros con cajeta"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "friends",
+      "adventurers"
+    ],
+    "getting_around": "Use taxis, colectivos, or rent a car to explore the region",
+    "tips": [
+      "Book tours and activities in advance to avoid crowds",
+      "Don't forget to try local Mexican cuisine and drinks like mezcal and horchata"
+    ]
+  },
+  "Oaxaca": {
+    "tagline": "Vibrant colonial town rich in history",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Rich indigenous culture",
+      "Vibrant colonial architecture",
+      "Delicious mole and mezcal",
+      "Vivid Day of the Dead celebrations"
+    ],
+    "must_visit": [
+      {
+        "name": "Monte Albán",
+        "desc": "Explore ancient Zapotec ruins"
+      },
+      {
+        "name": "Tule Tree",
+        "desc": "Marvel at a 2,000-year-old cypress tree"
+      },
+      {
+        "name": "Oaxaca Cathedral",
+        "desc": "Admire stunning colonial architecture"
+      },
+      {
+        "name": "Mercado de Abastos",
+        "desc": "Discover local handicrafts and cuisine"
+      },
+      {
+        "name": "Hierve el Agua",
+        "desc": "Relax in natural mineral water springs"
+      }
+    ],
+    "covers": [
+      "Puerto Escondido",
+      "San Bartolo Coyotepec",
+      "Teotitlán del Valle",
+      "Mitla"
+    ],
+    "food": [
+      "Mole negro",
+      "Tlayudas",
+      "Tasajo",
+      "Memelas"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "backpackers"
+    ],
+    "getting_around": "Walk or take a colectivo to explore the city and surrounding towns",
+    "tips": [
+      "Learn some basic Spanish to interact with locals",
+      "Try to visit during the Day of the Dead celebrations for a unique experience"
+    ]
+  },
+  "Havana": {
+    "tagline": "Vintage charm in a tropical paradise",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Classic American cars",
+      "Salsa music and dance",
+      "Colonial architecture",
+      "Beautiful Caribbean beaches"
+    ],
+    "must_visit": [
+      {
+        "name": "Old Havana",
+        "desc": "Explore historic plazas and landmarks"
+      },
+      {
+        "name": "El Malecon",
+        "desc": "Stroll along the seaside promenade"
+      },
+      {
+        "name": "Museo de la Revolucion",
+        "desc": "Learn about Cuba's history"
+      },
+      {
+        "name": "Tropicana Nightclub",
+        "desc": "Experience a classic cabaret show"
+      },
+      {
+        "name": "Varadero Beach",
+        "desc": "Relax on a stunning white-sand beach"
+      }
+    ],
+    "covers": [
+      "Miramar",
+      "Vedado",
+      "Cojimar",
+      "Santa Maria del Mar"
+    ],
+    "food": [
+      "Ropa vieja",
+      "Arroz con pollo",
+      "Lechon asado",
+      "Cuban sandwiches"
+    ],
+    "best_for": [
+      "couples",
+      "solo",
+      "friends",
+      "culture lovers"
+    ],
+    "getting_around": "Use vintage taxis or hop-on hop-off buses to navigate the city",
+    "tips": [
+      "Learn some basic Spanish to interact with locals",
+      "Bring cash, as credit cards are not widely accepted"
+    ]
+  },
+  "Costa Rica (Arenal & Manuel Antonio)": {
+    "tagline": "Tropical adventures await",
+    "ideal_days_min": 7,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Volcano hot springs relaxation",
+      "Cloud forest hiking trails",
+      "Zip-line jungle thrills",
+      "Exotic wildlife spotting"
+    ],
+    "must_visit": [
+      {
+        "name": "Arenal Volcano",
+        "desc": "Hike around the base of this active volcano"
+      },
+      {
+        "name": "Manuel Antonio National Park",
+        "desc": "Explore beaches and rainforests"
+      },
+      {
+        "name": "Monteverde Cloud Forest",
+        "desc": "Walk suspension bridges amidst cloud cover"
+      },
+      {
+        "name": "Tortuguero Canals",
+        "desc": "Spot monkeys and sloths on a boat tour"
+      },
+      {
+        "name": "La Fortuna Waterfall",
+        "desc": "Swim in the natural pool at the base"
+      }
+    ],
+    "covers": [
+      "San Jose",
+      "Tamarindo",
+      "Puerto Viejo",
+      "Limon"
+    ],
+    "food": [
+      "Gallo pinto",
+      "Casados",
+      "Ceviche",
+      "Empanadas"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "adventurers",
+      "nature lovers"
+    ],
+    "getting_around": "Rent a 4x4 vehicle or use shuttle services between towns",
+    "tips": [
+      "Book accommodations with volcano views",
+      "Pack layers for changing cloud forest weather"
+    ]
+  },
+  "Rio de Janeiro": {
+    "tagline": "Samba rhythms meet tropical bliss",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Iconic Christ the Redeemer statue",
+      "Vibrant Copacabana and Ipanema beaches",
+      "Lush Tijuca Forest hikes",
+      "Electric Carnival celebrations"
+    ],
+    "must_visit": [
+      {
+        "name": "Sugarloaf Mountain",
+        "desc": "Ride a cable car for breathtaking views"
+      },
+      {
+        "name": "Christ the Redeemer",
+        "desc": "Marvel at the iconic Art Deco statue"
+      },
+      {
+        "name": "Copacabana Beach",
+        "desc": "Soak up the sun on this famous stretch"
+      },
+      {
+        "name": "Tijuca Forest",
+        "desc": "Hike through the lush Atlantic rainforest"
+      },
+      {
+        "name": "Lapa Neighborhood",
+        "desc": "Experience the city's vibrant nightlife"
+      }
+    ],
+    "covers": [
+      "Santa Teresa",
+      "Barra da Tijuca",
+      "Niteroi",
+      "Buzios"
+    ],
+    "food": [
+      "Feijoada",
+      "Churrasco",
+      "Açaí bowls",
+      "Pão de queijo"
+    ],
+    "best_for": [
+      "couples",
+      "friends",
+      "solo",
+      "adventurers"
+    ],
+    "getting_around": "Use the efficient metro system or hop on a bus to explore the city",
+    "tips": [
+      "Learn some basic Portuguese phrases to interact with locals",
+      "Be mindful of your belongings in crowded areas and at night"
+    ]
+  },
+  "Machu Picchu & Cusco": {
+    "tagline": "Cloud-wrapped Inca citadel above the Andes",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Inca ruins and trails",
+      "Sacred Valley scenery",
+      "Rich cultural heritage",
+      "Breathtaking mountain vistas"
+    ],
+    "must_visit": [
+      {
+        "name": "Machu Picchu",
+        "desc": "Explore the ancient Inca citadel"
+      },
+      {
+        "name": "Cusco City",
+        "desc": "Discover the historic Inca capital"
+      },
+      {
+        "name": "Sacsayhuaman",
+        "desc": "Visit the impressive Inca fortress"
+      },
+      {
+        "name": "Aguas Calientes",
+        "desc": "Relax in the hot springs town"
+      },
+      {
+        "name": "Sun Gate",
+        "desc": "Watch the sunrise over Machu Picchu"
+      }
+    ],
+    "covers": [
+      "Urubamba Valley",
+      "Ollantaytambo",
+      "Pisac",
+      "Limatambo"
+    ],
+    "food": [
+      "Ceviche",
+      "Lomo Saltado",
+      "Cuy",
+      "Papa a la Huancaina"
+    ],
+    "best_for": [
+      "couples",
+      "adventurers",
+      "families",
+      "solo",
+      "culture lovers"
+    ],
+    "getting_around": "Use buses, trains, or hike the Inca Trail to reach Machu Picchu",
+    "tips": [
+      "Acclimatize to high altitude in Cusco before hiking",
+      "Book Inca Trail permits and tours in advance"
+    ]
+  },
+  "Buenos Aires": {
+    "tagline": "Sultry tango nights in Paris of South America",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Rich European architecture",
+      "Vibrant tango scene",
+      "Juicy asados and wine",
+      "Lively street performances"
+    ],
+    "must_visit": [
+      {
+        "name": "Teatro Colón",
+        "desc": "Attend a performance at this iconic opera house"
+      },
+      {
+        "name": "Recoleta Cemetery",
+        "desc": "Explore the grand mausoleums of Argentina's elite"
+      },
+      {
+        "name": "Caminito Street",
+        "desc": "Admire colorful street art in La Boca"
+      },
+      {
+        "name": "San Telmo Market",
+        "desc": "Browse antiques and vintage goods"
+      },
+      {
+        "name": "Plaza de Mayo",
+        "desc": "Visit the historic heart of Buenos Aires"
+      }
+    ],
+    "covers": [
+      "La Boca",
+      "Recoleta",
+      "Palermo",
+      "San Telmo"
+    ],
+    "food": [
+      "Asado",
+      "Choripán",
+      "Empanadas",
+      "Dulce de leche"
+    ],
+    "best_for": [
+      "couples",
+      "solo",
+      "friends",
+      "backpackers"
+    ],
+    "getting_around": "Use the efficient metro system or hail a taxi on the street",
+    "tips": [
+      "Learn some basic Spanish to enhance your experience",
+      "Be prepared for variable weather and potential summer heat"
+    ]
+  },
+  "Patagonia (Torres del Paine)": {
+    "tagline": "Trek the End of the World",
+    "ideal_days_min": 7,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Granite spires and peaks",
+      "Glaciers and frozen lakes",
+      "Wildlife and guanacos",
+      "Unspoiled nature reserves"
+    ],
+    "must_visit": [
+      {
+        "name": "Torres del Paine National Park",
+        "desc": "Hike to the base of the iconic towers"
+      },
+      {
+        "name": "Los Cuernos",
+        "desc": "Trek through the scenic valley"
+      },
+      {
+        "name": "Grey Glacier",
+        "desc": "Take a boat tour or kayak on the glacier lake"
+      },
+      {
+        "name": "Valle Frances",
+        "desc": "Hike through the beautiful valley surrounded by mountains"
+      },
+      {
+        "name": "Puerto Natales",
+        "desc": "Relax in this charming coastal town"
+      }
+    ],
+    "covers": [
+      "El Chalten",
+      "El Calafate",
+      "Puerto Natales",
+      "Punta Arenas"
+    ],
+    "food": [
+      "Chilean asado",
+      "Fresh seafood",
+      "King crab",
+      "Pastel de choclo"
+    ],
+    "best_for": [
+      "adventurers",
+      "hikers",
+      "nature lovers",
+      "couples",
+      "solo"
+    ],
+    "getting_around": "Rent a car or take shuttle buses to get around the park and nearby towns",
+    "tips": [
+      "Book accommodations and tours in advance due to limited availability",
+      "Pack layers and waterproof gear for unpredictable Patagonian weather"
+    ]
+  },
+  "Cartagena": {
+    "tagline": "Vibrant Caribbean coastal city charm",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Colorful colonial architecture",
+      "Lively salsa nightlife",
+      "Rich pirate history",
+      "Tropical Caribbean beaches"
+    ],
+    "must_visit": [
+      {
+        "name": "Old Town",
+        "desc": "Explore historic walled city"
+      },
+      {
+        "name": "Castillo San Felipe de Barajas",
+        "desc": "Discover 17th century fortress"
+      },
+      {
+        "name": "Plaza Bolivar",
+        "desc": "Admire stunning colonial square"
+      },
+      {
+        "name": "Rosario Islands",
+        "desc": "Relax on pristine beaches"
+      },
+      {
+        "name": "Getsemani neighborhood",
+        "desc": "Experience vibrant street art scene"
+      }
+    ],
+    "covers": [
+      "Bocagrande",
+      "La Boquilla",
+      "Manga",
+      "Island of Baru"
+    ],
+    "food": [
+      "Fresh seafood",
+      "Coconut rice",
+      "Empanadas",
+      "Arepas"
+    ],
+    "best_for": [
+      "couples",
+      "solo",
+      "friends",
+      "adventurers"
+    ],
+    "getting_around": "Walk or take taxis within the walled city and use buses for outer areas",
+    "tips": [
+      "Learn some basic Spanish to interact with locals",
+      "Be prepared for hot and humid weather year-round"
+    ]
+  },
+  "Galapagos Islands": {
+    "tagline": "Wildlife paradise on earth",
+    "ideal_days_min": 7,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Fearless tortoises roam free",
+      "Snorkel with playful sea lions",
+      "Blue-footed booby mating rituals",
+      "Unspoiled volcanic landscapes"
+    ],
+    "must_visit": [
+      {
+        "name": "Giant Tortoise Reserve",
+        "desc": "Get up close with giant tortoises in their natural habitat"
+      },
+      {
+        "name": "Bartolome Island",
+        "desc": "Hike to the summit for breathtaking views of Pinnacle Rock"
+      },
+      {
+        "name": "North Seymour Island",
+        "desc": "Witness blue-footed booby and frigatebird colonies"
+      },
+      {
+        "name": "Santa Cruz Island",
+        "desc": "Explore the island's stunning beaches and cacti forests"
+      },
+      {
+        "name": "Darwin Research Station",
+        "desc": "Learn about conservation efforts and see giant tortoises and iguanas"
+      }
+    ],
+    "covers": [
+      "San Cristobal Island",
+      "Isabela Island",
+      "Fernandina Island",
+      "Santa Fe Island"
+    ],
+    "food": [
+      "Fresh seafood ceviche",
+      "Locally-caught lobster",
+      "Ecuadorian-style grilled fish",
+      "Traditional Galapagos coffee"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "adventurers",
+      "luxury"
+    ],
+    "getting_around": "Take a guided boat tour or rent a bike to explore the islands",
+    "tips": [
+      "Book tours and accommodations in advance to avoid peak season crowds",
+      "Bring sunscreen, a hat, and water to protect against the strong equatorial sun"
+    ]
+  },
+  "Sydney": {
+    "tagline": "Sun-kissed city by the sea",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Iconic Opera House",
+      "Stunning Harbour Bridge",
+      "World-class beaches",
+      "Vibrant cultural scene"
+    ],
+    "must_visit": [
+      {
+        "name": "Sydney Opera House",
+        "desc": "Take a guided tour of the iconic building"
+      },
+      {
+        "name": "Bondi Beach",
+        "desc": "Enjoy the sun, sand and surf at this famous beach"
+      },
+      {
+        "name": "Blue Mountains",
+        "desc": "Explore the scenic trails and views of this national park"
+      },
+      {
+        "name": "Sydney Harbour Bridge",
+        "desc": "Climb the bridge for breathtaking city views"
+      },
+      {
+        "name": "Taronga Zoo",
+        "desc": "Get up close to native Australian wildlife"
+      }
+    ],
+    "covers": [
+      "Manly",
+      "Coogee",
+      "The Rocks",
+      "Parramatta"
+    ],
+    "food": [
+      "Fresh seafood",
+      "Meat pies",
+      "Fish and chips",
+      "Vegemite on toast"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "luxury"
+    ],
+    "getting_around": "Use the efficient public transport system, including buses, trains and ferries to get around the city",
+    "tips": [
+      "Book tickets for popular attractions in advance to avoid queues",
+      "Pack sunscreen and a hat to protect yourself from the strong Australian sun"
+    ]
+  },
+  "Great Barrier Reef (Cairns)": {
+    "tagline": "Vibrant coral and tropical fish paradise",
+    "ideal_days_min": 5,
+    "ideal_days_max": 14,
+    "highlights": [
+      "World's largest coral reef system",
+      "Incredible marine biodiversity",
+      "Snorkel or dive with tropical fish",
+      "Stunning beachside resorts"
+    ],
+    "must_visit": [
+      {
+        "name": "Green Island",
+        "desc": "Coral cay with white sandy beaches"
+      },
+      {
+        "name": "The Great Barrier Reef Marine Park",
+        "desc": "Protected area with diverse marine life"
+      },
+      {
+        "name": "Fitzroy Island",
+        "desc": "Tropical island with coral beaches"
+      },
+      {
+        "name": "Daintree Rainforest",
+        "desc": "Oldest continuously surviving rainforest"
+      },
+      {
+        "name": "Cairns Esplanade",
+        "desc": "Waterfront promenade with shops and restaurants"
+      }
+    ],
+    "covers": [
+      "Palm Cove",
+      "Port Douglas",
+      "Mission Beach",
+      "The Whitsundays"
+    ],
+    "food": [
+      "Seafood platter",
+      "Fish and chips",
+      "Tropical fruit salad",
+      "Australian barbecue"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "adventurers"
+    ],
+    "getting_around": "Take a ferry or join a guided tour to explore the reef and surrounding islands",
+    "tips": [
+      "Book snorkeling or diving tours in advance to avoid peak season crowds",
+      "Choose eco-friendly tour operators to support reef conservation"
+    ]
+  },
+  "Melbourne": {
+    "tagline": "Vibrant culture and coffee capital",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Street art in laneways",
+      "World-class coffee culture",
+      "Foodie paradise",
+      "Cultural events"
+    ],
+    "must_visit": [
+      {
+        "name": "Federation Square",
+        "desc": "Major public events and attractions"
+      },
+      {
+        "name": "Queen Victoria Market",
+        "desc": "Historic marketplace for shopping"
+      },
+      {
+        "name": "St Kilda Beach",
+        "desc": "Iconic seaside suburb with pier"
+      },
+      {
+        "name": "Hosier Lane",
+        "desc": "Street art and graffiti hub"
+      },
+      {
+        "name": "Royal Botanic Gardens",
+        "desc": "Serenity in the city centre"
+      }
+    ],
+    "covers": [
+      "St Kilda",
+      "Docklands",
+      "South Yarra",
+      "Prahran"
+    ],
+    "food": [
+      "Flat whites and avocado toast",
+      "Melbourne-style dim sims",
+      "Fresh seafood at the market",
+      "Traditional Australian meat pies"
+    ],
+    "best_for": [
+      "couples",
+      "solo",
+      "friends",
+      "foodies",
+      "culture lovers"
+    ],
+    "getting_around": "Melbourne has an extensive tram network and bike-share system",
+    "tips": [
+      "Buy a Myki card for easy travel on public transport",
+      "Explore laneways and arcades for hidden gems"
+    ]
+  },
+  "Queenstown": {
+    "tagline": "Adventure capital of the world",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Breathtaking mountain scenery",
+      "World-class skiing and snowboarding",
+      "Thrilling bungee jumping and jet boating",
+      "Lord of the Rings film locations"
+    ],
+    "must_visit": [
+      {
+        "name": "Milford Sound",
+        "desc": "Take a boat cruise through stunning fjords"
+      },
+      {
+        "name": "Skyline Gondola",
+        "desc": "Ride to the top for panoramic views"
+      },
+      {
+        "name": "Lake Wakatipu",
+        "desc": "Enjoy a scenic drive along its shores"
+      },
+      {
+        "name": "Kawarau Bridge",
+        "desc": "The world's first commercial bungee jump site"
+      },
+      {
+        "name": "Glenorchy",
+        "desc": "Explore the picturesque town and its surroundings"
+      }
+    ],
+    "covers": [
+      "Arrowtown",
+      "Wanaka",
+      "Glenorchy"
+    ],
+    "food": [
+      "Lamb shanks",
+      "Fresh seafood",
+      "Central Otago wines",
+      "Hokey Pokey ice cream"
+    ],
+    "best_for": [
+      "adventurers",
+      "couples",
+      "families",
+      "friends"
+    ],
+    "getting_around": "Use public buses, shuttles, or rent a car to explore the area",
+    "tips": [
+      "Book adventure activities in advance to avoid peak season queues",
+      "Check the weather forecast before heading out to the mountains"
+    ]
+  },
+  "Fiji": {
+    "tagline": "Tropical paradise with warm Fijian smiles",
+    "ideal_days_min": 7,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Soft coral diving",
+      "Luxury island resorts",
+      "Warm Fijian hospitality",
+      "Pristine beaches"
+    ],
+    "must_visit": [
+      {
+        "name": "Mamanuca Islands",
+        "desc": "Crystal-clear waters and coral reefs"
+      },
+      {
+        "name": "Yasawa Islands",
+        "desc": "Secluded beaches and scenic hiking trails"
+      },
+      {
+        "name": "Monuriki Island",
+        "desc": "Film location of Cast Away"
+      },
+      {
+        "name": "Suva",
+        "desc": "Fiji's vibrant capital city"
+      },
+      {
+        "name": "Navala Village",
+        "desc": "Traditional Fijian village with thatched roof bures"
+      }
+    ],
+    "covers": [
+      "Nadi",
+      "Denarau Island",
+      "Coral Coast",
+      "Pacific Harbour"
+    ],
+    "food": [
+      "Kokoda",
+      "Lovo",
+      "Palusami",
+      "Fresh seafood"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "luxury",
+      "honeymoon",
+      "diving"
+    ],
+    "getting_around": "Ferry services and private boat transfers connect the islands, while taxis and rental cars are available on the main islands",
+    "tips": [
+      "Learn a few basic Fijian phrases to enhance your experience",
+      "Respect local customs and traditions, especially when visiting villages"
+    ]
+  },
+  "Bora Bora": {
+    "tagline": "Island paradise with turquoise lagoon",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Overwater bungalows with glass floors",
+      "Snorkeling with sharks and rays",
+      "Volcanic peak hiking trails",
+      "Luxurious beachside resorts"
+    ],
+    "must_visit": [
+      {
+        "name": "Matira Beach",
+        "desc": "Public beach with white sand and calm waters"
+      },
+      {
+        "name": "InterContinental Resort Bora Bora",
+        "desc": "Luxury resort with overwater villas"
+      },
+      {
+        "name": "Bora Bora Lagoon",
+        "desc": "Crystal-clear lagoon for snorkeling and diving"
+      },
+      {
+        "name": "Mount Pahia",
+        "desc": "Volcanic peak with stunning island views"
+      },
+      {
+        "name": "The St. Regis Bora Bora Resort",
+        "desc": "5-star resort with butler service"
+      }
+    ],
+    "covers": [
+      "Tahaa",
+      "Raiatea",
+      "Moorea"
+    ],
+    "food": [
+      "Po'e (Tahitian doughnuts)",
+      "Poisson cru (raw fish in coconut milk)",
+      "Ahima'a (Tahitian-style BBQ)",
+      "Fresh seafood at beachside restaurants"
+    ],
+    "best_for": [
+      "couples",
+      "luxury",
+      "honeymoon",
+      "adventurers"
+    ],
+    "getting_around": "Get around by boat or rent a scooter to explore the island",
+    "tips": [
+      "Book overwater bungalows well in advance",
+      "Take a 4x4 safari tour to explore the island's interior"
+    ]
+  },
+  "Auckland & Bay of Islands": {
+    "tagline": "Sail into turquoise bays and volcanic islands",
+    "ideal_days_min": 7,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Sailing in Auckland Harbour",
+      "Subtropical Bay of Islands",
+      "Volcanic Rangitoto Island",
+      "Black sand beaches"
+    ],
+    "must_visit": [
+      {
+        "name": "Waiheke Island",
+        "desc": "Sample wine at a local vineyard"
+      },
+      {
+        "name": "Paihia",
+        "desc": "Gateway to the Bay of Islands"
+      },
+      {
+        "name": "Sky Tower",
+        "desc": "Panoramic views of Auckland"
+      },
+      {
+        "name": "Urupukapuka Island",
+        "desc": "Explore ancient Maori sites"
+      },
+      {
+        "name": "Kerikeri",
+        "desc": "Visit a historic mission station"
+      }
+    ],
+    "covers": [
+      "Auckland City",
+      "Paihia",
+      "Whangarei",
+      "Warkworth"
+    ],
+    "food": [
+      "Fresh seafood",
+      "Maori hangi feast",
+      "Waiheke Island wine",
+      "Kumara sweet potato"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "adventurers"
+    ],
+    "getting_around": "Use ferries, buses, and rental cars to explore the region",
+    "tips": [
+      "Book sailing tours in advance",
+      "Pack layers for changing weather"
+    ]
+  },
+  "Osaka": {
+    "tagline": "Savor Japan's Culinary Heart",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Vibrant street food scene",
+      "Neon-lit canals at night",
+      "Historic Osaka Castle",
+      "Diverse entertainment districts"
+    ],
+    "must_visit": [
+      {
+        "name": "Osaka Castle",
+        "desc": "Explore the historic castle and its surrounding park"
+      },
+      {
+        "name": "Dotonbori",
+        "desc": "Experience the famous neon lights and street food"
+      },
+      {
+        "name": "Universal Studios Japan",
+        "desc": "Enjoy thrilling rides and attractions"
+      },
+      {
+        "name": "Shinsekai",
+        "desc": "Discover a retro-style neighborhood with local eats"
+      },
+      {
+        "name": "Umeda Sky Building",
+        "desc": "Take in panoramic views of the city from the rooftop"
+      }
+    ],
+    "covers": [
+      "Kyoto",
+      "Nara",
+      "Kobe"
+    ],
+    "food": [
+      "Takoyaki",
+      "Okonomiyaki",
+      "Kushikatsu",
+      "Fugu"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "foodies"
+    ],
+    "getting_around": "Use the comprehensive subway system or hop on a bus for easy navigation",
+    "tips": [
+      "Try local specialties at street food stalls and markets",
+      "Purchase an Osaka Amazing Pass for free entry to top attractions and public transport"
+    ]
+  },
+  "Ubud": {
+    "tagline": "Bali's serene jungle yoga oasis",
+    "ideal_days_min": 5,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Lush green landscapes",
+      "Vibrant cultural festivals",
+      "Serene yoga retreats",
+      "Rice-paddy walks"
+    ],
+    "must_visit": [
+      {
+        "name": "Ubud Monkey Forest",
+        "desc": "Explore the sacred monkey sanctuary"
+      },
+      {
+        "name": "Tegalalang Rice Terrace",
+        "desc": "Marvel at the scenic rice fields"
+      },
+      {
+        "name": "Ubud Royal Palace",
+        "desc": "Discover the historic palace's cultural significance"
+      },
+      {
+        "name": "Campuhan Ridge Walk",
+        "desc": "Hike through the picturesque ridge"
+      },
+      {
+        "name": "Yoga Barn",
+        "desc": "Practice yoga in a serene setting"
+      }
+    ],
+    "covers": [
+      "Seminyak",
+      "Canggu",
+      "Kuta",
+      "Nusa Dua"
+    ],
+    "food": [
+      "Nasi Goreng",
+      "Mie Goreng",
+      "Satay",
+      "Fresh coconuts"
+    ],
+    "best_for": [
+      "couples",
+      "solo",
+      "friends",
+      "adventurers",
+      "backpackers"
+    ],
+    "getting_around": "Rent a scooter or take a taxi to explore the area",
+    "tips": [
+      "Book yoga classes in advance",
+      "Respect local customs and dress modestly"
+    ]
+  },
+  "Hoi An": {
+    "tagline": "Lanterns dance on ancient rivers",
+    "ideal_days_min": 3,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Ancient town with lanterns",
+      "Tailor-made silk clothing",
+      "Beachside bike rides",
+      "Rich cultural heritage"
+    ],
+    "must_visit": [
+      {
+        "name": "Japanese Bridge",
+        "desc": "Historic bridge with unique architecture"
+      },
+      {
+        "name": "Hoi An Ancient Town",
+        "desc": "Well-preserved historic town with old houses"
+      },
+      {
+        "name": "An Bang Beach",
+        "desc": "Scenic beach with clear waters"
+      },
+      {
+        "name": "Phuc Kien Assembly Hall",
+        "desc": "Colorful temple with Chinese influence"
+      },
+      {
+        "name": "Hoi An Museum of History and Culture",
+        "desc": "Museum showcasing local history and culture"
+      }
+    ],
+    "covers": [
+      "Da Nang",
+      " Marble Mountains",
+      "Cham Islands",
+      "My Son Sanctuary"
+    ],
+    "food": [
+      "White Rose Dumplings",
+      "Cao Lau Noodles",
+      "Fresh seafood",
+      "Ban Xeo pancakes"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "backpackers"
+    ],
+    "getting_around": "Rent bikes or take taxis to explore the town and surrounding areas",
+    "tips": [
+      "Get custom-made clothing from local tailors",
+      "Explore the ancient town at night for a romantic lantern-lit experience"
+    ]
+  },
+  "Boracay": {
+    "tagline": "Tropical paradise with powder-white sand",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Vibrant nightlife scene",
+      "World-class water sports",
+      "Breathtaking sunsets",
+      "Crystal-clear waters"
+    ],
+    "must_visit": [
+      {
+        "name": "White Beach",
+        "desc": "Relax on the island's iconic beach"
+      },
+      {
+        "name": "D'Mall",
+        "desc": "Shop and dine in the island's main hub"
+      },
+      {
+        "name": "Ariel's Point",
+        "desc": "Go cliff diving and snorkeling"
+      },
+      {
+        "name": "Willy's Rock",
+        "desc": "Explore a unique rock formation"
+      },
+      {
+        "name": "Puka Beach",
+        "desc": "Escape to a secluded beach"
+      }
+    ],
+    "covers": [
+      "Kalibo",
+      "Caticlan",
+      "Romblon",
+      "Panay Island"
+    ],
+    "food": [
+      "Adobo",
+      "Lechon",
+      "Fresh seafood",
+      "Ube halaya"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends",
+      "backpackers"
+    ],
+    "getting_around": "Use tricycles, e-trikes, or walk to get around the compact island",
+    "tips": [
+      "Book accommodations and tours in advance to avoid peak season crowds",
+      "Respect the island's environmental rules to preserve its beauty"
+    ]
+  },
+  "Palawan": {
+    "tagline": "Island hop in tropical paradise",
+    "ideal_days_min": 5,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Turquoise lagoons",
+      "Limestone cliff formations",
+      "Pristine beaches",
+      "Vibrant marine life"
+    ],
+    "must_visit": [
+      {
+        "name": "El Nido",
+        "desc": "Explore hidden lagoons and beaches"
+      },
+      {
+        "name": "Coron Island",
+        "desc": "Discover shipwreck diving sites"
+      },
+      {
+        "name": "Underground River",
+        "desc": "Take a boat tour through a stunning cave"
+      },
+      {
+        "name": "Balabac Island",
+        "desc": "Relax on a secluded beach"
+      },
+      {
+        "name": "Port Barton",
+        "desc": "Enjoy snorkeling and island hopping"
+      }
+    ],
+    "covers": [
+      "El Nido",
+      "Coron",
+      "Puerto Princesa",
+      "San Vicente"
+    ],
+    "food": [
+      "Adobo",
+      "Sinigang",
+      "Fresh seafood",
+      "Halo-halo"
+    ],
+    "best_for": [
+      "couples",
+      "adventurers",
+      "families",
+      "friends"
+    ],
+    "getting_around": "Rent a van or take a tricycle to get around the islands",
+    "tips": [
+      "Book island hopping tours in advance",
+      "Bring sunscreen and a waterproof bag"
+    ]
+  },
+  "Bagan": {
+    "tagline": "Dawn Balloon Rides Over Ancient Temples",
+    "ideal_days_min": 3,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Sunrise Hot Air Balloon Rides",
+      "Thousands of Ancient Temples",
+      "Rich Cultural Heritage",
+      "Breathtaking Scenic Landscapes"
+    ],
+    "must_visit": [
+      {
+        "name": "Ananda Temple",
+        "desc": "One of the most well-preserved temples in Bagan"
+      },
+      {
+        "name": "Dhammayangyi Temple",
+        "desc": "The largest temple in Bagan with impressive architecture"
+      },
+      {
+        "name": "Shwesandaw Pagoda",
+        "desc": "A great spot to watch the sunset over Bagan"
+      },
+      {
+        "name": "Nyaung U Market",
+        "desc": "A bustling marketplace to experience local life"
+      },
+      {
+        "name": "Lawkahteikpan Temple",
+        "desc": "A unique temple with intricate carvings and murals"
+      }
+    ],
+    "covers": [
+      "Nyaung U",
+      "Old Bagan",
+      "New Bagan",
+      "Mount Popa"
+    ],
+    "food": [
+      "Laphet Tea",
+      "Shan Noodles",
+      "Mohinga Fish Soup",
+      "Burmese Curry"
+    ],
+    "best_for": [
+      "couples",
+      "solo",
+      "backpackers",
+      "photography"
+    ],
+    "getting_around": "Renting e-bikes or hiring horse carts are popular ways to explore Bagan's temples and surrounding areas",
+    "tips": [
+      "Book hot air balloon rides in advance to avoid peak season soldouts",
+      "Respect temple dress codes and remove shoes when required"
+    ]
+  },
+  "Tbilisi": {
+    "tagline": "Ancient charm meets modern vibe",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Sulfur baths and spas",
+      "Cliff-top churches and monasteries",
+      "Vibrant natural wine scene",
+      "Rich cultural heritage"
+    ],
+    "must_visit": [
+      {
+        "name": "Narikala Fortress",
+        "desc": "A 4th-century fortress with stunning views"
+      },
+      {
+        "name": "Sioni Cathedral",
+        "desc": "A historic cathedral in the heart of the city"
+      },
+      {
+        "name": "Abanotubani",
+        "desc": "A historic district famous for its sulfur baths"
+      },
+      {
+        "name": "Sameba Cathedral",
+        "desc": "The third-tallest Eastern Orthodox cathedral"
+      },
+      {
+        "name": "Dezerter Bazaar",
+        "desc": "A bustling marketplace for food and souvenirs"
+      }
+    ],
+    "covers": [
+      "Mtskheta",
+      "Kazbegi",
+      "Signaghi"
+    ],
+    "food": [
+      "Khinkali",
+      "Khachapuri",
+      "Shashlik",
+      "Churchkhela"
+    ],
+    "best_for": [
+      "couples",
+      "solo",
+      "backpackers",
+      "culture"
+    ],
+    "getting_around": "The city has a convenient and affordable public transportation system, including buses and taxis.",
+    "tips": [
+      "Learn some basic Georgian phrases to interact with the locals",
+      "Be prepared for variable weather, especially in the mountains"
+    ]
+  },
+  "Milan & the Lakes": {
+    "tagline": "Fashion meets lakefront serenity",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "World-class fashion scene",
+      "Breathtaking Lake Como views",
+      "Rich art and history museums",
+      "Romantic villa getaways"
+    ],
+    "must_visit": [
+      {
+        "name": "Galleria Vittorio Emanuele II",
+        "desc": "Shop at this iconic mall"
+      },
+      {
+        "name": "Lake Como",
+        "desc": "Explore picturesque towns by boat"
+      },
+      {
+        "name": "Castello Sforzesco",
+        "desc": "Discover medieval history and art"
+      },
+      {
+        "name": "Villa Balbianello",
+        "desc": "Visit this stunning 18th-century villa"
+      },
+      {
+        "name": "Duomo di Milano",
+        "desc": "Marvel at the iconic cathedral"
+      }
+    ],
+    "covers": [
+      "Como",
+      "Bellagio",
+      "Varenna",
+      "Milan"
+    ],
+    "food": [
+      "Risotto alla Milanese",
+      "Polenta e osei",
+      "Panettone",
+      "Aperol Spritz"
+    ],
+    "best_for": [
+      "couples",
+      "luxury",
+      "families",
+      "friends"
+    ],
+    "getting_around": "Use the efficient metro system and ferries to explore the city and lakes",
+    "tips": [
+      "Book fashion week tickets in advance for exclusive access",
+      "Rent a car to explore the lakes and surrounding towns"
+    ]
+  },
+  "Andalusia (Granada)": {
+    "tagline": "Moorish palaces meet Spanish passion",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Alhambra's ancient Moorish architecture",
+      "Vibrant flamenco music and dance",
+      "Delicious tapas and local wine",
+      "Stunning Sierra Nevada mountain views"
+    ],
+    "must_visit": [
+      {
+        "name": "The Alhambra",
+        "desc": "Explore the palace's intricate Moorish design"
+      },
+      {
+        "name": "Generalife Gardens",
+        "desc": "Stroll through the tranquil gardens"
+      },
+      {
+        "name": "Albaicin Neighborhood",
+        "desc": "Wander the narrow whitewashed streets"
+      },
+      {
+        "name": "Granada Cathedral",
+        "desc": "Marvel at the Gothic-Renaissance architecture"
+      },
+      {
+        "name": "Mirador de San Nicolas",
+        "desc": "Enjoy breathtaking views of the Alhambra"
+      }
+    ],
+    "covers": [
+      "Granada City",
+      "Sierra Nevada National Park",
+      "Nerja",
+      "Costa del Sol"
+    ],
+    "food": [
+      "Gazpacho",
+      "Jamón ibérico",
+      "Tortilla española",
+      "Pollo al ajillo"
+    ],
+    "best_for": [
+      "couples",
+      "culture lovers",
+      "foodies",
+      "history buffs"
+    ],
+    "getting_around": "Walk or take buses to explore the city, and trains or buses to reach nearby towns",
+    "tips": [
+      "Book Alhambra tickets in advance to avoid long wait times",
+      "Learn some basic Spanish phrases to interact with the friendly locals"
+    ]
+  },
+  "Bruges": {
+    "tagline": "Medieval charm in a chocolate paradise",
+    "ideal_days_min": 3,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Historic city center",
+      "Picturesque canals",
+      "Rich chocolate heritage",
+      "Iconic belfry towers"
+    ],
+    "must_visit": [
+      {
+        "name": "The Belfry Tower",
+        "desc": "Climb for panoramic views"
+      },
+      {
+        "name": "Groeningemuseum",
+        "desc": "Discover Flemish art masterpieces"
+      },
+      {
+        "name": "Burg Square",
+        "desc": "Admire medieval architecture"
+      },
+      {
+        "name": "Choco-Story Museum",
+        "desc": "Learn about chocolate history"
+      },
+      {
+        "name": "Minnewater Lake",
+        "desc": "Stroll around serene waters"
+      }
+    ],
+    "covers": [
+      "Damme",
+      "Ostend",
+      "Ghent"
+    ],
+    "food": [
+      "Waffles with chocolate",
+      "Belgian fries",
+      "Moules-frites",
+      "Speculoos"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "solo",
+      "friends"
+    ],
+    "getting_around": "Explore on foot or by bike to discover hidden gems",
+    "tips": [
+      "Book Belfry Tower tickets in advance to avoid queues",
+      "Try a beer tasting at a local brewery"
+    ]
+  },
+  "Scottish Highlands": {
+    "tagline": "Wild beauty on the Isle of Skye",
+    "ideal_days_min": 7,
+    "ideal_days_max": 14,
+    "highlights": [
+      "Breathtaking mountain landscapes",
+      "Serene lochs and glens",
+      "Historic castles and ruins",
+      "Unspoiled natural wilderness"
+    ],
+    "must_visit": [
+      {
+        "name": "Eilean Donan Castle",
+        "desc": "A picturesque 13th-century castle"
+      },
+      {
+        "name": "Isle of Skye",
+        "desc": "A haven for outdoor enthusiasts"
+      },
+      {
+        "name": "Glencoe",
+        "desc": "A valley steeped in history and natural beauty"
+      },
+      {
+        "name": "Loch Ness",
+        "desc": "Famous for the legend of the Loch Ness Monster"
+      },
+      {
+        "name": "Ben Nevis",
+        "desc": "The highest mountain peak in the UK"
+      }
+    ],
+    "covers": [
+      "Fort William",
+      "Inverness",
+      "Ullapool",
+      "The Cairngorms"
+    ],
+    "food": [
+      "Smoked salmon",
+      "Cullen skink",
+      "Haggis",
+      "Shortbread"
+    ],
+    "best_for": [
+      "couples",
+      "adventurers",
+      "families",
+      "nature lovers"
+    ],
+    "getting_around": "Rent a car to explore the scenic roads and rugged terrain of the Scottish Highlands",
+    "tips": [
+      "Check the weather forecast before heading out",
+      "Bring layers and waterproof clothing"
+    ]
+  },
+  "Faroe Islands": {
+    "tagline": "Unspoiled Nordic wilderness awaits",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Dramatic coastal cliffs",
+      "Turf-roofed villages",
+      "Northern Lights displays",
+      "Pristine fjords and lakes"
+    ],
+    "must_visit": [
+      {
+        "name": "Mykines Island",
+        "desc": "Hike to the iconic Mykines lighthouse"
+      },
+      {
+        "name": "Lake Slaettartindur",
+        "desc": "Witness the majestic lake and mountain scenery"
+      },
+      {
+        "name": "Gásadalur Village",
+        "desc": "Explore the picturesque village with colorful houses"
+      },
+      {
+        "name": "Mulafossur Waterfall",
+        "desc": "Marvel at the breathtaking waterfall"
+      },
+      {
+        "name": "Tórshavn",
+        "desc": "Discover the charming capital city's culture and history"
+      }
+    ],
+    "covers": [
+      "Streymoy Island",
+      "Eysturoy Island",
+      "Vágar Island",
+      "Koltur Island"
+    ],
+    "food": [
+      "Ræst fish",
+      "Skerpikjöt",
+      "Faroese lamb",
+      "Kippers and smoked salmon"
+    ],
+    "best_for": [
+      "adventurers",
+      "couples",
+      "solo",
+      "photography enthusiasts",
+      "nature lovers"
+    ],
+    "getting_around": "Rent a car to explore the scenic roads and rugged landscapes",
+    "tips": [
+      "Check the weather forecast before hiking",
+      "Respect the fragile environment and wildlife"
+    ]
+  },
+  "Yellowstone & Grand Teton": {
+    "tagline": "Wild beauty in America's first park",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Geysers and hot springs",
+      "Bison and elk herds",
+      "Jagged mountain peaks",
+      "Prismatic lakes and rivers"
+    ],
+    "must_visit": [
+      {
+        "name": "Old Faithful",
+        "desc": "Witness the iconic geyser eruption"
+      },
+      {
+        "name": "Grand Prismatic Spring",
+        "desc": "See the largest hot spring in the US"
+      },
+      {
+        "name": "Yellowstone Lake",
+        "desc": "Enjoy boating and fishing on the lake"
+      },
+      {
+        "name": "Jenny Lake",
+        "desc": "Take a scenic boat tour or hike around the lake"
+      },
+      {
+        "name": "Upper Yellowstone Falls",
+        "desc": "Hike to the brink of the 109-foot waterfall"
+      }
+    ],
+    "covers": [
+      "Jackson Hole",
+      "West Yellowstone",
+      "Cody",
+      "Big Sky"
+    ],
+    "food": [
+      "Bison burgers",
+      "Huckleberry pie",
+      "Grilled trout",
+      "Chuckwagon BBQ"
+    ],
+    "best_for": [
+      "families",
+      "adventurers",
+      "nature lovers",
+      "hikers",
+      "road trippers"
+    ],
+    "getting_around": "Drive the Grand Loop Road or use the park's shuttle service to explore Yellowstone and Grand Teton National Parks",
+    "tips": [
+      "Book accommodations and tours in advance to avoid peak season crowds",
+      "Bring bear spray and stay on designated trails to ensure wildlife safety"
+    ]
+  },
+  "Tulum": {
+    "tagline": "Caribbean coast meets ancient Maya charm",
+    "ideal_days_min": 4,
+    "ideal_days_max": 8,
+    "highlights": [
+      "Turquoise ocean views",
+      "Lush jungle surroundings",
+      "Historic Maya ruins",
+      "Vibrant bohemian scene"
+    ],
+    "must_visit": [
+      {
+        "name": "Tulum National Park",
+        "desc": "Explore ancient Maya ruins perched on a cliff"
+      },
+      {
+        "name": "Cenote Calavera",
+        "desc": "Swim in a picturesque underwater cave"
+      },
+      {
+        "name": "Playa Paraiso",
+        "desc": "Relax on a stunning white-sand beach"
+      },
+      {
+        "name": "Sian Ka'an Biosphere Reserve",
+        "desc": "Discover diverse wildlife in a UNESCO site"
+      },
+      {
+        "name": "Coba Ruins",
+        "desc": "Visit ancient Maya temples deep in the jungle"
+      }
+    ],
+    "covers": [
+      "Playa del Carmen",
+      "Akumal",
+      "Coba",
+      "Bacalar"
+    ],
+    "food": [
+      "Tacos al pastor",
+      "Fresh ceviche",
+      "Chiles rellenos",
+      "Cochinita pibil"
+    ],
+    "best_for": [
+      "couples",
+      "solo",
+      "friends",
+      "adventurers"
+    ],
+    "getting_around": "Rent a car or scooter to explore Tulum and its surroundings",
+    "tips": [
+      "Book accommodations and tours in advance to avoid peak season crowds",
+      "Bring insect repellent and stay hydrated in the tropical climate"
+    ]
+  },
+  "Medellin": {
+    "tagline": "Vibrant city of eternal spring",
+    "ideal_days_min": 4,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Street art in Comuna 13",
+      "Ride the Metrocable",
+      "Salsa nights in El Poblado",
+      "Explore Parque Arvi"
+    ],
+    "must_visit": [
+      {
+        "name": "Plaza Botero",
+        "desc": "See Fernando Botero's iconic sculptures"
+      },
+      {
+        "name": "Museo de Antioquia",
+        "desc": "Discover art and history of Medellin"
+      },
+      {
+        "name": "Jardin Botanico",
+        "desc": "Stroll through beautiful botanical gardens"
+      },
+      {
+        "name": "Parque Lleras",
+        "desc": "Experience the city's vibrant nightlife"
+      },
+      {
+        "name": "Comuna 13",
+        "desc": "Learn about the neighborhood's transformation"
+      }
+    ],
+    "covers": [
+      "El Poblado",
+      "La Llanura",
+      "Guatape",
+      "Envigado"
+    ],
+    "food": [
+      "Bandeja Paisa",
+      "Ajiaco",
+      "Empanadas",
+      "Arepa de Queso"
+    ],
+    "best_for": [
+      "couples",
+      "backpackers",
+      "solo",
+      "friends",
+      "budget"
+    ],
+    "getting_around": "Use the efficient Metro and Metrocable system to navigate the city",
+    "tips": [
+      "Learn some basic Spanish to interact with locals",
+      "Be prepared for occasional rain showers"
+    ]
+  },
+  "Iguazu Falls": {
+    "tagline": "Thundering waterfalls in lush jungle",
+    "ideal_days_min": 3,
+    "ideal_days_max": 7,
+    "highlights": [
+      "Largest waterfall system in world",
+      "Tropical rainforest hiking trails",
+      "Wildlife spotting opportunities",
+      "Panoramic views of falls"
+    ],
+    "must_visit": [
+      {
+        "name": "Devil's Throat",
+        "desc": "Walkway over the falls' most powerful spot"
+      },
+      {
+        "name": "Iguazu National Park",
+        "desc": "Protected area with hiking trails and wildlife"
+      },
+      {
+        "name": "Argentine Falls",
+        "desc": "Upper and lower falls circuits for stunning views"
+      },
+      {
+        "name": "Puerto Iguazu",
+        "desc": "Charming town with shops and restaurants"
+      },
+      {
+        "name": "San Martin Island",
+        "desc": "Island in the middle of the falls for unique views"
+      }
+    ],
+    "covers": [
+      "Puerto Iguazu",
+      "Foz do Iguacu",
+      "El Calafate"
+    ],
+    "food": [
+      "Asado",
+      "Empanadas",
+      "Choripan",
+      "Dulce de Leche"
+    ],
+    "best_for": [
+      "couples",
+      "families",
+      "adventurers",
+      "nature lovers"
+    ],
+    "getting_around": "Use buses, taxis, or rent a car to get around the area and national park",
+    "tips": [
+      "Book falls tours and accommodations in advance",
+      "Bring waterproof gear and comfortable hiking shoes"
+    ]
+  },
+  "Atacama Desert": {
+    "tagline": "Desert landscapes under starry skies",
+    "ideal_days_min": 5,
+    "ideal_days_max": 10,
+    "highlights": [
+      "Vast salt flats",
+      "Geothermal geysers",
+      "Stargazing in dark skies",
+      "Unique desert landscapes"
+    ],
+    "must_visit": [
+      {
+        "name": "Salar de Atacama",
+        "desc": "Largest salt flat in Chile"
+      },
+      {
+        "name": "El Tatio Geysers",
+        "desc": "Highest geothermal field in the world"
+      },
+      {
+        "name": "Valle de la Luna",
+        "desc": "Moon-like landscape with sand and stone formations"
+      },
+      {
+        "name": "San Pedro de Atacama",
+        "desc": "Oasis town with historic adobe buildings"
+      },
+      {
+        "name": "Cerro Paranal Observatory",
+        "desc": "One of the world's most advanced optical observatories"
+      }
+    ],
+    "covers": [
+      "Antofagasta",
+      "Calama",
+      "Iquique",
+      "Pica"
+    ],
+    "food": [
+      "Pastel de choclo",
+      "Chupe de mariscos",
+      "Cazuela",
+      "Ch'arki de llama"
+    ],
+    "best_for": [
+      "adventurers",
+      "couples",
+      "solo",
+      "friends"
+    ],
+    "getting_around": "Rent a 4x4 vehicle to explore the desert's rugged terrain and scenic routes",
+    "tips": [
+      "Bring sunscreen and water to protect against the intense desert sun",
+      "Book accommodations and tours in advance to avoid peak season crowds"
+    ]
+  }
+}

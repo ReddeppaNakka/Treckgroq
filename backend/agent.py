@@ -23,7 +23,45 @@ from typing import Any, Dict, List, Optional
 from langchain_groq import ChatGroq
 from langchain_core.messages import HumanMessage, SystemMessage
 
+import pricing
+import rich_data
 from destinations import DESTINATIONS, ALL_TAGS
+
+# Common departure cities -> IATA, so a user can type "from Mumbai" or "BLR".
+ORIGIN_IATA = {
+    "delhi": "DEL", "new delhi": "DEL", "mumbai": "BOM", "bombay": "BOM",
+    "bangalore": "BLR", "bengaluru": "BLR", "hyderabad": "HYD", "chennai": "MAA",
+    "kolkata": "CCU", "calcutta": "CCU", "pune": "PNQ", "ahmedabad": "AMD",
+    "goa": "GOI", "kochi": "COK", "cochin": "COK", "jaipur": "JAI",
+    "lucknow": "LKO", "chandigarh": "IXC", "guwahati": "GAU", "indore": "IDR",
+    "london": "LON", "new york": "NYC", "dubai": "DXB", "singapore": "SIN",
+    "paris": "PAR", "tokyo": "TYO", "sydney": "SYD", "toronto": "YTO",
+}
+
+
+def resolve_origin(text: Optional[str]) -> Optional[str]:
+    """Turn a free-text origin ('Mumbai', 'from Bangalore', 'DEL') into an IATA code."""
+    if not text:
+        return None
+    t = text.strip().lower()
+    # Bare 3-letter IATA code.
+    m = re.fullmatch(r"[a-z]{3}", t)
+    if m:
+        return t.upper()
+    for city, code in ORIGIN_IATA.items():
+        if re.search(rf"\b{re.escape(city)}\b", t):
+            return code
+    return None
+
+
+def _infer_mode(message: str) -> Optional[str]:
+    """Sniff a domestic/international preference from the user's words."""
+    low = message.lower()
+    if re.search(r"\b(within india|in india|domestic|indian|desi|inside india)\b", low):
+        return "domestic"
+    if re.search(r"\b(international|abroad|overseas|foreign|out of india|outside india)\b", low):
+        return "international"
+    return None
 
 # ---------------------------------------------------------------------------
 # Model configuration
@@ -77,7 +115,7 @@ _CURRENCY_WORDS = {
     "pound": "GBP", "pounds": "GBP", "gbp": "GBP", "quid": "GBP", "sterling": "GBP",
     "yen": "JPY", "jpy": "JPY", "yuan": "CNY", "rmb": "CNY", "cny": "CNY",
     "dirham": "AED", "dirhams": "AED", "aed": "AED",
-    "won": "KRW", "krw": "KRW", "ruble": "RUB", "rubles": "RUB", "rouble": "RUB", "rub": "RUB",
+    "krw": "KRW", "ruble": "RUB", "rubles": "RUB", "rouble": "RUB", "rub": "RUB",
     "riyal": "SAR", "sar": "SAR", "baht": "THB", "thb": "THB",
     "ringgit": "MYR", "myr": "MYR", "peso": "MXN", "pesos": "MXN",
     "rand": "ZAR", "zar": "ZAR", "franc": "CHF", "chf": "CHF",
@@ -98,14 +136,20 @@ def to_usd(amount: float, currency: Optional[str]) -> float:
 
 
 def detect_currency(text: str) -> Optional[str]:
-    """Best-effort currency detection from raw user text (symbols or words)."""
+    """Best-effort currency detection from raw user text (symbols or words).
+
+    Tolerates currency tokens glued to digits, e.g. "8000rs", "rs8000", "₹8000",
+    "8000inr" — only letters on either side block a match (so "first"/"yours"
+    never read as "rs"), while adjacent digits are fine.
+    """
     for sym, code in _CURRENCY_SYMBOLS.items():
         if sym in text:
             return code
     low = text.lower()
-    for word, code in _CURRENCY_WORDS.items():
-        if re.search(rf"\b{re.escape(word)}\b", low):
-            return code
+    # Longer tokens first so "rupees" wins over "rs" etc.
+    for word in sorted(_CURRENCY_WORDS, key=len, reverse=True):
+        if re.search(rf"(?<![a-z]){re.escape(word)}(?![a-z])", low):
+            return _CURRENCY_WORDS[word]
     return None
 
 
@@ -185,6 +229,23 @@ def _make_llm(model: str, temperature: float = 0.4, json_mode: bool = False) -> 
         max_tokens=1024,
         model_kwargs=kwargs,
     )
+
+
+def _is_rate_limit(exc: Exception) -> bool:
+    s = str(exc).lower()
+    return "429" in s or "rate_limit" in s or "rate limit" in s
+
+
+def _invoke_resilient(messages, temperature: float = 0.5, json_mode: bool = False,
+                      prefer: str = SMART_MODEL):
+    """Invoke the preferred model; if it's rate-limited (Groq free-tier daily
+    cap), transparently retry on the fast model so the app keeps responding."""
+    try:
+        return _make_llm(prefer, temperature=temperature, json_mode=json_mode).invoke(messages)
+    except Exception as exc:
+        if _is_rate_limit(exc) and prefer != FAST_MODEL:
+            return _make_llm(FAST_MODEL, temperature=temperature, json_mode=json_mode).invoke(messages)
+        raise
 
 
 def _safe_json(text: str) -> Dict[str, Any]:
@@ -303,9 +364,15 @@ def filter_destinations(intent: Dict[str, Any]) -> List[Dict[str, Any]]:
     months = _target_months(intent)
     continents = {c.lower() for c in intent.get("preferred_continents", [])}
     interests = set(intent.get("interests", []))
+    mode = intent.get("mode")  # "domestic" (India only) | "international" | None
 
     candidates = []
     for d in DESTINATIONS:
+        is_india = d["country"] == "India"
+        if mode == "domestic" and not is_india:
+            continue
+        if mode == "international" and is_india:
+            continue
         if continents and d["continent"].lower() not in continents:
             continue
         candidates.append(d)
@@ -351,28 +418,34 @@ def estimate_costs(candidates: List[Dict[str, Any]], intent: Dict[str, Any]) -> 
             "ground_inr": usd_to_inr(ground),
             "total_inr": usd_to_inr(total),
             "per_day_inr": usd_to_inr(d["daily_cost_usd"]),
+            "source": "estimate",  # upgraded to "live"/"partly live" if real prices arrive
         }
-        # Budget fit score (1.0 = comfortably within budget).
-        if budget:
-            if total <= budget:
-                item["budget_fit"] = 1.0
-            elif total <= budget * 1.25:
-                item["budget_fit"] = 0.6  # a stretch
-            else:
-                # Well over budget: keep a gradient (budget/total) so cheaper
-                # options still rank above pricier ones instead of all collapsing
-                # to 0, but cap it well below any genuinely in-budget option.
-                item["budget_fit"] = round(min(0.5, budget / total), 3)
-            item["within_budget"] = total <= budget
-            item["over_budget_ratio"] = round(total / budget, 2)
-        elif tier:
-            item["budget_fit"] = 1.0 if d["budget_tier"] == tier else 0.45
-            item["within_budget"] = d["budget_tier"] == tier
-        else:
-            item["budget_fit"] = 0.7
-            item["within_budget"] = None
+        _score_budget_fit(item, total, budget, tier)
         enriched.append(item)
     return enriched
+
+
+def _score_budget_fit(item: Dict[str, Any], total: float,
+                      budget: Optional[float], tier: Optional[str]) -> None:
+    """Set budget_fit / within_budget on an item for a given trip total (in place)."""
+    if budget:
+        if total <= budget:
+            item["budget_fit"] = 1.0
+        elif total <= budget * 1.25:
+            item["budget_fit"] = 0.6  # a stretch
+        else:
+            # Well over budget: keep a gradient (budget/total) so cheaper options
+            # still rank above pricier ones instead of all collapsing to 0, but
+            # cap it well below any genuinely in-budget option.
+            item["budget_fit"] = round(min(0.5, budget / total), 3)
+        item["within_budget"] = total <= budget
+        item["over_budget_ratio"] = round(total / budget, 2)
+    elif tier:
+        item["budget_fit"] = 1.0 if item["budget_tier"] == tier else 0.45
+        item["within_budget"] = item["budget_tier"] == tier
+    else:
+        item["budget_fit"] = 0.7
+        item["within_budget"] = None
 
 
 # ===========================================================================
@@ -416,6 +489,52 @@ def rank_destinations(items: List[Dict[str, Any]], intent: Dict[str, Any]) -> Li
 
 
 # ===========================================================================
+# Stage 4.5 — Live pricing (best-effort overlay on the top shortlist)
+# ===========================================================================
+def apply_live_prices(top: List[Dict[str, Any]], intent: Dict[str, Any]) -> int:
+    """Overlay live flight/hotel prices on the top shortlist, in place.
+
+    Returns the number of destinations that got at least one live figure. Any
+    failure leaves the static estimate untouched (source stays "estimate").
+    """
+    if not pricing.enabled() or not top:
+        return 0
+
+    origin = intent.get("origin_iata")
+    month = intent.get("travel_month")
+    days = max(1, int(intent.get("trip_days") or 7))
+    inr_rate = pricing.usd_to_inr_rate()
+
+    live = pricing.live_estimates([d["name"] for d in top], origin, month, days)
+    updated = 0
+    for d in top:
+        got = live.get(d["name"])
+        if not got:
+            continue
+        est = d["estimate"]
+        flight = got.get("flight_usd", est["flight_usd"])
+        per_day = got.get("per_night_usd", est["per_day_usd"])
+        ground = per_day * est["days"]
+        total = flight + ground
+        est.update({
+            "flight_usd": flight,
+            "ground_usd": ground,
+            "total_usd": total,
+            "per_day_usd": per_day,
+            "flight_inr": int(round(flight * inr_rate)),
+            "ground_inr": int(round(ground * inr_rate)),
+            "total_inr": int(round(total * inr_rate)),
+            "per_day_inr": int(round(per_day * inr_rate)),
+            # "live" if both legs are real, otherwise "partly live".
+            "source": "live" if {"flight_usd", "per_night_usd"} <= got.keys() else "partly live",
+        })
+        # Re-evaluate budget fit against the now-live total so re-ranking is correct.
+        _score_budget_fit(d, total, intent.get("budget_total_usd"), intent.get("budget_tier"))
+        updated += 1
+    return updated
+
+
+# ===========================================================================
 # Stage 5 — Recommendation text
 # ===========================================================================
 def _format_for_prompt(top: List[Dict[str, Any]], intent: Dict[str, Any]) -> str:
@@ -423,10 +542,12 @@ def _format_for_prompt(top: List[Dict[str, Any]], intent: Dict[str, Any]) -> str
     for d in top:
         est = d["estimate"]
         cost = f"{format_usd(est['total_usd'])} ({format_inr(est['total_inr'])})"
+        tag = "LIVE price" if est.get("source") == "live" else (
+            "part-live price" if est.get("source") == "partly live" else "estimate")
         lines.append(
             f"- {d['name']}, {d['country']} ({d['continent']}). "
             f"Best months: {', '.join(MONTH_NAMES[m] for m in d['best_months'])}. "
-            f"Est. {est['days']}-day cost ~{cost} "
+            f"{est['days']}-day cost ~{cost} [{tag}] "
             f"({format_usd(est['per_day_usd'])}/day + ~{format_usd(est['flight_usd'])} flights). "
             f"Vibe: {d['blurb']} Tags: {', '.join(d['tags'])}."
         )
@@ -449,12 +570,15 @@ Write naturally and concisely (about 130-200 words):
   the options are over the traveller's budget, say so plainly up front — these are
   the closest matches but cost more than they set — and tell them roughly how much
   more, then suggest raising the budget or a nearer/shorter trip. Do not gloss over it.
+- LIVE PRICES: a shortlist line tagged [LIVE price] is a real fetched fare/rate —
+  you may call it a "live price"; lines tagged [estimate] are planning estimates, so
+  don't call those "live". If the brief says origin_known is false, briefly invite the
+  traveller to share which city they're flying from so you can pull live flight prices.
 - Close with one short follow-up question to refine further.
 Use light markdown (bold names, short paragraphs). No bullet-point spam, no headings."""
 
 
 def generate_reply(top: List[Dict[str, Any]], intent: Dict[str, Any]) -> str:
-    llm = _make_llm(SMART_MODEL, temperature=0.55)
     budget = intent.get("budget_total_usd")
     picks = top[:6]
     cheapest = min((d["estimate"]["total_usd"] for d in picks), default=None)
@@ -492,35 +616,48 @@ def generate_reply(top: List[Dict[str, Any]], intent: Dict[str, Any]) -> str:
         "interests": intent.get("interests"),
         "traveler_type": intent.get("traveler_type"),
         "notes": intent.get("notes"),
+        "origin_known": bool(intent.get("origin_iata")),
+        "live_pricing_on": pricing.enabled(),
     }
-    resp = llm.invoke([
+    resp = _invoke_resilient([
         SystemMessage(content=_REPLY_SYSTEM),
         HumanMessage(content=(
             f"Traveller brief: {json.dumps(brief)}\n\n"
             f"Ranked shortlist (pick the top 3):\n{_format_for_prompt(picks, intent)}"
         )),
-    ])
+    ], temperature=0.55)
     return resp.content.strip()
 
 
 # ===========================================================================
 # Orchestrator
 # ===========================================================================
-def run_workflow(message: str, history: Optional[List[Dict[str, str]]] = None) -> Dict[str, Any]:
-    """Run the full agentic pipeline and return reply + trace + cards."""
+def run_workflow(message: str, history: Optional[List[Dict[str, str]]] = None,
+                 origin: Optional[str] = None, mode: Optional[str] = None) -> Dict[str, Any]:
+    """Run the full agentic pipeline and return reply + trace + cards.
+
+    mode: "domestic" (India only), "international", or None (auto/all). An
+    explicit UI mode wins; otherwise we sniff intent from the message.
+    """
     trace: List[Dict[str, Any]] = []
 
     intent = extract_intent(message, history)
+    # Origin: explicit field from the UI wins; otherwise sniff "from <city>".
+    origin_iata = resolve_origin(origin) or resolve_origin(message)
+    intent["origin_iata"] = origin_iata
+    intent["mode"] = mode or _infer_mode(message)
     trace.append({
         "step": "Understanding your request",
         "detail": _describe_intent(intent),
     })
 
     candidates = filter_destinations(intent)
+    scope = {"domestic": "within India", "international": "international"}.get(
+        intent.get("mode"), "across all regions")
     trace.append({
         "step": "Filtering destinations",
-        "detail": f"Narrowed {len(DESTINATIONS)} destinations down to "
-                  f"{len(candidates)} that fit your season and region.",
+        "detail": f"Searched {scope}: narrowed {len(DESTINATIONS)} destinations down "
+                  f"to {len(candidates)} that fit your season and region.",
     })
 
     costed = estimate_costs(candidates, intent)
@@ -531,6 +668,27 @@ def run_workflow(message: str, history: Optional[List[Dict[str, str]]] = None) -
     })
 
     ranked = rank_destinations(costed, intent)
+
+    # Best-effort: overlay live flight/hotel prices on the shortlist we'll show.
+    shortlist = ranked[:6]
+    n_live = apply_live_prices(shortlist, intent)
+    if pricing.enabled():
+        if n_live:
+            src = "Pulled live flight & hotel prices" + (
+                f" from {origin_iata}" if origin_iata else "")
+            trace.append({
+                "step": "Fetching live prices",
+                "detail": f"{src} for {n_live} of the top picks "
+                          f"(falling back to estimates where unavailable).",
+            })
+        else:
+            trace.append({
+                "step": "Fetching live prices",
+                "detail": "Live prices weren't available right now — showing planning estimates.",
+            })
+
+    # Live totals can shift which picks fit the budget, so re-rank the shortlist.
+    ranked = rank_destinations(shortlist, intent) + ranked[6:]
     top = ranked[:3]
     trace.append({
         "step": "Ranking by season, budget & interests",
@@ -571,6 +729,7 @@ def _describe_intent(intent: Dict[str, Any]) -> str:
 
 
 def _card(d: Dict[str, Any]) -> Dict[str, Any]:
+    rich = rich_data.get_rich(d["name"])
     return {
         "id": d["id"],
         "name": d["name"],
@@ -585,4 +744,85 @@ def _card(d: Dict[str, Any]) -> Dict[str, Any]:
         "within_budget": d.get("within_budget"),
         "scores": d["scores"],
         "image_query": d["image_query"],
+        "is_domestic": d["country"] == "India",
+        # Rich, itinerary-style detail (empty lists/None until enrichment runs).
+        "tagline": rich["tagline"],
+        "ideal_days_min": rich["ideal_days_min"],
+        "ideal_days_max": rich["ideal_days_max"],
+        "highlights": rich["highlights"],
+        "must_visit": rich["must_visit"],
+        "covers": rich["covers"],
+        "food": rich["food"],
+        "best_for": rich["best_for"],
+        "getting_around": rich["getting_around"],
+        "tips": rich["tips"],
+    }
+
+
+# ===========================================================================
+# On-demand: tailored day-by-day itinerary for one destination
+# ===========================================================================
+_ITINERARY_SYSTEM = """You are Atlas, a travel-planning agent crafting a vivid,
+realistic day-by-day itinerary for ONE destination. Reply with ONLY a JSON object:
+
+{
+  "summary": string,                  // one-sentence overview of the trip arc
+  "days": [
+    {
+      "day": number,
+      "title": string,                // short theme for the day, e.g. "Old town & sunset"
+      "morning": string,              // one concrete activity sentence
+      "afternoon": string,
+      "evening": string
+    }
+  ]
+}
+
+Rules: produce EXACTLY the requested number of days. Use real, specific places
+for this destination (lean on the provided must-visit list). Pace it sensibly
+(arrival/easing in on day 1, a marquee sight mid-trip, wind-down at the end).
+Tailor to the stated interests. Keep each line tight and evocative."""
+
+
+def generate_itinerary(name: str, days: int,
+                       interests: Optional[List[str]] = None) -> Dict[str, Any]:
+    """Generate a tailored day-by-day plan for a destination (on demand)."""
+    dest = next((d for d in DESTINATIONS if d["name"] == name), None)
+    if not dest:
+        raise ValueError(f"Unknown destination: {name}")
+    days = max(1, min(14, int(days or 5)))
+    rich = rich_data.get_rich(name)
+    must = "; ".join(f"{m['name']} ({m.get('desc','')})" for m in rich["must_visit"]) \
+        or ", ".join(dest["tags"])
+
+    brief = (
+        f"Destination: {name}, {dest['country']} ({dest['continent']}).\n"
+        f"Vibe: {dest['blurb']}\n"
+        f"Must-visit anchors: {must}.\n"
+        f"Trip length: {days} days.\n"
+        f"Traveller interests: {', '.join(interests) if interests else 'general sightseeing'}.\n"
+        f"Write the {days}-day itinerary JSON now."
+    )
+    resp = _invoke_resilient([
+        SystemMessage(content=_ITINERARY_SYSTEM),
+        HumanMessage(content=brief),
+    ], temperature=0.6, json_mode=True)
+    data = _safe_json(resp.content)
+    plan = data.get("days") or []
+    # Normalise: ensure day numbers and trim to requested length.
+    cleaned = []
+    for i, day in enumerate(plan[:days], 1):
+        cleaned.append({
+            "day": i,
+            "title": (day.get("title") or "").strip(),
+            "morning": (day.get("morning") or "").strip(),
+            "afternoon": (day.get("afternoon") or "").strip(),
+            "evening": (day.get("evening") or "").strip(),
+        })
+    return {
+        "destination": name,
+        "country": dest["country"],
+        "days": len(cleaned),
+        "summary": (data.get("summary") or "").strip(),
+        "plan": cleaned,
     }

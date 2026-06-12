@@ -21,10 +21,18 @@ export function getMeta() {
   return request("/api/meta");
 }
 
-export function recommend(message, history) {
+export function recommend(message, history, origin, mode) {
   return request("/api/recommend", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ message, history }),
+    body: JSON.stringify({ message, history, origin, mode }),
+  });
+}
+
+export function getItinerary(name, days, interests) {
+  return request("/api/itinerary", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name, days, interests }),
   });
 }
