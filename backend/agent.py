@@ -632,40 +632,40 @@ def generate_reply(top: List[Dict[str, Any]], intent: Dict[str, Any]) -> str:
 # ===========================================================================
 # Orchestrator
 # ===========================================================================
-def run_workflow(message: str, history: Optional[List[Dict[str, str]]] = None,
-                 origin: Optional[str] = None, mode: Optional[str] = None) -> Dict[str, Any]:
-    """Run the full agentic pipeline and return reply + trace + cards.
+def workflow_events(message: str, history: Optional[List[Dict[str, str]]] = None,
+                    origin: Optional[str] = None, mode: Optional[str] = None):
+    """Run the pipeline as a generator, yielding each step the moment it finishes
+    so the UI can show the agent "thinking" live. Yields {"type":"step", ...} per
+    stage, then a final {"type":"result", ...} with reply + cards.
 
     mode: "domestic" (India only), "international", or None (auto/all). An
     explicit UI mode wins; otherwise we sniff intent from the message.
     """
     trace: List[Dict[str, Any]] = []
 
+    def emit(step: str, detail: str) -> Dict[str, Any]:
+        entry = {"step": step, "detail": detail}
+        trace.append(entry)
+        return {"type": "step", **entry}
+
     intent = extract_intent(message, history)
     # Origin: explicit field from the UI wins; otherwise sniff "from <city>".
     origin_iata = resolve_origin(origin) or resolve_origin(message)
     intent["origin_iata"] = origin_iata
     intent["mode"] = mode or _infer_mode(message)
-    trace.append({
-        "step": "Understanding your request",
-        "detail": _describe_intent(intent),
-    })
+    yield emit("Understanding your request", _describe_intent(intent))
 
     candidates = filter_destinations(intent)
     scope = {"domestic": "within India", "international": "international"}.get(
         intent.get("mode"), "across all regions")
-    trace.append({
-        "step": "Filtering destinations",
-        "detail": f"Searched {scope}: narrowed {len(DESTINATIONS)} destinations down "
-                  f"to {len(candidates)} that fit your season and region.",
-    })
+    yield emit("Filtering destinations",
+               f"Searched {scope}: narrowed {len(DESTINATIONS)} destinations down "
+               f"to {len(candidates)} that fit your season and region.")
 
     costed = estimate_costs(candidates, intent)
-    trace.append({
-        "step": "Estimating trip costs",
-        "detail": f"Costed each option for a {intent['trip_days']}-day trip "
-                  f"(flights + on-the-ground spend).",
-    })
+    yield emit("Estimating trip costs",
+               f"Costed each option for a {intent['trip_days']}-day trip "
+               f"(flights + on-the-ground spend).")
 
     ranked = rank_destinations(costed, intent)
 
@@ -676,38 +676,47 @@ def run_workflow(message: str, history: Optional[List[Dict[str, str]]] = None,
         if n_live:
             src = "Pulled live flight & hotel prices" + (
                 f" from {origin_iata}" if origin_iata else "")
-            trace.append({
-                "step": "Fetching live prices",
-                "detail": f"{src} for {n_live} of the top picks "
-                          f"(falling back to estimates where unavailable).",
-            })
+            yield emit("Fetching live prices",
+                       f"{src} for {n_live} of the top picks "
+                       f"(falling back to estimates where unavailable).")
         else:
-            trace.append({
-                "step": "Fetching live prices",
-                "detail": "Live prices weren't available right now — showing planning estimates.",
-            })
+            yield emit("Fetching live prices",
+                       "Live prices weren't available right now — showing planning estimates.")
 
     # Live totals can shift which picks fit the budget, so re-rank the shortlist.
     ranked = rank_destinations(shortlist, intent) + ranked[6:]
     top = ranked[:3]
-    trace.append({
-        "step": "Ranking by season, budget & interests",
-        "detail": "Top match: " + ", ".join(
-            f"{d['name']} ({int(d['scores']['overall']*100)}%)" for d in top
-        ) if top else "No destinations matched.",
-    })
+    yield emit("Ranking by season, budget & interests",
+               "Top match: " + ", ".join(
+                   f"{d['name']} ({int(d['scores']['overall']*100)}%)" for d in top
+               ) if top else "No destinations matched.")
+
+    yield {"type": "step", "step": "Writing your recommendation",
+           "detail": "Drafting a personal pick from the shortlist…"}
 
     reply = generate_reply(ranked, intent) if top else (
         "I couldn't find a good match — could you tell me your budget, travel "
         "month and what kind of trip you're after?"
     )
 
-    return {
+    yield {
+        "type": "result",
         "reply": reply,
         "intent": intent,
         "trace": trace,
         "recommendations": [_card(d) for d in top],
     }
+
+
+def run_workflow(message: str, history: Optional[List[Dict[str, str]]] = None,
+                 origin: Optional[str] = None, mode: Optional[str] = None) -> Dict[str, Any]:
+    """Non-streaming entry point: drain the event generator and return the final
+    result dict (reply + trace + cards)."""
+    result: Dict[str, Any] = {}
+    for ev in workflow_events(message, history, origin, mode):
+        if ev.get("type") == "result":
+            result = {k: v for k, v in ev.items() if k != "type"}
+    return result
 
 
 def _describe_intent(intent: Dict[str, Any]) -> str:
@@ -773,7 +782,9 @@ realistic day-by-day itinerary for ONE destination. Reply with ONLY a JSON objec
       "title": string,                // short theme for the day, e.g. "Old town & sunset"
       "morning": string,              // one concrete activity sentence
       "afternoon": string,
-      "evening": string
+      "evening": string,
+      "cost_usd": number              // realistic per-person spend for THIS day in USD
+                                      // (stay + food + local transport + that day's activities)
     }
   ]
 }
@@ -781,7 +792,10 @@ realistic day-by-day itinerary for ONE destination. Reply with ONLY a JSON objec
 Rules: produce EXACTLY the requested number of days. Use real, specific places
 for this destination (lean on the provided must-visit list). Pace it sensibly
 (arrival/easing in on day 1, a marquee sight mid-trip, wind-down at the end).
-Tailor to the stated interests. Keep each line tight and evocative."""
+Tailor to the stated interests. Keep each line tight and evocative.
+COSTS: base each day's cost_usd around the given typical daily spend, varying it
+sensibly — higher on activity/excursion-heavy days, lower on relaxed/beach days.
+Be realistic for this destination; never return 0."""
 
 
 def generate_itinerary(name: str, days: int,
@@ -795,11 +809,13 @@ def generate_itinerary(name: str, days: int,
     must = "; ".join(f"{m['name']} ({m.get('desc','')})" for m in rich["must_visit"]) \
         or ", ".join(dest["tags"])
 
+    typical_day_usd = dest["daily_cost_usd"]
     brief = (
         f"Destination: {name}, {dest['country']} ({dest['continent']}).\n"
         f"Vibe: {dest['blurb']}\n"
         f"Must-visit anchors: {must}.\n"
         f"Trip length: {days} days.\n"
+        f"Typical on-the-ground spend: about ${typical_day_usd} per person per day.\n"
         f"Traveller interests: {', '.join(interests) if interests else 'general sightseeing'}.\n"
         f"Write the {days}-day itinerary JSON now."
     )
@@ -809,15 +825,31 @@ def generate_itinerary(name: str, days: int,
     ], temperature=0.6, json_mode=True)
     data = _safe_json(resp.content)
     plan = data.get("days") or []
-    # Normalise: ensure day numbers and trim to requested length.
+
+    inr_rate = pricing.usd_to_inr_rate()
+    # Sanity bounds so an LLM slip can't show an absurd day cost.
+    lo, hi = typical_day_usd * 0.4, typical_day_usd * 4
+
     cleaned = []
+    total_usd = 0
     for i, day in enumerate(plan[:days], 1):
+        cost = day.get("cost_usd")
+        try:
+            cost = float(cost)
+        except (TypeError, ValueError):
+            cost = typical_day_usd
+        if not (lo <= cost <= hi):
+            cost = typical_day_usd
+        cost = round(cost)
+        total_usd += cost
         cleaned.append({
             "day": i,
             "title": (day.get("title") or "").strip(),
             "morning": (day.get("morning") or "").strip(),
             "afternoon": (day.get("afternoon") or "").strip(),
             "evening": (day.get("evening") or "").strip(),
+            "cost_usd": cost,
+            "cost_inr": int(round(cost * inr_rate)),
         })
     return {
         "destination": name,
@@ -825,4 +857,7 @@ def generate_itinerary(name: str, days: int,
         "days": len(cleaned),
         "summary": (data.get("summary") or "").strip(),
         "plan": cleaned,
+        "total_usd": total_usd,
+        "total_inr": int(round(total_usd * inr_rate)),
+        "note": "Per-day costs are planning estimates (stay, food, local travel & activities), excluding flights.",
     }

@@ -1,10 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { continentGradient, photoUrl, formatUSD, formatINR } from "../lib/format";
-import { getItinerary } from "../api";
 
-export default function DestinationCard({ d, index }) {
+export default function DestinationCard({ d, index, onView }) {
   const [imgOk, setImgOk] = useState(true);
-  const [open, setOpen] = useState(false);
   const gradient = continentGradient(d.continent);
   const score = Math.round(d.scores.overall * 100);
   const duration =
@@ -168,139 +166,11 @@ export default function DestinationCard({ d, index }) {
 
         {/* CTA */}
         <button
-          onClick={() => setOpen(true)}
+          onClick={() => onView?.(d)}
           className="w-full rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500 px-3 py-2.5 text-sm font-semibold text-white shadow-lg transition hover:from-sky-400 hover:to-indigo-400"
         >
           View day-by-day plan →
         </button>
-      </div>
-
-      {open && <ItineraryModal d={d} onClose={() => setOpen(false)} />}
-    </div>
-  );
-}
-
-function ItineraryModal({ d, onClose }) {
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [data, setData] = useState(null);
-  const days = d.estimate?.days || d.ideal_days_min || 5;
-
-  // Fetch the tailored itinerary once when the modal opens.
-  useEffect(() => {
-    let alive = true;
-    getItinerary(d.name, days, d.matched_interests)
-      .then((res) => alive && setData(res))
-      .catch((e) => alive && setError(e.message))
-      .finally(() => alive && setLoading(false));
-    return () => {
-      alive = false;
-    };
-  }, [d.name, days, d.matched_interests]);
-
-  return (
-    <div
-      className="fixed inset-0 z-50 flex items-end justify-center bg-black/70 p-0 backdrop-blur-sm sm:items-center sm:p-6"
-      onClick={onClose}
-    >
-      <div
-        className="glass max-h-[88vh] w-full max-w-2xl overflow-hidden rounded-t-3xl sm:rounded-3xl"
-        onClick={(e) => e.stopPropagation()}
-      >
-        {/* Header image */}
-        <div className={`relative h-36 bg-gradient-to-br ${continentGradient(d.continent)}`}>
-          <img
-            src={photoUrl(d.image_query, 800, 360)}
-            alt={d.name}
-            className="absolute inset-0 h-full w-full object-cover opacity-70"
-            onError={(e) => (e.currentTarget.style.display = "none")}
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/85 to-transparent" />
-          <button
-            onClick={onClose}
-            className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur hover:bg-black/70"
-          >
-            ✕
-          </button>
-          <div className="absolute bottom-3 left-4 right-4">
-            <div className="text-[11px] font-semibold text-sky-300">
-              {days}-DAY ITINERARY
-            </div>
-            <h3 className="font-display text-2xl font-bold text-white">{d.name}</h3>
-            <p className="text-xs text-white/80">{d.country} · {d.continent}</p>
-          </div>
-        </div>
-
-        {/* Body */}
-        <div className="max-h-[calc(88vh-9rem)] overflow-y-auto p-5">
-          {loading && (
-            <div className="space-y-3">
-              <p className="text-sm text-slate-400">Crafting your tailored plan…</p>
-              {[...Array(days)].map((_, i) => (
-                <div key={i} className="h-16 animate-pulse rounded-xl bg-white/5" />
-              ))}
-            </div>
-          )}
-          {error && (
-            <p className="text-sm text-rose-300">Couldn’t build the itinerary: {error}</p>
-          )}
-          {data && (
-            <>
-              {data.summary && (
-                <p className="mb-4 text-sm leading-relaxed text-slate-300">{data.summary}</p>
-              )}
-              <ol className="space-y-3">
-                {data.plan.map((day) => (
-                  <li key={day.day} className="rounded-xl bg-white/5 p-4">
-                    <div className="mb-2 flex items-center gap-2">
-                      <span className="flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-sky-400 to-indigo-500 text-xs font-bold text-white">
-                        {day.day}
-                      </span>
-                      <span className="font-display text-sm font-bold text-white">
-                        {day.title}
-                      </span>
-                    </div>
-                    <div className="space-y-1.5 pl-9 text-[13px] text-slate-300">
-                      {day.morning && (
-                        <p><span className="text-amber-300">☀ Morning</span> — {day.morning}</p>
-                      )}
-                      {day.afternoon && (
-                        <p><span className="text-orange-300">🌤 Afternoon</span> — {day.afternoon}</p>
-                      )}
-                      {day.evening && (
-                        <p><span className="text-indigo-300">🌙 Evening</span> — {day.evening}</p>
-                      )}
-                    </div>
-                  </li>
-                ))}
-              </ol>
-
-              {/* Food + tips footer */}
-              {((d.food || []).length > 0 || (d.tips || []).length > 0) && (
-                <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                  {(d.food || []).length > 0 && (
-                    <div className="rounded-xl bg-white/5 p-3">
-                      <div className="mb-1 text-[11px] font-semibold uppercase tracking-wide text-slate-400">
-                        🍽 Must-eat
-                      </div>
-                      <p className="text-[12px] text-slate-300">{d.food.join(" · ")}</p>
-                    </div>
-                  )}
-                  {(d.tips || []).length > 0 && (
-                    <div className="rounded-xl bg-white/5 p-3">
-                      <div className="mb-1 text-[11px] font-semibold uppercase tracking-wide text-slate-400">
-                        💡 Good to know
-                      </div>
-                      <ul className="space-y-1 text-[12px] text-slate-300">
-                        {d.tips.map((t) => <li key={t}>• {t}</li>)}
-                      </ul>
-                    </div>
-                  )}
-                </div>
-              )}
-            </>
-          )}
-        </div>
       </div>
     </div>
   );

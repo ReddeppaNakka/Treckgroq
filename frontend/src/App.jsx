@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from "react";
-import { getMeta, recommend } from "./api";
+import { getMeta, recommendStream } from "./api";
 import {
   UserMessage,
   AssistantMessage,
   ThinkingMessage,
   ErrorMessage,
 } from "./components/Message";
+import ItineraryMessage from "./components/Itinerary";
 import Composer from "./components/Composer";
 
 const SUGGESTIONS = {
@@ -29,6 +30,7 @@ export default function App() {
   const [origin, setOrigin] = useState("");
   const [mode, setMode] = useState("domestic");
   const [loading, setLoading] = useState(false);
+  const [liveTrace, setLiveTrace] = useState([]);
   const [meta, setMeta] = useState(null);
   const scrollRef = useRef(null);
   const suggestions = SUGGESTIONS[mode];
@@ -59,22 +61,42 @@ export default function App() {
 
     setMessages((prev) => [...prev, { role: "user", content: message }]);
     setLoading(true);
+    setLiveTrace([]);
     try {
-      const data = await recommend(message, history, origin.trim() || undefined, mode);
-      setMessages((prev) => [
-        ...prev,
-        {
-          role: "assistant",
-          reply: data.reply,
-          trace: data.trace,
-          recommendations: data.recommendations,
+      await recommendStream(message, history, origin.trim() || undefined, mode, {
+        onStep: (ev) =>
+          setLiveTrace((prev) => [...prev, { step: ev.step, detail: ev.detail }]),
+        onResult: (data) =>
+          setMessages((prev) => [
+            ...prev,
+            {
+              role: "assistant",
+              reply: data.reply,
+              trace: data.trace,
+              recommendations: data.recommendations,
+            },
+          ]),
+        onError: (e) => {
+          throw e;
         },
-      ]);
+      });
     } catch (e) {
       setMessages((prev) => [...prev, { role: "error", content: e.message }]);
     } finally {
       setLoading(false);
+      setLiveTrace([]);
     }
+  };
+
+  // Open a destination's day-by-day plan inline, like another turn in the chat.
+  const viewItinerary = (d) => {
+    if (loading) return;
+    const days = d.estimate?.days || d.ideal_days_min || 5;
+    setMessages((prev) => [
+      ...prev,
+      { role: "user", content: `📋 ${days}-day plan for ${d.name}` },
+      { role: "itinerary", d, days },
+    ]);
   };
 
   const started = messages.length > 0;
@@ -116,7 +138,7 @@ export default function App() {
 
       {/* Conversation */}
       <main ref={scrollRef} className="flex-1 overflow-y-auto px-4 py-6 sm:px-8">
-        <div className="mx-auto max-w-3xl space-y-6">
+        <div className="mx-auto max-w-5xl space-y-6">
           {!started && <Welcome meta={meta} mode={mode} suggestions={suggestions} onPick={send} />}
 
           {messages.map((m, i) => {
@@ -124,23 +146,26 @@ export default function App() {
               return <UserMessage key={i} content={m.content} />;
             if (m.role === "error")
               return <ErrorMessage key={i} content={m.content} />;
+            if (m.role === "itinerary")
+              return <ItineraryMessage key={i} d={m.d} days={m.days} />;
             return (
               <AssistantMessage
                 key={i}
                 reply={m.reply}
                 trace={m.trace}
                 recommendations={m.recommendations}
+                onViewItinerary={viewItinerary}
               />
             );
           })}
 
-          {loading && <ThinkingMessage />}
+          {loading && <ThinkingMessage trace={liveTrace} />}
         </div>
       </main>
 
       {/* Composer */}
       <footer className="border-t border-white/5 px-4 py-4 sm:px-8">
-        <div className="mx-auto max-w-3xl space-y-2">
+        <div className="mx-auto max-w-5xl space-y-2">
           {started && (
             <div className="flex flex-wrap gap-2">
               {suggestions.slice(0, 3).map((s) => (

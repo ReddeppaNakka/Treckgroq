@@ -26,18 +26,22 @@ export function UserMessage({ content }) {
   );
 }
 
-export function AssistantMessage({ reply, trace, recommendations }) {
+export function AssistantMessage({ reply, trace, recommendations, onViewItinerary }) {
   return (
     <div className="flex gap-3 animate-fade-up">
       <Avatar className="bg-gradient-to-br from-sky-400 to-indigo-500 text-white">
         ✈
       </Avatar>
       <div className="min-w-0 flex-1 space-y-4">
-        {trace?.length > 0 && <AgentSteps trace={trace} />}
+        {trace?.length > 0 && (
+          <div className="max-w-2xl">
+            <AgentSteps trace={trace} />
+          </div>
+        )}
 
         {reply && (
           <div
-            className="reply max-w-[90%] rounded-2xl rounded-tl-sm glass px-4 py-3 text-sm leading-relaxed text-slate-200"
+            className="reply max-w-2xl rounded-2xl rounded-tl-sm glass px-4 py-3 text-sm leading-relaxed text-slate-200"
             dangerouslySetInnerHTML={{ __html: renderReply(reply) }}
           />
         )}
@@ -45,7 +49,7 @@ export function AssistantMessage({ reply, trace, recommendations }) {
         {recommendations?.length > 0 && (
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {recommendations.map((d, i) => (
-              <DestinationCard key={d.id} d={d} index={i} />
+              <DestinationCard key={d.id} d={d} index={i} onView={onViewItinerary} />
             ))}
           </div>
         )}
@@ -54,24 +58,32 @@ export function AssistantMessage({ reply, trace, recommendations }) {
   );
 }
 
-export function ThinkingMessage() {
-  const steps = ["Reading your request", "Filtering 110 destinations", "Costing & ranking"];
+export function ThinkingMessage({ trace = [] }) {
   return (
     <div className="flex gap-3 animate-fade-up">
       <Avatar className="bg-gradient-to-br from-sky-400 to-indigo-500 text-white">
         ✈
       </Avatar>
-      <div className="glass flex items-center gap-3 rounded-2xl rounded-tl-sm px-4 py-3">
-        <div className="flex gap-1">
-          {[0, 1, 2].map((i) => (
-            <span
-              key={i}
-              className="h-2 w-2 rounded-full bg-sky-400 animate-pulse-soft"
-              style={{ animationDelay: `${i * 200}ms` }}
-            />
-          ))}
-        </div>
-        <span className="text-sm text-slate-400">Atlas is planning…</span>
+      <div className="min-w-0 flex-1">
+        {trace.length > 0 ? (
+          // Live agent steps as they stream in from the backend.
+          <div className="max-w-2xl">
+            <AgentSteps trace={trace} live />
+          </div>
+        ) : (
+          <div className="glass inline-flex items-center gap-3 rounded-2xl rounded-tl-sm px-4 py-3">
+            <div className="flex gap-1">
+              {[0, 1, 2].map((i) => (
+                <span
+                  key={i}
+                  className="h-2 w-2 rounded-full bg-sky-400 animate-pulse-soft"
+                  style={{ animationDelay: `${i * 200}ms` }}
+                />
+              ))}
+            </div>
+            <span className="text-sm text-slate-400">Atlas is planning…</span>
+          </div>
+        )}
       </div>
     </div>
   );
