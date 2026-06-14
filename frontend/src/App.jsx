@@ -1,13 +1,13 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { Globe, Sparkles, AlertCircle } from "lucide-react";
 import { getMeta, recommendStream } from "./api";
-import {
-  UserMessage,
-  AssistantMessage,
-  ThinkingMessage,
-  ErrorMessage,
-} from "./components/Message";
-import ItineraryMessage from "./components/Itinerary";
-import Composer from "./components/Composer";
+import { renderReply } from "./lib/format";
+import Hero from "./components/Hero";
+import SearchBar from "./components/SearchBar";
+import AgentSteps from "./components/AgentSteps";
+import DestinationCard from "./components/DestinationCard";
+import TripDetail from "./components/TripDetail";
 
 const SUGGESTIONS = {
   domestic: [
@@ -25,281 +25,202 @@ const SUGGESTIONS = {
 };
 
 export default function App() {
-  const [messages, setMessages] = useState([]);
-  const [input, setInput] = useState("");
-  const [origin, setOrigin] = useState("");
   const [mode, setMode] = useState("domestic");
+  const [query, setQuery] = useState("");
+  const [origin, setOrigin] = useState("");
   const [loading, setLoading] = useState(false);
   const [liveTrace, setLiveTrace] = useState([]);
+  const [result, setResult] = useState(null);
+  const [error, setError] = useState(null);
+  const [selected, setSelected] = useState(null);
   const [meta, setMeta] = useState(null);
-  const scrollRef = useRef(null);
+
   const suggestions = SUGGESTIONS[mode];
+  const started = loading || !!result || !!error;
 
   useEffect(() => {
     getMeta().then(setMeta).catch(() => {});
   }, []);
 
-  useEffect(() => {
-    scrollRef.current?.scrollTo({
-      top: scrollRef.current.scrollHeight,
-      behavior: "smooth",
-    });
-  }, [messages, loading]);
-
-  const send = async (text) => {
-    const message = (text ?? input).trim();
+  const search = async (text) => {
+    const message = (text ?? query).trim();
     if (!message || loading) return;
-    setInput("");
-
-    // Build a compact history of prior user/assistant turns for context.
-    const history = messages
-      .filter((m) => m.role === "user" || (m.role === "assistant" && m.reply))
-      .map((m) => ({
-        role: m.role,
-        content: m.role === "user" ? m.content : m.reply,
-      }));
-
-    setMessages((prev) => [...prev, { role: "user", content: message }]);
+    setQuery(message);
     setLoading(true);
     setLiveTrace([]);
+    setResult(null);
+    setError(null);
+    window.scrollTo({ top: 0, behavior: "smooth" });
     try {
-      await recommendStream(message, history, origin.trim() || undefined, mode, {
+      await recommendStream(message, [], origin.trim() || undefined, mode, {
         onStep: (ev) =>
           setLiveTrace((prev) => [...prev, { step: ev.step, detail: ev.detail }]),
         onResult: (data) =>
-          setMessages((prev) => [
-            ...prev,
-            {
-              role: "assistant",
-              reply: data.reply,
-              trace: data.trace,
-              recommendations: data.recommendations,
-            },
-          ]),
+          setResult({
+            reply: data.reply,
+            recommendations: data.recommendations,
+            trace: data.trace,
+            query: message,
+          }),
         onError: (e) => {
           throw e;
         },
       });
     } catch (e) {
-      setMessages((prev) => [...prev, { role: "error", content: e.message }]);
+      setError(e.message);
     } finally {
       setLoading(false);
       setLiveTrace([]);
     }
   };
 
-  // Open a destination's day-by-day plan inline, like another turn in the chat.
-  const viewItinerary = (d) => {
-    if (loading) return;
-    const days = d.estimate?.days || d.ideal_days_min || 5;
-    setMessages((prev) => [
-      ...prev,
-      { role: "user", content: `📋 ${days}-day plan for ${d.name}` },
-      { role: "itinerary", d, days },
-    ]);
+  const goHome = () => {
+    setResult(null);
+    setError(null);
+    setLiveTrace([]);
+    setQuery("");
   };
 
-  const started = messages.length > 0;
-
   return (
-    <div className="relative flex h-full flex-col overflow-hidden">
-      {/* Ambient background */}
-      <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute -left-40 -top-40 h-[28rem] w-[28rem] rounded-full bg-sky-500/20 blur-[120px]" />
-        <div className="absolute -bottom-40 -right-40 h-[28rem] w-[28rem] rounded-full bg-indigo-500/20 blur-[120px]" />
-        <div className="absolute left-1/2 top-1/3 h-72 w-72 -translate-x-1/2 rounded-full bg-fuchsia-500/10 blur-[120px]" />
-      </div>
+    <div className="relative min-h-full">
+      {/* Top bar */}
+      <header className="sticky top-0 z-30 border-b border-white/5 bg-ink/70 backdrop-blur-xl">
+        <div className="mx-auto flex max-w-6xl items-center gap-4 px-4 py-3 sm:px-6">
+          <button onClick={goHome} className="flex flex-none items-center gap-2.5">
+            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 text-lg shadow-lg">
+              🧭
+            </span>
+            <span className="text-left">
+              <span className="block font-serif text-lg font-semibold leading-none text-white">
+                Atlas
+              </span>
+              <span className="block text-[10px] tracking-wide text-slate-400">
+                AI TRAVEL CONCIERGE
+              </span>
+            </span>
+          </button>
 
-      {/* Header */}
-      <header className="flex items-center justify-between border-b border-white/5 px-5 py-3.5 sm:px-8">
-        <div className="flex items-center gap-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-sky-400 to-indigo-500 text-lg shadow-lg">
-            🌍
-          </div>
-          <div>
-            <div className="font-display text-base font-bold leading-none text-white">
-              Atlas
-            </div>
-            <div className="text-[11px] text-slate-400">
-              AI Travel Recommender
-            </div>
-          </div>
-        </div>
-        <div className="flex items-center gap-4">
-          <ModeTabs mode={mode} onChange={setMode} />
-          {meta && (
-            <div className="hidden items-center gap-4 text-[11px] text-slate-400 lg:flex">
-              <Stat n={meta.destination_count} label="destinations" />
-              <Stat n={meta.country_count} label="countries" />
+          {/* Compact search appears once a search has started */}
+          {started && (
+            <div className="min-w-0 flex-1">
+              <SearchBar
+                mode={mode}
+                setMode={setMode}
+                value={query}
+                onChange={setQuery}
+                origin={origin}
+                setOrigin={setOrigin}
+                onSubmit={search}
+                loading={loading}
+                livePricing={meta?.live_pricing}
+                compact
+              />
             </div>
           )}
+
+          <div className="ml-auto hidden items-center gap-3 text-[11px] text-slate-400 lg:flex">
+            {meta?.live_pricing && (
+              <span className="flex items-center gap-1 rounded-full bg-sky-500/10 px-2.5 py-1 font-semibold text-sky-300">
+                <span className="h-1.5 w-1.5 animate-pulse-soft rounded-full bg-sky-400" />
+                Live prices
+              </span>
+            )}
+            {meta && (
+              <span className="flex items-center gap-1">
+                <Globe size={13} /> {meta.country_count} countries
+              </span>
+            )}
+          </div>
         </div>
       </header>
 
-      {/* Conversation */}
-      <main ref={scrollRef} className="flex-1 overflow-y-auto px-4 py-6 sm:px-8">
-        <div className="mx-auto max-w-5xl space-y-6">
-          {!started && <Welcome meta={meta} mode={mode} suggestions={suggestions} onPick={send} />}
-
-          {messages.map((m, i) => {
-            if (m.role === "user")
-              return <UserMessage key={i} content={m.content} />;
-            if (m.role === "error")
-              return <ErrorMessage key={i} content={m.content} />;
-            if (m.role === "itinerary")
-              return <ItineraryMessage key={i} d={m.d} days={m.days} />;
-            return (
-              <AssistantMessage
-                key={i}
-                reply={m.reply}
-                trace={m.trace}
-                recommendations={m.recommendations}
-                onViewItinerary={viewItinerary}
-              />
-            );
-          })}
-
-          {loading && <ThinkingMessage trace={liveTrace} />}
-        </div>
-      </main>
-
-      {/* Composer */}
-      <footer className="border-t border-white/5 px-4 py-4 sm:px-8">
-        <div className="mx-auto max-w-5xl space-y-2">
-          {started && (
-            <div className="flex flex-wrap gap-2">
-              {suggestions.slice(0, 3).map((s) => (
-                <Chip
-                  key={s}
-                  text={s}
-                  onClick={() => send(s)}
-                  disabled={loading}
-                />
-              ))}
-            </div>
-          )}
-          {meta?.live_pricing && (
-            <div className="flex items-center gap-2">
-              <span className="text-[11px] text-slate-500">✈️ Flying from</span>
-              <input
-                value={origin}
-                onChange={(e) => setOrigin(e.target.value)}
-                placeholder="e.g. Mumbai or DEL"
-                className="w-44 rounded-lg border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-slate-200 placeholder:text-slate-500 focus:border-sky-400/50 focus:outline-none"
-              />
-              <span className="text-[11px] text-slate-500">
-                — for live flight prices
-              </span>
-            </div>
-          )}
-          <Composer
-            value={input}
-            onChange={setInput}
-            onSend={() => send()}
-            disabled={loading}
+      {/* Body */}
+      {!started ? (
+        <div className="min-h-[calc(100vh-3.5rem)]">
+          <Hero
+            mode={mode}
+            setMode={setMode}
+            query={query}
+            setQuery={setQuery}
+            origin={origin}
+            setOrigin={setOrigin}
+            onSubmit={search}
+            loading={loading}
+            livePricing={meta?.live_pricing}
+            suggestions={suggestions}
+            meta={meta}
           />
-          <p className="text-center text-[11px] text-slate-500">
-            {meta?.live_pricing
-              ? "Atlas pulls live flight & hotel prices for top picks — cards marked ● Live are real fares; others are planning estimates."
-              : "Atlas reasons over real destination data — figures are planning estimates, not live prices."}
-          </p>
         </div>
-      </footer>
-    </div>
-  );
-}
+      ) : (
+        <main className="mx-auto max-w-6xl px-4 py-6 sm:px-6">
+          {/* Thinking / trace */}
+          {(loading || result) && (
+            <div className="mb-6 max-w-2xl">
+              <AgentSteps
+                trace={loading ? liveTrace : result.trace}
+                live={loading}
+              />
+            </div>
+          )}
 
-function ModeTabs({ mode, onChange }) {
-  const tabs = [
-    { id: "domestic", label: "Domestic", flag: "🇮🇳" },
-    { id: "international", label: "International", flag: "🌍" },
-  ];
-  return (
-    <div className="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 p-1">
-      {tabs.map((t) => (
-        <button
-          key={t.id}
-          onClick={() => onChange(t.id)}
-          className={
-            "flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-semibold transition " +
-            (mode === t.id
-              ? "bg-gradient-to-r from-sky-400 to-indigo-500 text-white shadow"
-              : "text-slate-400 hover:text-white")
-          }
-        >
-          <span>{t.flag}</span>
-          {t.label}
-        </button>
-      ))}
-    </div>
-  );
-}
+          {/* Reply intro */}
+          {result?.reply && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="mb-6 flex max-w-3xl gap-3"
+            >
+              <span className="flex h-9 w-9 flex-none items-center justify-center rounded-xl bg-gradient-to-br from-sky-400 to-indigo-500 text-sm">
+                <Sparkles size={16} className="text-white" />
+              </span>
+              <div
+                className="reply glass ring-hairline rounded-2xl rounded-tl-sm px-4 py-3 text-sm leading-relaxed text-slate-200"
+                dangerouslySetInnerHTML={{ __html: renderReply(result.reply) }}
+              />
+            </motion.div>
+          )}
 
-function Stat({ n, label }) {
-  return (
-    <div className="text-right">
-      <span className="font-display font-bold text-white">{n}</span>{" "}
-      <span>{label}</span>
-    </div>
-  );
-}
+          {/* Error */}
+          {error && (
+            <div className="flex max-w-2xl items-start gap-3 rounded-2xl border border-rose-500/30 bg-rose-500/10 px-4 py-3 text-sm text-rose-200">
+              <AlertCircle size={18} className="mt-0.5 flex-none" />
+              <div>
+                {error}
+                <button
+                  onClick={() => search(query)}
+                  className="ml-2 underline hover:text-white"
+                >
+                  Try again
+                </button>
+              </div>
+            </div>
+          )}
 
-function Chip({ text, onClick, disabled }) {
-  return (
-    <button
-      onClick={onClick}
-      disabled={disabled}
-      className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-slate-300 transition hover:border-sky-400/50 hover:bg-sky-400/10 hover:text-white disabled:opacity-40"
-    >
-      {text}
-    </button>
-  );
-}
+          {/* Results grid */}
+          {result?.recommendations?.length > 0 && (
+            <>
+              <div className="mb-3 flex items-baseline justify-between">
+                <h2 className="font-display text-lg font-bold text-white">
+                  Top picks for you
+                </h2>
+                <span className="text-xs text-slate-500">
+                  Tap a trip for the full plan
+                </span>
+              </div>
+              <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                {result.recommendations.map((d, i) => (
+                  <DestinationCard key={d.id} d={d} index={i} onOpen={setSelected} />
+                ))}
+              </div>
+            </>
+          )}
+        </main>
+      )}
 
-function Welcome({ meta, mode, suggestions, onPick }) {
-  const domestic = mode === "domestic";
-  return (
-    <div className="flex flex-col items-center pt-8 text-center animate-fade-up sm:pt-16">
-      <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-400 to-indigo-500 text-3xl shadow-2xl">
-        {domestic ? "🇮🇳" : "🧭"}
-      </div>
-      <h1 className="font-display text-3xl font-extrabold leading-tight text-white sm:text-4xl">
-        {domestic ? "Explore incredible India" : "Where should you go next?"}
-      </h1>
-      <p className="mt-3 max-w-md text-sm leading-relaxed text-slate-400">
-        {domestic ? (
-          <>
-            Tell me your budget in rupees, when you want to travel, and what you
-            love. Atlas plans low-budget trips across India — beaches, hills,
-            heritage and more — with real must-visit spots and day-by-day plans.
-          </>
-        ) : (
-          <>
-            Tell me your budget, when you want to travel, and what you love. My
-            agent filters{" "}
-            <span className="text-slate-200">
-              {meta ? meta.destination_count : "100+"} destinations
-            </span>{" "}
-            across {meta ? meta.continent_count : "6"} continents, estimates your
-            costs, and ranks the best matches.
-          </>
-        )}
-      </p>
-
-      <div className="mt-8 grid w-full max-w-xl grid-cols-1 gap-2.5 sm:grid-cols-2">
-        {suggestions.map((s) => (
-          <button
-            key={s}
-            onClick={() => onPick(s)}
-            className="group glass rounded-xl px-4 py-3 text-left text-sm text-slate-300 transition hover:border-sky-400/40 hover:bg-sky-400/5"
-          >
-            <span className="mr-2 text-sky-400 transition group-hover:translate-x-0.5">
-              →
-            </span>
-            {s}
-          </button>
-        ))}
-      </div>
+      {/* Trip detail overlay */}
+      <AnimatePresence>
+        {selected && <TripDetail d={selected} onClose={() => setSelected(null)} />}
+      </AnimatePresence>
     </div>
   );
 }
