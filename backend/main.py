@@ -18,7 +18,13 @@ from pydantic import BaseModel, Field
 
 load_dotenv()
 
-from agent import run_workflow, generate_itinerary, SMART_MODEL, FAST_MODEL, USD_TO_INR  # noqa: E402
+import json  # noqa: E402
+
+from fastapi.responses import StreamingResponse  # noqa: E402
+
+from agent import (  # noqa: E402
+    run_workflow, workflow_events, generate_itinerary, SMART_MODEL, FAST_MODEL, USD_TO_INR,
+)
 from destinations import DESTINATIONS, ALL_TAGS  # noqa: E402
 import pricing  # noqa: E402
 
@@ -94,6 +100,33 @@ def recommend(req: RecommendRequest):
         return run_workflow(req.message, history, origin=req.origin, mode=req.mode)
     except Exception as exc:  # surface a clean error to the client
         raise HTTPException(status_code=500, detail=f"Agent failed: {exc}")
+
+
+@app.post("/api/recommend/stream")
+def recommend_stream(req: RecommendRequest):
+    """Same pipeline as /api/recommend, but streams each agent step as NDJSON
+    ({"type":"step",...}) as it completes, then a final {"type":"result",...}."""
+    if not _key_ready():
+        raise HTTPException(
+            status_code=503,
+            detail="GROQ_API_KEY is not set. Add your key to backend/.env "
+                   "(get one free at https://console.groq.com/keys) and restart the backend.",
+        )
+
+    history = [t.model_dump() for t in req.history] if req.history else None
+
+    def gen():
+        try:
+            for ev in workflow_events(req.message, history, origin=req.origin, mode=req.mode):
+                yield json.dumps(ev) + "\n"
+        except Exception as exc:  # stream a clean error event instead of dropping the connection
+            yield json.dumps({"type": "error", "detail": f"Agent failed: {exc}"}) + "\n"
+
+    return StreamingResponse(
+        gen(),
+        media_type="application/x-ndjson",
+        headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
+    )
 
 
 @app.post("/api/itinerary")
