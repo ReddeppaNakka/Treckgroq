@@ -7,6 +7,16 @@ conversational **React** frontend.
 
 > **Stack:** Python · FastAPI · LangChain · Groq API (LLaMA 3.3 70B) · React + Vite + Tailwind
 
+<p align="center">
+  <a href="https://treckgroq-1.onrender.com/">
+    <img src="https://img.shields.io/badge/▶_Live_Demo-treckgroq--1.onrender.com-10B981?style=for-the-badge&logo=render&logoColor=white" alt="Live demo" />
+  </a>
+</p>
+
+> ⏱️ **Heads up:** the demo runs on Render's free tier, which sleeps when idle.
+> The first request can take **30–60 seconds** to wake the service — after that
+> it's responsive.
+
 ---
 
 ## ✨ What it does
