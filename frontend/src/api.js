@@ -21,6 +21,15 @@ export function getMeta() {
   return request("/api/meta");
 }
 
+// Full destination catalog for the Explore experience (browse + map). Pure data,
+// no LLM — instant. Cached in-module so we fetch it once per session.
+let _catalog = null;
+export async function getDestinations() {
+  if (_catalog) return _catalog;
+  _catalog = (await request("/api/destinations")).destinations;
+  return _catalog;
+}
+
 export function recommend(message, history, origin, mode) {
   return request("/api/recommend", {
     method: "POST",
@@ -79,6 +88,50 @@ export async function recommendStream(
       else if (ev.type === "error") onError?.(new Error(ev.detail));
     }
   }
+}
+
+// Full card for one destination (story + neutral estimate), no LLM. Used when a
+// user taps a place in Explore to open its detail directly.
+export function getDestinationCard(name) {
+  return request(`/api/destination/${encodeURIComponent(name)}`);
+}
+
+// Instant hybrid search (keyword + semantic + geo). No LLM — fast + explainable.
+export async function searchDestinations(query, mode) {
+  const body = JSON.stringify({ query, mode, limit: 24 });
+  const res = await request("/api/search", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body,
+  });
+  return res.results || [];
+}
+
+// Live on-the-ground conditions (air quality, sunrise/sunset, rain chance).
+export function getConditions(name) {
+  return request(`/api/conditions/${encodeURIComponent(name)}`);
+}
+
+// Hidden-gems POI discovery categories (waterfalls, forts, caves…).
+let _poiCats = null;
+export async function getNearbyCategories() {
+  if (_poiCats) return _poiCats;
+  _poiCats = (await request("/api/nearby/categories")).categories;
+  return _poiCats;
+}
+
+// Destination coordinates + a mixed set of nearby highlights (for its detail map).
+export function getAround(name) {
+  return request(`/api/around/${encodeURIComponent(name)}`);
+}
+
+// Real POIs (OpenStreetMap) of a category near a point or a named place.
+export function getNearby({ category, lat, lng, near, radiusKm = 60, limit = 30 }) {
+  return request("/api/nearby", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ category, lat, lng, near, radius_km: radiusKm, limit }),
+  });
 }
 
 export function getItinerary(name, days, interests) {

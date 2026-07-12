@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import json
 import os
+import random
 import re
 from typing import Any, Dict, List, Optional
 
@@ -63,6 +64,65 @@ def _infer_mode(message: str) -> Optional[str]:
         return "international"
     return None
 
+
+def _infer_style(message: str, intent: Dict[str, Any]) -> str:
+    """Decide the traveller's spending style: shoestring | budget | mid | luxury.
+
+    Students and backpackers get the cheapest realistic plan (bus/train + hostels).
+    We look for explicit words first, then fall back to the per-day budget if the
+    traveller gave an amount, then to the budget tier word.
+    """
+    low = message.lower()
+    if re.search(
+        r"\b(students?|backpack\w*|shoestring|hostels?|dirt[\s-]?cheap|super[\s-]?cheap|"
+        r"ultra[\s-]?budget|broke|cheapest|very (?:low|tight) budget|low[\s-]?cost)\b",
+        low,
+    ):
+        return "shoestring"
+    if re.search(r"\b(luxury|luxe|premium|five[\s-]?star|lavish|splurge)\b", low):
+        return "luxury"
+
+    budget = intent.get("budget_total_usd")
+    days = max(1, int(intent.get("trip_days") or 7))
+    if budget:
+        per_day = budget / days
+        if per_day < 22:      # < ~₹1,800/day
+            return "shoestring"
+        if per_day < 55:      # < ~₹4,500/day
+            return "budget"
+        if per_day > 200:     # > ~₹16,500/day
+            return "luxury"
+        return "mid"
+
+    tier = intent.get("budget_tier")
+    if tier == "luxury":
+        return "luxury"
+    if tier == "budget":
+        return "budget"
+    return "mid"
+
+
+def _transport_cost_usd(dest: Dict[str, Any], style: str) -> tuple[float, str]:
+    """Choose a travel cost + mode. Budget/shoestring travellers within India go by
+    overnight bus or sleeper train; everyone else, and all international trips, fly."""
+    is_india = dest["country"] == "India"
+    band = dest["flight_band"]
+    if is_india and style in ("shoestring", "budget"):
+        return float(DOMESTIC_SURFACE_COST.get(band, 20)), "bus/train"
+    if is_india:
+        return float(FLIGHT_BAND_COST.get(band, 45)), "flight"
+    return float(FLIGHT_BAND_COST.get(band, 600)), "flight"
+
+
+def _is_domestic(intent: Dict[str, Any], dests: Optional[List[Dict[str, Any]]] = None) -> bool:
+    """True when we should speak purely in rupees: an explicit domestic request, or
+    a shortlist that is entirely within India."""
+    if intent.get("mode") == "domestic":
+        return True
+    if dests:
+        return all(d.get("country") == "India" for d in dests)
+    return False
+
 # ---------------------------------------------------------------------------
 # Model configuration
 # ---------------------------------------------------------------------------
@@ -86,6 +146,16 @@ SEASON_TO_MONTHS = {
 # Rough round-trip airfare per flight band (USD), from an Indian origin.
 # Band 0 is a domestic India hop (cheap flight / train); 1-4 climb to long-haul.
 FLIGHT_BAND_COST = {0: 45, 1: 150, 2: 450, 3: 750, 4: 1100}
+
+# Cheap domestic surface transport (overnight bus / sleeper train), round-trip
+# USD, keyed by the same flight band. Budget travellers rarely fly within India —
+# an overnight bus both costs a fraction of the fare and saves a night's stay.
+DOMESTIC_SURFACE_COST = {0: 15, 1: 24, 2: 34, 3: 44, 4: 55}
+
+# Daily on-the-ground spend multiplier by travel style, applied to the dataset's
+# mid-range daily_cost_usd. Shoestring = hostels/dorms, street food, local buses;
+# luxury = boutique stays and private transport.
+STYLE_DAILY_MULT = {"shoestring": 0.5, "budget": 0.7, "mid": 1.0, "luxury": 1.7}
 
 # USD -> INR conversion (override via env when rates move).
 USD_TO_INR = float(os.getenv("USD_TO_INR", "83"))
@@ -163,15 +233,19 @@ _MULTIPLIERS = {
 _INDIAN_MULTIPLIERS = {"lakh", "lakhs", "lac", "lacs", "crore", "crores", "cr"}
 
 
-def parse_budget(text: str) -> tuple[Optional[float], Optional[str]]:
+def parse_budget(text: str, default_currency: Optional[str] = None) -> tuple[Optional[float], Optional[str]]:
     """Deterministically pull (amount, currency_code) out of the user's text.
 
     Returns (amount_in_that_currency, currency_code). Either may be None.
     Handles symbols/words/codes for the currency and Indian/Western shorthand
     (lakh, crore, k, million) for the amount. We do this in code rather than
     trusting the small intent model to read currencies correctly.
+
+    ``default_currency`` is assumed when the text names no currency at all — in
+    India/domestic mode this is "INR", so a bare "under 4000" reads as ₹4,000
+    (not $4,000). This also lets a plain number count as a budget in that mode.
     """
-    currency = detect_currency(text)
+    currency = detect_currency(text) or default_currency
     low = text.lower()
 
     # 1) Amount written with a shorthand multiplier: "2 lakh", "1.5k", "3 crore".
@@ -292,7 +366,8 @@ If the user gives a budget tier word (cheap/budget, moderate/mid, luxury/premium
 Map any interests onto the allowed tag list as closely as possible."""
 
 
-def extract_intent(message: str, history: Optional[List[Dict[str, str]]] = None) -> Dict[str, Any]:
+def extract_intent(message: str, history: Optional[List[Dict[str, str]]] = None,
+                   mode: Optional[str] = None) -> Dict[str, Any]:
     llm = _make_llm(FAST_MODEL, temperature=0.1, json_mode=True)
     convo = ""
     if history:
@@ -305,10 +380,15 @@ def extract_intent(message: str, history: Optional[List[Dict[str, str]]] = None)
     ])
     data = _safe_json(resp.content)
 
+    # This app is India-first: in domestic mode a bare number is rupees, so a
+    # plain "under 4000" means ₹4,000 — never $4,000.
+    eff_mode = mode or _infer_mode(message)
+    default_ccy = "INR" if eff_mode == "domestic" else None
+
     # --- Budget: parse + convert to USD deterministically in code ---
     # Primary source is a regex parse of the raw message (reliable for currency);
     # the small intent model is only a fallback when we can't find a number.
-    raw_amount, currency = parse_budget(message)
+    raw_amount, currency = parse_budget(message, default_ccy)
 
     if raw_amount is None:
         # Fall back to whatever the model extracted.
@@ -323,6 +403,9 @@ def extract_intent(message: str, history: Optional[List[Dict[str, str]]] = None)
         model_currency = data.get("budget_currency")
         if currency is None and isinstance(model_currency, str):
             currency = model_currency.strip().upper() or None
+        # Still nothing? In domestic mode assume rupees rather than dollars.
+        if currency is None:
+            currency = default_ccy
 
     budget_total_usd = None
     if isinstance(raw_amount, (int, float)) and raw_amount > 0:
@@ -400,24 +483,32 @@ def estimate_costs(candidates: List[Dict[str, Any]], intent: Dict[str, Any]) -> 
     days = max(1, int(intent.get("trip_days") or 7))
     budget = intent.get("budget_total_usd")
     tier = intent.get("budget_tier")
+    style = intent.get("travel_style") or "mid"
+    mult = STYLE_DAILY_MULT.get(style, 1.0)
 
     enriched = []
     for d in candidates:
-        flight = FLIGHT_BAND_COST.get(d["flight_band"], 600)
-        ground = d["daily_cost_usd"] * days
-        total = flight + ground
+        # Transport scales with style (budget travellers take the bus/train within
+        # India); daily spend scales with style too (dorm vs boutique).
+        transport, transport_mode = _transport_cost_usd(d, style)
+        per_day = max(6, round(d["daily_cost_usd"] * mult))
+        ground = per_day * days
+        total = transport + ground
         item = dict(d)
         item["estimate"] = {
             "days": days,
-            "flight_usd": flight,
+            "style": style,
+            "transport_mode": transport_mode,   # "flight" | "bus/train"
+            # Kept under the flight_* keys so the rest of the pipeline/UI is unchanged.
+            "flight_usd": transport,
             "ground_usd": ground,
             "total_usd": total,
-            "per_day_usd": d["daily_cost_usd"],
-            # Mirror every figure in INR so the UI can show both by default.
-            "flight_inr": usd_to_inr(flight),
+            "per_day_usd": per_day,
+            # Mirror every figure in INR so the UI can show rupees by default.
+            "flight_inr": usd_to_inr(transport),
             "ground_inr": usd_to_inr(ground),
             "total_inr": usd_to_inr(total),
-            "per_day_inr": usd_to_inr(d["daily_cost_usd"]),
+            "per_day_inr": usd_to_inr(per_day),
             "source": "estimate",  # upgraded to "live"/"partly live" if real prices arrive
         }
         _score_budget_fit(item, total, budget, tier)
@@ -488,6 +579,57 @@ def rank_destinations(items: List[Dict[str, Any]], intent: Dict[str, Any]) -> Li
     return items
 
 
+def select_top(ranked: List[Dict[str, Any]], k: int = 3, margin: float = 0.05
+               ) -> List[Dict[str, Any]]:
+    """Choose the k destinations to feature — with rotation among near-ties.
+
+    Taking the deterministic top-k makes every similar (or vague) search return the
+    exact same places: when a query doesn't pin down season/interest/budget, every
+    candidate scores the same, and a stable sort just keeps dataset order, so the
+    head of the list wins every time. Instead we gather all destinations scoring
+    within ``margin`` of the best and rotate randomly among them, so repeat/similar
+    searches surface fresh — but still strong — picks. We also avoid featuring k
+    places from the same country when the pool allows it.
+    """
+    if not ranked:
+        return []
+    top_score = ranked[0]["scores"]["overall"]
+    pool = [d for d in ranked if d["scores"]["overall"] >= top_score - margin]
+    random.shuffle(pool)
+
+    chosen: List[Dict[str, Any]] = []
+    chosen_ids: set = set()
+    seen_countries: set = set()
+
+    # First pass: prefer one pick per country for a more varied shortlist.
+    for d in pool:
+        if len(chosen) >= k:
+            break
+        if d["country"] in seen_countries:
+            continue
+        chosen.append(d)
+        chosen_ids.add(d["id"])
+        seen_countries.add(d["country"])
+
+    # If country-diversity left us short, fill from the rest of the (shuffled) pool.
+    for d in pool:
+        if len(chosen) >= k:
+            break
+        if d["id"] not in chosen_ids:
+            chosen.append(d)
+            chosen_ids.add(d["id"])
+
+    # Tiny pool? Top up from the remaining ranked list in score order.
+    for d in ranked:
+        if len(chosen) >= k:
+            break
+        if d["id"] not in chosen_ids:
+            chosen.append(d)
+            chosen_ids.add(d["id"])
+
+    return chosen[:k]
+
+
 # ===========================================================================
 # Stage 4.5 — Live pricing (best-effort overlay on the top shortlist)
 # ===========================================================================
@@ -508,6 +650,10 @@ def apply_live_prices(top: List[Dict[str, Any]], intent: Dict[str, Any]) -> int:
     live = pricing.live_estimates([d["name"] for d in top], origin, month, days)
     updated = 0
     for d in top:
+        # Budget bus/train trips shouldn't be overwritten with airfares/hotel rates —
+        # keep the cheap surface estimate that matches how the traveller will go.
+        if d["estimate"].get("transport_mode") == "bus/train":
+            continue
         got = live.get(d["name"])
         if not got:
             continue
@@ -535,21 +681,72 @@ def apply_live_prices(top: List[Dict[str, Any]], intent: Dict[str, Any]) -> int:
 
 
 # ===========================================================================
+# Stage 4.6 — Live climate (free, key-less Open-Meteo overlay)
+# ===========================================================================
+def apply_climate(top: List[Dict[str, Any]], intent: Dict[str, Any]) -> int:
+    """Attach a live climate block to each shortlisted destination, in place.
+
+    Uses the traveller's chosen month when they named one; otherwise each
+    destination's own first best-month, so the card still shows honest weather.
+    Returns the number of destinations that got a climate reading.
+    """
+    if not pricing.climate_enabled() or not top:
+        return 0
+    tmonth = intent.get("travel_month")
+    reqs = [
+        (d["name"], d["country"], tmonth or (d["best_months"][0] if d.get("best_months") else 1))
+        for d in top
+    ]
+    got = pricing.climate_estimates(reqs)
+    updated = 0
+    for d in top:
+        c = got.get(d["name"])
+        if c:
+            # Flag when the traveller's own month is a poor-weather window but the
+            # destination has better (often cheaper, less crowded) months to offer.
+            if tmonth and not c.get("pleasant"):
+                better = [MONTH_NAMES[m] for m in d.get("best_months", []) if m != tmonth]
+                if better:
+                    c["better_months"] = better[:3]
+            d["climate"] = c
+            updated += 1
+    return updated
+
+
+# ===========================================================================
 # Stage 5 — Recommendation text
 # ===========================================================================
 def _format_for_prompt(top: List[Dict[str, Any]], intent: Dict[str, Any]) -> str:
+    domestic = _is_domestic(intent, top)
     lines = []
     for d in top:
         est = d["estimate"]
-        cost = f"{format_usd(est['total_usd'])} ({format_inr(est['total_inr'])})"
+        mode = est.get("transport_mode", "flights")
+        if domestic:
+            # Rupees only, and name the real way there (overnight bus/train vs flight).
+            cost = format_inr(est["total_inr"])
+            per = f"{format_inr(est['per_day_inr'])}/day"
+            trans = f"~{format_inr(est['flight_inr'])} {mode}"
+        else:
+            cost = f"{format_usd(est['total_usd'])} ({format_inr(est['total_inr'])})"
+            per = f"{format_usd(est['per_day_usd'])}/day"
+            trans = f"~{format_usd(est['flight_usd'])} {mode}"
         tag = "LIVE price" if est.get("source") == "live" else (
             "part-live price" if est.get("source") == "partly live" else "estimate")
+        clim = d.get("climate")
+        weather = ""
+        if clim:
+            weather = (f" Weather in {MONTH_NAMES[clim['month']]}: {clim['verdict']}, "
+                       f"~{clim['high_c']}°C day / {clim['low_c']}°C night.")
+            if clim.get("better_months"):
+                weather += (f" (That month is not ideal here — {', '.join(clim['better_months'])} "
+                            f"are pleasanter and usually cheaper/less crowded.)")
         lines.append(
             f"- {d['name']}, {d['country']} ({d['continent']}). "
             f"Best months: {', '.join(MONTH_NAMES[m] for m in d['best_months'])}. "
             f"{est['days']}-day cost ~{cost} [{tag}] "
-            f"({format_usd(est['per_day_usd'])}/day + ~{format_usd(est['flight_usd'])} flights). "
-            f"Vibe: {d['blurb']} Tags: {', '.join(d['tags'])}."
+            f"({per} + {trans}). "
+            f"Vibe: {d['blurb']} Tags: {', '.join(d['tags'])}.{weather}"
         )
     return "\n".join(lines)
 
@@ -563,17 +760,29 @@ Write naturally and concisely (about 130-200 words):
 - Open with one friendly sentence acknowledging what they asked for.
 - For each of the 3 picks: a bold destination name, then 1-2 sentences on why it
   fits their season, budget and interests, weaving in the estimated cost.
-- ALWAYS state each cost in BOTH US dollars and Indian rupees exactly as given in
-  the shortlist, e.g. "around $1,135 (₹94,205)". Use the figures verbatim; never
-  recompute or drop a currency.
-- BUDGET HONESTY: never claim a trip fits a budget it exceeds. If the brief says
-  the options are over the traveller's budget, say so plainly up front — these are
-  the closest matches but cost more than they set — and tell them roughly how much
-  more, then suggest raising the budget or a nearer/shorter trip. Do not gloss over it.
-- LIVE PRICES: a shortlist line tagged [LIVE price] is a real fetched fare/rate —
-  you may call it a "live price"; lines tagged [estimate] are planning estimates, so
-  don't call those "live". If the brief says origin_known is false, briefly invite the
-  traveller to share which city they're flying from so you can pull live flight prices.
+- CURRENCY: use the cost figures from the shortlist verbatim — never recompute or
+  invent numbers. Obey the brief's "currency_instruction": if it is "INR only",
+  quote EVERY price in Indian rupees only (e.g. "around ₹4,200") and do NOT mention
+  US dollars at all; otherwise give both, e.g. "around $1,135 (₹94,205)".
+- TRAVEL STYLE: the brief carries "travel_style", and each shortlist line names how
+  you get there ("bus/train" or "flight"). For budget/shoestring travellers (e.g.
+  students), lean into saving money: recommend the overnight bus or sleeper train
+  (it also saves a night's stay), hostels/dorms and local street food, and give a
+  clear all-in total. For luxury, match that tone instead. Never push flights on a
+  budget traveller when the shortlist says bus/train.
+- BUDGET HONESTY: never claim a trip fits a budget it exceeds. If the brief says the
+  options are over the traveller's budget, say so plainly up front — these are the
+  closest matches but cost more than they set — and tell them roughly how much more,
+  then suggest a nearer/shorter trip or a cheaper travel style. Do not gloss over it.
+- WEATHER: some shortlist lines include real climate for the travel month. Weave it in
+  naturally when it helps ("late November is warm and dry, ~28°C"). If a line says the
+  chosen month isn't ideal and names pleasanter months, gently suggest shifting to one of
+  those — they're usually cheaper and less crowded, which serves a budget traveller.
+- LIVE PRICES: a shortlist line tagged [LIVE price] is a real fetched fare/rate — you
+  may call it a "live price"; lines tagged [estimate] are planning estimates, so don't
+  call those "live". Only when the trip involves flights and the brief says
+  origin_known is false, briefly invite the traveller to share their departure city
+  for live flight prices — never ask this for a bus/train trip.
 - Close with one short follow-up question to refine further.
 Use light markdown (bold names, short paragraphs). No bullet-point spam, no headings."""
 
@@ -582,30 +791,39 @@ def generate_reply(top: List[Dict[str, Any]], intent: Dict[str, Any]) -> str:
     budget = intent.get("budget_total_usd")
     picks = top[:6]
     cheapest = min((d["estimate"]["total_usd"] for d in picks), default=None)
+    domestic = _is_domestic(intent, picks)
+
+    def money(usd: float) -> str:
+        """Rupees only for domestic trips; dollars + rupees otherwise."""
+        if domestic:
+            return format_inr(usd_to_inr(usd))
+        return f"{format_usd(usd)} ({format_inr(usd_to_inr(usd))})"
 
     budget_status = None
     if budget and cheapest is not None:
-        budget_inr = format_inr(usd_to_inr(budget))
         if cheapest > budget:
             budget_status = (
-                f"OVER BUDGET: the traveller's budget is ~{format_usd(budget)} ({budget_inr}), "
-                f"but the cheapest option here is ~{format_usd(cheapest)} "
-                f"(~{round(cheapest / budget, 1)}x their budget). EVERY option below is over budget. "
-                f"Be honest about this up front and suggest raising the budget or a nearer/shorter trip."
+                f"OVER BUDGET: the traveller's budget is ~{money(budget)}, but the cheapest "
+                f"option here is ~{money(cheapest)} (~{round(cheapest / budget, 1)}x their budget). "
+                f"EVERY option below is over budget. Be honest about this up front and suggest a "
+                f"nearer/shorter trip or a cheaper travel style (bus/train, hostels)."
             )
         elif not any(d.get("within_budget") for d in picks):
             budget_status = (
-                f"The traveller's budget is ~{format_usd(budget)} ({budget_inr}); most options are a "
-                f"stretch — flag the closest ones honestly."
+                f"The traveller's budget is ~{money(budget)}; most options are a stretch — flag the "
+                f"closest ones honestly."
             )
         else:
             budget_status = (
-                f"The traveller's budget is ~{format_usd(budget)} ({budget_inr}); prioritise options "
-                f"that fit and clearly flag any that are a stretch."
+                f"The traveller's budget is ~{money(budget)}; prioritise options that fit and clearly "
+                f"flag any that are a stretch."
             )
 
     brief = {
-        "budget_total_usd": budget,
+        "currency_instruction": "INR only" if domestic else "USD and INR",
+        "domestic_trip": domestic,
+        "travel_style": intent.get("travel_style"),
+        "budget_total_usd": None if domestic else budget,
         "budget_in_rupees": format_inr(usd_to_inr(budget)) if budget else None,
         "budget_currency": intent.get("budget_currency"),
         "budget_tier": intent.get("budget_tier"),
@@ -648,11 +866,12 @@ def workflow_events(message: str, history: Optional[List[Dict[str, str]]] = None
         trace.append(entry)
         return {"type": "step", **entry}
 
-    intent = extract_intent(message, history)
+    intent = extract_intent(message, history, mode)
     # Origin: explicit field from the UI wins; otherwise sniff "from <city>".
     origin_iata = resolve_origin(origin) or resolve_origin(message)
     intent["origin_iata"] = origin_iata
     intent["mode"] = mode or _infer_mode(message)
+    intent["travel_style"] = _infer_style(message, intent)
     yield emit("Understanding your request", _describe_intent(intent))
 
     candidates = filter_destinations(intent)
@@ -685,16 +904,30 @@ def workflow_events(message: str, history: Optional[List[Dict[str, str]]] = None
 
     # Live totals can shift which picks fit the budget, so re-rank the shortlist.
     ranked = rank_destinations(shortlist, intent) + ranked[6:]
-    top = ranked[:3]
+    # Rotate among near-ties instead of always taking the same deterministic top 3,
+    # so repeat/similar searches don't keep surfacing the same handful of places.
+    top = select_top(ranked, 3)
     yield emit("Ranking by season, budget & interests",
                "Top match: " + ", ".join(
                    f"{d['name']} ({int(d['scores']['overall']*100)}%)" for d in top
                ) if top else "No destinations matched.")
 
+    # Free, key-less: overlay real climate on the final picks so travellers can
+    # judge the weather (and dodge pricey peak months for pleasant cheaper ones).
+    if top and pricing.climate_enabled():
+        n_clim = apply_climate(top, intent)
+        if n_clim:
+            when = MONTH_NAMES[intent["travel_month"]] if intent.get("travel_month") else "their best season"
+            yield emit("Checking the weather window",
+                       f"Pulled typical {when} weather for {n_clim} of the top picks "
+                       f"so you know what to expect on the ground.")
+
     yield {"type": "step", "step": "Writing your recommendation",
            "detail": "Drafting a personal pick from the shortlist…"}
 
-    reply = generate_reply(ranked, intent) if top else (
+    # Generate the reply from exactly the rotated picks, so the written
+    # recommendation names the same places shown on the cards.
+    reply = generate_reply(top, intent) if top else (
         "I couldn't find a good match — could you tell me your budget, travel "
         "month and what kind of trip you're after?"
     )
@@ -720,12 +953,18 @@ def run_workflow(message: str, history: Optional[List[Dict[str, str]]] = None,
 
 
 def _describe_intent(intent: Dict[str, Any]) -> str:
+    domestic = intent.get("mode") == "domestic"
     bits = []
     if intent.get("budget_total_usd"):
         b = intent["budget_total_usd"]
-        bits.append(f"~{format_usd(b)} / {format_inr(usd_to_inr(b))} budget")
+        bits.append(
+            f"{format_inr(usd_to_inr(b))} budget" if domestic
+            else f"~{format_usd(b)} / {format_inr(usd_to_inr(b))} budget"
+        )
     elif intent.get("budget_tier"):
         bits.append(f"{intent['budget_tier']} budget")
+    if intent.get("travel_style") in ("shoestring", "budget"):
+        bits.append("budget / backpacker style")
     if intent.get("travel_month"):
         bits.append(f"travel in {MONTH_NAMES[intent['travel_month']]}")
     elif intent.get("season"):
@@ -754,18 +993,57 @@ def _card(d: Dict[str, Any]) -> Dict[str, Any]:
         "scores": d["scores"],
         "image_query": d["image_query"],
         "is_domestic": d["country"] == "India",
+        # Live climate for the travel month (None if Open-Meteo had no reading).
+        "climate": d.get("climate"),
         # Rich, itinerary-style detail (empty lists/None until enrichment runs).
         "tagline": rich["tagline"],
         "ideal_days_min": rich["ideal_days_min"],
         "ideal_days_max": rich["ideal_days_max"],
         "highlights": rich["highlights"],
         "must_visit": rich["must_visit"],
+        "hidden_gems": rich["hidden_gems"],
         "covers": rich["covers"],
         "food": rich["food"],
-        "best_for": rich["best_for"],
+        "stay_areas": rich["stay_areas"],
+        "budget_split": rich["budget_split"],
+        "getting_there": rich["getting_there"],
         "getting_around": rich["getting_around"],
+        "visa": rich["visa"],
+        "safety": rich["safety"],
+        "sim_connectivity": rich["sim_connectivity"],
+        "language": rich["language"],
+        "events": rich["events"],
+        "best_for": rich["best_for"],
         "tips": rich["tips"],
     }
+
+
+def build_destination_card(name: str, days: Optional[int] = None) -> Dict[str, Any]:
+    """Build a full destination card for ONE named place, with no LLM call — used
+    by the Explore experience so tapping a place opens exactly that destination's
+    story + costs instantly. Costs are neutral planning estimates (mid style, no
+    stated budget); the day-by-day itinerary is still fetched on demand elsewhere.
+    """
+    dest = next((d for d in DESTINATIONS if d["name"] == name), None)
+    if not dest:
+        raise ValueError(f"Unknown destination: {name}")
+    rich = rich_data.get_rich(name)
+    trip_days = int(days or rich.get("ideal_days_min") or 5)
+    intent: Dict[str, Any] = {
+        "trip_days": trip_days,
+        "travel_style": "mid",
+        "budget_total_usd": None,
+        "budget_tier": None,
+        "interests": [],
+        "preferred_continents": [],
+        "travel_month": None,
+        "season": None,
+    }
+    costed = estimate_costs([dict(dest)], intent)   # -> estimate block
+    ranked = rank_destinations(costed, intent)      # -> scores + matched_interests
+    card_src = ranked[0]
+    card_src["within_budget"] = None
+    return _card(card_src)
 
 
 # ===========================================================================

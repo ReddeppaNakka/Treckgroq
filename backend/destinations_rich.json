@@ -1,103 +1,215 @@
 {
   "Jaipur": {
-    "tagline": "Vibrant city of majestic forts",
+    "tagline": "Discover the vibrant Pink City",
     "ideal_days_min": 3,
-    "ideal_days_max": 7,
+    "ideal_days_max": 6,
     "highlights": [
-      "Majestic hilltop forts",
-      "Intricate mirrored palaces",
-      "Vibrant bazaar shopping",
-      "Rich cultural heritage"
+      "Amer Fort's majestic architecture",
+      "Hawa Mahal's intricate latticework",
+      "Jal Mahal's serene lake views",
+      "City Palace's royal heritage",
+      "Johri Bazaar's colourful street shopping",
+      "Nahargarh Fort's panoramic city views"
     ],
     "must_visit": [
       {
-        "name": "Amber Fort",
-        "desc": "Explore the majestic fort's grandeur"
+        "name": "Amer Fort",
+        "desc": "A majestic hilltop fort and former royal residence",
+        "why": "Witness the stunning Light and Sound Show in the evening"
       },
       {
         "name": "Hawa Mahal",
-        "desc": "Marvel at the palace's intricate architecture"
+        "desc": "A palace with intricate latticework and stunning views",
+        "why": "Visit early morning to avoid crowds and capture great photos"
+      },
+      {
+        "name": "Jal Mahal",
+        "desc": "A serene palace situated in the middle of a lake",
+        "why": "Take a romantic boat ride around the palace at sunset"
       },
       {
         "name": "City Palace",
-        "desc": "Discover the palace's rich history and culture"
+        "desc": "A historic palace showcasing the city's royal heritage",
+        "why": "Explore the palace's museums and gardens to learn about Jaipur's history"
       },
       {
         "name": "Johri Bazaar",
-        "desc": "Experience the vibrant colours of the local market"
+        "desc": "A bustling marketplace for shopping and street food",
+        "why": "Try local delicacies like dal baati churma and shop for traditional handicrafts"
       },
       {
         "name": "Nahargarh Fort",
-        "desc": "Enjoy panoramic views of the city"
+        "desc": "A hilltop fort offering panoramic views of the city",
+        "why": "Watch the sunset from the fort for a breathtaking view"
       }
+    ],
+    "hidden_gems": [
+      "Anokhi Museum of Hand Printing",
+      "Kanak Vrindavan Gardens",
+      "Sargasuli Tower"
     ],
     "covers": [
       "Amer",
-      "Tonk",
       "Sanganer",
-      "Ajmer"
+      "Tonk"
     ],
     "food": [
-      "Dal Baati Churma",
-      "Laal Maans",
-      "Ghewar",
-      "Ker Sangri"
+      "Dal Baati Churma — traditional Rajasthani dish",
+      "Laal Maans — spicy mutton curry",
+      "Ghevar — sweet dessert",
+      "Ker Sangri — traditional vegetable dish",
+      "Mawa Kachori — sweet and crispy snack"
+    ],
+    "stay_areas": [
+      {
+        "name": "Bani Park",
+        "vibe": "Leafy and mid-range, suitable for families and couples"
+      },
+      {
+        "name": "Sindhi Camp",
+        "vibe": "Budget-friendly and lively, suitable for backpackers and solo travellers"
+      },
+      {
+        "name": "C Scheme",
+        "vibe": "Upscale and modern, suitable for luxury travellers"
+      }
+    ],
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "20%",
+      "activities": "25%"
+    },
+    "getting_there": "Jaipur International Airport is well-connected to major Indian cities, and you can also take a train or bus from nearby cities like Delhi and Agra.",
+    "getting_around": "Hire a taxi or auto-rickshaw, or use public transport like buses to get around the city.",
+    "visa": "Domestic — no visa required for Indian citizens",
+    "safety": "Jaipur is generally a safe city, but be cautious of petty theft and scams in crowded areas and markets.",
+    "sim_connectivity": "Get a local SIM card or use a portable Wi-Fi hotspot for reliable internet connectivity.",
+    "language": "Hindi and Rajasthani; 'Namaste' = hello, 'Dhanyavad' = thanks. English is also widely spoken in tourist areas.",
+    "events": [
+      {
+        "name": "Jaipur Literature Festival",
+        "when": "January"
+      },
+      {
+        "name": "Jaipur Heritage Festival",
+        "when": "February"
+      }
     ],
     "best_for": [
       "couples",
       "families",
       "backpackers",
-      "adventurers"
+      "students"
     ],
-    "getting_around": "Use auto-rickshaws, taxis, or rent a bike to navigate the city",
     "tips": [
-      "Bargain while shopping at local bazaars",
-      "Respect local customs and dress modestly"
+      "Haggle while shopping at local markets to get the best prices",
+      "Try street food at Johri Bazaar for authentic flavours",
+      "Visit the City Palace early morning to avoid crowds",
+      "Take a guided tour to explore the city's hidden gems",
+      "Respect local customs and dress modestly while visiting temples and forts"
     ]
   },
   "Goa": {
-    "tagline": "Tropical beaches meet Portuguese charm",
-    "ideal_days_min": 5,
-    "ideal_days_max": 14,
+    "tagline": "Sun-kissed beaches and vibrant nightlife",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
     "highlights": [
-      "Palm-lined beaches",
-      "Vibrant nightlife",
-      "Water sports",
-      "Historic churches"
+      "Palolem Beach",
+      "Fort Aguada",
+      "Baga Night Market",
+      "Dudhsagar Waterfalls",
+      "Calangute Beach",
+      "Se Cathedral"
     ],
     "must_visit": [
       {
         "name": "Palolem Beach",
-        "desc": "Secluded beach with picturesque views"
-      },
-      {
-        "name": "Baga Beach",
-        "desc": "Popular beach with water sports and nightlife"
-      },
-      {
-        "name": "Se Cathedral",
-        "desc": "Historic Portuguese-era cathedral"
+        "desc": "A picturesque beach with palm trees and clear waters",
+        "why": "It's a great spot for relaxation and water sports, especially during sunrise"
       },
       {
         "name": "Fort Aguada",
-        "desc": "17th-century Portuguese fort"
+        "desc": "A 17th-century Portuguese fort",
+        "why": "It offers stunning views of the Arabian Sea and is a great spot for photography"
       },
       {
-        "name": "Anjuna Market",
-        "desc": "Famous flea market for shopping and dining"
+        "name": "Baga Night Market",
+        "desc": "A bustling market with shops, food stalls, and live music",
+        "why": "It's a great place to experience Goa's nightlife and try local street food"
+      },
+      {
+        "name": "Dudhsagar Waterfalls",
+        "desc": "A breathtaking waterfall on the Goa-Karnataka border",
+        "why": "It's a great spot for trekking and swimming, and is especially beautiful during the monsoon season"
+      },
+      {
+        "name": "Calangute Beach",
+        "desc": "A popular beach with water sports and shacks",
+        "why": "It's a great spot for swimming, sunbathing, and trying local seafood"
+      },
+      {
+        "name": "Se Cathedral",
+        "desc": "A historic Portuguese-era cathedral",
+        "why": "It's a great spot for history buffs and those interested in architecture"
       }
+    ],
+    "hidden_gems": [
+      "Butterfly Beach",
+      "Hollant Beach",
+      "Sao Jose de Areal"
     ],
     "covers": [
       "Panjim",
       "Candolim",
-      "Calangute",
       "Morjim"
     ],
     "food": [
-      "Seafood curry",
-      "Beef vindaloo",
-      "Goan fish fry",
-      "Bebinca dessert"
+      "Fish Curry — try it with rice and roti",
+      "Beef Vindaloo — a popular Portuguese-influenced dish",
+      "Prawn Balchao — a spicy seafood curry",
+      "Goan Sausages — try them with bread and cheese",
+      "Fado — a traditional Portuguese dessert"
+    ],
+    "stay_areas": [
+      {
+        "name": "Calangute",
+        "vibe": "Budget-friendly with many hostels and guesthouses, great for backpackers"
+      },
+      {
+        "name": "Candolim",
+        "vibe": "Mid-range with many hotels and resorts, great for families"
+      },
+      {
+        "name": "Panjim",
+        "vibe": "Luxury with many high-end hotels, great for couples"
+      }
+    ],
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "20%",
+      "activities": "25%"
+    },
+    "getting_there": "The nearest airport is Dabolim Airport, which is connected to major Indian cities. You can also take a train or bus to Margao or Panjim.",
+    "getting_around": "You can rent a scooter or bike to get around Goa, or use public transport like buses and taxis.",
+    "visa": "Domestic — no visa",
+    "safety": "Goa is generally a safe destination, but be aware of petty theft and scams, especially in crowded areas.",
+    "sim_connectivity": "You can buy a local SIM card or use an eSIM, and wifi is widely available in cafes and restaurants.",
+    "language": "Konkani; 'Namaskar' = hello, 'Dhanyavad' = thanks. English and Hindi are also widely spoken.",
+    "events": [
+      {
+        "name": "Goa Carnival",
+        "when": "February-March"
+      },
+      {
+        "name": "Sunburn Festival",
+        "when": "December"
+      },
+      {
+        "name": "Goa Food and Cultural Festival",
+        "when": "April-May"
+      }
     ],
     "best_for": [
       "couples",
@@ -106,404 +218,747 @@
       "friends",
       "backpackers"
     ],
-    "getting_around": "Rent a scooter or take a taxi to explore the area",
     "tips": [
-      "Book accommodations in advance during peak season",
-      "Be mindful of sun protection and stay hydrated"
+      "Rent a scooter to explore Goa's beaches and countryside",
+      "Try the local seafood at beach shacks and restaurants",
+      "Avoid traveling during the monsoon season (June-September) for better weather",
+      "Be respectful of Goa's environment and culture",
+      "Haggle at markets and shops to get the best prices"
     ]
   },
   "Kerala Backwaters": {
-    "tagline": "Drift through serene palm-lined canals",
+    "tagline": "Serene houseboat cruises through tropical paradise",
     "ideal_days_min": 3,
     "ideal_days_max": 7,
     "highlights": [
-      "Houseboat cruises",
-      "Palm-lined canals",
-      "Tea-green hills",
-      "Village walks"
+      "Palm-lined canals and tea-green hills",
+      "Drifting through Kumarakom Bird Sanctuary",
+      "Village walks and local fishing communities",
+      "Ayurvedic massages and wellness retreats",
+      "Fresh seafood and local Kerala cuisine",
+      "Sunset views over the tranquil backwaters"
     ],
     "must_visit": [
       {
         "name": "Alleppey",
-        "desc": "Board houseboats and explore backwaters"
+        "desc": "A major backwater destination with houseboat cruises",
+        "why": "Must-visit for its stunning natural beauty and serene atmosphere"
       },
       {
         "name": "Kumarakom",
-        "desc": "Birdwatching and village tours"
-      },
-      {
-        "name": "Kollam",
-        "desc": "Explore ancient lighthouses and harbors"
+        "desc": "A charming village on the shores of Vembanad Lake",
+        "why": "Perfect for birdwatching and experiencing local village life"
       },
       {
         "name": "Mararikulam",
-        "desc": "Relax on pristine beaches"
+        "desc": "A picturesque beach town near Alleppey",
+        "why": "Ideal for relaxation and enjoying water sports"
       },
       {
         "name": "Pathiramanal Island",
-        "desc": "Spot exotic birds and wildlife"
+        "desc": "A small island in the Vembanad Lake",
+        "why": "Great for birdwatching and taking a boat ride"
+      },
+      {
+        "name": "Kerala Backwaters",
+        "desc": "A network of interconnected waterways",
+        "why": "Explore the local villages and experience the traditional way of life"
+      },
+      {
+        "name": "Vembanad Lake",
+        "desc": "The longest lake in India",
+        "why": "Perfect for taking a boat ride and enjoying the scenic views"
       }
     ],
+    "hidden_gems": [
+      "Kayaking through the narrow canals",
+      "Visiting the local coir factories",
+      "Taking a cooking class to learn Kerala cuisine"
+    ],
     "covers": [
-      "Alleppey",
-      "Kottayam",
-      "Kollam",
-      "Trivandrum"
+      "Fort Kochi",
+      "Munnar",
+      "Thekkady"
     ],
     "food": [
-      "Karimeen fry",
-      "Kerala sadhya",
-      "Idiyappam",
-      "Puttu with kadala curry"
+      "Kerala Sadya — a traditional feast served on a banana leaf",
+      "Karimeen Fry — a fried pearl spot fish dish",
+      "Idiyappam with Egg Curry — steamed rice noodles with egg curry",
+      "Puttu with Kadala Curry — steamed rice cake with chickpea curry",
+      "Fresh Coconut Water — a refreshing and hydrating drink"
     ],
-    "best_for": [
-      "couples",
-      "families",
-      "solo",
-      "backpackers"
+    "stay_areas": [
+      {
+        "name": "Alleppey",
+        "vibe": "Budget-friendly houseboats and guesthouses, ₹1,500-₹5,000 per night"
+      },
+      {
+        "name": "Kumarakom",
+        "vibe": "Mid-range resorts and hotels, ₹5,000-₹15,000 per night"
+      },
+      {
+        "name": "Mararikulam",
+        "vibe": "Luxury resorts and beachside villas, ₹15,000-₹50,000 per night"
+      }
     ],
-    "getting_around": "Houseboats, ferries, and local buses connect main towns and villages",
-    "tips": [
-      "Book houseboats in advance to avoid peak season rush",
-      "Carry sunscreen and insect repellent for outdoor activities"
+    "budget_split": {
+      "stay": "40%",
+      "food": "25%",
+      "transport": "15%",
+      "activities": "20%"
+    },
+    "getting_there": "The nearest airport is Cochin International Airport, and the nearest railway station is Alleppey Railway Station. From there, you can take a taxi or bus to reach the backwaters.",
+    "getting_around": "Houseboats and local ferries are the best way to explore the backwaters, while taxis and autorickshaws are available for land travel.",
+    "visa": "Domestic — no visa required for Indian citizens",
+    "safety": "Generally safe, but be cautious of waterborne diseases and take necessary precautions to avoid them.",
+    "sim_connectivity": "Good mobile network coverage and internet connectivity are available in most areas, with options to purchase a local SIM card or use international roaming.",
+    "language": "Malayalam; 'Namaskaram' = hello, 'Nanni' = thanks. English and Hindi are also widely spoken in tourist areas.",
+    "events": [
+      {
+        "name": "Onam Festival",
+        "when": "August-September"
+      },
+      {
+        "name": "Vallam Kali",
+        "when": "August"
+      },
+      {
+        "name": "Kerala Boat Festival",
+        "when": "July-August"
+      }
     ]
   },
   "Rishikesh": {
     "tagline": "Find serenity on the Ganges",
-    "ideal_days_min": 5,
-    "ideal_days_max": 14,
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
     "highlights": [
-      "Yoga and meditation retreats",
-      "River rafting in the Himalayas",
-      "Scenic treks to hidden waterfalls",
-      "Spiritual ashrams and temples"
+      "Ganga Aarti at Parmarth Niketan",
+      "River rafting in the Ganges",
+      "Trek to Neer Garh Waterfall",
+      "Yoga classes at Rishikesh Yoga Peeth",
+      "Visit to Beatles Ashram",
+      "Himalayan views from Ram Jhula"
     ],
     "must_visit": [
       {
-        "name": "Triveni Ghat",
-        "desc": "Witness the sacred Ganges aarti ceremony"
-      },
-      {
-        "name": "Neer Garh Waterfall",
-        "desc": "Hike to a stunning natural waterfall"
-      },
-      {
-        "name": "Ram Jhula",
-        "desc": "Walk across a historic iron suspension bridge"
+        "name": "Lakshman Jhula",
+        "desc": "A historic suspension bridge over the Ganges",
+        "why": "Best viewed at sunrise for a serene atmosphere"
       },
       {
         "name": "Parmarth Niketan Ashram",
-        "desc": "Experience yoga and meditation in a serene ashram"
+        "desc": "A renowned ashram for yoga and spiritual learning",
+        "why": "Attend the evening Ganga Aarti for a spiritual experience"
       },
       {
-        "name": "Rajaji National Park",
-        "desc": "Go on a wildlife safari in the Himalayan foothills"
+        "name": "Neer Garh Waterfall",
+        "desc": "A scenic waterfall trek in the Himalayan foothills",
+        "why": "Best visited after monsoons for a lush green trek"
+      },
+      {
+        "name": "Triveni Ghat",
+        "desc": "A sacred ghat for spiritual bathing in the Ganges",
+        "why": "Best visited during sunrise for a peaceful experience"
+      },
+      {
+        "name": "Rishikesh Yoga Peeth",
+        "desc": "A yoga school offering classes and certification",
+        "why": "Ideal for those seeking a serious yoga retreat"
+      },
+      {
+        "name": "Shivpuri",
+        "desc": "A scenic spot for river rafting and camping",
+        "why": "Best visited during the rafting season from September to April"
       }
+    ],
+    "hidden_gems": [
+      "Kaudiyala for advanced river rafting",
+      "Anand Prakash Ashram for yoga and meditation",
+      "Patna Waterfall for a lesser-known trek"
     ],
     "covers": [
       "Haridwar",
-      "Dehradun",
       "Mussoorie",
-      "Tehri"
+      "Dehradun"
     ],
     "food": [
-      "Chole Bhature",
-      "Momos",
-      "Aloo Puri",
-      "Jalebi"
+      "Chotiwala Restaurant — try the Thali",
+      "60s Cafe — for a Beatles-themed breakfast",
+      "Meditate Cafe — for healthy and organic food",
+      "Ganga Beach Restaurant — for a riverside dining experience",
+      "Bhojnalaya — for affordable and delicious North Indian food"
     ],
-    "best_for": [
-      "adventurers",
-      "couples",
-      "solo",
-      "backpackers",
-      "families"
+    "stay_areas": [
+      {
+        "name": "Swargashram",
+        "vibe": "Budget-friendly ashrams and guesthouses"
+      },
+      {
+        "name": "Lakshman Jhula",
+        "vibe": "Mid-range hotels and yoga retreats"
+      },
+      {
+        "name": "Ram Jhula",
+        "vibe": "Leafy and upscale resorts"
+      }
     ],
-    "getting_around": "Use local buses, taxis, or rent a bike to explore the city and surrounding areas",
-    "tips": [
-      "Book accommodations and activities in advance during peak season",
-      "Respect local customs and dress modestly when visiting temples and ashrams"
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "15%",
+      "activities": "30%"
+    },
+    "getting_there": "The nearest airport is Jolly Grant Airport in Dehradun, about 35 km from Rishikesh. Take a taxi or bus from the airport to Rishikesh. Alternatively, take a train to Haridwar and then a taxi or bus to Rishikesh.",
+    "getting_around": "Rishikesh has a well-connected network of buses, taxis, and auto-rickshaws, making it easy to get around the city.",
+    "visa": "Domestic — no visa required",
+    "safety": "Rishikesh is generally a safe city, but be cautious of petty theft and scams, especially in crowded areas and during festivals.",
+    "sim_connectivity": "Getting a SIM card is easy, and most areas have good wifi and data connectivity.",
+    "language": "Hindi; 'Namaste' = hello, 'Dhanyavad' = thanks. English is widely spoken in tourist areas.",
+    "events": [
+      {
+        "name": "International Yoga Festival",
+        "when": "March"
+      },
+      {
+        "name": "Ganga Dussehra",
+        "when": "May-June"
+      }
     ]
   },
   "Manali": {
-    "tagline": "Snowy Himalayan Charm",
-    "ideal_days_min": 5,
+    "tagline": "Himalayan Adventure Awaits",
+    "ideal_days_min": 4,
     "ideal_days_max": 10,
     "highlights": [
-      "Trek to high mountain passes",
-      "Soak in natural hot springs",
-      "Explore pine forest trails",
-      "Experience Himalayan village life"
+      "Snow-capped Himalayan peaks",
+      "Hot springs in Vashisht village",
+      "Trek to Rohtang Pass",
+      "Solang Valley skiing",
+      "Beas River rafting",
+      "Old Manali's charming cafes"
     ],
     "must_visit": [
       {
-        "name": "Solang Valley",
-        "desc": "Adventure sports and stunning views"
+        "name": "Hidimba Devi Temple",
+        "desc": "Ancient wooden temple dedicated to Hidimba Devi",
+        "why": "Must-visit for its unique architecture and serene surroundings"
       },
       {
         "name": "Rohtang Pass",
-        "desc": "Scenic mountain pass with snow"
+        "desc": "High mountain pass with breathtaking views",
+        "why": "A must-visit for adventure seekers and nature lovers, best visited early morning"
       },
       {
-        "name": "Manikaran Gurudwara",
-        "desc": "Sacred Sikh temple with hot springs"
+        "name": "Vashisht Village",
+        "desc": "Quaint village with natural hot springs",
+        "why": "Visit for its hot springs and beautiful temples, best time to visit is morning"
+      },
+      {
+        "name": "Solang Valley",
+        "desc": "Scenic valley with skiing and paragliding opportunities",
+        "why": "Perfect for adventure enthusiasts, visit in winter for skiing"
       },
       {
         "name": "Old Manali",
-        "desc": "Quaint village with charming cafes"
+        "desc": "Charming old town with cafes and shops",
+        "why": "Must-visit for its laid-back vibe and delicious food, best time to visit is evening"
       },
       {
-        "name": "Jogini Waterfall",
-        "desc": "Picturesque waterfall trek"
+        "name": "Beas River",
+        "desc": "River with rafting and fishing opportunities",
+        "why": "Visit for its serene beauty and adventure activities, best time to visit is morning"
       }
     ],
+    "hidden_gems": [
+      "Gulaba village",
+      "Jagatsukh village",
+      "Bhrigu Lake trek"
+    ],
     "covers": [
+      "Solang Valley",
       "Kullu",
       "Naggar",
-      "Vashisht"
+      "Keylong"
     ],
     "food": [
-      "Momos",
-      "Thukpa",
-      "Sidu",
-      "Rajma Chawal"
+      "Sidu — traditional Himachali bread",
+      "Babru — Himachali pancakes",
+      "Kaddu Ka Khatta — sweet and sour pumpkin dish",
+      "Rajma Chawal — kidney bean and rice dish",
+      "Tibetan Thukpa — noodle soup"
     ],
-    "best_for": [
-      "couples",
-      "adventurers",
-      "trekkers",
-      "backpackers",
-      "families"
+    "stay_areas": [
+      {
+        "name": "Old Manali",
+        "vibe": "backpacker hostels, budget-friendly"
+      },
+      {
+        "name": "Mall Road",
+        "vibe": "mid-range hotels, lively atmosphere"
+      },
+      {
+        "name": "Log Huts Area",
+        "vibe": "luxury resorts, serene surroundings"
+      }
     ],
-    "getting_around": "Use local taxis, buses, or rent a bike to explore the town and nearby areas",
-    "tips": [
-      "Check the weather before planning a trek",
-      "Book accommodations in advance during peak season"
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "20%",
+      "activities": "25%"
+    },
+    "getting_there": "The nearest airport is Bhuntar Airport, approximately 50 km from Manali, with flights from Delhi and Chandigarh. Alternatively, take an overnight bus from Delhi or Chandigarh to Manali.",
+    "getting_around": "Local transport includes buses, taxis, and auto-rickshaws, with many places also accessible on foot.",
+    "visa": "Domestic — no visa required",
+    "safety": "Manali is generally a safe town, but be cautious of landslides and rockfalls during the monsoon season and petty theft in crowded areas.",
+    "sim_connectivity": "Mobile network coverage is available in most areas, with Airtel, Jio, and Vodafone being the most reliable providers, and wifi is widely available in cafes and hotels.",
+    "language": "Hindi; 'Namaste' = hello, 'Dhanyavad' = thanks. English is also widely spoken in tourist areas.",
+    "events": [
+      {
+        "name": "Manali Winter Carnival",
+        "when": "February"
+      },
+      {
+        "name": "Manali International Film Festival",
+        "when": "May"
+      },
+      {
+        "name": "Hadimba Devi Fair",
+        "when": "May"
+      }
     ]
   },
   "Udaipur": {
-    "tagline": "Romance in marble palaces",
+    "tagline": "Romance amidst marble palaces",
     "ideal_days_min": 3,
-    "ideal_days_max": 7,
+    "ideal_days_max": 6,
     "highlights": [
-      "Marble palaces",
-      "Sunset boat rides",
-      "Old-world royalty",
-      "Rich cultural heritage"
+      "Lake Pichola",
+      "Jag Mandir Palace",
+      "City Palace Museum",
+      "Monsoon Palace",
+      "Fateh Sagar Lake",
+      "Vintage Car Museum"
     ],
     "must_visit": [
       {
-        "name": "Lake Pichola",
-        "desc": "Take a boat ride across the lake"
-      },
-      {
         "name": "City Palace",
-        "desc": "Explore the majestic palace complex"
+        "desc": "A majestic palace showcasing the history of Mewar kingdom",
+        "why": "Must-visit for its impressive architecture and stunning views of Lake Pichola"
       },
       {
-        "name": "Jag Mandir",
-        "desc": "Visit the stunning island palace"
+        "name": "Lake Pichola",
+        "desc": "A picturesque lake with a stunning backdrop of hills and palaces",
+        "why": "Perfect for a romantic boat ride at sunset"
       },
       {
-        "name": "Fateh Sagar Lake",
-        "desc": "Enjoy a scenic walk around the lake"
+        "name": "Jagdish Temple",
+        "desc": "A 400-year-old temple dedicated to Lord Jagannath",
+        "why": "Famous for its intricate carvings and beautiful architecture"
       },
       {
-        "name": "Eklingji Temple",
-        "desc": "Discover the ancient Hindu temple"
+        "name": "Sahelion ki Bari",
+        "desc": "A beautiful garden with fountains and marble pavilions",
+        "why": "A great spot to relax and enjoy the scenic views"
+      },
+      {
+        "name": "Monsoon Palace",
+        "desc": "A historic palace that offers breathtaking views of the city",
+        "why": "Best visited during sunset for a spectacular view"
+      },
+      {
+        "name": "Bagore ki Haveli",
+        "desc": "A 18th-century haveli with a museum and cultural performances",
+        "why": "A great place to experience the local culture and traditions"
       }
     ],
+    "hidden_gems": [
+      "Shilpgram",
+      "Dudh Talai Musical Garden",
+      "Ambrai Ghat"
+    ],
     "covers": [
-      "Mount Abu",
-      "Ranakpur",
       "Kumbhalgarh",
-      "Chittorgarh"
+      "Ranakpur",
+      "Chittorgarh",
+      "Mount Abu"
     ],
     "food": [
-      "Dal Baati Churma",
-      "Laal Maans",
-      "Ghevar",
-      "Mirchi Bada"
+      "Dal Baati Churma — a traditional Rajasthani dish",
+      "Laal Maans — a spicy lamb curry",
+      "Ghewar — a traditional sweet dish",
+      "Kachoris — crispy fried bread",
+      "Mirchi Bada — a spicy fritter"
+    ],
+    "stay_areas": [
+      {
+        "name": "Lake Pichola area",
+        "vibe": "Romantic and upscale, with luxurious hotels and resorts"
+      },
+      {
+        "name": "Hathi Pol area",
+        "vibe": "Budget-friendly and lively, with many options for street food and shopping"
+      },
+      {
+        "name": "Ambrai Road area",
+        "vibe": "Mid-range and convenient, with many hotels and restaurants"
+      }
+    ],
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "20%",
+      "activities": "25%"
+    },
+    "getting_there": "The nearest airport is Maharana Pratap Airport, which is about 22 km from the city center. You can also take a train or bus from major cities like Delhi, Mumbai, and Jaipur.",
+    "getting_around": "You can hire a taxi, auto-rickshaw, or take a bus to get around the city.",
+    "visa": "Domestic — no visa",
+    "safety": "Udaipur is generally a safe city, but be aware of petty theft and scams in crowded areas.",
+    "sim_connectivity": "You can easily get a SIM card or portable Wi-Fi hotspot in the city, and many cafes and restaurants offer free Wi-Fi.",
+    "language": "Hindi; 'Namaste' = hello, 'Dhanyavad' = thanks. English is widely spoken in tourist areas.",
+    "events": [
+      {
+        "name": "Udaipur Lake Festival",
+        "when": "February"
+      },
+      {
+        "name": "Udaipur Music Festival",
+        "when": "December"
+      },
+      {
+        "name": "Shilpgram Crafts Fair",
+        "when": "November-December"
+      }
     ],
     "best_for": [
       "couples",
       "families",
-      "solo",
-      "friends",
-      "backpackers"
+      "backpackers",
+      "students"
     ],
-    "getting_around": "Use local taxis, auto-rickshaws, or rent a bike to explore the city",
     "tips": [
-      "Hire a local guide to explore the city's hidden gems",
-      "Bargain while shopping at local markets"
+      "Take a sunrise or sunset boat ride on Lake Pichola for a romantic experience",
+      "Try the local street food at the Hathi Pol market",
+      "Visit the City Palace Museum early in the morning to avoid crowds",
+      "Take a day trip to Kumbhalgarh Fort, a UNESCO World Heritage Site",
+      "Bargain while shopping at the local markets"
     ]
   },
   "Varanasi": {
-    "tagline": "Sacred ghats on the Ganges River",
+    "tagline": "Spiritual hub of India's ancient soul",
     "ideal_days_min": 4,
     "ideal_days_max": 7,
     "highlights": [
-      "Spiritual ghats along Ganges",
-      "Vibrant street food scenes",
-      "Ancient temples and ruins",
-      "Dawn boat rides on the river"
+      "Ganga Aarti at Dashashwamedh Ghat",
+      "Sunrise boat ride on the Ganges",
+      "Exploring narrow alleys of Old Varanasi",
+      "Visiting Kashi Vishwanath Temple",
+      "Walking along the ghats at dawn",
+      "Witnessing the evening rituals"
     ],
     "must_visit": [
       {
-        "name": "Dasaswamedh Ghat",
-        "desc": "Witness the iconic Ganga Aarti ceremony"
+        "name": "Dashashwamedh Ghat",
+        "desc": "One of the most sacred ghats in Varanasi",
+        "why": "Must-visit for the spectacular Ganga Aarti ceremony"
       },
       {
         "name": "Kashi Vishwanath Temple",
-        "desc": "One of the twelve Jyotirlingas in India"
+        "desc": "One of the twelve Jyotirlingas in India",
+        "why": "A significant pilgrimage site for Hindus, best visited early morning"
       },
       {
         "name": "Assi Ghat",
-        "desc": "A favorite spot for sunrise and yoga"
+        "desc": "A popular ghat for boat rides and yoga",
+        "why": "Perfect spot to watch the sunrise over the Ganges"
       },
       {
         "name": "Banaras Hindu University",
-        "desc": "Explore the campus and its museum"
+        "desc": "A prestigious university with a beautiful campus",
+        "why": "Visit the Bharat Mata Mandir for a panoramic view of the city"
       },
       {
         "name": "Sarnath",
-        "desc": "Discover ancient Buddhist ruins and artifacts"
+        "desc": "A historic site near Varanasi, significant for Buddhists",
+        "why": "Explore the ruins of the ancient city and the Dhamek Stupa"
+      },
+      {
+        "name": "Man Mandir Ghat",
+        "desc": "A picturesque ghat with a historic observatory",
+        "why": "Climb to the top for stunning views of the Ganges and the city"
       }
+    ],
+    "hidden_gems": [
+      "The Weaver's village of Sarai Mohana",
+      "The Alamgir Mosque",
+      "The Varanasi City Mall for local handicrafts"
     ],
     "covers": [
       "Sarnath",
       "Ramnagar",
-      "Chunar",
-      "Mirzapur"
+      "Chunar"
     ],
     "food": [
-      "Malaiyyo",
-      "Thandai",
-      "Lassi",
-      "Jalebi"
+      "Thandai — a cold drink made with milk and spices",
+      "Lassi — a yogurt-based drink, perfect for hot days",
+      "Jalebi — a sweet, crispy dessert",
+      "Puri sabzi — a popular breakfast dish",
+      "Malaiyyo — a seasonal dessert made with milk cream"
     ],
-    "best_for": [
-      "spiritual seekers",
-      "couples",
-      "backpackers",
-      "families"
+    "stay_areas": [
+      {
+        "name": "Assi Ghat area",
+        "vibe": "Budget-friendly, with many affordable guesthouses and hostels"
+      },
+      {
+        "name": "Dashashwamedh Ghat area",
+        "vibe": "Central location, with a mix of budget and mid-range options"
+      },
+      {
+        "name": "Cantt area",
+        "vibe": "More upscale, with better amenities and restaurants"
+      }
     ],
-    "getting_around": "Explore the city on foot or hire a cycle rickshaw for a day",
-    "tips": [
-      "Respect local customs and dress modestly",
-      "Bargain at local markets for the best deals"
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "15%",
+      "activities": "30%"
+    },
+    "getting_there": "The nearest airport is Lal Bahadur Shastri Airport (VNS), about 25 km from Varanasi city. Regular flights connect Varanasi to major Indian cities like Delhi and Mumbai. You can also reach Varanasi by train, with Varanasi Junction being the main railway station.",
+    "getting_around": "Varanasi has a well-connected network of buses, autos, and cycle-rickshaws for local transportation, with many places also accessible on foot.",
+    "visa": "Domestic — no visa required for Indian citizens",
+    "safety": "Varanasi is generally a safe city, but beware of petty theft and scams, especially in crowded areas and ghats; be mindful of your belongings and avoid carrying large amounts of cash.",
+    "sim_connectivity": "Getting a SIM card in Varanasi is easy, with many providers offering prepaid plans; wifi is also widely available in cafes, hotels, and restaurants.",
+    "language": "Hindi; 'Namaste' = hello, 'Dhanyavad' = thanks. English is also widely spoken in tourist areas.",
+    "events": [
+      {
+        "name": "Dev Deepawali",
+        "when": "November"
+      },
+      {
+        "name": "Maha Shivaratri",
+        "when": "February-March"
+      },
+      {
+        "name": "Holi",
+        "when": "February-March"
+      }
     ]
   },
   "Agra": {
-    "tagline": "Mughal Marvels and Timeless Romance",
-    "ideal_days_min": 3,
-    "ideal_days_max": 7,
+    "tagline": "Timeless Mughal romance in marble",
+    "ideal_days_min": 2,
+    "ideal_days_max": 4,
     "highlights": [
-      "Taj Mahal sunrise",
-      "Mughal architectural heritage",
-      "Marble inlay craftsmanship",
-      "Rich cultural festivals"
+      "Taj Mahal at sunrise",
+      "Agra Fort's Mughal architecture",
+      "Fatehpur Sikri's abandoned city",
+      "Marble inlay craft workshops",
+      "Akbar's Mausoleum",
+      "Yamuna River boat rides"
     ],
     "must_visit": [
       {
         "name": "Taj Mahal",
-        "desc": "Witness the stunning white marble mausoleum"
+        "desc": "A stunning white marble mausoleum",
+        "why": "Watch the sunrise over its grandeur for an unforgettable experience"
       },
       {
         "name": "Agra Fort",
-        "desc": "Explore the historic Mughal fort and palace"
+        "desc": "A historic Mughal fortress",
+        "why": "Explore its impressive architecture and learn about its strategic importance"
       },
       {
         "name": "Fatehpur Sikri",
-        "desc": "Discover the abandoned Mughal city"
+        "desc": "An abandoned Mughal city",
+        "why": "Discover its well-preserved ruins and intricate carvings"
+      },
+      {
+        "name": "Akbar's Mausoleum",
+        "desc": "The final resting place of Mughal emperor Akbar",
+        "why": "Marvel at its beautiful blend of Hindu, Christian, and Islamic architectural styles"
       },
       {
         "name": "Itmad-Ud-Daulah's Tomb",
-        "desc": "Admire the beautiful marble inlay work"
+        "desc": "A mausoleum known for its intricate marble inlay work",
+        "why": "Admire the ornate decorations and serene atmosphere"
       },
       {
         "name": "Kinari Bazaar",
-        "desc": "Shop for local handicrafts and souvenirs"
+        "desc": "A bustling marketplace",
+        "why": "Find unique souvenirs, try local street food, and experience the vibrant local culture"
       }
+    ],
+    "hidden_gems": [
+      "Mehtab Bagh for a serene sunset view of the Taj",
+      "Balkeshwar Temple for its historic significance and peaceful ambiance",
+      "Agra's local street food scene for authentic flavors"
     ],
     "covers": [
       "Fatehabad",
       "Mathura",
-      "Bharatpur",
-      "Gwalior"
+      "Vrindavan"
     ],
     "food": [
-      "Petha sweet",
-      "Mughlai cuisine",
-      "Dalmoth snack",
-      "Bedai breakfast"
+      "Petha — a sweet dish made from white pumpkin",
+      "Dalmoth — a spicy snack mix",
+      "Bedai — a crispy, stuffed bread",
+      "Mughlai cuisine — rich, aromatic dishes",
+      "Lassi — a yogurt-based drink, perfect for hot days"
+    ],
+    "stay_areas": [
+      {
+        "name": "Taj East Gate Road",
+        "vibe": "Budget-friendly, with many affordable hotels and guesthouses"
+      },
+      {
+        "name": "Sadar Bazaar",
+        "vibe": "Central, lively area with a mix of budget and mid-range options"
+      },
+      {
+        "name": "Fatehabad Road",
+        "vibe": "Upscale, with luxury hotels and resorts"
+      }
+    ],
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "20%",
+      "activities": "25%"
+    },
+    "getting_there": "The nearest airport is the Agra Airport (AGR), but most flights connect through Delhi (DEL) or other major Indian cities. Regular trains and buses also connect Agra to nearby cities.",
+    "getting_around": "Auto-rickshaws, cycle-rickshaws, and taxis are readily available for local transportation.",
+    "visa": "Domestic — no visa required for Indian citizens",
+    "safety": "Generally safe, but beware of petty theft and scams in crowded areas and tourist hotspots.",
+    "sim_connectivity": "SIM cards and mobile data are widely available, with good network coverage in the city.",
+    "language": "Hindi; 'Namaste' = hello, 'Dhanyavad' = thanks. English is also widely spoken in tourist areas.",
+    "events": [
+      {
+        "name": "Taj Mahotsav",
+        "when": "February"
+      },
+      {
+        "name": "Agra Food Festival",
+        "when": "December"
+      }
     ],
     "best_for": [
       "couples",
       "families",
-      "backpackers"
+      "backpackers",
+      "students"
     ],
-    "getting_around": "Use auto-rickshaws, taxis, or cycle-rickshaws to navigate the city",
     "tips": [
-      "Hire a guide to explore the monuments",
-      "Bargain while shopping at local markets"
+      "Buy a composite ticket for access to multiple monuments",
+      "Hire a guide for a more informative and immersive experience",
+      "Bargain at local markets for better deals on souvenirs",
+      "Try the local street food for authentic flavors at affordable prices",
+      "Visit the Taj Mahal at sunrise to avoid crowds and heat"
     ]
   },
   "Munnar": {
-    "tagline": "Misty hills and emerald tea",
+    "tagline": "Misty hills and emerald tea plantations",
     "ideal_days_min": 3,
-    "ideal_days_max": 7,
+    "ideal_days_max": 6,
     "highlights": [
-      "Rolling tea gardens",
-      "Misty mountain landscapes",
+      "Tea plantations",
+      "Misty hills",
       "Wildlife sanctuaries",
-      "Scenic hiking trails"
+      "Waterfalls",
+      "Trekking trails",
+      "Colonial bungalows"
     ],
     "must_visit": [
       {
         "name": "Mattupetty Dam",
-        "desc": "A picturesque dam with boating facilities"
+        "desc": "A scenic dam with boating facilities",
+        "why": "It's a great spot for picnics and boating, best visited in the morning"
       },
       {
         "name": "Echo Point",
-        "desc": "A scenic spot with natural echo phenomenon"
+        "desc": "A scenic viewpoint with echo phenomenon",
+        "why": "It's a great spot for trekking and offers stunning views, best visited in the evening"
       },
       {
-        "name": "Kundala Lake",
-        "desc": "A serene lake with pedal boating options"
-      },
-      {
-        "name": "Anamudi Peak",
-        "desc": "The highest peak in the Western Ghats"
+        "name": "Rajamalai (Eravikulam) National Park",
+        "desc": "A national park with endangered Nilgiri Tahr",
+        "why": "It's a great spot for wildlife enthusiasts, best visited early in the morning"
       },
       {
         "name": "Tea Museum",
-        "desc": "A museum showcasing tea production history"
+        "desc": "A museum showcasing tea production",
+        "why": "It's a great place to learn about tea production and history, best visited in the afternoon"
+      },
+      {
+        "name": "Anamudi Peak",
+        "desc": "The highest peak in South India",
+        "why": "It's a great spot for trekking and offers stunning views, best visited in the morning"
+      },
+      {
+        "name": "Kundala Lake",
+        "desc": "A scenic lake with boating facilities",
+        "why": "It's a great spot for picnics and boating, best visited in the evening"
       }
     ],
+    "hidden_gems": [
+      "Marayoor Dolmens",
+      "Chinnakanal Waterfalls",
+      "Lockhart Gap"
+    ],
     "covers": [
+      "Coimbatore",
       "Thekkady",
-      "Kochi",
       "Alleppey",
-      "Idukki"
+      "Kochi"
     ],
     "food": [
-      "Idlis and dosas",
-      "Puttu with kadala curry",
-      "Appam with stew",
-      "Kerala-style biryani"
+      "Idlis — steamed rice cakes",
+      "Dosa — fermented rice and lentil crepe",
+      "Vada — fried lentil doughnut",
+      "Sadhya — traditional Kerala meal",
+      "Puttu — steamed rice cake with coconut and spices"
     ],
-    "best_for": [
-      "couples",
-      "families",
-      "solo",
-      "friends",
-      "backpackers"
+    "stay_areas": [
+      {
+        "name": "Munnar Town",
+        "vibe": "Budget-friendly, with many affordable hotels and homestays"
+      },
+      {
+        "name": "Old Munnar",
+        "vibe": "Colonial-era charm, with many heritage bungalows and mid-range hotels"
+      },
+      {
+        "name": "Chinnakanal",
+        "vibe": "Scenic and peaceful, with many luxury resorts and villas"
+      }
     ],
-    "getting_around": "Local buses and taxis are available for transportation, while self-drive cars and bikes can be rented for flexibility",
-    "tips": [
-      "Carry warm clothing for chilly evenings",
-      "Book accommodations in advance to avoid peak season rush"
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "20%",
+      "activities": "25%"
+    },
+    "getting_there": "The nearest airport is Cochin International Airport, which is about 125 km from Munnar. You can take a taxi or bus from the airport to Munnar. The nearest railway station is Aluva, which is about 110 km from Munnar.",
+    "getting_around": "Munnar has a well-connected bus network, and you can also hire taxis or autos to get around",
+    "visa": "Domestic — no visa",
+    "safety": "Munnar is generally a safe town, but be cautious of your belongings in crowded areas and avoid traveling alone at night",
+    "sim_connectivity": "You can get a SIM card or portable Wi-Fi hotspot at the airport or in Munnar town, and data connectivity is generally good",
+    "language": "Malayalam; 'Namaskaram' = hello, 'Nanni' = thanks. English and Hindi are also widely spoken in tourist areas.",
+    "events": [
+      {
+        "name": "Munnar Summer Festival",
+        "when": "May"
+      },
+      {
+        "name": "Munnar Tea Festival",
+        "when": "January"
+      },
+      {
+        "name": "Attukal Pongala",
+        "when": "February"
+      }
     ]
   },
   "Hampi": {
@@ -511,844 +966,1585 @@
     "ideal_days_min": 3,
     "ideal_days_max": 7,
     "highlights": [
-      "Vijayanagara Empire ruins",
+      "Vijaya Vitthala Temple",
+      "Hampi Bazaar",
+      "Royal Enclosure",
+      "Virupaksha Temple",
       "Boulder-strewn landscape",
-      "Ancient temples and palaces",
-      "Serene rural Indian setting"
+      "Sunset at Hemakuta Hill"
     ],
     "must_visit": [
       {
         "name": "Virupaksha Temple",
-        "desc": "A historic temple with stunning carvings"
+        "desc": "A 9th-century Shiva temple",
+        "why": "Witness the vibrant daily puja ceremonies"
       },
       {
-        "name": "Vittala Temple",
-        "desc": "Features an iconic stone chariot"
+        "name": "Vijaya Vitthala Temple",
+        "desc": "A 16th-century temple with intricate carvings",
+        "why": "Admire the stunning stone chariot and musical pillars"
       },
       {
         "name": "Hampi Bazaar",
-        "desc": "A bustling marketplace with local vendors"
+        "desc": "A bustling marketplace",
+        "why": "Explore the shops and eateries, and try local street food"
       },
       {
         "name": "Royal Enclosure",
-        "desc": "Explore the ancient royal ruins"
+        "desc": "The former royal residence of the Vijayanagara kings",
+        "why": "Discover the ancient ruins and historic significance"
       },
       {
-        "name": "Matanga Hill",
-        "desc": "Offers breathtaking sunset views"
+        "name": "Anjana Hill",
+        "desc": "A hill with stunning views of the surrounding landscape",
+        "why": "Watch the sunset for breathtaking views"
+      },
+      {
+        "name": "Coracle Ride",
+        "desc": "A traditional boat ride on the Tungabhadra River",
+        "why": "Experience the serene river and surrounding landscape"
       }
+    ],
+    "hidden_gems": [
+      "The Daroji Bear Sanctuary",
+      "The Sanapur Lake",
+      "The Anegondi Village"
     ],
     "covers": [
       "Hospet",
       "Kamalapuram",
-      "Anegundi"
+      "Anegondi"
     ],
     "food": [
-      "Dosa",
-      "Idli",
-      "Vada",
-      "Bisi Bele Bath"
+      "Vada — crispy fried lentil doughnuts",
+      "Idli — steamed rice cakes",
+      "Dosa — fermented rice and lentil crepe",
+      "Bisi Bele Bath — a flavorful rice dish",
+      "Jowar Roti — a traditional sorghum flatbread"
     ],
-    "best_for": [
-      "backpackers",
-      "adventurers",
-      "couples",
-      "solo"
+    "stay_areas": [
+      {
+        "name": "Hampi Bazaar",
+        "vibe": "Budget-friendly guesthouses and hostels"
+      },
+      {
+        "name": "Kamalapuram",
+        "vibe": "Mid-range hotels and resorts"
+      },
+      {
+        "name": "Anegondi",
+        "vibe": "Rustic village stays and homestays"
+      }
     ],
-    "getting_around": "Rent a bicycle or scooter to explore the ruins and surrounding landscape",
-    "tips": [
-      "Wear comfortable shoes for exploring",
-      "Stay hydrated in the tropical climate"
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "20%",
+      "activities": "25%"
+    },
+    "getting_there": "The nearest airport is Bellary Airport (BEP), and the nearest railway station is Hospet Junction (HPT). From there, take a taxi or bus to Hampi, which is about 13 km away.",
+    "getting_around": "Explore the town on foot or by renting a bicycle or moped, as the scenic landscape and historic sites are best experienced at a leisurely pace.",
+    "visa": "Domestic — no visa required for Indian citizens",
+    "safety": "Hampi is generally a safe town, but be mindful of your belongings, especially in crowded areas, and avoid traveling alone at night.",
+    "sim_connectivity": "Mobile network coverage is available, but internet connectivity can be patchy in some areas; consider purchasing a local SIM card or portable Wi-Fi hotspot for better connectivity.",
+    "language": "Kannada; 'Namaskara' = hello, 'Dhanyavad' = thanks. Hindi and English are also widely spoken in tourist areas.",
+    "events": [
+      {
+        "name": "Hampi Utsav",
+        "when": "January"
+      },
+      {
+        "name": "Virupaksha Temple Festival",
+        "when": "February"
+      },
+      {
+        "name": "Navaratri Celebrations",
+        "when": "September-October"
+      }
     ]
   },
   "Pondicherry": {
     "tagline": "French colonial charm by the sea",
-    "ideal_days_min": 4,
+    "ideal_days_min": 3,
     "ideal_days_max": 7,
     "highlights": [
-      "Seaside promenades",
-      "French quarter architecture",
-      "Auroville's spiritual calm",
-      "Local seafood cuisine"
+      "Seaside promenade",
+      "Auroville spiritual community",
+      "French Quarter architecture",
+      "Serenity Beach",
+      "Pondicherry Museum",
+      "Botanical Gardens"
     ],
     "must_visit": [
       {
         "name": "Auroville",
-        "desc": "Explore the experimental township's serene atmosphere"
+        "desc": "A self-sufficient spiritual community",
+        "why": "Experience inner peace and see the Matrimandir"
       },
       {
-        "name": "Promenade Beach",
-        "desc": "Stroll along the scenic beachfront"
+        "name": "French Quarter",
+        "desc": "Historic colonial area with charming architecture",
+        "why": "Walk through the tree-lined streets and enjoy the cafes"
       },
       {
-        "name": "Bharathi Park",
-        "desc": "Relax in this picturesque French-style garden"
+        "name": "Serenity Beach",
+        "desc": "A tranquil and picturesque beach",
+        "why": "Relax and watch the sunset"
       },
       {
-        "name": "Sri Aurobindo Ashram",
-        "desc": "Discover the spiritual community's peaceful ambiance"
+        "name": "Pondicherry Museum",
+        "desc": "A museum showcasing the history and culture of Pondicherry",
+        "why": "Learn about the French and Tamil influences"
       },
       {
-        "name": "Goubert Market",
-        "desc": "Browse the vibrant stalls for local handicrafts and souvenirs"
+        "name": "Botanical Gardens",
+        "desc": "A beautiful garden with a variety of plants and trees",
+        "why": "Take a leisurely walk and enjoy nature"
+      },
+      {
+        "name": "Eglise de Notre Dame des Anges",
+        "desc": "A historic church in the French Quarter",
+        "why": "Admire the stunning architecture and peaceful atmosphere"
       }
+    ],
+    "hidden_gems": [
+      "The Pondicherry Lighthouse",
+      "The Ousteri Lake",
+      "The Chunnambar Boat House"
     ],
     "covers": [
       "Auroville",
       "Villupuram",
-      "Chunnambar",
-      "Mahabalipuram"
+      "Cuddalore",
+      "Chidambaram"
     ],
     "food": [
-      "Seafood biryani",
-      "French crepes",
-      "Idlis with sambar",
-      "Filter coffee"
+      "Pondicherry-style biryani — with a French twist",
+      "Seafood at the beachside restaurants — try the fish fry",
+      "French-inspired desserts — like crème brûlée",
+      "Idlis and dosas at a local eatery — a South Indian staple",
+      "Filter coffee at a traditional cafe — strong and rich"
+    ],
+    "stay_areas": [
+      {
+        "name": "White Town",
+        "vibe": "Upscale, boutique hotels and colonial architecture"
+      },
+      {
+        "name": "Mission Street",
+        "vibe": "Budget-friendly, lively and close to the beach"
+      },
+      {
+        "name": "Auroville",
+        "vibe": "Peaceful, eco-friendly and community-driven"
+      }
+    ],
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "20%",
+      "activities": "25%"
+    },
+    "getting_there": "The nearest airport is Chennai International Airport, about 160 km from Pondicherry. Take a taxi or bus from the airport to Pondicherry. Alternatively, you can take a train to Villupuram railway station, which is about 40 km from Pondicherry.",
+    "getting_around": "Pondicherry has a well-connected bus network and auto-rickshaws are readily available for short trips.",
+    "visa": "Domestic — no visa required for Indian citizens",
+    "safety": "Pondicherry is generally a safe city, but be cautious of petty theft and scams in crowded areas.",
+    "sim_connectivity": "You can purchase a SIM card or portable Wi-Fi hotspot at the airport or in the city, with reliable coverage throughout Pondicherry.",
+    "language": "Tamil; 'Vanakkam' = hello, 'Nandri' = thanks. English and French are also widely spoken in tourist areas.",
+    "events": [
+      {
+        "name": "Pondicherry Festival",
+        "when": "August-September"
+      },
+      {
+        "name": "Auroville Festival",
+        "when": "February"
+      },
+      {
+        "name": "Pongal Celebrations",
+        "when": "January"
+      }
     ],
     "best_for": [
       "couples",
-      "solo",
       "families",
+      "solo",
+      "friends",
       "backpackers"
     ],
-    "getting_around": "Rent a bicycle or take an auto-rickshaw to explore the town and nearby areas",
     "tips": [
-      "Visit during the cooler months from October to February",
-      "Respect the peaceful atmosphere in Auroville and ashrams"
+      "Walk or cycle through the French Quarter to explore its charm",
+      "Try the local street food, especially the seafood",
+      "Visit the Auroville market for unique handicrafts and souvenirs",
+      "Take a sunrise or sunset walk along the promenade for breathtaking views",
+      "Bargain at the local markets for the best prices"
     ]
   },
   "Leh Ladakh": {
-    "tagline": "Turquoise lakes amidst high desert landscapes",
+    "tagline": "High-altitude desert beauty and adventure",
     "ideal_days_min": 7,
     "ideal_days_max": 14,
     "highlights": [
-      "Breathtaking mountain vistas",
-      "Serene turquoise lakes",
-      "Ancient monasteries and culture",
-      "Challenging high-altitude treks"
+      "Turquoise lakes like Pangong Tso",
+      "Ancient monasteries and gompas",
+      "5,000m mountain passes",
+      "Trekking routes like the Markha Valley",
+      "Breathtaking high-desert landscapes",
+      "Vibrant local culture and festivals"
     ],
     "must_visit": [
       {
-        "name": "Pangong Lake",
-        "desc": "Witness the lake's changing colors"
-      },
-      {
-        "name": "Nubra Valley",
-        "desc": "Explore the valley's scenic landscapes"
+        "name": "Pangong Tso Lake",
+        "desc": "A stunning high-altitude lake",
+        "why": "Witness its breathtaking beauty and changing colors"
       },
       {
         "name": "Thiksey Monastery",
-        "desc": "Discover ancient Buddhist artifacts"
+        "desc": "A 12-storey monastery complex",
+        "why": "Explore its ancient architecture and vibrant festivals"
+      },
+      {
+        "name": "Nubra Valley",
+        "desc": "A scenic valley with sand dunes and camel rides",
+        "why": "Experience the unique landscape and local culture"
       },
       {
         "name": "Khardung La Pass",
-        "desc": "Conquer the world's highest motorable pass"
+        "desc": "One of the world's highest motorable passes",
+        "why": "Take in the breathtaking views and sense of adventure"
+      },
+      {
+        "name": "Hemis Monastery",
+        "desc": "A ancient monastery with stunning architecture",
+        "why": "Attend the vibrant Hemis Festival and experience local culture"
       },
       {
         "name": "Tso Moriri Lake",
-        "desc": "Spot rare migratory birds"
+        "desc": "A serene and picturesque high-altitude lake",
+        "why": "Enjoy the peaceful atmosphere and stunning scenery"
       }
+    ],
+    "hidden_gems": [
+      "The picturesque village of Turtuk",
+      "The ancient petroglyphs at Domkhar",
+      "The scenic trail to the lesser-known lake of Chagar Tso"
     ],
     "covers": [
       "Nubra Valley",
       "Zanskar Valley",
-      "Kargil",
-      "Srinagar"
+      "Srinagar",
+      "Manali"
     ],
     "food": [
-      "Momos",
-      "Thukpa",
-      "Skyu",
-      "Gurgur Cha"
+      "Momos — steamed dumplings filled with meat or vegetables",
+      "Thukpa — a hearty noodle soup",
+      "Skyu — a traditional Ladakhi noodle dish",
+      "Mutton Chutney — a spicy and flavorful condiment",
+      "Butter Tea — a salty and comforting beverage"
     ],
-    "best_for": [
-      "adventurers",
-      "backpackers",
-      "couples",
-      "solo"
+    "stay_areas": [
+      {
+        "name": "Leh Town",
+        "vibe": "Central and convenient, with options for all budgets"
+      },
+      {
+        "name": "Changspa",
+        "vibe": "Quiet and peaceful, with mid-range guesthouses and homestays"
+      },
+      {
+        "name": "Skara",
+        "vibe": "Laid-back and rural, with budget-friendly homestays and camping options"
+      }
     ],
-    "getting_around": "Rent a bike or hire a taxi to navigate the rugged terrain",
-    "tips": [
-      "Acclimatize to high altitude by resting for a day",
-      "Pack warm clothing for extreme temperature fluctuations"
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "20%",
+      "activities": "25%"
+    },
+    "getting_there": "Fly to Leh Kushok Bakula Rimpochee Airport (IXL) from major Indian cities like Delhi, Mumbai, or Srinagar, or take a scenic road trip from Manali or Srinagar.",
+    "getting_around": "Rent a bike or hire a taxi to explore Leh and its surroundings, or use public transport like buses and shared jeeps.",
+    "visa": "Domestic — no visa required for Indian citizens",
+    "safety": "Generally safe, but beware of altitude sickness and take necessary precautions, especially when traveling to high-altitude areas.",
+    "sim_connectivity": "Get a prepaid SIM card from a local operator like BSNL or Jio, and enjoy decent network coverage in Leh town and surrounding areas.",
+    "language": "Ladakhi and Hindi; 'Julley' = hello, 'Khataks' = thanks. English is also widely spoken in tourist areas.",
+    "events": [
+      {
+        "name": "Hemis Festival",
+        "when": "June-July"
+      },
+      {
+        "name": "Ladakh Festival",
+        "when": "September"
+      },
+      {
+        "name": "Losar Festival",
+        "when": "February-March"
+      }
     ]
   },
   "Darjeeling": {
-    "tagline": "Himalayan haven of tea and tranquility",
+    "tagline": "Himalayan tea gardens and toy trains",
     "ideal_days_min": 4,
     "ideal_days_max": 7,
     "highlights": [
-      "Breathtaking Kanchenjunga views",
-      "Riding the toy train",
-      "Tea plantation tours",
-      "Scenic Himalayan treks"
+      "Kanchenjunga sunrise views",
+      "Ride the Darjeeling Himalayan Railway",
+      "Tea estate walks and tastings",
+      "Tiger Hill sunrise",
+      "Batasia Loop war memorial",
+      "Himalayan Mountaineering Institute"
     ],
     "must_visit": [
       {
         "name": "Tiger Hill",
-        "desc": "Witness sunrise over Kanchenjunga"
+        "desc": "A hill offering panoramic views of the Himalayas",
+        "why": "Watch the sunrise over Kanchenjunga, the world's third-highest peak"
       },
       {
         "name": "Darjeeling Himalayan Railway",
-        "desc": "Ride the historic toy train"
+        "desc": "A UNESCO World Heritage Site and historic toy train",
+        "why": "Take a scenic ride to Ghum, the highest railway station in India"
       },
       {
         "name": "Happy Valley Tea Estate",
-        "desc": "Explore tea gardens and factory"
-      },
-      {
-        "name": "Mirik Lake",
-        "desc": "Relax by the lake and surrounding hills"
+        "desc": "One of the oldest and most famous tea estates in Darjeeling",
+        "why": "Learn about tea production and take a guided tour of the estate"
       },
       {
         "name": "Batasia Loop",
-        "desc": "Admire the war memorial and gardens"
+        "desc": "A scenic loop of the Darjeeling Himalayan Railway",
+        "why": "Enjoy the views of the surrounding hills and valleys"
+      },
+      {
+        "name": "Himalayan Mountaineering Institute",
+        "desc": "A premier mountaineering institute founded by Tenzing Norgay",
+        "why": "Learn about the history of mountaineering and see exhibits on Everest expeditions"
+      },
+      {
+        "name": "Mirik Lake",
+        "desc": "A serene lake surrounded by hills and tea gardens",
+        "why": "Take a boat ride and enjoy the peaceful surroundings"
       }
     ],
+    "hidden_gems": [
+      "The hidden waterfalls of Senchal Wildlife Sanctuary",
+      "The scenic village of Lepchajagat",
+      "The historic St. Andrew's Church"
+    ],
     "covers": [
-      "Gangtok",
       "Kalimpong",
       "Kurseong",
+      "Mirik",
       "Siliguri"
     ],
     "food": [
-      "Momos",
-      "Thukpa",
-      "Darjeeling tea",
-      "Gundruk soup"
+      "Momos — try the traditional Tibetan dish at a local eatery",
+      "Thukpa — a hearty noodle soup perfect for the hills",
+      "Darjeeling tea — taste the famous tea at a local estate",
+      "Gundruk soup — a traditional Nepali soup made from fermented greens",
+      "Sel roti — a sweet, ring-shaped bread typically served with tea"
+    ],
+    "stay_areas": [
+      {
+        "name": "Mall Road",
+        "vibe": "Central and lively, with a range of hotels and restaurants, mid-range to luxury"
+      },
+      {
+        "name": "Chowrasta",
+        "vibe": "Quiet and scenic, with budget-friendly options and easy access to town, budget"
+      },
+      {
+        "name": "Ghoom",
+        "vibe": "Peaceful and picturesque, with homestays and trekking opportunities, budget to mid-range"
+      }
+    ],
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "20%",
+      "activities": "25%"
+    },
+    "getting_there": "Fly to Bagdogra Airport (IXB) and take a taxi or bus to Darjeeling, about 70 km away. Alternatively, take the train to New Jalpaiguri (NJP) or Siliguri (SGUJ) and then a taxi or bus to Darjeeling.",
+    "getting_around": "Use local taxis, buses, or walk to get around Darjeeling, with many attractions within walking distance.",
+    "visa": "Domestic — no visa required for Indian citizens",
+    "safety": "Darjeeling is generally a safe town, but be mindful of your belongings in crowded areas and avoid traveling alone at night.",
+    "sim_connectivity": "Get a local SIM card or use your existing Indian number, with good network coverage and wifi available in most hotels and cafes.",
+    "language": "Nepali, Hindi, and English; 'Namaste' = hello, 'Dhanyabaad' = thanks. Many locals speak English, especially in tourist areas.",
+    "events": [
+      {
+        "name": "Darjeeling Tea Festival",
+        "when": "November to December"
+      },
+      {
+        "name": "Darjeeling Carnival",
+        "when": "December to January"
+      }
+    ]
+  },
+  "Jaisalmer": {
+    "tagline": "Desert dreams in golden Jaisalmer",
+    "ideal_days_min": 3,
+    "ideal_days_max": 6,
+    "highlights": [
+      "Jaisalmer Fort",
+      "Thar Desert camel safaris",
+      "Sunset over sand dunes",
+      "Havelis of Salim Singh and Patwon",
+      "Gadisar Lake",
+      "Desert camping under stars"
+    ],
+    "must_visit": [
+      {
+        "name": "Jaisalmer Fort",
+        "desc": "A UNESCO World Heritage Site and living fort",
+        "why": "Experience the history and vibrant market within its walls, best visited early morning"
+      },
+      {
+        "name": "Thar Desert",
+        "desc": "Endless dunes of golden sand",
+        "why": "Take a camel safari to watch the sunset over the dunes for an unforgettable experience"
+      },
+      {
+        "name": "Patwon Ki Haveli",
+        "desc": "The first and largest haveli of Jaisalmer",
+        "why": "Admire its intricate architecture and mirror work, a must-visit for history and architecture enthusiasts"
+      },
+      {
+        "name": "Gadisar Lake",
+        "desc": "A scenic lake with numerous shrines and a serene atmosphere",
+        "why": "Visit at sunrise for a peaceful boat ride and to see the lake at its most tranquil"
+      },
+      {
+        "name": "Desert Camping",
+        "desc": "Experience the vastness of the Thar Desert under the stars",
+        "why": "Enjoy folk music, local cuisine, and the tranquility of the desert night"
+      },
+      {
+        "name": "Bada Bagh",
+        "desc": "A historic garden complex with cenotaphs",
+        "why": "Offering panoramic views of the city and a glimpse into its royal past"
+      }
+    ],
+    "hidden_gems": [
+      "Kuldhara Abandoned Village",
+      "Akal Wood Fossil Park",
+      "Lodurva Jain Temple"
+    ],
+    "covers": [
+      "Jodhpur",
+      "Bikaner",
+      "Osian"
+    ],
+    "food": [
+      "Dal Baati Churma — traditional Rajasthani dish",
+      "Laal Maans — spicy lamb curry",
+      "Ker Sangri — desert vegetable dish",
+      "Ghevar — traditional sweet",
+      "Chana Masala — North Indian favorite"
+    ],
+    "stay_areas": [
+      {
+        "name": "Jaisalmer Fort",
+        "vibe": "Historic and lively, with budget-friendly guesthouses"
+      },
+      {
+        "name": "Gandhi Chowk",
+        "vibe": "Central and bustling, with a range of accommodations from budget to mid-range"
+      },
+      {
+        "name": "Sam Road",
+        "vibe": "Quieter area near the desert, ideal for those seeking a more relaxed stay"
+      }
+    ],
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "20%",
+      "activities": "25%"
+    },
+    "getting_there": "Fly to Jodhpur Airport, then take a 4-5 hour bus or taxi to Jaisalmer. Alternatively, take a train to Jaisalmer Railway Station.",
+    "getting_around": "Use local auto-rickshaws, bicycles, or walk within the fort and city.",
+    "visa": "Domestic — no visa required",
+    "safety": "Generally safe, but beware of petty theft in crowded areas and follow local advice on desert travel.",
+    "sim_connectivity": "Good mobile network coverage in the city, with options for prepaid SIM cards and wi-fi at most hotels and cafes.",
+    "language": "Hindi and Rajasthani; 'Namaste' = hello, 'Dhanyavad' = thanks. English is also widely understood in tourist areas.",
+    "events": [
+      {
+        "name": "Desert Festival",
+        "when": "February"
+      },
+      {
+        "name": "Navratri",
+        "when": "September-October"
+      }
     ],
     "best_for": [
       "couples",
       "families",
       "solo",
-      "backpackers"
-    ],
-    "getting_around": "Explore the town on foot or hire taxis for nearby excursions",
-    "tips": [
-      "Book accommodations in advance during peak season",
-      "Pack warm clothing for chilly mornings and evenings"
-    ]
-  },
-  "Jaisalmer": {
-    "tagline": "Golden Desert Oasis Awaits",
-    "ideal_days_min": 3,
-    "ideal_days_max": 7,
-    "highlights": [
-      "Desert Fort City",
-      "Camel Safari Adventures",
-      "Thar Dune Camping",
-      "Rich Cultural Heritage"
-    ],
-    "must_visit": [
-      {
-        "name": "Jaisalmer Fort",
-        "desc": "Explore the majestic golden fort"
-      },
-      {
-        "name": "Patwon Ki Haveli",
-        "desc": "Discover intricate architecture and history"
-      },
-      {
-        "name": "Sam Sand Dunes",
-        "desc": "Experience thrilling desert safaris"
-      },
-      {
-        "name": "Gadisar Lake",
-        "desc": "Relax by the serene lake"
-      },
-      {
-        "name": "Bada Bagh",
-        "desc": "Visit the royal cenotaphs"
-      }
-    ],
-    "covers": [
-      "Jodhpur",
-      "Bikaner",
-      "Barmer",
-      "Khuri"
-    ],
-    "food": [
-      "Dal Baati Churma",
-      "Laal Maans",
-      "Ker Sangri",
-      "Ghevar"
-    ],
-    "best_for": [
-      "couples",
+      "friends",
       "adventurers",
-      "families",
       "backpackers"
     ],
-    "getting_around": "Explore the city on foot or hire a taxi for longer trips",
     "tips": [
-      "Book desert camps in advance",
-      "Stay hydrated during desert safaris"
+      "Haggle when shopping in local markets for the best prices",
+      "Book desert safaris and camps through reputable operators for safety",
+      "Try local street food for authentic flavors at affordable prices",
+      "Respect the fort's residential areas and local culture",
+      "Carry sufficient water and sunscreen when exploring the desert"
     ]
   },
   "Andaman Islands": {
-    "tagline": "Tropical paradise in the Bay of Bengal",
+    "tagline": "Turquoise paradise of coral reefs",
     "ideal_days_min": 5,
-    "ideal_days_max": 14,
+    "ideal_days_max": 10,
     "highlights": [
-      "Pristine beaches and coral reefs",
-      "Turquoise waters and marine life",
-      "Lush green forests and wildlife",
-      "Secluded islands and romantic getaways"
+      "Vibrant coral reefs",
+      "Pristine white-sand beaches",
+      "Tropical rainforests",
+      "Water sports like snorkelling",
+      "Historic Cellular Jail",
+      "Limestone caves"
     ],
     "must_visit": [
       {
+        "name": "Radhanagar Beach",
+        "desc": "A stunning white-sand beach",
+        "why": "It's a perfect spot for sunset viewing"
+      },
+      {
         "name": "Havelock Island",
-        "desc": "Known for its beautiful beaches and snorkeling opportunities"
+        "desc": "A popular island for water sports",
+        "why": "It offers excellent snorkelling and scuba diving opportunities"
       },
       {
         "name": "Neil Island",
-        "desc": "Famous for its natural coral reefs and scenic views"
+        "desc": "A tranquil island with beautiful beaches",
+        "why": "It's ideal for relaxation and nature walks"
       },
       {
-        "name": "Port Blair",
-        "desc": "The capital city with a rich history and cultural heritage"
-      },
-      {
-        "name": "Radhanagar Beach",
-        "desc": "One of the most beautiful beaches in Asia"
+        "name": "Cellular Jail",
+        "desc": "A historic prison turned museum",
+        "why": "It showcases the freedom struggle of India"
       },
       {
         "name": "Elephant Beach",
-        "desc": "A popular spot for water sports and activities"
+        "desc": "A secluded beach with crystal-clear waters",
+        "why": "It's perfect for swimming and snorkelling"
+      },
+      {
+        "name": "Mount Harriet National Park",
+        "desc": "A forested park with scenic views",
+        "why": "It offers trekking and birdwatching opportunities"
       }
+    ],
+    "hidden_gems": [
+      "Ross Island for its historic ruins",
+      "Baratang Island for its limestone caves",
+      "Long Island for its secluded beaches"
     ],
     "covers": [
       "Port Blair",
       "Havelock Island",
       "Neil Island",
-      "Little Andaman"
+      "Diglipur"
     ],
     "food": [
-      "Seafood curries",
-      "Fresh fish barbecue",
-      "Coconut water and local fruits",
-      "Indian and Southeast Asian cuisine"
+      "Seafood — fresh catch of the day",
+      "Coconut water — refreshing and hydrating",
+      "Fish fry — a local specialty",
+      "Prawn curry — a spicy and flavorful dish",
+      "Fresh fruits — abundant and varied"
+    ],
+    "stay_areas": [
+      {
+        "name": "Port Blair",
+        "vibe": "Budget-friendly, with options for all budgets"
+      },
+      {
+        "name": "Havelock Island",
+        "vibe": "Mid-range to luxury, with a focus on water sports"
+      },
+      {
+        "name": "Neil Island",
+        "vibe": "Relaxed and peaceful, with budget-friendly options"
+      }
+    ],
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "20%",
+      "activities": "25%"
+    },
+    "getting_there": "Fly to Veer Savarkar International Airport in Port Blair from major Indian cities like Delhi, Mumbai, and Chennai, or take a ship from Chennai, Kolkata, or Visakhapatnam.",
+    "getting_around": "Use local buses, taxis, or rent a scooter to get around the islands.",
+    "visa": "Domestic — no visa required for Indian citizens",
+    "safety": "The Andaman Islands are generally safe, but beware of strong currents while swimming and follow local advice.",
+    "sim_connectivity": "Get a local SIM card or use a portable Wi-Fi hotspot for data connectivity, as mobile networks can be patchy.",
+    "language": "Hindi, English, and Bengali; 'Namaste' = hello, 'Dhanyavad' = thanks. English is widely used in tourist areas.",
+    "events": [
+      {
+        "name": "Island Tourism Festival",
+        "when": "January"
+      },
+      {
+        "name": "Beach Festival",
+        "when": "December"
+      }
     ],
     "best_for": [
       "couples",
       "families",
       "adventurers",
-      "luxury",
       "backpackers"
     ],
-    "getting_around": "Ferries and boats are the primary mode of transportation between islands, while taxis and buses are available for local travel",
     "tips": [
       "Book ferry tickets in advance to avoid long wait times",
-      "Respect the local environment and marine life by not littering and avoiding single-use plastics"
+      "Carry a water bottle and refill it to reduce plastic waste",
+      "Bargain while shopping at local markets",
+      "Try local seafood at beachside restaurants",
+      "Respect the marine ecosystem and do not touch coral reefs"
     ]
   },
   "Bali": {
-    "tagline": "Tropical paradise found in Bali",
-    "ideal_days_min": 7,
+    "tagline": "Tropical paradise of temples and beaches",
+    "ideal_days_min": 5,
     "ideal_days_max": 14,
     "highlights": [
-      "Lush green landscapes",
-      "World-class surf breaks",
-      "Ancient temples and culture",
-      "Vibrant beach towns"
+      "Uluwatu's stunning sunsets",
+      "Seminyak's vibrant beach life",
+      "Ubud's lush rice terraces",
+      "Tirta Empul's sacred water temple",
+      "Nusa Dua's crystal-clear waters",
+      "Mount Batur's sunrise hiking"
     ],
     "must_visit": [
       {
-        "name": "Uluwatu Temple",
-        "desc": "Watch the sunset over the Indian Ocean"
-      },
-      {
-        "name": "Seminyak Beach",
-        "desc": "Enjoy upscale dining and shopping"
+        "name": "Tanah Lot Temple",
+        "desc": "A picturesque sea temple on a rock formation",
+        "why": "Watch the sunset here for a breathtaking view"
       },
       {
         "name": "Ubud Monkey Forest",
-        "desc": "Explore the sacred forest and its inhabitants"
+        "desc": "A nature reserve and Hindu temple complex",
+        "why": "Visit early morning to see the monkeys at their most active"
       },
       {
-        "name": "Nusa Dua",
-        "desc": "Relax on the pristine white-sand beaches"
+        "name": "Kuta Beach",
+        "desc": "A popular beach with white sand and crystal-clear waters",
+        "why": "Come here for surfing, sunbathing, and vibrant nightlife"
       },
       {
         "name": "Tegalalang Rice Terrace",
-        "desc": "Marvel at the stunning rice field landscapes"
+        "desc": "A scenic rice terrace with stunning views",
+        "why": "Hike through the terraces for a glimpse into rural Balinese life"
+      },
+      {
+        "name": "Pura Luhur Uluwatu Temple",
+        "desc": "A Balinese Hindu temple perched on a cliff",
+        "why": "Watch the Kecak fire dance performance at sunset"
+      },
+      {
+        "name": "Gili Islands",
+        "desc": "A group of three islands off the coast of Bali",
+        "why": "Take a day trip here for snorkeling, diving, and relaxation"
       }
     ],
+    "hidden_gems": [
+      "The scenic village of Canggu",
+      "The beautiful waterfalls of Tibumana",
+      "The tranquil Botanic Garden in Bedugul"
+    ],
     "covers": [
-      "Kuta",
-      "Sanur",
-      "Canggu",
-      "Lovina"
+      "Seminyak",
+      "Nusa Dua",
+      "Ubud",
+      "Kuta"
     ],
     "food": [
-      "Nasi Goreng",
-      "Satay",
-      "Fresh seafood",
-      "Martabak"
+      "Nasi Goreng — try it at a local warung",
+      "Mie Goreng — a popular Indonesian noodle dish",
+      "Satay — grilled meat skewers with spicy peanut sauce",
+      "Gado-Gado — a refreshing salad with mixed vegetables",
+      "Martabak — a stuffed pancake with savory fillings"
     ],
-    "best_for": [
-      "couples",
-      "families",
-      "solo",
-      "friends",
-      "adventurers"
+    "stay_areas": [
+      {
+        "name": "Kuta",
+        "vibe": "Backpacker hostels, cheapest"
+      },
+      {
+        "name": "Seminyak",
+        "vibe": "Luxury resorts, high-end"
+      },
+      {
+        "name": "Ubud",
+        "vibe": "Leafy and mid-range, suits families and couples"
+      }
     ],
-    "getting_around": "Rent a scooter or hire a driver to explore the island",
-    "tips": [
-      "Learn some basic Indonesian phrases to interact with locals",
-      "Respect the island's rich culture and traditions"
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "20%",
+      "activities": "25%"
+    },
+    "getting_there": "Fly from India to Ngurah Rai International Airport in Denpasar, Bali, with airlines like Garuda Indonesia, Singapore Airlines, or Malaysia Airlines, often with a layover.",
+    "getting_around": "Use taxis, ride-hailing apps, or rent a scooter to get around the island, with a prepaid SIM card for data and navigation.",
+    "visa": "Visa on arrival (~$35) for Indian passport holders, valid for 30 days",
+    "safety": "Bali is generally a safe destination, but beware of petty theft and scams, especially in tourist areas, and be mindful of local customs and dress modestly when visiting temples.",
+    "sim_connectivity": "Buy a prepaid SIM card at the airport or a local shop, with decent 4G coverage and affordable data plans.",
+    "language": "Balinese and Indonesian; 'Selamat pagi' = good morning, 'Terima kasih' = thank you. English is widely spoken in tourist areas.",
+    "events": [
+      {
+        "name": "Galungan Festival",
+        "when": "Every 210 days, according to the Balinese calendar"
+      },
+      {
+        "name": "Nyepi Day of Silence",
+        "when": "March, the Balinese New Year"
+      },
+      {
+        "name": "Ubud Food Festival",
+        "when": "April"
+      }
     ]
   },
   "Bangkok": {
-    "tagline": "Vibrant streets, rich culture, spicy delights",
+    "tagline": "Vibrant streets, rich culture, and spicy delights",
     "ideal_days_min": 4,
     "ideal_days_max": 7,
     "highlights": [
-      "Street food heaven",
-      "Glittering temples",
-      "Rooftop bar scene",
-      "Vibrant night markets"
+      "Grand Palace",
+      "Wat Phra Kaew",
+      "Floating Markets",
+      "Street Food Nightlife",
+      "Rooftop Bars",
+      "Chatuchak Weekend Market"
     ],
     "must_visit": [
       {
-        "name": "Grand Palace",
-        "desc": "Explore the official residence of the king"
-      },
-      {
-        "name": "Wat Phra Kaew",
-        "desc": "Discover the home of the Emerald Buddha"
-      },
-      {
-        "name": "Chatuchak Weekend Market",
-        "desc": "Browse over 15,000 stalls"
+        "name": "The Grand Palace",
+        "desc": "Historic palace complex with stunning architecture",
+        "why": "A must-visit for its sheer scale and historical significance, best visited early morning"
       },
       {
         "name": "Wat Arun",
-        "desc": "Marvel at the 79-meter-tall spire"
+        "desc": "Temple with a 79-meter-tall spire covered in colorful ceramics",
+        "why": "Offers a panoramic view of the city, especially beautiful during sunset"
+      },
+      {
+        "name": "Floating Markets",
+        "desc": "Traditional markets where vendors sell goods from boats",
+        "why": "Experience traditional Thai commerce and culture, try to visit early to avoid crowds"
       },
       {
         "name": "Khao San Road",
-        "desc": "Experience the lively nightlife"
+        "desc": "Famous street known for its nightlife, street food, and affordable accommodations",
+        "why": "The heart of Bangkok's backpacker scene, great for meeting fellow travelers and enjoying cheap eats"
+      },
+      {
+        "name": "Wat Pho",
+        "desc": "Temple complex known for its giant reclining Buddha",
+        "why": "One of the largest and most revered temples in Bangkok, a great place to learn about Buddhism"
+      },
+      {
+        "name": "Chatuchak Weekend Market",
+        "desc": "One of the largest markets in Asia, selling everything from clothing to home decor",
+        "why": "A shopper's paradise with over 15,000 stalls, be prepared to haggle and try local snacks"
       }
+    ],
+    "hidden_gems": [
+      "The Jim Thompson House",
+      "The Museum of Siam",
+      "Lhong 1919"
     ],
     "covers": [
       "Ayutthaya",
-      "Chinatown",
-      "Rattanakosin",
-      "Sukhumvit"
+      "Hua Hin",
+      "Kanchanaburi"
     ],
     "food": [
-      "Pad Thai",
-      "Tom Yum soup",
-      "Som Tam (papaya salad)",
-      "Mango sticky rice"
+      "Pad Thai — stir-fry rice noodles with shrimp",
+      "Tom Yum Soup — spicy and sour soup made with shrimp",
+      "Som Tam (Papaya Salad) — spicy and sour salad made from shredded green papaya",
+      "Massaman Curry — rich and slightly sweet curry made with beef or chicken",
+      "Mango Sticky Rice — traditional Thai dessert made with glutinous rice and fresh mango"
     ],
-    "best_for": [
-      "couples",
-      "solo",
-      "friends",
-      "backpackers"
+    "stay_areas": [
+      {
+        "name": "Sukhumvit",
+        "vibe": "Upscale area with luxury hotels and shopping malls, high-end"
+      },
+      {
+        "name": "Silom",
+        "vibe": "Central business district with a mix of budget and luxury options, mid-range"
+      },
+      {
+        "name": "Rattanakosin",
+        "vibe": "Historic area with budget-friendly guesthouses and a lively atmosphere, backpacker hostels, cheapest"
+      }
     ],
-    "getting_around": "Use the efficient Skytrain or taxis to navigate the city",
-    "tips": [
-      "Learn basic Thai phrases to interact with locals",
-      "Be prepared for crowds and heat in peak season"
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "15%",
+      "activities": "30%"
+    },
+    "getting_there": "Indian travelers can fly from major Indian cities like Delhi, Mumbai, and Chennai to Suvarnabhumi Airport (BKK) in Bangkok, with several airlines offering direct and connecting flights.",
+    "getting_around": "Bangkok has a well-developed public transportation system including the BTS Skytrain, MRT Subway, and buses, as well as taxis and tuk-tuks for shorter distances.",
+    "visa": "Visa on arrival (~$35) for Indian passport holders, valid for 15 days",
+    "safety": "Bangkok is generally a safe city, but petty theft and scams can occur, especially in tourist areas, so it's essential to be mindful of your belongings and avoid carrying large amounts of cash.",
+    "sim_connectivity": "Getting a SIM card or eSIM is easy and affordable, with many providers offering tourist plans, and WiFi is widely available in cafes, restaurants, and hotels.",
+    "language": "Thai; 'Sawasdee' = hello, 'Khop khun' = thanks. English is widely spoken in tourist areas, but learning a few basic Thai phrases can go a long way.",
+    "events": [
+      {
+        "name": "Songkran Water Festival",
+        "when": "April"
+      },
+      {
+        "name": "Loy Krathong",
+        "when": "November"
+      },
+      {
+        "name": "Magha Puja",
+        "when": "February or March"
+      }
     ]
   },
   "Chiang Mai": {
-    "tagline": "Ancient temples meet modern charm",
-    "ideal_days_min": 5,
-    "ideal_days_max": 10,
+    "tagline": "Ancient temples, vibrant markets, and jungle adventures",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
     "highlights": [
-      "Rich cultural heritage",
-      "Majestic mountain scenery",
-      "Vibrant night markets",
-      "Elephant sanctuaries"
+      "Doi Suthep mountain peak",
+      "Wat Phra That temple",
+      "Chiang Mai Night Bazaar",
+      "Elephant Nature Park",
+      "Sunday Walking Street",
+      "Bo Sang Umbrella Village"
     ],
     "must_visit": [
       {
         "name": "Doi Suthep",
-        "desc": "Panoramic views of the city"
+        "desc": "A mountain peak with a stunning temple on top",
+        "why": "Watch the sunset for breathtaking views of the city"
       },
       {
         "name": "Wat Phra That",
-        "desc": "Historic temple with stunning architecture"
+        "desc": "A historic temple with a golden chedi",
+        "why": "Climb to the top for panoramic views of the old city"
       },
       {
         "name": "Chiang Mai Night Bazaar",
-        "desc": "Shopping and street food heaven"
-      },
-      {
-        "name": "Bo Sang Umbrella Village",
-        "desc": "Colorful handmade crafts"
+        "desc": "A bustling market with street food, souvenirs, and local goods",
+        "why": "Try local street food and shop for unique souvenirs at affordable prices"
       },
       {
         "name": "Elephant Nature Park",
-        "desc": "Ethical elephant conservation"
+        "desc": "A sanctuary for rescued elephants",
+        "why": "Take a guided tour to learn about elephant conservation and feed them"
+      },
+      {
+        "name": "Sunday Walking Street",
+        "desc": "A weekly market with local vendors, food, and live music",
+        "why": "Explore the market and try local street food, such as khao soi and mango sticky rice"
+      },
+      {
+        "name": "Bo Sang Umbrella Village",
+        "desc": "A village famous for handmade paper umbrellas",
+        "why": "Learn about the traditional craft and buy unique souvenirs"
       }
+    ],
+    "hidden_gems": [
+      "Huay Tung Tao Lake",
+      "Mae Sa Waterfall",
+      "Chiang Mai City Arts & Cultural Center"
     ],
     "covers": [
       "Mae Rim",
-      "Hang Dong",
-      "San Kamphaeng",
-      "Doi Inthanon National Park"
+      "Doi Inthanon National Park",
+      "Chiang Dao"
     ],
     "food": [
-      "Khao Soi",
-      "Som Tam (papaya salad)",
-      "Sai Oua (Chiang Mai sausage)",
-      "Khao Niew Mamuang (mango with sticky rice)"
+      "Khao Soi — curried noodle soup with braised beef or chicken",
+      "Som Tam — spicy papaya salad with peanuts and chilies",
+      "Sai Oua — Chiang Mai-style sausage with herbs and spices",
+      "Khao Niew Mamuang — mango with sticky rice and coconut cream",
+      "Larb Moo — spicy minced pork salad with herbs and chilies"
     ],
-    "best_for": [
-      "couples",
-      "families",
-      "solo",
-      "friends",
-      "backpackers",
-      "adventurers"
+    "stay_areas": [
+      {
+        "name": "Old City",
+        "vibe": "Historic and cultural, with many temples and guesthouses, mid-range"
+      },
+      {
+        "name": "Nimmanhaemin",
+        "vibe": "Trendy and upscale, with boutique hotels and restaurants, expensive"
+      },
+      {
+        "name": "Chang Khlan",
+        "vibe": "Budget-friendly and lively, with many hostels and night markets, cheapest"
+      }
     ],
-    "getting_around": "Songthaews and tuk-tuks are readily available for local transportation",
-    "tips": [
-      "Respect temple dress codes and customs",
-      "Bargain politely at markets and from street vendors"
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "15%",
+      "activities": "30%"
+    },
+    "getting_there": "Fly from India to Chiang Mai International Airport (CNX) with a connecting flight, or take a bus or train from Bangkok or other major Thai cities.",
+    "getting_around": "Use songthaews (red trucks) or tuk-tuks for short trips, or rent a scooter or bicycle for more freedom.",
+    "visa": "Visa on arrival (~$35) for Indian passport holders, valid for 15 days.",
+    "safety": "Chiang Mai is generally safe, but be mindful of petty theft and scams, especially in crowded areas and night markets.",
+    "sim_connectivity": "Buy a local SIM card or rent a pocket wifi for reliable internet access, with prices starting from 100 THB (~200 INR) per week.",
+    "language": "Thai; 'Sawasdee' = hello, 'Khop khun' = thanks. English is widely spoken in tourist areas, but learning basic Thai phrases can be helpful.",
+    "events": [
+      {
+        "name": "Loy Krathong",
+        "when": "November"
+      },
+      {
+        "name": "Songkran Water Festival",
+        "when": "April"
+      },
+      {
+        "name": "Chiang Mai Flower Festival",
+        "when": "February"
+      }
     ]
   },
   "Phuket": {
-    "tagline": "Tropical paradise with turquoise bays",
+    "tagline": "Turquoise bays and vibrant night markets",
     "ideal_days_min": 5,
-    "ideal_days_max": 14,
+    "ideal_days_max": 10,
     "highlights": [
-      "Stunning Andaman Sea beaches",
-      "Limestone cliffs and bays",
-      "Vibrant nightlife and markets",
-      "Water sports and activities"
+      "Patong Beach nightlife",
+      "Phang Nga Bay boat tours",
+      "Old Phuket Town Sino-Portuguese architecture",
+      "Promthep Cape sunset views",
+      "Kata Beach water sports",
+      "Big Buddha statue at Chalong"
     ],
     "must_visit": [
       {
-        "name": "Patong Beach",
-        "desc": "Popular beach with lively atmosphere"
-      },
-      {
         "name": "Phang Nga Bay",
-        "desc": "Iconic bay with towering limestone cliffs"
+        "desc": "A bay filled with towering limestone cliffs",
+        "why": "It's a breathtaking sight and a must-visit for any Phuket trip, best visited at sunrise or sunset"
       },
       {
         "name": "Old Phuket Town",
-        "desc": "Historic town with Sino-Portuguese architecture"
+        "desc": "A historic town with Sino-Portuguese architecture",
+        "why": "It offers a glimpse into Phuket's rich history and culture, visit on a Sunday for the walking street market"
       },
       {
-        "name": "Promthep Cape",
-        "desc": "Scenic viewpoint with stunning sunsets"
+        "name": "Patong Beach",
+        "desc": "The most popular and lively beach in Phuket",
+        "why": "It's the heart of Phuket's nightlife and offers a wide range of water sports, visit at night for the bars and clubs"
       },
       {
         "name": "Kata Beach",
-        "desc": "Family-friendly beach with clear waters"
+        "desc": "A picturesque beach with clear waters",
+        "why": "It's perfect for swimming, snorkeling, and sunbathing, and has a more relaxed atmosphere than Patong"
+      },
+      {
+        "name": "Promthep Cape",
+        "desc": "A viewpoint with stunning views of the Andaman Sea",
+        "why": "It's the perfect spot to watch the sunset and take in the breathtaking views, visit around 5 pm for the best views"
+      },
+      {
+        "name": "Big Buddha",
+        "desc": "A 45-meter tall Buddha statue",
+        "why": "It's a iconic landmark and a must-visit for any Phuket trip, offering stunning views of the surrounding area"
       }
     ],
+    "hidden_gems": [
+      "Khao Phra Thaeo National Park",
+      "Karon Viewpoint",
+      "Mai Khao Beach"
+    ],
     "covers": [
-      "Karon",
-      "Kamala",
-      "Surin Beach"
+      "Krabi",
+      "Khao Lak",
+      "Phang Nga"
     ],
     "food": [
-      "Som Tam (papaya salad)",
-      "Tom Yum Goong (spicy soup)",
-      "Massaman Curry",
-      "Fresh seafood barbecues"
+      "Tom Yum soup — spicy and sour",
+      "Green Curry — with fish balls and Thai basil",
+      "Massaman Curry — rich and slightly sweet",
+      "Som Tam (papaya salad) — spicy and sour",
+      "Khanom Buang (Thai crepe) — sweet and delicate"
     ],
-    "best_for": [
-      "couples",
-      "families",
-      "friends",
-      "adventurers"
+    "stay_areas": [
+      {
+        "name": "Patong",
+        "vibe": "Lively and vibrant, with a wide range of accommodation options, from budget-friendly guesthouses to luxury resorts"
+      },
+      {
+        "name": "Kata",
+        "vibe": "Relaxed and family-friendly, with a mix of mid-range hotels and luxury resorts"
+      },
+      {
+        "name": "Old Phuket Town",
+        "vibe": "Historic and charming, with a range of boutique hotels and guesthouses, suitable for couples and solo travelers"
+      }
     ],
-    "getting_around": "Rent a car, scooter, or use local songthaews and taxis to get around the island",
-    "tips": [
-      "Book accommodations and tours in advance during peak season",
-      "Be mindful of sun protection and stay hydrated in the tropical heat"
+    "budget_split": {
+      "stay": "40%",
+      "food": "25%",
+      "transport": "15%",
+      "activities": "20%"
+    },
+    "getting_there": "The nearest airport is Phuket International Airport, which is well-connected to major Indian cities like Delhi, Mumbai, and Bengaluru. From the airport, you can take a taxi or bus to your destination.",
+    "getting_around": "Phuket has a well-developed public transport system, with songthaews (red trucks) and tuk-tuks available for hire, or you can rent a scooter or car for more flexibility",
+    "visa": "Visa on arrival (~$35) for Indian passport holders, valid for up to 15 days",
+    "safety": "Phuket is generally a safe destination, but be aware of petty theft and scams, especially in crowded areas and tourist hotspots",
+    "sim_connectivity": "You can buy a SIM card or rent a portable Wi-Fi hotspot at the airport, with good coverage and data speeds across the island",
+    "language": "Thai; 'Sawasdee' = hello, 'Khop khun' = thanks. English is widely spoken in tourist areas, but learning a few basic Thai phrases can go a long way",
+    "events": [
+      {
+        "name": "Loy Krathong",
+        "when": "November"
+      }
     ]
   },
   "Hanoi": {
-    "tagline": "Vibrant streets meet serene lakes",
+    "tagline": "Immerse in old-quarter charm and street food heaven",
     "ideal_days_min": 4,
     "ideal_days_max": 7,
     "highlights": [
+      "Ancient Old Quarter alleys",
+      "Serenity of Hoan Kiem Lake",
+      "Legendary street pho",
       "Rich cultural heritage",
-      "Delicious street food",
-      "Historic old quarter",
-      "Scenic lakeside views"
+      "Vibrant night markets",
+      "Historic temples and pagodas"
     ],
     "must_visit": [
       {
-        "name": "Hoan Kiem Lake",
-        "desc": "Walk around this peaceful lake in the heart of the city"
-      },
-      {
-        "name": "Old Quarter",
-        "desc": "Explore the narrow streets and local markets"
+        "name": "Ho Chi Minh Mausoleum",
+        "desc": "Final resting place of Vietnam's founding father",
+        "why": "A must-visit for history buffs, best visited early morning"
       },
       {
         "name": "Temple of Literature",
-        "desc": "Discover Vietnam's ancient education system"
+        "desc": "Ancient temple dedicated to education and literature",
+        "why": "Witness the beautiful architecture and historic significance, ideal in the afternoon"
       },
       {
         "name": "Dong Xuan Market",
-        "desc": "Shop for local goods and try street food"
+        "desc": "Largest market in Hanoi for shopping and trying street food",
+        "why": "Experience the local shopping scene and try delicious street food, best in the evening"
       },
       {
-        "name": "Ha Long Bay",
-        "desc": "Take a day trip to this stunning natural wonder"
+        "name": "West Lake",
+        "desc": "Largest lake in Hanoi, perfect for a relaxing stroll",
+        "why": "Enjoy the serene atmosphere and beautiful views, especially during sunset"
+      },
+      {
+        "name": "Old Quarter",
+        "desc": "Historic heart of Hanoi with narrow alleys and traditional shops",
+        "why": "Get lost in the charming streets and discover local gems, any time of day"
+      },
+      {
+        "name": "Water Puppet Show",
+        "desc": "Traditional Vietnamese art form with puppetry and music",
+        "why": "A unique and entertaining experience, best enjoyed in the evening"
       }
     ],
+    "hidden_gems": [
+      "Train Street",
+      "Long Bien Bridge",
+      "Quan Thanh Temple"
+    ],
     "covers": [
-      "Ho Chi Minh Mausoleum",
-      "Bat Trang Ceramic Village",
-      "Ba Dinh Square",
-      "West Lake"
+      "Ha Long Bay",
+      "Ninh Binh",
+      "Sapa",
+      "Ba Vi National Park"
     ],
     "food": [
-      "Pho",
-      "Bun Cha",
-      "Banh Xeo",
-      "Cha Ca La Vong"
+      "Pho — flavorful beef noodle soup",
+      "Bun Cha — grilled pork with rice noodles",
+      "Banh Mi — crispy baguette with various fillings",
+      "Cha Ca — grilled fish with dill and turmeric",
+      "Egg Coffee — rich and creamy coffee drink"
     ],
-    "best_for": [
-      "couples",
-      "families",
-      "solo",
-      "backpackers"
+    "stay_areas": [
+      {
+        "name": "Old Quarter",
+        "vibe": "backpacker hostels, budget-friendly"
+      },
+      {
+        "name": "Tay Ho",
+        "vibe": "leafy and mid-range, suitable for families"
+      },
+      {
+        "name": "Ba Dinh",
+        "vibe": "upscale and luxurious, close to embassies"
+      }
     ],
-    "getting_around": "Use taxis, cyclos, or walk to navigate the city's compact old quarter",
-    "tips": [
-      "Learn some basic Vietnamese phrases to interact with locals",
-      "Be prepared for crowded streets and chaotic traffic"
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "15%",
+      "activities": "30%"
+    },
+    "getting_there": "Fly from India to Noi Bai International Airport in Hanoi, with connecting flights available from major Indian cities like Delhi and Mumbai. From the airport, take a taxi or bus to reach the city center.",
+    "getting_around": "Use taxis, buses, or ride-hailing apps to get around the city, or walk and cycle in the Old Quarter for a more immersive experience.",
+    "visa": "e-Visa needed, costs around $25, valid for 30 days",
+    "safety": "Generally safe, but beware of petty theft and scams in crowded areas, especially at night",
+    "sim_connectivity": "Buy a local SIM card or rent a portable Wi-Fi hotspot for reliable internet access, with prices starting from around 100,000 VND (~400 INR) per month",
+    "language": "Vietnamese; 'Xin chào' = hello, 'Cảm ơn' = thanks. English widely used in tourist areas, but learning basic Vietnamese phrases can be helpful.",
+    "events": [
+      {
+        "name": "Tet Festival",
+        "when": "February"
+      },
+      {
+        "name": "Hanoi International Film Festival",
+        "when": "November"
+      },
+      {
+        "name": "Full Moon Festival",
+        "when": "mid-autumn, around September or October"
+      }
     ]
   },
   "Ha Long Bay": {
-    "tagline": "Emerald waters meet limestone giants",
-    "ideal_days_min": 2,
+    "tagline": "Limestone karsts in emerald waters",
+    "ideal_days_min": 3,
     "ideal_days_max": 5,
     "highlights": [
-      "Limestone karst island scenery",
-      "Vibrant emerald waters",
-      "Romantic sunset cruises",
-      "Abundant marine life"
+      "Thousands of limestone islands",
+      "Emerald green waters",
+      "Kayaking through hidden caves",
+      "Sunset on a cruise ship",
+      "Fresh seafood",
+      "Swimming in secluded beaches"
     ],
     "must_visit": [
       {
         "name": "Sung Sot Cave",
-        "desc": "Explore a massive cave with stunning rock formations"
+        "desc": "A large cave with stunning rock formations",
+        "why": "It's a must-visit for its breathtaking views and unique formations"
       },
       {
-        "name": "Titop Island",
-        "desc": "Enjoy panoramic views from the island's summit"
+        "name": "Ti Top Island",
+        "desc": "A small island with a beautiful beach",
+        "why": "It's perfect for swimming and sunbathing"
       },
       {
         "name": "Bai Tu Long Bay",
-        "desc": "Discover a quieter alternative to Ha Long Bay"
+        "desc": "A less crowded alternative to Ha Long Bay",
+        "why": "It offers a more serene and peaceful experience"
       },
       {
         "name": "Cat Ba Island",
-        "desc": "Relax on the island's beautiful beaches"
+        "desc": "The largest island in Ha Long Bay",
+        "why": "It's a great spot for hiking and exploring"
       },
       {
         "name": "Ha Long Bay Cruise",
-        "desc": "Take a romantic overnight cruise through the bay"
+        "desc": "A cruise ship that takes you through the bay",
+        "why": "It's a great way to see the limestone karsts and enjoy the sunset"
+      },
+      {
+        "name": "Dau Go Cave",
+        "desc": "A cave with ancient carvings and stunning rock formations",
+        "why": "It's a unique and fascinating place to explore"
       }
     ],
+    "hidden_gems": [
+      "Quang Ninh Museum",
+      "Bai Chay Beach",
+      "Tuan Chau Island"
+    ],
     "covers": [
+      "Hanoi",
+      "Ninh Binh",
       "Cat Ba Island",
-      "Bai Tu Long Bay",
-      "Quang Ninh Province",
-      "Van Don Island"
+      "Mong Cai"
     ],
     "food": [
-      "Fresh seafood",
-      "Vietnamese spring rolls",
-      "Pho noodle soup",
-      "Grilled squid"
+      "Fresh seafood — try the grilled fish",
+      "Banh cuon — a local rice roll dish",
+      "Pho — a popular Vietnamese noodle soup",
+      "Goat meat — a specialty of the region",
+      "Coconut coffee — a unique and delicious drink"
     ],
-    "best_for": [
-      "couples",
-      "adventurers",
-      "families",
-      "friends"
+    "stay_areas": [
+      {
+        "name": "Bai Chay",
+        "vibe": "Touristy area with many hotels and resorts, mid-range to luxury"
+      },
+      {
+        "name": "Tuan Chau",
+        "vibe": "Island with a range of accommodation options, from budget to luxury"
+      },
+      {
+        "name": "Cat Ba Island",
+        "vibe": "Relaxed and peaceful atmosphere, budget-friendly to mid-range"
+      }
     ],
-    "getting_around": "Take an overnight cruise or rent a kayak to explore the bay",
-    "tips": [
-      "Book a cruise in advance to avoid peak season crowds",
-      "Bring sunscreen and a hat to protect against the strong sun"
+    "budget_split": {
+      "stay": "40%",
+      "food": "25%",
+      "transport": "15%",
+      "activities": "20%"
+    },
+    "getting_there": "Fly from India to Hanoi, then take a bus or taxi to Ha Long Bay, which is about 170 km away. You can also take a flight from Hanoi to Van Don International Airport, which is closer to Ha Long Bay.",
+    "getting_around": "Take a cruise ship or a boat to get around Ha Long Bay, or rent a motorbike to explore the surrounding areas.",
+    "visa": "e-Visa needed, which costs around $25 and is valid for 30 days",
+    "safety": "Ha Long Bay is generally a safe place, but be careful of petty theft and scams, especially in crowded areas and tourist hotspots.",
+    "sim_connectivity": "You can buy a SIM card or rent a portable Wi-Fi hotspot at the airport or in Hanoi, with data plans starting from around 100,000 VND (~400 INR) per day.",
+    "language": "Vietnamese; 'Xin chào' = hello, 'Cảm ơn' = thanks. English is widely used in tourist areas, but learning some basic Vietnamese phrases can be helpful.",
+    "events": [
+      {
+        "name": "Ha Long Bay Festival",
+        "when": "April"
+      },
+      {
+        "name": "Vietnam National Day",
+        "when": "September"
+      },
+      {
+        "name": "Tet Festival",
+        "when": "February"
+      }
     ]
   },
   "Siem Reap": {
-    "tagline": "Uncover ancient secrets at dawn",
-    "ideal_days_min": 3,
+    "tagline": "Sunrise over ancient Angkor Wat",
+    "ideal_days_min": 4,
     "ideal_days_max": 7,
     "highlights": [
-      "Majestic Angkor Wat sunrise",
-      "Ancient temple ruins",
-      "Vibrant local markets",
-      "Rich Khmer culture"
+      "Angkor Wat at sunrise",
+      "Ta Prohm's ancient tree roots",
+      "Bayon's mysterious faces",
+      "Tonle Sap Lake's floating villages",
+      "Pub Street's vibrant nightlife",
+      "Silk farms and local artisans"
     ],
     "must_visit": [
       {
         "name": "Angkor Wat",
-        "desc": "Witness sunrise over the ancient temple complex"
-      },
-      {
-        "name": "Tonle Sap Lake",
-        "desc": "Explore floating villages and bird sanctuaries"
-      },
-      {
-        "name": "Pub Street",
-        "desc": "Experience Siem Reap's nightlife and cuisine"
+        "desc": "The largest temple complex in the world",
+        "why": "Watch the sunrise over the ancient spires for a breathtaking experience"
       },
       {
         "name": "Ta Prohm Temple",
-        "desc": "Discover the jungle-covered temple ruins"
+        "desc": "A temple overgrown with massive tree roots",
+        "why": "Visit early morning or late afternoon to avoid the crowds"
       },
       {
-        "name": "National Museum of Angkor",
-        "desc": "Learn about Khmer history and art"
+        "name": "Bayon Temple",
+        "desc": "A temple famous for its intricate carvings and mysterious faces",
+        "why": "Explore the temple's many passageways and towers for a unique perspective"
+      },
+      {
+        "name": "Tonle Sap Lake",
+        "desc": "The largest freshwater lake in Southeast Asia",
+        "why": "Take a boat tour to see the floating villages and spot local wildlife"
+      },
+      {
+        "name": "Pub Street",
+        "desc": "The heart of Siem Reap's nightlife",
+        "why": "Enjoy cheap drinks and lively atmosphere in the evening"
+      },
+      {
+        "name": "Angkor National Museum",
+        "desc": "A museum showcasing the history and culture of Angkor",
+        "why": "Learn about the ancient civilization before exploring the temples"
       }
     ],
+    "hidden_gems": [
+      "The Cambodia Landmine Museum",
+      "The Phnom Bakheng hill for sunset",
+      "The local Psar Chas market for souvenirs"
+    ],
     "covers": [
-      "Angkor Archaeological Park",
-      "Tonle Sap Lake",
+      "Angkor Thom",
       "Banteay Srei",
       "Kampong Phluk"
     ],
     "food": [
-      "Fish Amok",
-      "Nom Banh Chok",
-      "Khmer BBQ",
-      "Fresh coconut water"
+      "Fish Amok — steamed fish in coconut milk",
+      "Nom Banh Chok — rice noodle soup",
+      "Char Kroeung — stir-fried lemongrass",
+      "Bai Mon — rice with various toppings",
+      "Fresh coconut water — a refreshing drink"
+    ],
+    "stay_areas": [
+      {
+        "name": "Pub Street area",
+        "vibe": "Backpacker hostels, cheapest"
+      },
+      {
+        "name": "Wat Bo area",
+        "vibe": "Mid-range hotels, family-friendly"
+      },
+      {
+        "name": "Wat Damnak area",
+        "vibe": "Luxury resorts, peaceful atmosphere"
+      }
+    ],
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "20%",
+      "activities": "25%"
+    },
+    "getting_there": "Fly from India to Siem Reap International Airport (REP) with a layover, or take a bus from Bangkok or Phnom Penh.",
+    "getting_around": "Use tuk-tuks or rent a bicycle to explore the town and temples.",
+    "visa": "Visa on arrival (~$30) for Indian passport holders, valid for 30 days",
+    "safety": "Siem Reap is generally safe, but beware of petty theft and scams in crowded areas.",
+    "sim_connectivity": "Buy a local SIM card or use eSIM for data, with decent wifi available in cafes and hotels.",
+    "language": "Khmer; 'Sawatdee' = hello, 'Akun' = thanks. English widely used in tourist areas.",
+    "events": [
+      {
+        "name": "Angkor Wat Festival",
+        "when": "December"
+      },
+      {
+        "name": "Siem Reap Street Festival",
+        "when": "January"
+      },
+      {
+        "name": "Khmer New Year",
+        "when": "April"
+      }
     ],
     "best_for": [
       "couples",
       "families",
-      "solo",
-      "adventurers",
-      "backpackers"
+      "backpackers",
+      "adventurers"
     ],
-    "getting_around": "Rent a tuk-tuk or bike to explore the town and temples",
     "tips": [
-      "Book temple tours in advance to avoid crowds",
+      "Buy a 3-day Angkor Wat pass for $62 instead of a single-day pass for $37",
+      "Haggle with tuk-tuk drivers for a fair price",
+      "Try local street food for $1-2 per meal",
+      "Visit the temples early morning or late afternoon to avoid crowds",
       "Respect local customs and dress modestly when visiting temples"
     ]
   },
   "Singapore": {
-    "tagline": "Garden city of future delights",
+    "tagline": "Garden city of futuristic dreams",
     "ideal_days_min": 4,
     "ideal_days_max": 7,
     "highlights": [
-      "Futuristic Gardens by the Bay",
-      "Vibrant hawker food scene",
-      "Rooftop pools with city views",
-      "World-class shopping malls"
+      "Marina Bay Sands SkyPark",
+      "Gardens by the Bay",
+      "Hawker Centre food tours",
+      "Sentosa Island beaches",
+      "Orchard Road shopping",
+      "Clarke Quay nightlife"
     ],
     "must_visit": [
       {
-        "name": "Marina Bay Sands",
-        "desc": "Iconic hotel with rooftop infinity pool"
-      },
-      {
         "name": "Gardens by the Bay",
-        "desc": "Stunning floral displays and Supertree Grove"
+        "desc": "A futuristic park with towering floral structures",
+        "why": "Visit at night for a spectacular light show"
       },
       {
-        "name": "Haw Par Villa",
-        "desc": "Theme park showcasing Chinese mythology"
+        "name": "Marina Bay Sands",
+        "desc": "An iconic hotel with a rooftop infinity pool",
+        "why": "Enjoy the stunning city views from the observation deck"
+      },
+      {
+        "name": "Hawker Centre",
+        "desc": "A food court serving affordable local dishes",
+        "why": "Try the famous chili crab and Hainanese chicken rice"
+      },
+      {
+        "name": "Sentosa Island",
+        "desc": "A resort island with beaches and theme parks",
+        "why": "Visit Universal Studios for thrilling rides"
+      },
+      {
+        "name": "Orchard Road",
+        "desc": "A shopping street lined with malls and boutiques",
+        "why": "Shop for luxury brands and local souvenirs"
       },
       {
         "name": "Clarke Quay",
-        "desc": "Lively nightlife and dining destination"
-      },
-      {
-        "name": "Merlion Park",
-        "desc": "Symbolic half-lion, half-fish statue of Singapore"
+        "desc": "A nightlife hub with bars and clubs",
+        "why": "Enjoy live music and cocktails by the river"
       }
     ],
+    "hidden_gems": [
+      "Tiong Bahru neighborhood",
+      "MacRitchie Reservoir Park",
+      "Little India district"
+    ],
     "covers": [
-      "Sentosa Island",
-      "Chinatown",
-      "Little India",
-      "Orchard Road"
+      "Johor Bahru",
+      "Batam Island",
+      "Malacca"
     ],
     "food": [
-      "Chili crab",
-      "Hainanese chicken rice",
-      "Laksa noodle soup",
-      "Kaya toast with coffee"
+      "Chili crab — try it at a hawker centre",
+      "Hainanese chicken rice — a classic Singaporean dish",
+      "Laksa — a spicy noodle soup",
+      "Char kway teow — stir-fried noodles",
+      "Kaya toast — a traditional breakfast snack"
+    ],
+    "stay_areas": [
+      {
+        "name": "Marina Bay",
+        "vibe": "Luxury hotels, expensive"
+      },
+      {
+        "name": "Chinatown",
+        "vibe": "Boutique hotels, mid-range"
+      },
+      {
+        "name": "Little India",
+        "vibe": "Budget hostels, affordable"
+      }
+    ],
+    "budget_split": {
+      "stay": "50%",
+      "food": "25%",
+      "transport": "10%",
+      "activities": "15%"
+    },
+    "getting_there": "Fly into Changi Airport, one of the world's best airports, with direct flights from major Indian cities like Delhi, Mumbai, and Bangalore.",
+    "getting_around": "Use the efficient MRT system or take taxis and ride-hailing services to get around the city.",
+    "visa": "Visa-free for Indian passport holders for up to 96 hours, or apply for an e-Visa for longer stays.",
+    "safety": "Singapore is a very safe city, but be mindful of pickpocketing in crowded areas and follow local laws and regulations.",
+    "sim_connectivity": "Buy a prepaid SIM card or rent a portable Wi-Fi hotspot for easy data access, with good coverage throughout the city.",
+    "language": "English; 'Hello' = Hello, 'Thank you' = Xie xie. English is widely spoken, but you may also hear Mandarin, Malay, and Tamil.",
+    "events": [
+      {
+        "name": "Chinese New Year",
+        "when": "February"
+      },
+      {
+        "name": "Singapore Grand Prix",
+        "when": "September"
+      },
+      {
+        "name": "Deepavali",
+        "when": "October/November"
+      }
     ],
     "best_for": [
       "couples",
       "families",
       "luxury",
-      "friends",
+      "shopping",
       "foodies"
     ],
-    "getting_around": "Use the efficient Mass Rapid Transit system or taxis to navigate the city",
     "tips": [
-      "Buy a Singapore Tourist Pass for unlimited public transport",
-      "Try street food at hawker centers like Maxwell Food Centre"
+      "Buy a Singapore Tourist Pass for unlimited public transport rides",
+      "Eat at hawker centres for affordable and delicious food",
+      "Visit Gardens by the Bay at night for a stunning light show",
+      "Take a stroll along the Marina Bay Waterfront for beautiful views",
+      "Avoid chewing gum, as it's banned in Singapore"
     ]
   },
   "Kuala Lumpur": {
-    "tagline": "Vibrant city of diverse flavours",
+    "tagline": "Vibrant city of Petronas Towers",
     "ideal_days_min": 4,
     "ideal_days_max": 7,
     "highlights": [
-      "Iconic Petronas Twin Towers",
-      "Street food heaven",
-      "Rich cultural heritage",
-      "Affordable luxury shopping"
+      "Petronas Twin Towers",
+      "Batu Caves temple complex",
+      "Merdeka Square",
+      "Jalan Alor street food",
+      "Chinatown night market",
+      "Kuala Lumpur Tower views"
     ],
     "must_visit": [
       {
+        "name": "Petronas Twin Towers",
+        "desc": "Iconic 88-storey skyscraper",
+        "why": "Must-visit for panoramic city views, especially at sunset"
+      },
+      {
         "name": "Batu Caves",
-        "desc": "Limestone caves with Hindu temples"
+        "desc": "Limestone hill with series of caves and temples",
+        "why": "A great spot for Hindu festival of Thaipusam, and stunning views of the city"
       },
       {
-        "name": "Merdeka Square",
-        "desc": "Historic heart of Kuala Lumpur"
-      },
-      {
-        "name": "Petaling Street",
-        "desc": "Bustling night market"
-      },
-      {
-        "name": "National Museum",
-        "desc": "Insights into Malaysian history"
+        "name": "Central Market",
+        "desc": "Historic market for local handicrafts and souvenirs",
+        "why": "Best place to experience the local culture and buy authentic gifts"
       },
       {
         "name": "Jalan Alor",
-        "desc": "Famous street food night market"
+        "desc": "Famous street food destination",
+        "why": "Try the delicious and affordable street food, especially at night"
+      },
+      {
+        "name": "Merdeka Square",
+        "desc": "Historic square with British colonial architecture",
+        "why": "Learn about Malaysia's history and independence at this iconic landmark"
+      },
+      {
+        "name": "Kuala Lumpur Tower",
+        "desc": "Communications tower with panoramic views",
+        "why": "Enjoy stunning views of the city from the observation deck"
       }
     ],
+    "hidden_gems": [
+      "Taman Negara National Park",
+      "Kuala Gandah Elephant Sanctuary",
+      "Thean Hou Temple"
+    ],
     "covers": [
-      "Bukit Bintang",
-      "Chinatown",
-      "Brickfields",
-      "Subang Jaya"
+      "Petaling Jaya",
+      "Subang Jaya",
+      "Putrajaya"
     ],
     "food": [
-      "Char Kway Teow",
-      "Hainanese Chicken Rice",
-      "Roti Canai",
-      "Nasi Lemak"
+      "Char Kway Teow — stir-fry noodles",
+      "Hainanese Chicken Rice — poached chicken with fragrant rice",
+      "Nasi Lemak — coconut milk rice with fried anchovies",
+      "Roti Canai — Indian-influenced flatbread",
+      "Chilli Pan Mee — spicy noodle dish"
     ],
-    "best_for": [
-      "couples",
-      "families",
-      "solo",
-      "friends",
-      "backpackers"
+    "stay_areas": [
+      {
+        "name": "Bukit Bintang",
+        "vibe": "Shopping and nightlife hub, mid-range to luxury"
+      },
+      {
+        "name": "Chinatown",
+        "vibe": "Cultural and historic area, budget-friendly"
+      },
+      {
+        "name": "KLCC",
+        "vibe": "Upscale area near Petronas Twin Towers, luxury"
+      }
     ],
-    "getting_around": "Use the efficient KL Monorail and LRT network to navigate the city",
-    "tips": [
-      "Try haggling at markets for best deals",
-      "Stay hydrated in the tropical heat"
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "20%",
+      "activities": "25%"
+    },
+    "getting_there": "Fly from major Indian cities to Kuala Lumpur International Airport (KUL) with airlines like Malaysia Airlines, AirAsia, or IndiGo. From the airport, take a taxi or bus to the city centre.",
+    "getting_around": "Use the efficient public transportation system, including the KL Monorail, LRT, and buses, or take a taxi or ride-hailing service.",
+    "visa": "e-Visa needed, costs around ₹1,200, and is valid for 30 days",
+    "safety": "Generally a safe city, but beware of petty theft and scams in tourist areas, especially at night",
+    "sim_connectivity": "Buy a prepaid SIM card from providers like Celcom, Maxis, or DiGi, with data plans starting from ₹200, and enjoy good wifi connectivity in cafes and hotels",
+    "language": "Malay; 'Hello' = 'Hai', 'Thank you' = 'Terima kasih'. English widely used in tourist areas.",
+    "events": [
+      {
+        "name": "Thaipusam",
+        "when": "January or February"
+      },
+      {
+        "name": "Merdeka Day",
+        "when": "August"
+      },
+      {
+        "name": "Deepavali",
+        "when": "October or November"
+      }
     ]
   },
   "Tokyo": {
@@ -1356,32 +2552,49 @@
     "ideal_days_min": 5,
     "ideal_days_max": 10,
     "highlights": [
-      "Vibrant Neon Districts",
-      "Ancient Temples and Shrines",
-      "World-Class Cuisine",
-      "Cutting-Edge Technology"
+      "Shibuya Crossing",
+      "Meiji Shrine",
+      "Tsukiji Fish Market",
+      "Asakusa Kannon Temple",
+      "Akihabara Electronic Shops",
+      "Sumo Tournament at Ryogoku"
     ],
     "must_visit": [
       {
-        "name": "Shibuya Crossing",
-        "desc": "Experience the busiest intersection in the world"
+        "name": "Tokyo Skytree",
+        "desc": "Tallest tower in the world for panoramic views",
+        "why": "Best at sunset for a breathtaking cityscape"
       },
       {
-        "name": "Meiji Shrine",
-        "desc": "Serene Shinto shrine in a tranquil forested area"
+        "name": "Shibuya 109",
+        "desc": "Legendary fashion mall",
+        "why": "Experience Tokyo's vibrant youth culture and shopping"
+      },
+      {
+        "name": "Imperial Palace",
+        "desc": "Main residence of the Emperor",
+        "why": "A serene escape from the city's bustle, especially during cherry blossom season"
+      },
+      {
+        "name": "Robot Restaurant",
+        "desc": "Bizarre and fascinating show",
+        "why": "A one-of-a-kind entertainment experience in Shinjuku's Kabukicho"
       },
       {
         "name": "Tsukiji Outer Market",
-        "desc": "Fresh sushi and seafood at the world's largest fish market"
+        "desc": "Fresh sushi and seafood",
+        "why": "Try the freshest sushi for breakfast and explore the stalls"
       },
       {
-        "name": "Asakusa Kannon Temple",
-        "desc": "Explore one of Japan's oldest and most iconic temples"
-      },
-      {
-        "name": "Akihabara District",
-        "desc": "Tokyo's electronic and anime hub"
+        "name": "Ghibli Museum",
+        "desc": "Dedicated to Studio Ghibli's anime",
+        "why": "A must-visit for fans of Miyazaki and Japanese animation"
       }
+    ],
+    "hidden_gems": [
+      "Neon Districts of Golden Gai",
+      "Kappabashi Dougu Street for kitchen tools",
+      "TeamLab Borderless digital art museum"
     ],
     "covers": [
       "Yokohama",
@@ -1389,21 +2602,51 @@
       "Nikko"
     ],
     "food": [
-      "Sushi at the Tsukiji Fish Market",
-      "Ramen in Shinjuku",
-      "Tonkatsu in Shibuya",
-      "Yakitori in Otemachi"
+      "Sushi — Fresh at Tsukiji",
+      "Ramen — Rich Tonkotsu Broth",
+      "Udon — Hot or Cold Noodle Options",
+      "Tempura — Light and Crispy Seafood",
+      "Yakitori — Grilled Chicken Skewers"
     ],
-    "best_for": [
-      "couples",
-      "solo",
-      "friends",
-      "adventurers"
+    "stay_areas": [
+      {
+        "name": "Shinjuku",
+        "vibe": "Central, leafy, and mid-range with easy access to nightlife"
+      },
+      {
+        "name": "Asakusa",
+        "vibe": "Traditional, budget-friendly, and close to ancient temples"
+      },
+      {
+        "name": "Roppongi",
+        "vibe": "Upscale, modern, and great for shopping and dining"
+      }
     ],
-    "getting_around": "Use the efficient and extensive Tokyo Metro subway system to navigate the city",
-    "tips": [
-      "Learn basic Japanese phrases to enhance your experience",
-      "Purchase a Suica or Pasmo card for convenient travel on public transportation"
+    "budget_split": {
+      "stay": "40%",
+      "food": "30%",
+      "transport": "15%",
+      "activities": "15%"
+    },
+    "getting_there": "Fly into Narita or Haneda airports from major Indian cities like Delhi or Mumbai, with airlines such as ANA, Japan Airlines, or Air India offering direct or connecting flights.",
+    "getting_around": "Use the efficient Tokyo Metro and bus system with a prepaid IC card like Suica or Pasmo for convenient travel.",
+    "visa": "Indian citizens require a visa, which can be a single-entry visa (~$8) or a multiple-entry visa, depending on the purpose and duration of the stay.",
+    "safety": "Tokyo is very safe, but be mindful of pickpocketing in crowded areas and train stations.",
+    "sim_connectivity": "Purchase a prepaid SIM card or rent a pocket Wi-Fi for data access, as public Wi-Fi can be limited.",
+    "language": "Japanese; 'Konnichiwa' = hello, 'Arigatou' = thanks. English is not widely spoken, especially among older generations, so learning basic Japanese phrases is helpful.",
+    "events": [
+      {
+        "name": "Cherry Blossom Festival",
+        "when": "March-April"
+      },
+      {
+        "name": "Golden Week",
+        "when": "April-May"
+      },
+      {
+        "name": "Autumn Leaves",
+        "when": "November"
+      }
     ]
   },
   "Kyoto": {
@@ -1463,36 +2706,53 @@
     ]
   },
   "Seoul": {
-    "tagline": "Vibrant city of K-pop and ancient charm",
-    "ideal_days_min": 5,
-    "ideal_days_max": 10,
+    "tagline": "K-pop heartbeat of Asia",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
     "highlights": [
-      "K-pop culture",
-      "Historic palace tours",
-      "24-hour street food",
-      "Cutting-edge tech"
+      "Bukchon Hanok Village",
+      "Gyeongbokgung Palace",
+      "Myeong-dong shopping",
+      "Hongdae nightlife",
+      "N Seoul Tower views",
+      "Jongmyo Shrine ceremonies"
     ],
     "must_visit": [
       {
         "name": "Gyeongbokgung Palace",
-        "desc": "Largest palace in Korea"
-      },
-      {
-        "name": "Myeong-dong Shopping District",
-        "desc": "Premier shopping destination"
+        "desc": "Largest palace in Korea",
+        "why": "Must-see for its grandeur and historical significance, best visited early morning"
       },
       {
         "name": "Bukchon Hanok Village",
-        "desc": "Traditional Korean village"
+        "desc": "Traditional Korean village",
+        "why": "Wander through its narrow streets to experience traditional Korean culture and architecture"
       },
       {
-        "name": "Hongdae Night Market",
-        "desc": "Trendy nightlife and shopping"
+        "name": "Myeong-dong Shopping District",
+        "desc": "Premier shopping destination",
+        "why": "From high-end fashion to affordable cosmetics, shop till you drop, especially during sales"
+      },
+      {
+        "name": "Hongdae Nightlife",
+        "desc": "Trendy nightlife area",
+        "why": "Experience Seoul's vibrant nightlife with bars, clubs, and live music venues, best on weekends"
       },
       {
         "name": "N Seoul Tower",
-        "desc": "Panoramic city views"
+        "desc": "Seoul's iconic communication tower",
+        "why": "Enjoy panoramic views of the city, especially during sunset"
+      },
+      {
+        "name": "Jongmyo Shrine",
+        "desc": "Sacred Confucian shrine",
+        "why": "Attend a traditional ceremony to understand Korea's rich cultural heritage, best on Sundays"
       }
+    ],
+    "hidden_gems": [
+      "Seoul Forest for a peaceful escape",
+      "Ikseon-dong for its unique cafes",
+      "Yeouido Island for cherry blossoms"
     ],
     "covers": [
       "Incheon",
@@ -1500,193 +2760,359 @@
       "Paju"
     ],
     "food": [
-      "Bibimbap",
-      "Bulgogi",
-      "Jjajangmyeon",
-      "Tteokbokki"
+      "Bibimbap — mixed rice bowl with an assortment of vegetables",
+      "Bulgogi — marinated beef barbecue",
+      "Jjajangmyeon — black bean sauce noodles",
+      "Tteokbokki — spicy rice cakes",
+      "Hotteok — sweet pancakes filled with honey and cinnamon"
     ],
-    "best_for": [
-      "couples",
-      "families",
-      "solo",
-      "friends",
-      "adventurers"
+    "stay_areas": [
+      {
+        "name": "Myeong-dong",
+        "vibe": "Central, upscale, and convenient for shopping"
+      },
+      {
+        "name": "Hongdae",
+        "vibe": "Vibrant, youthful, and perfect for nightlife enthusiasts, with a range of budget-friendly options"
+      },
+      {
+        "name": "Jongno",
+        "vibe": "Historic, cultural, and mid-range, ideal for those interested in traditional Korea"
+      }
     ],
-    "getting_around": "Use the efficient and extensive subway system to navigate the city",
-    "tips": [
-      "Learn basic Korean phrases to enhance your experience",
-      "Try to avoid traveling during peak rush hour times"
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "15%",
+      "activities": "30%"
+    },
+    "getting_there": "Fly from major Indian cities like Delhi, Mumbai, or Bengaluru to Incheon International Airport, with airlines such as Korean Air, Asiana Airlines, or Air India, and then take the express train to Seoul Station.",
+    "getting_around": "Use the efficient and extensive subway system, which is well-connected and easy to navigate with English signs and announcements.",
+    "visa": "Visa required, apply for a Korean visa at the embassy or consulate in India, with processing times varying from 5 to 30 working days, costing around ₹1,500 to ₹3,000.",
+    "safety": "Generally very safe, but beware of pickpocketing in crowded areas and tourist hotspots, especially in Myeong-dong and Hongdae.",
+    "sim_connectivity": "Purchase a prepaid SIM card or rent a portable Wi-Fi hotspot at the airport for convenient and affordable data access, with prices starting from ₹500 per day.",
+    "language": "Korean; 'Annyeonghaseyo' = hello, 'Gamsahamnida' = thank you. English is not widely spoken, but many signs and menus are translated, and younger Koreans often speak some English.",
+    "events": [
+      {
+        "name": "Seoul Lantern Festival",
+        "when": "November"
+      },
+      {
+        "name": "Boryeong Mud Festival",
+        "when": "July"
+      },
+      {
+        "name": "Seoul Cherry Blossom Festival",
+        "when": "April"
+      }
     ]
   },
   "Hong Kong": {
-    "tagline": "East meets West in dazzling skyscrapers",
+    "tagline": "East meets West in this skyscraper jungle",
     "ideal_days_min": 4,
     "ideal_days_max": 7,
     "highlights": [
-      "Breathtaking skyline views",
-      "World-class dim sum",
-      "Vibrant nightlife scene",
-      "Rich cultural heritage"
+      "Victoria Peak for panoramic views",
+      "Tsim Sha Tsui Promenade for harbour views",
+      "Wong Tai Sin Temple for traditional culture",
+      "Lan Kwai Fong for nightlife",
+      "Causeway Bay for shopping",
+      "Dim sum at Lin Heung Tea House"
     ],
     "must_visit": [
       {
         "name": "Victoria Peak",
-        "desc": "Enjoy panoramic views of the city"
+        "desc": "The highest point on Hong Kong Island",
+        "why": "Go at sunset for breathtaking views of the skyline"
       },
       {
         "name": "Tsim Sha Tsui Promenade",
-        "desc": "Watch the nightly Symphony of Lights"
+        "desc": "Waterfront area with stunning harbour views",
+        "why": "Watch the Symphony of Lights show at 8pm every night"
       },
       {
-        "name": "Lantau Island",
-        "desc": "Explore the Big Buddha and Po Lin Monastery"
+        "name": "Lan Kwai Fong",
+        "desc": "Popular nightlife district",
+        "why": "Visit on a weekend for a lively atmosphere"
       },
       {
         "name": "Wong Tai Sin Temple",
-        "desc": "Discover a famous Taoist temple"
+        "desc": "Traditional Chinese temple",
+        "why": "Visit for a glimpse into local culture and fortune-telling"
       },
       {
-        "name": "Ladies' Market",
-        "desc": "Shop for souvenirs and try street food"
+        "name": "Causeway Bay",
+        "desc": "Major shopping district",
+        "why": "Shop at Sogo or Times Square for a range of brands"
+      },
+      {
+        "name": "Lantau Island",
+        "desc": "Large island with beaches and outdoor activities",
+        "why": "Take a day trip to visit the Big Buddha and Po Lin Monastery"
       }
+    ],
+    "hidden_gems": [
+      "Mong Kok's street markets for affordable shopping",
+      "The escalator in Mid-Levels for a unique experience",
+      "Tai O fishing village for a glimpse of traditional life"
     ],
     "covers": [
       "Kowloon",
-      "Mong Kok",
-      "Causeway Bay",
-      "Lantau Island"
+      "Lantau Island",
+      "Macau",
+      "Shenzhen"
     ],
     "food": [
-      "Dim sum at Tim Ho Wan",
-      "Roast goose at Kam's Roast Goose",
-      "Congee at Sang Kee",
-      "Egg tarts at Lord Stow's Bakery"
+      "Dim sum at Tim Ho Wan — try the char siu bao",
+      "Roast goose at Kam's Roast Goose — a classic dish",
+      "Egg tarts at Lord Stow's Bakery — a Macanese specialty",
+      "Congee at Sang Kee — a comforting breakfast option",
+      "Wonton noodles at Mak's Noodle — a traditional Cantonese dish"
     ],
-    "best_for": [
-      "couples",
-      "families",
-      "solo",
-      "friends",
-      "luxury"
+    "stay_areas": [
+      {
+        "name": "Causeway Bay",
+        "vibe": "Central and mid-range, with many shopping options"
+      },
+      {
+        "name": "Mong Kok",
+        "vibe": "Busy and affordable, with a mix of hostels and hotels"
+      },
+      {
+        "name": "Central",
+        "vibe": "Upscale and convenient, with easy access to public transport"
+      }
     ],
-    "getting_around": "Use the efficient MTR subway system or take a taxi to get around the city",
-    "tips": [
-      "Learn some basic Cantonese phrases to interact with locals",
-      "Buy an Octopus card for convenient travel on public transport"
+    "budget_split": {
+      "stay": "40%",
+      "food": "30%",
+      "transport": "15%",
+      "activities": "15%"
+    },
+    "getting_there": "Fly from India to Hong Kong International Airport, with flights available from major Indian cities such as Delhi, Mumbai, and Bangalore. From the airport, take the Airport Express train to reach the city centre.",
+    "getting_around": "Use the efficient MTR subway system or take taxis and buses to get around the city",
+    "visa": "Visa-free for Indian passport holders for up to 14 days",
+    "safety": "Generally a safe city, but be mindful of pickpocketing in crowded areas and scams targeting tourists",
+    "sim_connectivity": "Buy a prepaid SIM card or rent a portable Wi-Fi hotspot for data access, with many providers offering affordable plans",
+    "language": "Cantonese; 'Nei ho' = hello, 'M goi' = thanks. English is widely spoken in tourist areas.",
+    "events": [
+      {
+        "name": "Hong Kong New Year Countdown",
+        "when": "December"
+      },
+      {
+        "name": "Hong Kong International Film Festival",
+        "when": "March to April"
+      },
+      {
+        "name": "Dragon Boat Festival",
+        "when": "June"
+      }
     ]
   },
   "Beijing": {
-    "tagline": "Ancient Imperial City Unveiled",
-    "ideal_days_min": 5,
-    "ideal_days_max": 10,
+    "tagline": "Ancient history, modern vibes",
+    "ideal_days_min": 4,
+    "ideal_days_max": 7,
     "highlights": [
-      "Imperial Palace Complex",
-      "Hutong Alley Exploration",
+      "Forbidden City",
       "Great Wall of China",
-      "Rich Cultural Heritage"
+      "Temple of Heaven",
+      "Summer Palace",
+      "Hutong alleys",
+      "Imperial Chinese cuisine"
     ],
     "must_visit": [
       {
+        "name": "The Great Wall of China",
+        "desc": "A series of fortifications built to protect China",
+        "why": "Watch the sunrise over the wall for a breathtaking view"
+      },
+      {
         "name": "The Forbidden City",
-        "desc": "Explore the imperial palace of the Ming and Qing dynasties"
+        "desc": "The imperial palace of the Ming and Qing dynasties",
+        "why": "Explore the palace early in the morning to avoid crowds"
       },
       {
-        "name": "The Great Wall at Mutianyu",
-        "desc": "Hike a well-preserved and less crowded section of the Great Wall"
+        "name": "The Temple of Heaven",
+        "desc": "A complex of Taoist temples",
+        "why": "Attend a traditional Chinese ceremony or performance"
       },
       {
-        "name": "Temple of Heaven",
-        "desc": "Discover the historic temple complex where emperors once prayed"
+        "name": "The Summer Palace",
+        "desc": "A UNESCO World Heritage Site and former imperial summer resort",
+        "why": "Take a boat ride on Kunming Lake for a serene experience"
       },
       {
         "name": "Wangfujing Street",
-        "desc": "Experience modern Beijing's shopping and dining scene"
+        "desc": "A famous shopping street",
+        "why": "Try some local street food and shop for souvenirs"
       },
       {
-        "name": "Summer Palace",
-        "desc": "Stroll through the beautiful imperial gardens and lakes"
+        "name": "The Ming Tombs",
+        "desc": "The burial site of the Ming dynasty emperors",
+        "why": "Learn about the history and culture of the Ming dynasty"
       }
+    ],
+    "hidden_gems": [
+      "The Confucius Temple",
+      "The Panjiayuan Antique Market",
+      "The Liulichang Street"
     ],
     "covers": [
       "Tianjin",
-      "Chengde",
-      "The Ming Tombs"
+      "The Great Wall of China at Badaling",
+      "The Chengde Mountain Resort"
     ],
     "food": [
-      "Peking Roast Duck",
-      "Jiaozi Dumplings",
-      "Zhajiangmian Noodles",
-      "Jianbing Pancakes"
+      "Peking Roast Duck — crispy skin and tender meat",
+      "Jiaozi — boiled dumplings filled with pork and vegetables",
+      "Zhajiangmian — noodles with fermented soybean sauce",
+      "Bing Tang Hu Lu — sweet and sour hawthorn fruit",
+      "Jianbing — savory crêpe with eggs and scallions"
     ],
-    "best_for": [
-      "couples",
-      "families",
-      "solo",
-      "friends",
-      "adventurers",
-      "culture lovers"
+    "stay_areas": [
+      {
+        "name": "Wangfujing",
+        "vibe": "Central, upscale, and convenient, with prices starting from ₹8,000/night"
+      },
+      {
+        "name": "Houhai",
+        "vibe": "Lively, trendy, and affordable, with prices starting from ₹4,000/night"
+      },
+      {
+        "name": "Guomao",
+        "vibe": "Modern, business-oriented, and well-connected, with prices starting from ₹6,000/night"
+      }
     ],
-    "getting_around": "Use the efficient subway system or hire a taxi for convenient transportation around the city",
-    "tips": [
-      "Learn basic Mandarin phrases to enhance your experience",
-      "Avoid traveling during peak hours and holidays for a smoother journey"
+    "budget_split": {
+      "stay": "40%",
+      "food": "25%",
+      "transport": "15%",
+      "activities": "20%"
+    },
+    "getting_there": "Indian travellers can fly from major cities like Delhi, Mumbai, or Bengaluru to Beijing Capital International Airport (PEK) with airlines like Air India, China Eastern, or China Southern.",
+    "getting_around": "Use the efficient Beijing Metro system, taxis, or ride-hailing apps like Didi Chuxing to get around the city.",
+    "visa": "Indian passport holders can apply for a Chinese visa with a validity of up to 3 months, with a fee of around ₹1,500.",
+    "safety": "Beijing is generally a safe city, but be aware of pickpocketing and scams in tourist areas, and take necessary precautions to protect yourself.",
+    "sim_connectivity": "Purchase a Chinese SIM card or rent a portable Wi-Fi hotspot for data access, with prices starting from ₹500/week.",
+    "language": "Mandarin Chinese; 'nǐ hǎo' = hello, 'xièxiè' = thanks. English is not widely spoken, but many signs and menus are translated.",
+    "events": [
+      {
+        "name": "Chinese New Year",
+        "when": "January or February"
+      },
+      {
+        "name": "Beijing International Film Festival",
+        "when": "April"
+      },
+      {
+        "name": "Mid-Autumn Festival",
+        "when": "September or October"
+      }
     ]
   },
   "Maldives": {
-    "tagline": "Crystal Lagoons and Overwater Bliss",
+    "tagline": "Turquoise paradise of pristine beaches",
     "ideal_days_min": 5,
-    "ideal_days_max": 14,
+    "ideal_days_max": 10,
     "highlights": [
-      "Pristine beaches and coral reefs",
-      "Luxurious overwater villas",
-      "World-class diving and snorkeling",
-      "Unparalleled romantic getaways"
+      "Vibrant coral reefs",
+      "Overwater villas",
+      "Pristine white-sand beaches",
+      "World-class diving spots",
+      "Luxurious resorts",
+      "Stunning sunsets"
     ],
     "must_visit": [
       {
         "name": "Grand Friday Mosque",
-        "desc": "A historic mosque in Malé"
+        "desc": "A beautiful mosque in Male",
+        "why": "It's a must-visit for its stunning architecture and historical significance"
       },
       {
         "name": "HP Reef",
-        "desc": "A popular diving spot"
-      },
-      {
-        "name": "Nasaru Palace",
-        "desc": "A historic palace in Malé"
+        "desc": "A popular diving spot",
+        "why": "It's known for its vibrant coral and diverse marine life"
       },
       {
         "name": "Malé Fish Market",
-        "desc": "A bustling marketplace"
+        "desc": "A bustling marketplace",
+        "why": "It's a great place to experience the local culture and try fresh seafood"
+      },
+      {
+        "name": "Nasaru Palace",
+        "desc": "A historic palace",
+        "why": "It offers a glimpse into the country's rich history and royal heritage"
+      },
+      {
+        "name": "Vaadhoo Island",
+        "desc": "A picturesque island",
+        "why": "It's famous for its 'sea of stars' phenomenon, where the beach glows at night"
       },
       {
         "name": "Banana Reef",
-        "desc": "A protected marine area"
+        "desc": "A popular snorkeling spot",
+        "why": "It's known for its crystal-clear waters and diverse marine life"
       }
     ],
+    "hidden_gems": [
+      "The local island of Fulidhoo",
+      "The secluded beach of Himmafushi",
+      "The vibrant market of Thulusdhoo"
+    ],
     "covers": [
-      "Malé",
+      "Male",
       "Ari Atoll",
-      "Kaafu Atoll",
-      "Addu Atoll"
+      "Addu Atoll",
+      "Kaafu Atoll"
     ],
     "food": [
-      "Garudhiya",
-      "Bambukeylu",
-      "Kavaabu",
-      "Mas huni"
+      "Mas huni — a traditional breakfast dish",
+      "Bambukeylu — a curry made with bamboo shoots",
+      "Garudhiya — a fish broth served with rice and coconut",
+      "Thepla — a type of flatbread",
+      "Kavaabu — a fried fish cake"
     ],
-    "best_for": [
-      "couples",
-      "luxury",
-      "honeymoon",
-      "diving",
-      "wellness"
+    "stay_areas": [
+      {
+        "name": "North Malé Atoll",
+        "vibe": "Luxurious resorts, high-end"
+      },
+      {
+        "name": "South Malé Atoll",
+        "vibe": "Budget-friendly guesthouses, mid-range"
+      },
+      {
+        "name": "Ari Atoll",
+        "vibe": "Secluded island resorts, luxury"
+      }
     ],
-    "getting_around": "Speedboats and seaplanes connect islands and resorts",
-    "tips": [
-      "Book resorts with house reefs for easy snorkeling",
-      "Pack light and breathable clothing for tropical weather"
+    "budget_split": {
+      "stay": "60%",
+      "food": "20%",
+      "transport": "10%",
+      "activities": "10%"
+    },
+    "getting_there": "Indian travellers can fly to Malé International Airport (MLE) from major Indian cities like Mumbai, Delhi, and Bengaluru, with airlines like IndiGo, Air India, and SriLankan Airlines.",
+    "getting_around": "Speedboats and ferries are the primary modes of transportation between islands, while taxis and buses are available for local travel in Malé.",
+    "visa": "Visa on arrival (free of charge) for Indian passport holders, valid for 30 days",
+    "safety": "The Maldives is generally a safe destination, but petty theft and scams can occur, so it's essential to be mindful of your belongings and avoid carrying large amounts of cash.",
+    "sim_connectivity": "Prepaid SIM cards are available at the airport, and wifi is widely available in resorts and hotels, but data speeds can be slow.",
+    "language": "Dhivehi; 'Shukuriyaa' = thank you, 'Maruhabaa' = hello. English is widely spoken in tourist areas.",
+    "events": [
+      {
+        "name": "Maldives Independence Day",
+        "when": "July"
+      },
+      {
+        "name": "Eid al-Fitr",
+        "when": "May or June, depending on the lunar calendar"
+      },
+      {
+        "name": "Maldives Fishermen's Day",
+        "when": "December"
+      }
     ]
   },
   "Colombo & South Coast": {
@@ -1748,147 +3174,259 @@
     ]
   },
   "Kathmandu & Pokhara": {
-    "tagline": "Himalayan grandeur at trekker's doorstep",
+    "tagline": "Himalayan grandeur at budget prices",
     "ideal_days_min": 7,
     "ideal_days_max": 14,
     "highlights": [
-      "Majestic Annapurna range",
-      "Vibrant temple life",
-      "Scenic lakeside walks",
-      "Trekking trailheads abound"
+      "Trek to Everest Base Camp",
+      "Paraglide over Pokhara",
+      "Explore Bhaktapur Durbar Square",
+      "Visit Pashupatinath Temple",
+      "Boat ride on Phewa Lake",
+      "Hike to Annapurna Base Camp"
     ],
     "must_visit": [
       {
         "name": "Boudhanath Stupa",
-        "desc": "Sacred Buddhist site with massive dome"
+        "desc": "One of the largest Buddhist stupas in the world",
+        "why": "Watch the sunset here for a serene experience"
       },
       {
-        "name": "Phewa Lake",
-        "desc": "Serene lake with boat rides and views"
+        "name": "Sarangkot Viewpoint",
+        "desc": "A hill station with panoramic views of the Himalayas",
+        "why": "Best spot to watch the sunrise over the Annapurnas"
       },
       {
-        "name": "Pashupatinath Temple",
-        "desc": "Hindu temple complex on Bagmati River"
+        "name": "Kathmandu Durbar Square",
+        "desc": "A UNESCO World Heritage site with ancient temples and palaces",
+        "why": "Experience the vibrant street life and try some local street food"
       },
       {
-        "name": "Sarangkot",
-        "desc": "Panoramic viewpoint for sunrise and sunset"
+        "name": "Davis Falls",
+        "desc": "A picturesque waterfall on the outskirts of Pokhara",
+        "why": "A great spot for a picnic or a relaxing walk"
       },
       {
         "name": "Thamel",
-        "desc": "Kathmandu's bustling backpacker hub"
+        "desc": "A bustling tourist hub with shops, restaurants, and bars",
+        "why": "Best place to find affordable trekking gear and souvenirs"
+      },
+      {
+        "name": "World Peace Pagoda",
+        "desc": "A Buddhist stupa with stunning views of Phewa Lake",
+        "why": "A great spot for meditation and reflection"
       }
     ],
+    "hidden_gems": [
+      "The scenic village of Dhulikhel",
+      "The ancient town of Panauti",
+      "The beautiful Rupa Lake"
+    ],
     "covers": [
-      "Bhaktapur",
       "Nagarkot",
+      "Bhaktapur",
+      "Chitwan National Park",
       "Lumbini"
     ],
     "food": [
-      "Momo dumplings",
-      "Dal bhat",
-      "Gorkhali lamb",
-      "Yak cheese dishes"
+      "Momo — try the traditional Nepali dumplings",
+      "Thukpa — a hearty Tibetan noodle soup",
+      "Gorkhali Lamb — a spicy Nepali curry",
+      "Sel Roti — a sweet, ring-shaped bread",
+      "Dal Bhat — a simple, comforting lentil soup"
     ],
-    "best_for": [
-      "adventurers",
-      "backpackers",
-      "couples",
-      "trekkers"
+    "stay_areas": [
+      {
+        "name": "Thamel",
+        "vibe": "Backpacker hostels, budget-friendly"
+      },
+      {
+        "name": "Lakeside",
+        "vibe": "Mid-range hotels, scenic views of Phewa Lake"
+      },
+      {
+        "name": "Bhaktapur",
+        "vibe": "Historic guesthouses, cultural experiences"
+      }
     ],
-    "getting_around": "Use local buses, taxis, or rent a bike to navigate the cities and trailheads",
-    "tips": [
-      "Respect local temple customs and dress modestly",
-      "Book treks and accommodations in advance for peak season"
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "20%",
+      "activities": "25%"
+    },
+    "getting_there": "Fly from India to Tribhuvan International Airport in Kathmandu, with connecting flights from major Indian cities like Delhi, Mumbai, and Kolkata. You can also take a bus or train from India to the Nepal border and then transfer to a local bus or taxi.",
+    "getting_around": "Use local buses, taxis, or rent a bike to get around Kathmandu and Pokhara, with many trekking trails and scenic routes accessible on foot.",
+    "visa": "Visa on arrival (~$25) for Indian citizens, with a valid passport and proof of onward travel.",
+    "safety": "Generally safe, but beware of petty theft and scams in tourist areas, and take necessary precautions when trekking in the Himalayas.",
+    "sim_connectivity": "Buy a local SIM card or rent a portable Wi-Fi hotspot for reliable internet access, with many cafes and restaurants offering free Wi-Fi.",
+    "language": "Nepali; 'Namaste' = hello, 'Dhanyabaad' = thanks. English widely used in tourist areas.",
+    "events": [
+      {
+        "name": "Dashain Festival",
+        "when": "September-October"
+      },
+      {
+        "name": "Buddha Jayanti",
+        "when": "May"
+      },
+      {
+        "name": "Teej Festival",
+        "when": "August-September"
+      }
     ]
   },
   "Dubai": {
-    "tagline": "Desert Oasis of Opulence",
+    "tagline": "Desert dreams meet gold-souk glamour",
     "ideal_days_min": 4,
     "ideal_days_max": 7,
     "highlights": [
-      "World's tallest tower",
-      "Desert safaris at dawn",
-      "Gold souk shopping sprees",
-      "Luxurious city nightlife"
+      "Burj Khalifa, the world's tallest tower",
+      "Desert safaris under starry skies",
+      "Gold souk shopping in Deira",
+      "Dubai Mall's record-breaking fountain show",
+      "Palm Jumeirah's luxury beaches",
+      "Miracle Garden's floral wonders"
     ],
     "must_visit": [
       {
         "name": "Burj Khalifa",
-        "desc": "Experience the world's tallest tower"
+        "desc": "The world's tallest building",
+        "why": "Go at sunset for breathtaking views"
       },
       {
         "name": "Dubai Mall",
-        "desc": "Shop and dine in one of the world's largest malls"
+        "desc": "One of the world's largest shopping malls",
+        "why": "Visit the ice rink and VR park for a unique experience"
+      },
+      {
+        "name": "Desert Safari",
+        "desc": "An adrenaline-pumping dune bashing experience",
+        "why": "Take a sunrise or sunset safari for the best photos"
       },
       {
         "name": "Palm Jumeirah",
-        "desc": "Relax on a man-made island"
+        "desc": "A man-made island with luxury hotels",
+        "why": "Relax on the beach or take a monorail ride"
       },
       {
-        "name": "Desert Conservation Reserve",
-        "desc": "Explore the Arabian desert's natural beauty"
+        "name": "Gold Souk",
+        "desc": "A traditional market for gold and spices",
+        "why": "Haggle for the best prices on gold and souvenirs"
       },
       {
-        "name": "Dubai Miracle Garden",
-        "desc": "Marvel at the world's largest flower garden"
+        "name": "Miracle Garden",
+        "desc": "A floral wonderland with over 45 million flowers",
+        "why": "Visit in the evening for a romantic atmosphere"
       }
+    ],
+    "hidden_gems": [
+      "Al Fahidi Historical Neighbourhood",
+      "Textile Souk in Bur Dubai",
+      "Global Village for cultural performances"
     ],
     "covers": [
       "Abu Dhabi",
       "Sharjah",
-      "Ras Al Khaimah",
-      "Hatta"
+      "Fujairah",
+      "Ras Al Khaimah"
     ],
     "food": [
-      "Shawarma",
-      "Machboos",
-      "Luqaimat",
-      "Karak Chai"
+      "Shawarma — try the spicy chicken version",
+      "Machboos — a flavorful rice dish with meat or fish",
+      "Luqaimat — sweet dumplings filled with dates",
+      "Karak Chai — a strong tea with cardamom and milk",
+      "Falafel — crispy and spicy chickpea patties"
     ],
-    "best_for": [
-      "couples",
-      "families",
-      "luxury",
-      "friends"
+    "stay_areas": [
+      {
+        "name": "Downtown Dubai",
+        "vibe": "Luxury hotels and apartments, expensive"
+      },
+      {
+        "name": "Deira",
+        "vibe": "Budget-friendly hotels and souks, affordable"
+      },
+      {
+        "name": "Marina",
+        "vibe": "Upscale hotels and apartments, mid-range to expensive"
+      }
     ],
-    "getting_around": "Use the efficient metro system or hire a taxi to navigate the city",
-    "tips": [
-      "Haggle when shopping at traditional souks",
-      "Respect local customs and dress modestly"
+    "budget_split": {
+      "stay": "50%",
+      "food": "20%",
+      "transport": "10%",
+      "activities": "20%"
+    },
+    "getting_there": "Fly from major Indian cities like Delhi, Mumbai, or Bengaluru to Dubai International Airport, with airlines like Emirates, IndiGo, or SpiceJet offering direct or connecting flights.",
+    "getting_around": "Use the Dubai Metro, buses, or taxis to get around the city, or opt for a private car rental for more convenience.",
+    "visa": "Indian passport holders can get a visa on arrival (~AED 100, ~INR 2,000) for a stay of up to 14 days, or apply for an e-Visa in advance.",
+    "safety": "Dubai is generally a safe city, but be aware of petty theft and scams, especially in crowded areas like souks and malls.",
+    "sim_connectivity": "Buy a local SIM card or eSIM from providers like Du or Etisalat for affordable data and voice plans, with widespread 4G coverage and free Wi-Fi in many public areas.",
+    "language": "Arabic; 'Marhaba' = hello, 'Shukraan' = thanks. English is widely spoken in tourist areas, and many signs are in both Arabic and English.",
+    "events": [
+      {
+        "name": "Dubai Shopping Festival",
+        "when": "January"
+      },
+      {
+        "name": "Dubai International Film Festival",
+        "when": "December"
+      },
+      {
+        "name": "Dubai World Cup",
+        "when": "March"
+      }
     ]
   },
   "Petra & Wadi Rum": {
-    "tagline": "Ancient city meets desert sands",
-    "ideal_days_min": 4,
-    "ideal_days_max": 7,
+    "tagline": "Ancient city meets desert adventure",
+    "ideal_days_min": 5,
+    "ideal_days_max": 8,
     "highlights": [
-      "Rose-red city of Petra",
-      "Mars-like Wadi Rum desert",
-      "Rich cultural heritage",
-      "Breathtaking natural landscapes"
+      "The Treasury building at sunrise",
+      "Monastery hike in Petra",
+      "Wadi Rum desert camping",
+      "Siq canyon narrow passages",
+      "Royal Tombs carved into cliffs",
+      "Little Petra archaeological site"
     ],
     "must_visit": [
       {
-        "name": "Al-Khazneh",
-        "desc": "The iconic Treasury building in Petra"
+        "name": "Al-Khazneh (The Treasury)",
+        "desc": "An ancient, intricately carved temple",
+        "why": "Witness the majestic structure at sunrise for an unforgettable experience"
       },
       {
-        "name": "Monastery",
-        "desc": "A monumental structure in Petra"
+        "name": "Wadi Rum Desert",
+        "desc": "A vast, Martian-like desert landscape",
+        "why": "Take a guided Jeep tour or camel ride to explore the stunning dunes and canyons"
       },
       {
-        "name": "Wadi Rum Valley",
-        "desc": "Explore the stunning desert landscape"
+        "name": "Ad Deir (The Monastery)",
+        "desc": "A monumental structure atop a mountain",
+        "why": "Hike up to the monastery for breathtaking views of the surrounding landscape"
       },
       {
-        "name": "Siq Canyon",
-        "desc": "A narrow canyon leading to Petra"
+        "name": "The Royal Tombs",
+        "desc": "A collection of grand, ancient tombs",
+        "why": "Marvel at the intricate facades and learn about the history of the Nabateans"
+      },
+      {
+        "name": "The Siq",
+        "desc": "A narrow canyon serving as the main entrance to Petra",
+        "why": "Walk through the canyon to experience the dramatic reveal of The Treasury"
       },
       {
         "name": "Little Petra",
-        "desc": "A smaller archaeological site near Petra"
+        "desc": "A smaller, lesser-known archaeological site",
+        "why": "Explore the site to discover ancient mosaics, temples, and a monastery"
       }
+    ],
+    "hidden_gems": [
+      "The narrow canyon of the Siq at night",
+      "The scenic village of Wadi Musa",
+      "The scenic hike to the High Place of Sacrifice"
     ],
     "covers": [
       "Aqaba",
@@ -1896,21 +3434,51 @@
       "Dead Sea"
     ],
     "food": [
-      "Mansaf",
-      "Maqluba",
-      "Falafel",
-      "Shawarma"
+      "Mansaf — a traditional Jordanian dish made with lamb and rice",
+      "Maqluba — a hearty, upside-down rice and vegetable dish",
+      "Kunafeh — a sweet, cheese-based dessert",
+      "Shawarma — a popular street food made with grilled meat",
+      "Gormeh — a rich, herb-based stew"
     ],
-    "best_for": [
-      "couples",
-      "adventurers",
-      "families",
-      "solo"
+    "stay_areas": [
+      {
+        "name": "Wadi Musa",
+        "vibe": "Tourist-friendly, mid-range hotels and restaurants"
+      },
+      {
+        "name": "Aqaba",
+        "vibe": "Beach resorts and luxury hotels, higher price range"
+      },
+      {
+        "name": "Petra town",
+        "vibe": "Budget-friendly, basic accommodations and local eateries"
+      }
     ],
-    "getting_around": "Rent a car or hire a driver to explore Petra and Wadi Rum",
-    "tips": [
-      "Bring sun protection and stay hydrated in the desert",
-      "Hire a guide for a deeper understanding of Petra's history and culture"
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "20%",
+      "activities": "25%"
+    },
+    "getting_there": "Fly from India to Amman's Queen Alia International Airport (AMM) or Aqaba's King Hussein International Airport (AQJ) with a connecting flight, then take a taxi or bus to Petra.",
+    "getting_around": "Use taxis, buses, or rent a car to get around Petra and Wadi Rum, or hire a guided tour for convenience and local insight.",
+    "visa": "Visa on arrival (~$56) for Indian passport holders, valid for 30 days",
+    "safety": "Petra and Wadi Rum are generally safe, but be mindful of pickpocketing and scams in crowded areas, and stay hydrated in the desert heat.",
+    "sim_connectivity": "Purchase a local SIM card or rent a portable Wi-Fi hotspot for data access, with decent coverage in tourist areas but limited connectivity in the desert.",
+    "language": "Arabic; 'Marhaba' = hello, 'Shukraan' = thanks. English is widely spoken in tourist areas, but learning basic Arabic phrases can enhance your experience.",
+    "events": [
+      {
+        "name": "Petra Festival",
+        "when": "August"
+      },
+      {
+        "name": "Aqaba Festival",
+        "when": "July"
+      },
+      {
+        "name": "Wadi Rum Full Moon Desert Trek",
+        "when": "Full moon nights from March to November"
+      }
     ]
   },
   "Istanbul": {
@@ -1918,89 +3486,152 @@
     "ideal_days_min": 4,
     "ideal_days_max": 7,
     "highlights": [
-      "Historic mosques and churches",
-      "Vibrant bazaars and markets",
-      "Scenic Bosphorus Strait views",
-      "Rich cultural heritage"
+      "Hagia Sophia's stunning Byzantine architecture",
+      "Vibrant Grand Bazaar shopping experience",
+      "Scenic Bosphorus Strait ferry rides",
+      "Historic Topkapi Palace",
+      "Delicious Turkish cuisine",
+      "Panoramic views from Galata Tower"
     ],
     "must_visit": [
       {
         "name": "Hagia Sophia",
-        "desc": "Explore the ancient Byzantine church"
+        "desc": "Former Byzantine church, Ottoman mosque, and now museum",
+        "why": "Witness its breathtaking architecture and historical significance, best visited early morning"
       },
       {
         "name": "Topkapi Palace",
-        "desc": "Discover the Ottoman Empire's primary residence"
+        "desc": "Primary residence of Ottoman sultans for nearly 400 years",
+        "why": "Explore its opulent pavilions and gardens, ideally in the late afternoon"
       },
       {
         "name": "Grand Bazaar",
-        "desc": "Shop for souvenirs and local goods"
+        "desc": "One of the oldest and largest covered markets in the world",
+        "why": "Experience the bustling atmosphere and shop for souvenirs, best during weekday mornings"
       },
       {
-        "name": "Bosphorus Ferry",
-        "desc": "Cruise along the scenic strait"
+        "name": "Bosphorus Strait",
+        "desc": "Natural strait separating Europe and Asia",
+        "why": "Take a ferry ride for stunning city views, preferably at sunset"
       },
       {
         "name": "Blue Mosque",
-        "desc": "Marvel at the stunning Islamic architecture"
+        "desc": "Historic mosque famous for its blue tiles and six minarets",
+        "why": "Visit at dawn or dusk to avoid crowds and appreciate its beauty"
+      },
+      {
+        "name": "Galata Tower",
+        "desc": "Medieval stone tower offering panoramic views of the city",
+        "why": "Climb to the top for a breathtaking vista, especially during sunset"
       }
+    ],
+    "hidden_gems": [
+      "Princes' Islands for a peaceful day trip",
+      "Chora Church for its well-preserved Byzantine mosaics",
+      "Karakoy for its trendy waterfront restaurants and bars"
     ],
     "covers": [
       "Sultanahmet",
       "Beyoglu",
-      "Princes' Islands",
-      "Kadikoy"
+      "Kadikoy",
+      "Princes' Islands"
     ],
     "food": [
-      "Doner kebab",
-      "Baklava",
-      "Lahmacun",
-      "Turkish delight"
+      "Doner Kebab — try the classic lamb version",
+      "Lahmacun — thin crust topped with minced meat and onions",
+      "Baklava — sweet pastry filled with nuts and honey",
+      "Menemen — Turkish-style omelette with tomatoes and spices",
+      "Sis Kebab — skewers of marinated meat grilled to perfection"
     ],
-    "best_for": [
-      "couples",
-      "families",
-      "solo",
-      "friends",
-      "luxury"
+    "stay_areas": [
+      {
+        "name": "Sultanahmet",
+        "vibe": "Historic, central, and mid-range, with many hotels and hostels"
+      },
+      {
+        "name": "Beyoglu",
+        "vibe": "Vibrant, trendy, and upscale, with boutique hotels and restaurants"
+      },
+      {
+        "name": "Karakoy",
+        "vibe": "Waterfront, modern, and budget-friendly, with hostels and guesthouses"
+      }
     ],
-    "getting_around": "Use the efficient tram and metro system or take a ferry along the Bosphorus",
-    "tips": [
-      "Haggle when shopping at bazaars",
-      "Respect dress codes when visiting mosques"
+    "budget_split": {
+      "stay": "40%",
+      "food": "30%",
+      "transport": "10%",
+      "activities": "20%"
+    },
+    "getting_there": "Fly from India to Istanbul Airport (IST) with airlines like Turkish Airlines or IndiGo, with layovers, or consider a cheaper option with a longer layover. From the airport, take the metro or a taxi to your destination.",
+    "getting_around": "Use the efficient public transport system, including metro, trams, and buses, or take a taxi for shorter distances.",
+    "visa": "e-Visa needed, which can be obtained online for ~$20, valid for 30 days",
+    "safety": "Istanbul is generally safe, but be cautious of petty theft and scams in crowded areas, especially in tourist hotspots like the Grand Bazaar",
+    "sim_connectivity": "Buy a local SIM card or rent a portable Wi-Fi hotspot for reliable internet access, with many providers offering affordable plans",
+    "language": "Turkish; 'Merhaba' = hello, 'Tesekkur' = thanks. English is widely spoken in tourist areas, but learning a few basic Turkish phrases can be helpful.",
+    "events": [
+      {
+        "name": "Istanbul Music Festival",
+        "when": "June"
+      },
+      {
+        "name": "Istanbul Film Festival",
+        "when": "April"
+      },
+      {
+        "name": "Whirling Dervishes performance",
+        "when": "year-round, but best in summer"
+      }
     ]
   },
   "Cappadocia": {
-    "tagline": "Dawn hot air balloon rides over fairy chimneys",
+    "tagline": "Fairy-tale landscapes at dawn",
     "ideal_days_min": 4,
     "ideal_days_max": 7,
     "highlights": [
-      "Breathtaking hot air balloon views",
-      "Unique fairy chimney landscapes",
-      "Ancient cave churches and monasteries",
-      "Stunning sunrises and sunsets"
+      "Hot air balloon rides over fairy chimneys",
+      "Exploring Derinkuyu underground city",
+      "Hiking in Red and Rose Valleys",
+      "Visiting ancient cave churches",
+      "Watching sunset at Uchisar Castle",
+      "Riding horses through scenic valleys"
     ],
     "must_visit": [
       {
         "name": "Göreme National Park",
-        "desc": "Explore ancient cave dwellings and churches"
+        "desc": "A UNESCO World Heritage Site with unique landscapes",
+        "why": "Must-visit for its stunning vistas and hiking trails, best at sunrise"
       },
       {
         "name": "Derinkuyu Underground City",
-        "desc": "Discover an ancient subterranean city"
+        "desc": "An ancient multi-level underground city",
+        "why": "A must-see for its historical significance and engineering marvel, try to avoid peak hours"
       },
       {
-        "name": "Ürgüp",
-        "desc": "Wander through a historic town with fairy chimneys"
+        "name": "Uchisar Castle",
+        "desc": "A historic castle with panoramic views",
+        "why": "Perfect spot to watch the sunset, arrive early to secure a good spot"
+      },
+      {
+        "name": "Kaymakli Underground City",
+        "desc": "Another ancient underground city",
+        "why": "Less crowded than Derinkuyu, offering a more peaceful experience"
       },
       {
         "name": "Red and Rose Valleys",
-        "desc": "Hike through scenic valleys with stunning rock formations"
+        "desc": "Scenic valleys with breathtaking views",
+        "why": "Ideal for hiking and watching the sunset, consider a guided tour for the best experience"
       },
       {
-        "name": "Kaymaklı Underground City",
-        "desc": "Learn about ancient underground living"
+        "name": "Göreme Open-Air Museum",
+        "desc": "A museum showcasing ancient cave churches",
+        "why": "A great place to learn about the history and culture of the region, plan your visit for the morning"
       }
+    ],
+    "hidden_gems": [
+      "The village of Çavuşin with its ancient church",
+      "The scenic town of Ürgüp with its wine tastings",
+      "The hidden valley of Meskendir with its unique landscapes"
     ],
     "covers": [
       "Göreme",
@@ -2009,66 +3640,149 @@
       "Nevşehir"
     ],
     "food": [
-      "Manti",
-      "Lahmacun",
-      "Menemen",
-      "Baklava"
+      "Manti — Turkish dumplings with a local twist",
+      "Lahmacun — thin crust topped with minced meat and spices",
+      "Borek — flaky pastry filled with cheese or spinach",
+      "Kebabs — various types of skewered meats",
+      "Ayran — a refreshing yogurt drink"
     ],
-    "best_for": [
-      "couples",
-      "adventurers",
-      "luxury",
-      "honeymoon"
+    "stay_areas": [
+      {
+        "name": "Göreme",
+        "vibe": "Central and lively, with a range of accommodations from budget-friendly to luxury"
+      },
+      {
+        "name": "Ürgüp",
+        "vibe": "Charming town with a more laid-back atmosphere, offering mid-range to luxury options"
+      },
+      {
+        "name": "Avanos",
+        "vibe": "Budget-friendly area with a more local feel, ideal for backpackers and students"
+      }
     ],
-    "getting_around": "Rent a car or take guided tours to explore the region",
-    "tips": [
-      "Book hot air balloon rides in advance to avoid peak season crowds",
-      "Wear comfortable shoes for hiking and exploring ancient sites"
+    "budget_split": {
+      "stay": "30%",
+      "food": "25%",
+      "transport": "20%",
+      "activities": "25%"
+    },
+    "getting_there": "Fly from India to either Istanbul or Ankara, then take a domestic flight to Kayseri or Nevşehir, from where you can take a bus or taxi to Cappadocia. Alternatively, consider a guided tour that includes transportation from Istanbul.",
+    "getting_around": "Use public buses, taxis, or rent a car to get around Cappadocia, with many tour operators also offering shuttle services between towns and attractions.",
+    "visa": "e-Visa needed, which can be obtained online in advance for around $20, valid for multiple entries within 180 days",
+    "safety": "Generally a very safe destination, but be mindful of pickpocketing in crowded areas and tourist hotspots, and take necessary precautions when hiking in the valleys",
+    "sim_connectivity": "Buy a local SIM card or rent a portable Wi-Fi hotspot for data access, with 4G coverage available in most areas",
+    "language": "Turkish; 'Merhaba' = hello, 'Teşekkür' = thanks. English is widely spoken in tourist areas, but learning a few basic phrases can go a long way.",
+    "events": [
+      {
+        "name": "Cappadocia International Hot Air Balloon Festival",
+        "when": "July"
+      },
+      {
+        "name": "Whirling Dervishes performance",
+        "when": "Throughout the year, but more frequent in summer months"
+      }
     ]
   },
   "Paris": {
-    "tagline": "City of Light and Endless Charm",
+    "tagline": "Romance beckons in City of Light",
     "ideal_days_min": 4,
     "ideal_days_max": 7,
     "highlights": [
-      "Iconic Eiffel Tower views",
-      "World-class art at the Louvre",
-      "Romantic Seine River cruises",
-      "Chic boutique shopping"
+      "Eiffel Tower views",
+      "Louvre Museum masterpieces",
+      "River Seine cruises",
+      "Montmartre artistic vibe",
+      "Champs-Élysées shopping",
+      "Notre-Dame Cathedral history"
     ],
     "must_visit": [
       {
-        "name": "The Louvre Museum",
-        "desc": "Home to the Mona Lisa"
+        "name": "The Louvre",
+        "desc": "World's largest art museum",
+        "why": "See Mona Lisa and an impressive collection of art"
       },
       {
         "name": "Eiffel Tower",
-        "desc": "Iron lattice tower with stunning views"
+        "desc": "Iconic iron lattice tower",
+        "why": "Enjoy breathtaking views of the city, especially at sunset"
       },
       {
         "name": "Notre-Dame Cathedral",
-        "desc": "Historic Gothic church"
+        "desc": "Historic Catholic cathedral",
+        "why": "Marvel at its Gothic architecture and historical significance"
       },
       {
         "name": "Montmartre",
-        "desc": "Bohemian neighborhood with artist studios"
+        "desc": "Bohemian neighborhood",
+        "why": "Explore its charming streets, artist studios, and stunning views"
       },
       {
-        "name": "Champs-Élysées",
-        "desc": "Famous avenue for shopping and dining"
+        "name": "Palace of Versailles",
+        "desc": "Former royal palace",
+        "why": "Discover its opulent interiors, gardens, and fountain shows"
+      },
+      {
+        "name": "Musée d'Orsay",
+        "desc": "Impressionist and Post-Impressionist art museum",
+        "why": "Admire an extensive collection of Monet, Renoir, and Van Gogh"
       }
+    ],
+    "hidden_gems": [
+      "Le Marais neighborhood",
+      "Canal Saint-Martin",
+      "Marché aux Puces de Saint-Ouen flea market"
     ],
     "covers": [
       "Versailles",
-      "Saint-Germain-des-Prés",
-      "Le Marais",
-      "Île de la Cité"
+      "Reims",
+      "Lille"
     ],
     "food": [
-      "Escargots",
-      "Coq au Vin",
-      "Macarons",
-      "Croissants"
+      "Escargots — garlic butter snails",
+      "Coq au Vin — braised chicken in red wine",
+      "Croissants — flaky pastry for breakfast",
+      "Macarons — delicate meringue-based cookies",
+      "Crème Brûlée — rich dessert with caramelized sugar"
+    ],
+    "stay_areas": [
+      {
+        "name": "Le Marais",
+        "vibe": "Trendy and upscale, with boutique hotels"
+      },
+      {
+        "name": "Latin Quarter",
+        "vibe": "Historic and lively, with budget-friendly options"
+      },
+      {
+        "name": "Champs-Élysées",
+        "vibe": "Luxurious and central, with high-end hotels"
+      }
+    ],
+    "budget_split": {
+      "stay": "40%",
+      "food": "30%",
+      "transport": "15%",
+      "activities": "15%"
+    },
+    "getting_there": "Fly from India to Paris Charles de Gaulle Airport (CDG) with airlines like Air India, Emirates, or Lufthansa, with layovers. Alternatively, consider flying into Paris Orly Airport (ORY) for some routes.",
+    "getting_around": "Use the efficient Paris Metro system, buses, or rent a bike to explore the city.",
+    "visa": "Schengen visa required, apply in advance (~€80, approx. ₹6,500)",
+    "safety": "Generally safe, but beware of pickpocketing in tourist areas and crowded public transport",
+    "sim_connectivity": "Purchase a prepaid SIM card or rent a portable Wi-Fi hotspot for data access, with decent coverage throughout the city",
+    "language": "French; 'Bonjour' = hello, 'Merci' = thanks. English widely spoken in tourist areas, but learning basic French phrases is appreciated.",
+    "events": [
+      {
+        "name": "Bastille Day",
+        "when": "July"
+      },
+      {
+        "name": "Paris Fashion Week",
+        "when": "February and September"
+      },
+      {
+        "name": "Rock en Seine music festival",
+        "when": "August"
+      }
     ],
     "best_for": [
       "couples",
@@ -2077,178 +3791,320 @@
       "friends",
       "luxury"
     ],
-    "getting_around": "Use the efficient Metro system to navigate the city",
     "tips": [
-      "Learn basic French phrases to interact with locals",
-      "Buy a Paris Museum Pass for skip-the-line access"
+      "Buy a Paris Museum Pass for skip-the-line entry and cost savings",
+      "Explore neighborhoods on foot to discover hidden gems",
+      "Enjoy a Seine River cruise at night for a unique perspective",
+      "Visit famous markets like Montmartre's Place du Tertre for local artisans",
+      "Learn some basic French phrases to interact with the locals and enhance your experience"
     ]
   },
   "Nice & French Riviera": {
-    "tagline": "Azure coastline and glamorous harbours await",
+    "tagline": "Glamour by the Azure Coast",
     "ideal_days_min": 5,
-    "ideal_days_max": 14,
+    "ideal_days_max": 10,
     "highlights": [
-      "Stunning beaches and coves",
-      "Historic old towns to explore",
-      "Glamorous yacht-lined harbours",
-      "Breathtaking views of the Mediterranean"
+      "Promenade des Anglais",
+      "Old Town of Nice",
+      "Saint-Tropez Harbour",
+      "Monaco Casino",
+      "Cannes Film Festival",
+      "Eze Village"
     ],
     "must_visit": [
       {
-        "name": "Promenade des Anglais",
-        "desc": "Iconic seaside promenade in Nice"
+        "name": "Chagall Museum",
+        "desc": "A museum showcasing the works of Marc Chagall",
+        "why": "It offers a unique perspective on the artist's life and work, best visited in the morning"
+      },
+      {
+        "name": "Cap Ferrat",
+        "desc": "A picturesque peninsula with stunning views",
+        "why": "It's perfect for a leisurely hike and offers breathtaking views of the Mediterranean"
+      },
+      {
+        "name": "Nice Flower Market",
+        "desc": "A historic market selling flowers, souvenirs, and local produce",
+        "why": "It's a great place to experience the local culture and buy some unique gifts, visit early to avoid crowds"
+      },
+      {
+        "name": "Grasse Perfume Factory",
+        "desc": "A factory that produces fragrances and offers tours",
+        "why": "It provides insight into the perfume-making process and allows you to create your own scent"
       },
       {
         "name": "Villefranche-sur-Mer",
-        "desc": "Picturesque medieval town with harbour"
+        "desc": "A charming old town with narrow streets and historic buildings",
+        "why": "It's a great place to get lost and explore, with plenty of restaurants and shops to discover"
       },
       {
-        "name": "Monaco",
-        "desc": "Luxurious principality with casino and palace"
-      },
-      {
-        "name": "Cours Saleya Market",
-        "desc": "Vibrant market in Nice's old town"
-      },
-      {
-        "name": "Eze Village",
-        "desc": "Perched medieval village with stunning views"
+        "name": "Baie des Anges",
+        "desc": "A beautiful bay with crystal-clear waters",
+        "why": "It's perfect for swimming, sunbathing, and enjoying water sports"
       }
+    ],
+    "hidden_gems": [
+      "Village of Gourdon",
+      "Plage de la Croisette",
+      "Marché aux Puces de Nice"
     ],
     "covers": [
       "Cannes",
-      "Antibes",
-      "Menton",
-      "Saint-Tropez"
+      "Monaco",
+      "Antibes"
     ],
     "food": [
-      "Salade Niçoise",
-      "Ratatouille",
-      "Socca",
-      "Tarte Tropezienne"
+      "Salade Niçoise — with fresh tuna and olives",
+      "Ratatouille — a vegetable stew from Provence",
+      "Socca — a thin, crispy pancake",
+      "Tarte Provençale — a savory tart with vegetables and cheese",
+      "Crêpes — thin French pancakes with various fillings"
     ],
-    "best_for": [
-      "couples",
-      "luxury",
-      "families",
-      "friends"
+    "stay_areas": [
+      {
+        "name": "Promenade des Anglais",
+        "vibe": "Luxurious hotels and apartments, high-end"
+      },
+      {
+        "name": "Old Town of Nice",
+        "vibe": "Charming boutique hotels and B&Bs, mid-range to high-end"
+      },
+      {
+        "name": "Cimiez",
+        "vibe": "Leafy neighborhood with budget-friendly options, suitable for families and backpackers"
+      }
     ],
-    "getting_around": "Use buses, trains, or rent a car to explore the French Riviera",
-    "tips": [
-      "Book restaurants and beaches in advance for peak season",
-      "Explore old towns on foot to discover hidden gems"
+    "budget_split": {
+      "stay": "50%",
+      "food": "25%",
+      "transport": "10%",
+      "activities": "15%"
+    },
+    "getting_there": "Indian travellers can fly from major Indian cities to Nice Côte d'Azur Airport (NCE) with one stop, typically in European hubs like Paris or Amsterdam, with airlines such as Air France, KLM, or Lufthansa.",
+    "getting_around": "The French Riviera has an efficient public transport system, including buses and trains, making it easy to get around without a car.",
+    "visa": "Indian passport holders require a Schengen visa, which can be applied for at the French embassy or consulate in India, with a typical processing time of 15 days.",
+    "safety": "The French Riviera is generally a safe destination, but petty theft and pickpocketing can be a problem in tourist areas, so it's essential to be mindful of your belongings, especially in crowded places.",
+    "sim_connectivity": "Indian travellers can purchase a local SIM card or rent a portable Wi-Fi hotspot for data access, with major providers like Orange and SFR offering affordable plans.",
+    "language": "French; 'Bonjour' = hello, 'Merci' = thanks. English is widely spoken in tourist areas, but learning a few basic French phrases can go a long way in enhancing your experience.",
+    "events": [
+      {
+        "name": "Cannes Film Festival",
+        "when": "May"
+      },
+      {
+        "name": "Nice Carnival",
+        "when": "February-March"
+      },
+      {
+        "name": "Jazz Festival in Juan-les-Pins",
+        "when": "July"
+      }
     ]
   },
   "Rome": {
-    "tagline": "Eternal City of Ancient Ruins",
+    "tagline": "Eternal city of love and ruins",
     "ideal_days_min": 4,
     "ideal_days_max": 7,
     "highlights": [
-      "Ancient Roman landmarks",
-      "Vatican City treasures",
-      "Renaissance architecture",
-      "World-class pasta dishes"
+      "Colosseum's ancient grandeur",
+      "Vatican City's Sistine Chapel",
+      "Trevi Fountain's baroque beauty",
+      "Roman Forum's historic ruins",
+      "Pantheon's architectural marvel",
+      "Villa Borghese's serene gardens"
     ],
     "must_visit": [
       {
-        "name": "Colosseum",
-        "desc": "Explore the iconic amphitheater"
+        "name": "The Colosseum",
+        "desc": "Ancient amphitheater and iconic landmark",
+        "why": "Witness the grandeur of Rome's history, best visited early morning or late evening"
       },
       {
-        "name": "Vatican Museums",
-        "desc": "Discover Renaissance art masterpieces"
+        "name": "The Vatican City",
+        "desc": "Independent city-state and center of Catholicism",
+        "why": "Explore the Sistine Chapel and St. Peter's Basilica, ideal on a guided tour"
       },
       {
-        "name": "Trevi Fountain",
-        "desc": "Toss a coin for good luck"
+        "name": "The Roman Forum",
+        "desc": "Historic heart of ancient Rome",
+        "why": "Discover ancient ruins and temples, perfect for a self-guided walking tour"
       },
       {
-        "name": "Roman Forum",
-        "desc": "Walk among ancient ruins"
+        "name": "The Pantheon",
+        "desc": "Magnificently preserved ancient temple",
+        "why": "Admire its architectural genius and historic significance, free to visit"
       },
       {
-        "name": "Pantheon",
-        "desc": "Marvel at the ancient temple"
+        "name": "The Trevi Fountain",
+        "desc": "Beautiful baroque fountain",
+        "why": "Toss a coin into the water to ensure your return to Rome, lively at night"
+      },
+      {
+        "name": "The Spanish Steps",
+        "desc": "Grand staircase and popular meeting spot",
+        "why": "Enjoy the lively atmosphere and people-watching, especially during sunset"
       }
+    ],
+    "hidden_gems": [
+      "Trastevere neighborhood",
+      "Santa Maria in Trastevere church",
+      "Giardino degli Aranci park"
     ],
     "covers": [
       "Vatican City",
-      "Trastevere",
-      "Monti",
-      "Ostia Antica"
+      "Ostia Antica",
+      "Tivoli",
+      "Castel Gandolfo"
     ],
     "food": [
-      "Carbonara",
-      "Amatriciana",
-      "Pizza Romana",
-      "Gelato"
+      "Carbonara — rich and creamy pasta dish",
+      "Pizza Romana — thin crust and fresh toppings",
+      "Gelato — Italian-style ice cream",
+      "Supplì — fried risotto balls filled with mozzarella",
+      "Caffè — strong and rich Italian coffee"
     ],
-    "best_for": [
-      "couples",
-      "families",
-      "solo",
-      "friends",
-      "luxury"
+    "stay_areas": [
+      {
+        "name": "Centro Storico",
+        "vibe": "Historic and upscale, mid-range to luxury"
+      },
+      {
+        "name": "Trastevere",
+        "vibe": "Bohemian and lively, budget-friendly to mid-range"
+      },
+      {
+        "name": "Monti",
+        "vibe": "Charming and local, budget-friendly to mid-range"
+      }
     ],
-    "getting_around": "Use the efficient metro system or walk through the historic center",
-    "tips": [
-      "Book Vatican tickets in advance to avoid long lines",
-      "Explore the city's hidden gems on foot"
+    "budget_split": {
+      "stay": "40%",
+      "food": "30%",
+      "transport": "10%",
+      "activities": "20%"
+    },
+    "getting_there": "Indian travellers can fly to Rome's Leonardo da Vinci–Fiumicino Airport (FCO) from major Indian cities like Delhi and Mumbai, with airlines such as Alitalia, Air India, and Emirates offering connecting flights.",
+    "getting_around": "Rome has an efficient public transport system, including metro lines, buses, and trams, with a single ticket costing around €1.50, or opt for a 3-day Roma Pass for unlimited travel and discounts on attractions.",
+    "visa": "Indian citizens require a Schengen visa, which can be applied for online or through the Italian embassy, with a processing time of around 15 days, costing around €60.",
+    "safety": "Rome is generally a safe city, but petty theft and pickpocketing can occur in tourist areas, so be mindful of your belongings, especially in crowded spots like train stations and popular landmarks.",
+    "sim_connectivity": "Purchase a local SIM card or rent a portable Wi-Fi hotspot for data access, with providers like TIM, Vodafone, and Wind offering affordable plans, and free Wi-Fi available in many cafes and restaurants.",
+    "language": "Italian; 'Ciao' = hello, 'Grazie' = thanks, English widely spoken in tourist areas.",
+    "events": [
+      {
+        "name": "Carnevale Romano",
+        "when": "February or March"
+      },
+      {
+        "name": "Estate Romana",
+        "when": "June to August"
+      },
+      {
+        "name": "Festa dei Noantri",
+        "when": "July"
+      }
     ]
   },
   "Venice": {
-    "tagline": "Floating City of Golden Dreams",
+    "tagline": "Romance in every gondola ride",
     "ideal_days_min": 4,
     "ideal_days_max": 7,
     "highlights": [
-      "Serene gondola rides",
-      "Vibrant masked carnivals",
-      "Historic golden basilicas",
-      "Romantic canal-side strolls"
+      "St. Mark's Basilica",
+      "Grand Canal gondola rides",
+      "Rialto Bridge views",
+      "Doge's Palace tours",
+      "Murano glass factories",
+      "Carnival of Venice masks"
     ],
     "must_visit": [
       {
-        "name": "St. Mark's Basilica",
-        "desc": "Marvel at its stunning Byzantine mosaics"
+        "name": "St. Mark's Square",
+        "desc": "Historic square with Byzantine mosaics",
+        "why": "Witness the stunning basilica and Doge's Palace at sunrise for fewer crowds"
       },
       {
         "name": "Grand Canal",
-        "desc": "Take a romantic gondola ride along its waters"
+        "desc": "Main waterway through Venice",
+        "why": "Take a vaporetto ride at sunset for breathtaking views of the city"
       },
       {
         "name": "Doge's Palace",
-        "desc": "Explore the historic heart of Venice's government"
+        "desc": "Former residence of the Doge of Venice",
+        "why": "Explore the ornate rooms and learn about Venetian history"
       },
       {
-        "name": "Rialto Bridge",
-        "desc": "Shop and dine with breathtaking views"
+        "name": "Rialto Market",
+        "desc": "Historic marketplace for seafood and produce",
+        "why": "Visit early in the morning for fresh seafood and local atmosphere"
+      },
+      {
+        "name": "Burano Island",
+        "desc": "Colorful island known for lace-making and sweets",
+        "why": "Get lost in the narrow streets and try traditional biscuits"
       },
       {
         "name": "San Giorgio Maggiore",
-        "desc": "Enjoy panoramic views of the city from its campanile"
+        "desc": "Island with a beautiful church and stunning views",
+        "why": "Climb the campanile for panoramic views of Venice"
       }
+    ],
+    "hidden_gems": [
+      "Campo Santa Marina",
+      "San Pietro di Castello",
+      "Museo Querini Stampalia"
     ],
     "covers": [
       "Murano",
-      "Burano",
-      "Lido di Venezia"
+      "Lido di Venezia",
+      "Torcello",
+      "Burano"
     ],
     "food": [
-      "Risotto al nero di seppia",
-      "Fritto misto",
-      "Bigoli in salsa",
-      "Seafood risotto"
+      "Risotto al Nero di Seppia — with squid ink",
+      "Fritto Misto — mixed fried seafood",
+      "Bigoli in Salsa — wholemeal pasta with anchovies",
+      "Baccala Mantecato — creamy cod spread",
+      "Tiramisù — classic Italian dessert"
     ],
-    "best_for": [
-      "couples",
-      "honeymoon",
-      "families",
-      "luxury"
+    "stay_areas": [
+      {
+        "name": "San Marco",
+        "vibe": "Luxury hotels and upscale atmosphere"
+      },
+      {
+        "name": "Santa Croce",
+        "vibe": "Local neighborhoods with affordable options"
+      },
+      {
+        "name": "Cannaregio",
+        "vibe": "Budget-friendly hostels and guesthouses"
+      }
     ],
-    "getting_around": "Explore the city on foot or by vaporetto, Venice's public water bus system",
-    "tips": [
-      "Get lost in the narrow streets to discover hidden gems",
-      "Book a gondola ride at sunset for a romantic experience"
+    "budget_split": {
+      "stay": "40%",
+      "food": "30%",
+      "transport": "10%",
+      "activities": "20%"
+    },
+    "getting_there": "Fly from India to Venice Marco Polo Airport (VCE) with a layover, or take a train/bus from other European cities. From the airport, take the Alilaguna water bus or a taxi to reach the city center.",
+    "getting_around": "Use vaporettos (water buses) or traghetti (gondola ferries) to navigate the canals and islands.",
+    "visa": "Schengen visa required for Indian passport holders, apply in advance (~€80)",
+    "safety": "Be mindful of pickpocketing in crowded areas and tourist hotspots, especially during peak season.",
+    "sim_connectivity": "Purchase a prepaid SIM card or rent a portable Wi-Fi hotspot for data access, with decent coverage throughout the city.",
+    "language": "Italian; 'Ciao' = hello, 'Grazie' = thanks. English is widely spoken in tourist areas, but learning basic Italian phrases can be helpful.",
+    "events": [
+      {
+        "name": "Carnival of Venice",
+        "when": "February or March"
+      },
+      {
+        "name": "Venice Film Festival",
+        "when": "August or September"
+      },
+      {
+        "name": "Festa del Redentore",
+        "when": "July"
+      }
     ]
   },
   "Amalfi Coast": {
@@ -2256,55 +4112,101 @@
     "ideal_days_min": 5,
     "ideal_days_max": 10,
     "highlights": [
-      "Pastel towns perched on cliffs",
-      "Crystal clear Tyrrhenian Sea",
-      "Luxury villas and hotels",
-      "Fresh seafood and limoncello"
+      "Pastel-hued towns perched on cliffs",
+      "Crystal-clear Tyrrhenian Sea waters",
+      "Luxurious Italian villas and gardens",
+      "Fresh seafood and limoncello tastings",
+      "Hiking trails with breathtaking Mediterranean views",
+      "Ancient ruins and historic cathedrals"
     ],
     "must_visit": [
       {
         "name": "Positano",
-        "desc": "Colorful town with steep streets and beaches"
+        "desc": "A picturesque cliffside town with colorful houses",
+        "why": "Visit at sunset for a romantic atmosphere"
       },
       {
         "name": "Amalfi Cathedral",
-        "desc": "Historic cathedral in the town of Amalfi"
+        "desc": "A historic cathedral with stunning Byzantine mosaics",
+        "why": "Attend a mass or concert for a unique experience"
       },
       {
         "name": "Island of Capri",
-        "desc": "Chic island with stunning natural beauty"
+        "desc": "A charming island with stunning natural beauty",
+        "why": "Take a boat tour to explore its hidden coves and grottos"
       },
       {
         "name": "Ravello",
-        "desc": "Hilltop town with stunning views and villas"
+        "desc": "A medieval town with stunning villas and gardens",
+        "why": "Attend a music festival or concert at Villa Rufolo"
       },
       {
-        "name": "Sentiero degli Dei",
-        "desc": "Hiking trail with breathtaking sea views"
+        "name": "Sentiero degli Dei (Path of the Gods)",
+        "desc": "A scenic hiking trail with breathtaking views",
+        "why": "Hike early in the morning to avoid crowds"
+      },
+      {
+        "name": "Pompeii and Herculaneum",
+        "desc": "Ancient Roman ruins frozen in time",
+        "why": "Take a guided tour to learn about history and archaeology"
       }
     ],
+    "hidden_gems": [
+      "The town of Conca dei Marini",
+      "The beach of Furore",
+      "The hiking trail to the top of Monte Tre Calli"
+    ],
     "covers": [
-      "Sorrento",
-      "Pompeii",
       "Naples",
-      "Ischia"
+      "Sorrento",
+      "Pompeii"
     ],
     "food": [
-      "Seafood risotto",
-      "Limoncello",
-      "Neapolitan pizza",
-      "Fresh mozzarella"
+      "Seafood risotto — with fresh mussels and clams",
+      "Limoncello — a sweet and tangy Italian liqueur",
+      "Pizza margherita — a classic Neapolitan-style pizza",
+      "Spaghetti alle vongole — with fresh clams and garlic",
+      "Torta di limone — a lemon-flavored Italian dessert"
     ],
-    "best_for": [
-      "couples",
-      "luxury",
-      "honeymoon",
-      "adventurers"
+    "stay_areas": [
+      {
+        "name": "Positano",
+        "vibe": "Luxurious and romantic, expensive"
+      },
+      {
+        "name": "Amalfi",
+        "vibe": "Historic and charming, mid-range"
+      },
+      {
+        "name": "Sorrento",
+        "vibe": "Lively and affordable, budget-friendly"
+      }
     ],
-    "getting_around": "Ferries and buses connect towns along the coast, while renting a car or scooter provides flexibility",
-    "tips": [
-      "Book accommodations and restaurants in advance, especially during peak season",
-      "Explore the towns and villages on foot to discover hidden gems"
+    "budget_split": {
+      "stay": "50%",
+      "food": "25%",
+      "transport": "10%",
+      "activities": "15%"
+    },
+    "getting_there": "Fly from India to Naples International Airport (NAP) and take a bus or ferry to the Amalfi Coast. Alternatively, fly to Rome (FCO) and take a train or bus to Naples and then to the Amalfi Coast.",
+    "getting_around": "Use buses, ferries, and taxis to get around the Amalfi Coast, or rent a car or scooter for more flexibility.",
+    "visa": "Schengen visa required, apply in advance (~€60)",
+    "safety": "Generally safe, but beware of pickpocketing and petty theft in crowded areas and tourist hotspots.",
+    "sim_connectivity": "Buy a prepaid SIM card or rent a portable Wi-Fi hotspot for data and calls, with decent coverage along the coast.",
+    "language": "Italian; 'Ciao' = hello, 'Grazie' = thanks. English widely used in tourist areas.",
+    "events": [
+      {
+        "name": "Festa di San Gennaro",
+        "when": "September"
+      },
+      {
+        "name": "Ravello Festival",
+        "when": "June to September"
+      },
+      {
+        "name": "Positano Summer Festival",
+        "when": "June to August"
+      }
     ]
   },
   "Florence & Tuscany": {
