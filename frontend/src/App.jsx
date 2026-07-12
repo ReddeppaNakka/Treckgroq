@@ -1,28 +1,15 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Globe, Sparkles, AlertCircle } from "lucide-react";
-import { getMeta, recommendStream } from "./api";
+import { getMeta, recommendStream, getDestinationCard } from "./api";
 import { renderReply } from "./lib/format";
-import Hero from "./components/Hero";
+import { loadRecent, pushRecent } from "./lib/history";
+import Explore from "./components/Explore";
 import SearchBar from "./components/SearchBar";
 import AgentSteps from "./components/AgentSteps";
 import DestinationCard from "./components/DestinationCard";
 import TripDetail from "./components/TripDetail";
-
-const SUGGESTIONS = {
-  domestic: [
-    "Goa beach trip in December under ₹20,000",
-    "Hill station for 5 days, budget ₹25,000",
-    "Spiritual trip, low budget, in winter",
-    "Adventure & mountains in August under ₹30,000",
-  ],
-  international: [
-    "Beach trip in December under $1,500",
-    "10 days of culture & food in Europe in spring",
-    "Adventure & mountains, mid budget, August",
-    "Romantic honeymoon, luxury, somewhere warm",
-  ],
-};
+import SpeakButton from "./components/SpeakButton";
 
 export default function App() {
   const [mode, setMode] = useState("domestic");
@@ -34,17 +21,18 @@ export default function App() {
   const [error, setError] = useState(null);
   const [selected, setSelected] = useState(null);
   const [meta, setMeta] = useState(null);
+  const [recent, setRecent] = useState(() => loadRecent());
 
-  const suggestions = SUGGESTIONS[mode];
   const started = loading || !!result || !!error;
 
   useEffect(() => {
     getMeta().then(setMeta).catch(() => {});
   }, []);
 
-  const search = async (text) => {
+  const search = async (text, modeOverride) => {
     const message = (text ?? query).trim();
     if (!message || loading) return;
+    const useMode = modeOverride || mode;
     setQuery(message);
     setLoading(true);
     setLiveTrace([]);
@@ -52,7 +40,7 @@ export default function App() {
     setError(null);
     window.scrollTo({ top: 0, behavior: "smooth" });
     try {
-      await recommendStream(message, [], origin.trim() || undefined, mode, {
+      await recommendStream(message, [], origin.trim() || undefined, useMode, {
         onStep: (ev) =>
           setLiveTrace((prev) => [...prev, { step: ev.step, detail: ev.detail }]),
         onResult: (data) =>
@@ -79,6 +67,19 @@ export default function App() {
     setError(null);
     setLiveTrace([]);
     setQuery("");
+  };
+
+  // Tapping a place in Explore opens its full story instantly (no LLM) via the
+  // catalog card endpoint; the day-by-day plan inside TripDetail loads on demand.
+  const openDestination = async (dest) => {
+    setRecent(pushRecent(dest.name));
+    try {
+      const card = await getDestinationCard(dest.name);
+      setSelected(card);
+    } catch {
+      // Fall back to running the planner on the place name.
+      search(`Plan a trip to ${dest.name}`, dest.is_domestic ? "domestic" : "international");
+    }
   };
 
   return (
@@ -137,7 +138,7 @@ export default function App() {
       {/* Body */}
       {!started ? (
         <div className="min-h-[calc(100vh-3.5rem)]">
-          <Hero
+          <Explore
             mode={mode}
             setMode={setMode}
             query={query}
@@ -146,9 +147,9 @@ export default function App() {
             setOrigin={setOrigin}
             onSubmit={search}
             loading={loading}
-            livePricing={meta?.live_pricing}
-            suggestions={suggestions}
             meta={meta}
+            recent={recent}
+            onOpenDestination={openDestination}
           />
         </div>
       ) : (
@@ -159,6 +160,7 @@ export default function App() {
               <AgentSteps
                 trace={loading ? liveTrace : result.trace}
                 live={loading}
+                model={meta?.model}
               />
             </div>
           )}
@@ -173,10 +175,16 @@ export default function App() {
               <span className="flex h-9 w-9 flex-none items-center justify-center rounded-xl bg-gradient-to-br from-sky-400 to-indigo-500 text-sm">
                 <Sparkles size={16} className="text-white" />
               </span>
-              <div
-                className="reply glass ring-hairline rounded-2xl rounded-tl-sm px-4 py-3 text-sm leading-relaxed text-slate-200"
-                dangerouslySetInnerHTML={{ __html: renderReply(result.reply) }}
-              />
+              <div className="min-w-0">
+                <div className="mb-1.5 flex items-center gap-2">
+                  <span className="text-xs font-semibold text-slate-400">Atlas suggests</span>
+                  <SpeakButton text={result.reply} />
+                </div>
+                <div
+                  className="reply glass ring-hairline rounded-2xl rounded-tl-sm px-4 py-3 text-sm leading-relaxed text-slate-200"
+                  dangerouslySetInnerHTML={{ __html: renderReply(result.reply) }}
+                />
+              </div>
             </motion.div>
           )}
 
@@ -209,7 +217,15 @@ export default function App() {
               </div>
               <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
                 {result.recommendations.map((d, i) => (
-                  <DestinationCard key={d.id} d={d} index={i} onOpen={setSelected} />
+                  <DestinationCard
+                    key={d.id}
+                    d={d}
+                    index={i}
+                    onOpen={(card) => {
+                      setRecent(pushRecent(card.name));
+                      setSelected(card);
+                    }}
+                  />
                 ))}
               </div>
             </>

@@ -1,10 +1,13 @@
-import { useState } from "react";
-import { Search, MapPin, Plane, Globe, ArrowRight } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { Search, MapPin, Plane, Globe, ArrowRight, Mic, Check, ChevronDown } from "lucide-react";
+import { useVoiceSearch, VOICE_LANGS, voiceSupported } from "../lib/voice";
 
 const MODES = [
   { id: "domestic", label: "India", icon: MapPin },
   { id: "international", label: "International", icon: Globe },
 ];
+
+const LANG_KEY = "atlas.voiceLang";
 
 // One search control, used large on the hero and compact in the results header.
 export default function SearchBar({
@@ -20,6 +23,33 @@ export default function SearchBar({
   compact = false,
 }) {
   const [showOrigin, setShowOrigin] = useState(false);
+  const [lang, setLang] = useState(
+    () => localStorage.getItem(LANG_KEY) || "en-IN"
+  );
+  const [langOpen, setLangOpen] = useState(false);
+  const langRef = useRef(null);
+  const canVoice = voiceSupported();
+
+  useEffect(() => localStorage.setItem(LANG_KEY, lang), [lang]);
+
+  // Close the language menu on outside click.
+  useEffect(() => {
+    if (!langOpen) return;
+    const onDown = (e) => {
+      if (langRef.current && !langRef.current.contains(e.target)) setLangOpen(false);
+    };
+    document.addEventListener("pointerdown", onDown);
+    return () => document.removeEventListener("pointerdown", onDown);
+  }, [langOpen]);
+
+  // Voice dictation writes into the input; a final result auto-submits.
+  const { listening, error: voiceError, start, stop } = useVoiceSearch({
+    lang,
+    onResult: (t) => onChange(t),
+    onFinal: (t) => t && onSubmit(t),
+  });
+
+  const activeLang = VOICE_LANGS.find((l) => l.code === lang) || VOICE_LANGS[0];
 
   const submit = (e) => {
     e?.preventDefault?.();
@@ -76,6 +106,69 @@ export default function SearchBar({
             }
           />
 
+          {/* Voice search: mic + language picker (only if the browser supports it) */}
+          {canVoice && (
+            <div className="relative flex flex-none items-center" ref={langRef}>
+              <button
+                type="button"
+                onClick={() => (listening ? stop() : start())}
+                title={listening ? "Listening… tap to stop" : `Search by voice (${activeLang.label})`}
+                aria-label="Voice search"
+                className={
+                  "flex h-9 w-9 items-center justify-center rounded-xl border transition " +
+                  (listening
+                    ? "border-rose-400/50 bg-rose-500/20 text-rose-300"
+                    : "border-white/10 bg-white/5 text-slate-300 hover:border-gold/40 hover:text-white")
+                }
+              >
+                <span className="relative flex items-center justify-center">
+                  {listening && (
+                    <span className="absolute h-7 w-7 animate-ping rounded-full bg-rose-400/30" />
+                  )}
+                  <Mic size={16} />
+                </span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setLangOpen((o) => !o)}
+                title="Voice language"
+                className="ml-0.5 hidden items-center gap-0.5 rounded-lg px-1.5 py-1 text-[11px] font-semibold text-slate-400 hover:text-white sm:flex"
+              >
+                {activeLang.short}
+                <ChevronDown size={12} />
+              </button>
+
+              {langOpen && (
+                <div className="absolute right-0 top-11 z-40 w-44 overflow-hidden rounded-xl border border-white/10 bg-surface-2/95 p-1 shadow-card backdrop-blur-xl">
+                  <div className="px-2.5 py-1.5 text-[10px] uppercase tracking-wider text-slate-500">
+                    Voice language
+                  </div>
+                  {VOICE_LANGS.map((l) => (
+                    <button
+                      key={l.code}
+                      type="button"
+                      onClick={() => {
+                        setLang(l.code);
+                        setLangOpen(false);
+                      }}
+                      className={
+                        "flex w-full items-center justify-between rounded-lg px-2.5 py-1.5 text-left text-[13px] transition " +
+                        (l.code === lang
+                          ? "bg-white/10 text-white"
+                          : "text-slate-300 hover:bg-white/5")
+                      }
+                    >
+                      <span>
+                        {l.label} <span className="text-slate-500">· {l.native}</span>
+                      </span>
+                      {l.code === lang && <Check size={13} className="text-gold-400" />}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+
           {livePricing && (
             <button
               type="button"
@@ -114,6 +207,20 @@ export default function SearchBar({
               className="flex-1 bg-transparent py-1.5 text-sm text-slate-200 placeholder:text-slate-500 focus:outline-none"
             />
             <span className="text-[11px] text-slate-500">for live flight prices</span>
+          </div>
+        )}
+
+        {/* Voice status line */}
+        {(listening || voiceError) && (
+          <div className="mt-1.5 flex items-center gap-2 px-2.5 text-[11px]">
+            {listening ? (
+              <span className="flex items-center gap-1.5 text-rose-300">
+                <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-rose-400" />
+                Listening in {activeLang.label}… speak now
+              </span>
+            ) : (
+              <span className="text-amber-300/90">{voiceError}</span>
+            )}
           </div>
         )}
       </div>
